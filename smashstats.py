@@ -10,8 +10,7 @@ prefix = "?"
 cmdPath = "characters/%s/commands.yml"
 hboxPath = "characters/%s/hitboxes/"
 embedColor = 00000000
-formError1 = "The correct format for the command is `?[command] [character] [move]`"
-formError2 = "Too many parameters. You should try conjoining character or move names that are multiple words.\n`Ex: ?viz duckhunt backair`"
+formError = "Too many parameters. You should try conjoining character or move names that are multiple words.\n`Ex: ?viz duckhunt backair`"
 moveError1 = "The move \"%s\" does not exist."
 moveError2 = "This character does not have the move \"%s\"."
 charError1 = "The character \"%s\" doesn't exist."
@@ -85,12 +84,8 @@ async def on_message(req):
     if cmd != "viz" and cmd != "stats":
         return
 
-    # Checks cmd format.
-    if len(msg) < 3:
-        await req.channel.send(formError1)
-        return
-    elif len(msg) > 3:
-        await req.channel.send(formError2)
+    if len(msg) > 3:
+        await req.channel.send(formError)
         return
 
     # Parses the character name.
@@ -102,12 +97,14 @@ async def on_message(req):
         return
 
     # Parses the move name.
-    move = msg[2].lower()
-    tempMove = move
-    move = Translate(move, "moveSynonyms.yml")
-    if move == "Invalid":
-        await req.channel.send(moveError1 % tempMove)
-        return
+    move = char
+    if len(msg) == 3:
+        move = msg[2].lower()
+        tempMove = move
+        move = Translate(move, "moveSynonyms.yml")
+        if move == "Invalid":
+            await req.channel.send(moveError1 % tempMove)
+            return
 
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
     cmdData = yamlLoad(open(cmdPath % char))
