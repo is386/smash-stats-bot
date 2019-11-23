@@ -1,0 +1,210 @@
+jab:
+  - jab1
+  - jabone
+
+jab2:
+  - jabtwo
+
+jab3:
+  - jabthree
+
+jab4:
+  - jabfour
+
+parry:
+  - parry
+
+fair:
+  - forwardair
+  - forwardsair
+  - forwardaerial
+  - forwardsaerial
+
+nair:
+  - neutralair
+  - neutralaerial
+
+dair:
+  - downair
+  - downaerial
+  - downwardair
+  - downwardsair
+  - downwardaerial
+  - downwardsaerial
+
+bair:
+  - backair
+  - backaerial
+  - backwardsair
+  - backwardsaerial
+  - backwardaerial
+  - backwardair
+
+uair:
+  - upair
+  - upaerial
+  - upwardaerial
+  - upwardsaerial
+  - upwardsair
+  - upwardair
+
+ftilt:
+  - forwardtilt
+  - forwardstilt
+
+dtilt:
+  - downtilt
+  - downwardtilt
+  - downwardstilt
+
+utilt: 
+  - uptilt
+  - upwardtilt
+  - upwardstilt
+
+dash:
+  - dashattack
+  - da
+
+neutralb:
+  - plasma
+  - neutralspecial
+  - nspecial
+  - nb
+  - b
+  - plasmabreath
+
+sideb:
+  - sidespecial
+  - sspecial
+  - sidewayspecial
+  - sidewaysspecial
+  - rush
+  - spacepiraterush
+  - spr
+  - sb
+
+upb:
+  - upspecial
+  - upwardb
+  - upwardsb
+  - upwardspecial
+  - upwardsspecial
+  - wingblitz
+  - recovery
+  - ub
+  - uspecial
+  - wb
+
+downb:
+  - downspecial
+  - downwardb
+  - downwardsb
+  - downwardspecial
+  - downwardsspecial
+  - skewer
+  - dspecial
+
+fsmash:
+  - forwardsmash
+  - forwardssmash
+  - sidesmash
+  - sidewayssmash
+  - sidewaysmash
+  - ssmash
+
+dsmash:
+  - downsmash
+  - downwardsmash
+  - downwardssmash
+
+usmash:
+  - upsmash
+  - upwardsmash
+  - upwardssmash
+
+standinggrab:
+  - grab
+  - sgrab
+
+dashgrab:
+  - dgrab
+
+pivotgrab:
+  - pgrab
+
+pummel:
+  - pummel
+
+fthrow:
+  - forwardthrow
+  - forwardsthrow
+
+dthrow:
+  - downthrow
+  - downwardthrow
+  - downwardsthrow
+
+uthrow:
+  - upthrow
+  - upwardthrow
+  - upwardsthrow
+
+bthrow:
+  - backthrow
+  - backwardthrow
+  - backwardsthrow
+
+dtaunt:
+  - downtaunt
+  - downwardtaunt
+  - downwardstaunt
+
+utaunt:
+  - uptaunt
+  - upwardtaunt
+  - upwardstaunt
+
+sidetaunt:
+  - sidewaytaunt
+  - sidewaystaunt
+  - staunt
+
+roll:
+  - spotdodge
+  - forwardroll
+  - forwardsroll
+  - froll
+  - backwardsroll
+  - backwardroll
+  - broll
+  - backroll
+  - rolls
+
+airdodge:
+  - directionalairdodge
+  - ad
+  - dad
+
+oos:
+  - outofshield
+
+getup:
+  - getupattack
+  - getupatk
+
+ledgeattack:
+  - ledge
+  - ledgehang
+  - ledgegetup
+  - ledgegetupattack
+  - ledgegetupatk
+  - ledgeattack
+  - ledgeatk
+
+tripattack:
+  - trip
+  - tripgetup
+  - tripgetupattack
+  - tripgetupatk
+  - tripatk
