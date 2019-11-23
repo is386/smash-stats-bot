@@ -8,8 +8,28 @@ jab2:
 jab3:
   - jabthree
 
-jab4:
-  - jabfour
+rapidjab:
+  - multijab
+  - multihitjab
+  - multiplehitjab
+  - rapid
+
+jabfinisher:
+  - jabfinish
+  - finish
+  - finisher
+  - rapidjabfinisher
+  - multijabfinisher
+  - multiplehitjabfinisher
+  - multihitjabfinisher
+  - rapidjabfinish
+  - multijabfinish
+  - multiplehitjabfinish
+  - multihitjabfinish
+  - multifinisher
+  - multifinish
+  - rapidfinish
+  - rapidfinisher
 
 parry:
   - parry
