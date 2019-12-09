@@ -1,20 +1,21 @@
 jab:
-  - jab1
-  - jabone
-
-jab2:
-  - jabtwo
-
-jab3:
-  - jabthree
+  - jab
 
 rapidjab:
   - multijab
   - multihitjab
   - multiplehitjab
   - rapid
+  - jabrapid
+  - jabmulti
+  - jabmultihit
+  - jabmultiplehitjab
 
 jabfinisher:
+  - jabend
+  - rapidjabend
+  - multiend
+  - multijabend
   - jabfinish
   - finish
   - finisher
@@ -30,9 +31,6 @@ jabfinisher:
   - multifinish
   - rapidfinish
   - rapidfinisher
-
-parry:
-  - parry
 
 fair:
   - forwardair
@@ -82,48 +80,41 @@ utilt:
   - upwardtilt
   - upwardstilt
 
-dash:
-  - dashattack
+dashattack:
+  - dash
   - da
 
-neutralb:
-  - plasma
+nspecial:
   - neutralspecial
-  - nspecial
+  - neutralb
   - nb
   - b
-  - plasmabreath
 
-sideb:
+sspecial:
   - sidespecial
-  - sspecial
+  - sideb
   - sidewayspecial
   - sidewaysspecial
-  - rush
-  - spacepiraterush
-  - spr
   - sb
 
-upb:
-  - upspecial
+uspecial:
+  - upb
   - upwardb
   - upwardsb
   - upwardspecial
   - upwardsspecial
-  - wingblitz
   - recovery
   - ub
-  - uspecial
-  - wb
 
-downb:
+dspecial:
   - downspecial
   - downwardb
   - downwardsb
   - downwardspecial
   - downwardsspecial
-  - skewer
-  - dspecial
+  - downb
+  - db
+
 
 fsmash:
   - forwardsmash
@@ -143,15 +134,18 @@ usmash:
   - upwardsmash
   - upwardssmash
 
-standinggrab:
+grabstanding:
   - grab
   - sgrab
+  - standinggrab
 
-dashgrab:
+grabdash:
   - dgrab
+  - dashgrab
 
-pivotgrab:
+grabpivot:
   - pgrab
+  - pivotgrab
 
 pummel:
   - pummel
@@ -209,8 +203,8 @@ airdodge:
 oos:
   - outofshield
 
-getup:
-  - getupattack
+getupattack:
+  - getup
   - getupatk
 
 ledgeattack:
