@@ -10,11 +10,13 @@ prefix = "?"
 cmdPath = "characters/%s/commands.yml"
 hboxPath = "characters/%s/hitboxes/"
 embedColor = 00000000
-formError = "Too many parameters. You should try conjoining character or move names that are multiple words.\n`Ex: ?viz duckhunt backair`"
 moveError1 = "The move \"%s\" does not exist."
 moveError2 = "This character does not have the move \"%s\"."
 charError1 = "The character \"%s\" doesn't exist."
 charError2 = "The character \"%s\" has no data yet."
+hBoxError = "This move does not have a hitbox graphic."
+matchMsg = "There are multiple hitboxes for this move:\n```%s```"
+nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣']
 
 client = discord.Client()
 tokenFile = open("token", "r")
@@ -44,8 +46,11 @@ def Translate(og, synFile):
 # Takes in a cmd name.
 # Returns an embed object and image file.
 def CreateImageEmbed(cmdData, char):
-    embed = discord.Embed(color=embedColor)
-    img = (hboxPath % char) + cmdData["image"]
+    try:
+        img = (hboxPath % char) + cmdData["image"]
+    except KeyError:
+        return False, False
+    embed = discord.Embed(title=cmdData["title"] ,color=embedColor)
     f = CreateEmbedAttachment(embed, img, "image")
     return embed, f
 
@@ -66,6 +71,29 @@ def CreateEmbedAttachment(embed, filename, attachType):
     return f
 
 
+# Waits for a reaction on stats or viz and then sends the opposite command if the message is reacted to.
+async def WaitForReaction(req, resp):
+    try:
+        # Checks if the reaction to a message matches the indicated emoji.
+        def CheckReaction(reaction, user):
+            return str(reaction.emoji) in nums and user == req.author
+
+        # This loop prevents a bug where if you did two stats cmds and reacted to one of them, 
+        # it would send the follow up message to both messages instead of the one that was reacted to.
+        while True:
+            await client.wait_for('reaction_add', timeout=60.0, check=CheckReaction)
+
+            # Updates the response sent earlier with the newly added reactions.
+            resp = await req.channel.fetch_message(resp.id)
+            # Makes sure the response being reacted to isn't some other message from before.
+            for r in resp.reactions:
+                if r.count > 1:
+                    n = nums.index(r.emoji)
+                    return n
+
+    except TimeoutError:
+        return
+
 @client.event
 async def on_message(req):
     if req.author == client.user:
@@ -84,10 +112,6 @@ async def on_message(req):
     if cmd != "viz" and cmd != "stats":
         return
 
-    if len(msg) > 3:
-        await req.channel.send(formError)
-        return
-
     # Parses the character name.
     char = msg[1].lower()
     tempChar = char
@@ -98,8 +122,8 @@ async def on_message(req):
 
     # Parses the move name.
     move = char
-    if len(msg) == 3:
-        move = msg[2].lower()
+    if len(msg) > 2:
+        move = "".join(msg[2:]).lower()
         tempMove = move
         move = Translate(move, "moveSynonyms.yml")
         if move == "Invalid":
@@ -115,11 +139,33 @@ async def on_message(req):
         await req.channel.send(moveError2 % tempMove)
         return
 
+    # Checks if the move has multiple hitboxes
+    matching = [i for i in cmdData.keys() if move in i]
+    if len(matching) > 1:
+        s = ""
+
+        for i in range(len(matching)):
+            m = cmdData[matching[i]]["title"]
+            s += ("\n %d. %s" % (i+1 ,m))
+
+        resp = await req.channel.send(matchMsg % s)
+
+        for i in range(len(matching)):
+            await resp.add_reaction(nums[i])
+
+        n = await WaitForReaction(req, resp)
+        move = matching[n]
+        await resp.delete()
+
     # Sends the message response.
     if cmd == "viz":
         embed, attach = CreateImageEmbed(cmdData[move], char)
+        if embed == False:
+            await req.channel.send(hBoxError)
+            return
     else:
         return
     await req.channel.send(embed=embed, file=attach)
+
 
 client.run(token)
