@@ -14,8 +14,10 @@ moveError1 = "The move \"%s\" does not exist."
 moveError2 = "This character does not have the move \"%s\"."
 charError1 = "The character \"%s\" doesn't exist."
 charError2 = "The character \"%s\" has no data yet."
-hBoxError = "This move does not have a hitbox graphic."
+hBoxError = "**%s** does not have a hitbox graphic."
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```%s```"
+forEmoji = '⏩'
+backEmoji = '⏪'
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣']
 
 client = discord.Client()
@@ -76,25 +78,41 @@ async def WaitForReaction(req, resp):
     try:
         # Checks if the reaction to a message matches the indicated emoji.
         def CheckReaction(reaction, user):
-            return str(reaction.emoji) in nums and user == req.author
+            e = str(reaction.emoji)
+            return (e in nums or e == backEmoji or e == forEmoji) and user == req.author
 
         # This loop prevents a bug where if you did two stats cmds and reacted to one of them, 
         # it would send the follow up message to both messages instead of the one that was reacted to.
         while True:
-            await client.wait_for('reaction_add', timeout=60.0, check=CheckReaction)
+            await client.wait_for('reaction_add', timeout=120.0, check=CheckReaction)
 
             # Updates the response sent earlier with the newly added reactions.
             resp = await req.channel.fetch_message(resp.id)
-            # Makes sure the response being reacted to isn't some other message from before.
+
             for r in resp.reactions:
-                if r.count > 1:
-                    n = nums.index(r.emoji)
-                    return n
+                users = await r.users().flatten()
+                if r.count > 1 and req.author in users:
+                    if r.emoji == backEmoji:
+                        await resp.remove_reaction(r.emoji, req.author)
+                        return -2
+                    elif r.emoji == forEmoji:
+                        await resp.remove_reaction(r.emoji, req.author)
+                        return -3
+                    else:
+                        n = nums.index(r.emoji)
+                        return n
 
     except TimeoutError:
         return -1
 
     return -1
+
+def ChangePage(x, y, cmdData, matching):
+    s = ""
+    for i in range(x, y):
+        m = cmdData[matching[i]]["title"]
+        s += ("\n %d. %s" % (i+1, m))
+    return s
 
 @client.event
 async def on_message(req):
@@ -144,28 +162,43 @@ async def on_message(req):
     # Checks if the move has multiple hitboxes
     matching = [i for i in cmdData.keys() if move in i]
     if len(matching) > 1:
-        s = ""
-
-        for i in range(len(matching)):
-            m = cmdData[matching[i]]["title"]
-            s += ("\n %d. %s" % (i+1 ,m))
+        p1 = 0
+        p2 = len(matching) if len(matching) <= 9 else 9
+        s = ChangePage(p1, p2, cmdData, matching)
 
         resp = await req.channel.send(matchMsg % s)
 
-        for i in range(len(matching)):
+        for i in range(p2):
             await resp.add_reaction(nums[i])
 
-        n = await WaitForReaction(req, resp)
-        if n == -1:
-            return
-        move = matching[n]
+        if len(matching) > 9:
+            await resp.add_reaction(backEmoji)
+            await resp.add_reaction(forEmoji)
+
+        while True:
+            n = await WaitForReaction(req, resp)
+            if n == -1:
+                return
+            elif n == -2:
+                p1 = p1 - 10 if p1 - 10 >= 0 else 0
+                p2 = p1 + 9 if p1 + 10 >= 9 else 9
+                s = ChangePage(p1, p2, cmdData, matching)
+                await resp.edit(content=matchMsg % s)
+            elif n == -3:
+                p2 = p2 + 10 if p2 + 10 <= len(matching) else len(matching)
+                p1 = p1 + 10 if p1 + 10 <= p2 else p1
+                s = ChangePage(p1, p2, cmdData, matching)
+                await resp.edit(content=matchMsg % s)
+            elif n + p1 <= len(matching):
+                break
+        move = matching[n + p1]
         await resp.delete()
 
     # Sends the message response.
     if cmd == "viz":
         embed, attach = CreateImageEmbed(cmdData[move], char)
         if embed == False:
-            await req.channel.send(hBoxError)
+            await req.channel.send(hBoxError % cmdData[move]["title"])
             return
     else:
         return

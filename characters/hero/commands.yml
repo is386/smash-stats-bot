@@ -1,0 +1,304 @@
+hero:
+  title: Hero's Stats
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: bair.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: bthrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: dair.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: dash.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: dsmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+  image: dtaunt.gif
+  fields:
+
+dthrow:
+  title: Down Throw
+  image: dthrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: dtilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: fair.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: fsmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: fthrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt Shield
+  image: ftilt.gif
+  fields:
+
+ftilt2:
+  title: Forward Tilt Sword
+  image: ftilt2.gif
+  fields:
+
+getupattack: 
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: grabDash.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: grabPivot.gif
+  fields:
+
+grabstanding:
+  title: Standing Gif
+  image: grabStanding.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: jab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: jab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: jab3.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: nair.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Frizz
+  fields:
+
+nspecial2:
+  title: Frizzle
+  fields:
+
+nspecial3:
+  title: Kafrizz
+  fields:
+
+pummel:
+  title: Pummel
+  image: pummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Menu/Select
+  fields:
+
+dspecial2:
+  title: Bang
+  fields:
+
+dspecial3:
+  title: Kaboom
+  image: dspecial3.gif
+  fields:
+
+dspecial4:
+  title: Sizz
+  fields:
+
+dspecial5:
+  title: Sizzle
+  image: dspecial5.gif
+  fields:
+
+dspecial6:
+  title: Whack
+  fields:
+
+dspecial7:
+  title: Thwack
+  image: dspecial7.png
+  fields:
+
+dspecial8:
+  title: Kamikazee
+  image: dspecial8.gif
+  fields:
+
+dspecial9:
+  title: Magic Burst
+  image: dspecial9.gif
+  fields:
+
+dspecial10:
+  title: Snooze
+  fields:
+
+dspecial11:
+  title: Heal
+  fields:
+
+dspecial12:
+  title: Flameslash
+  image: dspecial12.gif
+  fields:
+
+dspecial13:
+  title: Oomph
+  fields:
+
+dspecial14:
+  title: Acceleratle
+  fields:
+
+dspecial15:
+  title: Bounce
+  fields:
+
+dspecial16:
+  title: Kaclang
+  image: dspecial16.png
+  fields:
+
+dspecial17:
+  title: Zoom
+  fields:
+
+dspecial18:
+  title: Hocus Pocus
+  fields:
+
+dspecial19:
+  title: Karackle Slash
+  image: dspecial19.gif
+  fields:
+
+dspecial20:
+  title: Hatchet Man
+  image: dspecial20.gif
+  fields:
+
+dspecial21:
+  title: Metal Slash
+  image: dspecial21.gif
+  fields:
+
+dspecial22:
+  title: Psych Up
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Zap
+  image: sspecial.gif
+  fields:
+
+sspecial2:
+  title: Zapple
+  image: sspecial2.gif
+  fields:
+
+sspecial3:
+  title: Kazap
+  image: sspecial3.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+  image: staunt.gif
+  fields:
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: uair.gif
+  fields:
+
+uspecial:
+  title: Woosh
+  fields:
+
+uspecial2:
+  title: Swoosh
+  fields:
+
+uspecial3:
+  title: Kaswoosh
+  fields:
+
+usmash:
+  title: Up Smash
+  image: usmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+  image: utaunt.gif
+  fields:
+
+uthrow:
+  title: Up Throw
+  image: uthrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: utilt.gif
+  fields:
