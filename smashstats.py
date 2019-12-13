@@ -15,7 +15,7 @@ moveError2 = "This character does not have the move \"%s\"."
 charError1 = "The character \"%s\" doesn't exist."
 charError2 = "The character \"%s\" has no data yet."
 hBoxError = "This move does not have a hitbox graphic."
-matchMsg = "There are multiple hitboxes for this move:\n```%s```"
+matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```%s```"
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣']
 
 client = discord.Client()

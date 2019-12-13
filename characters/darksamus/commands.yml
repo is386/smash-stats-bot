@@ -53,17 +53,17 @@ fair:
   fields:
 
 fsmash:
-  title: Forward Smash 1
+  title: Forward Smash
   image: fsmash.gif
   fields:
 
 fsmash2:
-  title: Forward Smash 2
+  title: Forward Smash Down
   image: fsmash2.gif
   fields:
 
 fsmash3:
-  title: Forward Smash 3
+  title: Forward Smash Up
   image: fsmash3.gif
   fields:
 
@@ -73,17 +73,17 @@ fthrow:
   fields:
 
 ftilt:
-  title: Forward Tilt 1
+  title: Forward Tilt
   image: ftilt.gif
   fields:
 
 ftilt2:
-  title: Forward Tilt 2
+  title: Forward Tilt Down
   image: ftilt2.gif
   fields:
 
 ftilt3:
-  title: Forward Tilt 3
+  title: Forward Tilt Up
   image: ftilt3.gif
   fields:
 
