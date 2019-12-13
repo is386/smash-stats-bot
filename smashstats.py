@@ -92,7 +92,9 @@ async def WaitForReaction(req, resp):
                     return n
 
     except TimeoutError:
-        return
+        return -1
+
+    return -1
 
 @client.event
 async def on_message(req):
@@ -154,6 +156,8 @@ async def on_message(req):
             await resp.add_reaction(nums[i])
 
         n = await WaitForReaction(req, resp)
+        if n == -1:
+            return
         move = matching[n]
         await resp.delete()
 
