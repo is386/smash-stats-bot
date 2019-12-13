@@ -1,5 +1,11 @@
 jab:
-  - jab
+  - jab1
+
+jab2:
+  - jab2
+
+jab3:
+  - jab3
 
 rapidjab:
   - multijab
@@ -70,6 +76,16 @@ ftilt:
   - forwardtilt
   - forwardstilt
 
+ftilt2:
+  - forwardtiltdown
+  - forwardstiltdown
+  - ftiltdown
+
+ftilt3:
+  - forwardtiltup
+  - forwardstiltup
+  - ftiltup
+
 dtilt:
   - downtilt
   - downwardtilt
@@ -123,6 +139,24 @@ fsmash:
   - sidewayssmash
   - sidewaysmash
   - ssmash
+
+fsmash2:
+  - forwardsmashdown
+  - forwardssmashdown
+  - sidesmashdown
+  - sidewayssmashdown
+  - sidewaysmashdown
+  - ssmashdown
+  - fsmashdown
+
+fsmash3:
+  - forwardsmashup
+  - forwardssmashup
+  - sidesmashup
+  - sidewayssmashup
+  - sidewaysmashup
+  - ssmashup
+  - fsmashup
 
 dsmash:
   - downsmash
