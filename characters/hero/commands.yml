@@ -144,97 +144,97 @@ dspecial:
   title: Menu/Select
   fields:
 
-dspecial2:
+bang:
   title: Bang
   fields:
 
-dspecial3:
+kaboom:
   title: Kaboom
   image: dspecial3.gif
   fields:
 
-dspecial4:
+sizz:
   title: Sizz
   fields:
 
-dspecial5:
+sizzle:
   title: Sizzle
   image: dspecial5.gif
   fields:
 
-dspecial6:
+whack:
   title: Whack
   fields:
 
-dspecial7:
+thwack:
   title: Thwack
   image: dspecial7.png
   fields:
 
-dspecial8:
+kamikazee:
   title: Kamikazee
   image: dspecial8.gif
   fields:
 
-dspecial9:
+magicburst:
   title: Magic Burst
   image: dspecial9.gif
   fields:
 
-dspecial10:
+snooze:
   title: Snooze
   fields:
 
-dspecial11:
+heal:
   title: Heal
   fields:
 
-dspecial12:
+flameslash:
   title: Flameslash
   image: dspecial12.gif
   fields:
 
-dspecial13:
+oomph:
   title: Oomph
   fields:
 
-dspecial14:
+acceleratle:
   title: Acceleratle
   fields:
 
-dspecial15:
+bounce:
   title: Bounce
   fields:
 
-dspecial16:
+kaclang:
   title: Kaclang
   image: dspecial16.png
   fields:
 
-dspecial17:
+zoom:
   title: Zoom
   fields:
 
-dspecial18:
+hocuspocus:
   title: Hocus Pocus
   fields:
 
-dspecial19:
+karackleslash:
   title: Karackle Slash
   image: dspecial19.gif
   fields:
 
-dspecial20:
+hatchetman:
   title: Hatchet Man
   image: dspecial20.gif
   fields:
 
-dspecial21:
+metalslash:
   title: Metal Slash
   image: dspecial21.gif
   fields:
 
-dspecial22:
+psychup:
   title: Psych Up
   fields:
 
