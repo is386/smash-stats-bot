@@ -1,0 +1,281 @@
+iceclimbers:
+    title: Ice Climbers' Stats
+    image: hurtbox.png
+    fields:
+  
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air Nana
+  image: bair.gif
+  fields:
+
+bair2:
+    title: Back Air Popo
+    image: bair2.gif
+    fields:
+
+bthrow:
+  title: Back Throw
+  image: bthrow.gif
+  fields:
+
+dair:
+  title: Down Air Nana
+  image: dair.gif
+  fields:
+
+dair2:
+  title: Down Air Popo
+  image: dair2.gif
+  fields:
+
+dashattack:
+  title: Dash Attack Nana
+  image: dash.gif
+  fields:
+
+dashattack2:
+  title: Dash Attack Popo
+  image: dash2.gif
+  fields:
+
+dsmash:
+  title: Down Smash Nana
+  image: dsmash.gif
+  fields:
+
+dsmash2:
+  title: Down Smash Popo
+  image: dsmash2.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+  image: dtaunt.gif
+  fields:
+
+dthrow:
+  title: Down Throw
+  image: dthrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt Nana
+  image: dtilt.gif
+  fields:
+
+dtilt2:
+  title: Down Tilt Popo
+  image: dtilt2.gif
+  fields:
+
+fair:
+  title: Forward Air Nana
+  image: fair.gif
+  fields:
+
+fair2:
+  title: Forward Air Popo
+  image: fair2.gif
+  fields:
+      
+fsmash:
+  title: Forward Smash Nana
+  image: fsmash.gif
+  fields:
+
+fsmash2:
+  title: Forward Smash Popo
+  image: fsmash2.gif
+  fields:      
+
+fthrow:
+  title: Forward Throw
+  image: fthrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt Nana
+  image: ftilt.gif
+  fields:
+
+ftilt2:
+  title: Forward Tilt Down Nana
+  image: ftilt2.gif
+  fields:
+
+ftilt3:
+  title: Forward Tilt Up Nana
+  image: ftilt3.gif
+  fields:
+
+ftilt12:
+  title: Forward Tilt Popo
+  image: ftilt12.gif
+  fields:
+
+ftilt22:
+  title: Forward Tilt Down Popo
+  image: ftilt22.gif
+  fields:
+
+ftilt32:
+  title: Forward Tilt Up Popo
+  image: ftilt32.gif
+  fields: 
+
+getupattack: 
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: grabDash.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: grabPivot.gif
+  fields:
+
+grabstanding:
+  title: Standing Gif
+  image: grabStanding.gif
+  fields:
+
+jab:
+  title: Jab 1 Nana
+  image: jab1.gif
+  fields:
+
+jab2:
+  title: Jab 2 Nana
+  image: jab2.gif
+  fields:
+
+jab12:
+  title: Jab 1 Popo
+  image: jab12.gif
+  fields:
+
+jab22:
+  title: Jab 2 Popo
+  image: jab22.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air Nana
+  image: nair.gif
+  fields:
+
+nair2:
+  title: Neutral Air Popo
+  image: nair2.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Ice Shot
+  image: nspecial.png
+  fields:
+
+pummel:
+  title: Pummel
+  image: pummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Blizzard
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Squal Hammer Nana
+  image: sspecial.gif
+  fields:
+
+sspecial2:
+  title: Squal Hammer Alone Nana
+  image: sspecial2.gif
+  fields:
+
+sspecial12:
+  title: Squal Hammer Popo
+  image: sspecial12.gif
+  fields:
+
+sspecial22:
+  title: Squal Hammer Alone Popo
+  image: sspecial22.gif
+  fields:  
+
+staunt:
+  title: Side Taunt
+  image: staunt.gif
+  fields:
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air Nana
+  image: uair.gif
+  fields:
+
+uair2:
+  title: Up Air Popo
+  image: uair2.gif
+  fields:
+    
+uspecial:
+  title: Belay
+  image: uspecial.gif
+  fields:
+
+usmash:
+  title: Up Smash Nana
+  image: usmash.gif
+  fields:
+
+usmash2:
+  title: Up Smash Popo
+  image: usmash2.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+  image: utaunt.gif
+  fields:
+
+uthrow:
+  title: Up Throw
+  image: uthrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt Nana
+  image: utilt.gif
+  fields:
+
+utilt2:
+  title: Up Tilt Popo
+  image: utilt2.gif
+  fields:

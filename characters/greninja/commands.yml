@@ -69,12 +69,12 @@ ftilt:
 
 ftilt2:
   title: Forward Tilt Down
-  image: ftilt.gif
+  image: ftilt2.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: ftilt.gif
+  image: ftilt3.gif
   fields:
 
 getupattack: 
