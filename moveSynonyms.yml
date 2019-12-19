@@ -121,6 +121,7 @@ uspecial:
   - upwardsspecial
   - recovery
   - ub
+  - upspecial
 
 dspecial:
   - downspecial
