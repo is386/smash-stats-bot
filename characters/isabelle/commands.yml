@@ -1,0 +1,170 @@
+isabelle:
+  title: Isabelle
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: bair.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: bthrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: dair.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: dash.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: dsmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+  image: dtaunt.gif
+  fields:
+
+dthrow:
+  title: Down Throw
+  image: dthrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: dtilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: fair.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: fsmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: fthrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: ftilt.gif
+  fields:
+
+getupattack: 
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: grabDash.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: grabPivot.gif
+  fields:
+
+grabstanding:
+  title: Standing Gif
+  image: grabStanding.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: jab1.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: nair.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Pocket
+  image: nspecial.png
+  fields:
+
+pummel:
+  title: Pummel
+  image: pummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Lloid Trap
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Fishing Rod
+  fields:
+
+staunt:
+  title: Side Taunt
+  image: staunt.gif
+  fields:
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: uair.gif
+  fields:
+
+uspecial:
+  title: Balloon Trip
+  image: uspecial.png
+  fields:
+
+usmash:
+  title: Up Smash
+  image: usmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+  image: utaunt.gif
+  fields:
+
+uthrow:
+  title: Up Throw
+  image: uthrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: utilt.gif
+  fields:
