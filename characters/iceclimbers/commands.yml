@@ -8,14 +8,9 @@ airdodge:
   fields:
 
 bair:
-  title: Back Air Nana
+  title: Back Air
   image: bair.gif
   fields:
-
-bair2:
-    title: Back Air Popo
-    image: bair2.gif
-    fields:
 
 bthrow:
   title: Back Throw
@@ -23,33 +18,18 @@ bthrow:
   fields:
 
 dair:
-  title: Down Air Nana
+  title: Down Air
   image: dair.gif
   fields:
 
-dair2:
-  title: Down Air Popo
-  image: dair2.gif
-  fields:
-
 dashattack:
-  title: Dash Attack Nana
+  title: Dash Attack
   image: dash.gif
   fields:
 
-dashattack2:
-  title: Dash Attack Popo
-  image: dash2.gif
-  fields:
-
 dsmash:
-  title: Down Smash Nana
+  title: Down Smash
   image: dsmash.gif
-  fields:
-
-dsmash2:
-  title: Down Smash Popo
-  image: dsmash2.gif
   fields:
 
 dtaunt:
@@ -63,34 +43,19 @@ dthrow:
   fields:
 
 dtilt:
-  title: Down Tilt Nana
+  title: Down Tilt
   image: dtilt.gif
   fields:
 
-dtilt2:
-  title: Down Tilt Popo
-  image: dtilt2.gif
-  fields:
-
 fair:
-  title: Forward Air Nana
+  title: Forward Air
   image: fair.gif
-  fields:
-
-fair2:
-  title: Forward Air Popo
-  image: fair2.gif
   fields:
       
 fsmash:
-  title: Forward Smash Nana
+  title: Forward Smash
   image: fsmash.gif
-  fields:
-
-fsmash2:
-  title: Forward Smash Popo
-  image: fsmash2.gif
-  fields:      
+  fields:    
 
 fthrow:
   title: Forward Throw
@@ -98,33 +63,18 @@ fthrow:
   fields:
 
 ftilt:
-  title: Forward Tilt Nana
+  title: Forward Tilt
   image: ftilt.gif
   fields:
 
 ftilt2:
-  title: Forward Tilt Down Nana
+  title: Forward Tilt Down
   image: ftilt2.gif
   fields:
 
 ftilt3:
-  title: Forward Tilt Up Nana
+  title: Forward Tilt Up
   image: ftilt3.gif
-  fields:
-
-ftilt12:
-  title: Forward Tilt Popo
-  image: ftilt12.gif
-  fields:
-
-ftilt22:
-  title: Forward Tilt Down Popo
-  image: ftilt22.gif
-  fields:
-
-ftilt32:
-  title: Forward Tilt Up Popo
-  image: ftilt32.gif
   fields: 
 
 getupattack: 
@@ -147,23 +97,13 @@ grabstanding:
   fields:
 
 jab:
-  title: Jab 1 Nana
-  image: jab1.gif
+  title: Jab 1
+  image: jab.gif
   fields:
 
 jab2:
-  title: Jab 2 Nana
+  title: Jab 2
   image: jab2.gif
-  fields:
-
-jab12:
-  title: Jab 1 Popo
-  image: jab12.gif
-  fields:
-
-jab22:
-  title: Jab 2 Popo
-  image: jab22.gif
   fields:
 
 ledgeattack:
@@ -171,13 +111,8 @@ ledgeattack:
   fields:
 
 nair:
-  title: Neutral Air Nana
+  title: Neutral Air
   image: nair.gif
-  fields:
-
-nair2:
-  title: Neutral Air Popo
-  image: nair2.gif
   fields:
 
 oos:
@@ -207,24 +142,14 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Squal Hammer Nana
+  title: Squal Hammer
   image: sspecial.gif
   fields:
 
 sspecial2:
-  title: Squal Hammer Alone Nana
+  title: Squal Hammer Alone
   image: sspecial2.gif
   fields:
-
-sspecial12:
-  title: Squal Hammer Popo
-  image: sspecial12.gif
-  fields:
-
-sspecial22:
-  title: Squal Hammer Alone Popo
-  image: sspecial22.gif
-  fields:  
 
 staunt:
   title: Side Taunt
@@ -236,13 +161,8 @@ tripattack:
   fields:
 
 uair:
-  title: Up Air Nana
+  title: Up Air
   image: uair.gif
-  fields:
-
-uair2:
-  title: Up Air Popo
-  image: uair2.gif
   fields:
     
 uspecial:
@@ -251,13 +171,8 @@ uspecial:
   fields:
 
 usmash:
-  title: Up Smash Nana
+  title: Up Smash
   image: usmash.gif
-  fields:
-
-usmash2:
-  title: Up Smash Popo
-  image: usmash2.gif
   fields:
 
 utaunt:
@@ -271,11 +186,6 @@ uthrow:
   fields:
 
 utilt:
-  title: Up Tilt Nana
+  title: Up Tilt
   image: utilt.gif
-  fields:
-
-utilt2:
-  title: Up Tilt Popo
-  image: utilt2.gif
   fields:
