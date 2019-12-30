@@ -257,3 +257,13 @@ tripattack:
   - tripgetupattack
   - tripgetupatk
   - tripatk
+
+input:
+  - inputs 
+  - commands
+  - commandinput
+  - command
+  - commandinputs 
+  - cmd 
+  - in 
+  - cmdin 
