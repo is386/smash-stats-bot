@@ -44,12 +44,12 @@ dthrow:
 
 dtilt:
   title: Down Tilt (Light)
-  image: dtilt2.gif
+  image: dtilt.gif
   fields:
 
-dtilt:
+dtilt2:
   title: Down Tilt (Heavy)
-  image: dtilt.gif
+  image: dtilt2.gif
   fields:
 
 fair:
