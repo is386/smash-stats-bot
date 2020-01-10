@@ -9,62 +9,60 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleDashAttack.png
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleFTilt.gif
   fields:
 
 getupattack: 
@@ -73,22 +71,22 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabellePivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleJab.gif
   fields:
 
 ledgeattack:
@@ -97,7 +95,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleNAir.gif
   fields:
 
 oos:
@@ -106,12 +104,12 @@ oos:
 
 nspecial:
   title: Pocket
-  image: nspecial.png
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabellePocket.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabellePummel.gif
   fields:
 
 roll:
@@ -130,10 +128,32 @@ sspecial:
   title: Fishing Rod
   fields:
 
+sspecial2:
+  title: Fishing Rod (Reel In)
+  fields:
+
+sspecial3:
+  title: Fishing Rod (Throw Forward)
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleFishingRodFThrow.gif
+  fields:
+
+sspecial4:
+  title: Fishing Rod (Throw Backward)
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleFishingRodBThrow.gif
+  fields:
+
+sspecial5:
+  title: Fishing Rod (Throw Up)
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleFishingRodUThrow.gif
+  fields:
+
+sspecial6:
+  title: Fishing Rod (Throw Down)
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleFishingRodDThrow.gif
+  fields:               
+
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -141,30 +161,28 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleUAir.gif
   fields:
 
 uspecial:
   title: Balloon Trip
-  image: uspecial.png
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleBalloonHurtbox.png
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/isabelle/IsabelleUTilt.gif
   fields:
