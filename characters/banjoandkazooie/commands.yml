@@ -1,6 +1,6 @@
 banjoandkazooie:
   title: Banjo and Kazooie
-  image: hurtbox.png
+  image: UPLOAD
   fields:
 
 airdodge:
@@ -9,61 +9,60 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieFTilt.gif
   fields:
 
 getupattack: 
@@ -72,37 +71,37 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooiePivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieJab3.gif
   fields:
 
 jabfinisher:
   title: Rapid Jab Finisher
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieJabRapidEnd.gif
   fields:
 
 ledgeattack:
@@ -111,7 +110,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieNAir.gif
   fields:
 
 oos:
@@ -120,22 +119,22 @@ oos:
 
 nspecial:
   title: Egg Firing
-  image: nspecial.png
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieEggFiring.png
   fields:
 
 nspecial2:
   title: Breegull Blaster
-  image: nspecial2.png
+  image: UPLOAD
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooiePummel.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieJabRapid.gif
   fields:
 
 roll:
@@ -144,7 +143,7 @@ roll:
 
 dspecial:
   title: Rear Egg
-  image: dspecial.png
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Rear%20Egg.png
   fields:
 
 spotdodge:
@@ -153,12 +152,11 @@ spotdodge:
 
 sspecial:
   title: Wonderwing
-  image: sspecial.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieWonderwing.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
 
 tripattack:
   title: Trip Getup Attack
@@ -166,29 +164,22 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieUAir.gif
   fields:
 
 uspecial:
   title: Shock Spring Jump
-  image: uspecial.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieShockSpringJump.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
-  image: utilt.gif
-  fields:
+  image: https://ultimateframedata.com/hitboxes/banjo_and

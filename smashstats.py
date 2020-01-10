@@ -42,29 +42,12 @@ def Translate(og, synFile):
 # Returns an embed object and image file.
 def CreateImageEmbed(cmdData, char):
     try:
-        img = (hboxPath % char) + cmdData["image"]
+        imgURL = cmdData["image"]
     except KeyError:
-        return False, False
+        return False
     embed = discord.Embed(title=cmdData["title"] ,color=embedColor)
-    f = CreateEmbedAttachment(embed, img, "image")
-    return embed, f
-
-
-# Takes an embed, file name, and option to declare the attachment as a thumbnail or image.
-# Returns a file object that can be attached to an embedded message.
-def CreateEmbedAttachment(embed, filename, attachType):
-    # This assures the image is uploaded as a gif file.
-    imgURL = "attachment://" + "img.gif"
-
-    # This sets the url of the image the message will use.
-    if attachType == "thumbnail":
-        embed.set_thumbnail(url=imgURL)
-    elif attachType == "image":
-        embed.set_image(url=imgURL)
-
-    f = discord.File(filename, "img.gif")
-    return f
-
+    embed.set_image(url=imgURL)
+    return embed
 
 # Waits for a reaction on stats or viz and then sends the opposite command if the message is reacted to.
 async def WaitForReaction(req, resp):
@@ -162,13 +145,13 @@ async def on_message(req):
 
     # Sends the message response.
     if cmd == "viz":
-        embed, attach = CreateImageEmbed(cmdData[move], char)
+        embed = CreateImageEmbed(cmdData[move], char)
         if embed == False:
             await req.channel.send(hBoxError % cmdData[move]["title"])
             return
     else:
         return
-    await req.channel.send(embed=embed, file=attach)
+    await req.channel.send(embed=embed)
 
 
 client.run(token)
