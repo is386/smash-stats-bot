@@ -9,77 +9,75 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt (Light)
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenDTiltLight.gif
   fields:
 
 dtilt2:
   title: Down Tilt (Heavy)
-  image: dtilt2.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenDTiltHeavy.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt (Light, Close)
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenFTiltProximity.gif
   fields:
 
 ftilt2:
   title: Forward Tilt (Light, Far)
-  image: ftilt2.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenFTiltLight.gif
   fields:
 
 ftilt3:
   title: Forward Tilt (Heavy)
-  image: ftilt3.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenFTiltHeavy.gif
   fields:
 
 getupattack: 
@@ -88,42 +86,42 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenGrab.gif
   fields:
 
 jab:
   title: Jab 1 (Light)
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenJab3.gif
   fields:
 
 jab4:
   title: Jab (Heavy, Close)
-  image: jab4.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenJabProximity.gif
   fields:
 
 jab5:
   title: Jab (Heavy, Far)
-  image: jab4.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenJabHeavy.gif
   fields:
 
 ledgeattack:
@@ -132,7 +130,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenNAir.gif
   fields:
 
 oos:
@@ -145,7 +143,7 @@ nspecial:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenPummel.gif
   fields:
 
 roll:
@@ -153,8 +151,23 @@ roll:
   fields:
 
 dspecial:
-  title: Focus Attack
-  image: dspecial.gif
+  title: Focus Attack (Level 1)
+  image: https://ultimateframedata.com/hitboxes/ken/KenFocusAttackLv1.gif
+  fields:
+
+dspecial2:
+  title: Focus Attack (Level 2)
+  image: https://ultimateframedata.com/hitboxes/ken/KenFocusAttackLv2.gif
+  fields:
+
+dspecial3:
+  title: Focus Attack (Level 3)
+  image: https://ultimateframedata.com/hitboxes/ken/KenFocusAttackLv3.gif
+  fields:
+
+dspecial4:
+  title: Focus Attack (Dash Cancel)
+  image: https://ultimateframedata.com/hitboxes/ken/KenFocusAttackLv3.gif
   fields:
 
 spotdodge:
@@ -162,18 +175,26 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Tatsumaki Senpukyaku
-  image: sspecial.gif
+  title: Tatsumaki Senpukyaku (Start)
+  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuStart.gif
   fields:
 
 sspecial2:
+  title: Tatsumaki Senpukyaku (Weak)
+  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuWeak.gif
+  fields:
+
+sspecial3:
+  title: Tatsumaki Senpukyaku (Strong)
+  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuStrong.gif
+  fields:
+
+sspecial4:
   title: Tatsumaki Senpukyaku (Air)
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -181,60 +202,68 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenUAir.gif
   fields:
 
 uspecial:
-  title: Shoryuken
-  image: uspecial.gif
+  title: Shoryuken (Light)
+  image: https://ultimateframedata.com/hitboxes/ken/KenShoryukenLight.gif
   fields:
 
 uspecial2:
-  title: True Shoryuken
-  image: uspecial2.gif
+  title: Shoryuken (Medium)
+  image: https://ultimateframedata.com/hitboxes/ken/KenShoryukenMedium.gif
   fields:
 
 uspecial3:
-  title: Flame Shoryuken (Heavy)
-  image: uspecial3.gif
+  title: True Shoryuken (Light)
+  image: https://ultimateframedata.com/hitboxes/ken/KenShoryukenLightInput.gif
   fields:
 
 uspecial4:
-  title: True Flame Shoryuken (Heavy)
-  image: uspecial4.gif
+  title: True Shoryuken (Medium)
+  image: https://ultimateframedata.com/hitboxes/ken/KenShoryukenMediumInput.gif
   fields:
         
+uspecial5:
+  title: Flame Shoryuken (Heavy)
+  image: https://ultimateframedata.com/hitboxes/ken/KenShoryukenHeavy.gif
+  fields:
+
+uspecial6:
+  title: True Flame Shoryuken (Heavy)
+  image: https://ultimateframedata.com/hitboxes/ken/KenShoryukenHeavyInput.gif
+  fields:
+
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt (Light)
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenUTiltLight.gif
   fields:
 
 utilt2:
   title: Up Tilt (Heavy)
-  image: utilt2.gif
+  image: https://ultimateframedata.com/hitboxes/ken/KenUTiltHeavy.gif
   fields:
 
 input:
   title: Nata Otoshi Geri
-  image: input.gif 
+  image: https://ultimateframedata.com/hitboxes/ken/KenNataOtoshiGeri.gif
   fields:
 
 input2:
   title: Oosoto Mawashi Geri
-  image: input2.gif 
+  image: https://ultimateframedata.com/hitboxes/ken/KenOosotoMawashiGeri.gif
   fields:  
