@@ -9,87 +9,85 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash (Bayo's Foot)
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDSmash.gif
   fields:
 
 dsmash2:
   title: Down Smash (Giant Foot)
-  image: dsmash2.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDSmashStomp.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDTilt.gif
   fields:
 
 fair:
   title: Forward Air 1
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir%201.gif
   fields:
 
 fair2:
   title: Forward Air 2
-  image: fair2.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir2.gif
   fields:
 
 fair3:
   title: Forward Air 3
-  image: fair3.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir3.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt1.gif
   fields:
 
 ftilt2:
   title: Forward Tilt Down
-  image: ftilt2.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt2.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: ftilt3.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt3.gif
   fields:
 
 getupattack: 
@@ -98,37 +96,37 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab3.gif
   fields:
 
 jabfinisher:
   title: Rapid Jab Finisher
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJabRapidEnd.gif
   fields:
 
 ledgeattack:
@@ -137,7 +135,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaNAir.gif
   fields:
 
 oos:
@@ -150,17 +148,16 @@ nspecial:
 
 nspecial2:
   title: Bullet Climax (Full Charge)
-  image: nspecial2.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaPummel.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJabRapid.gif
   fields:
 
 roll:
@@ -169,7 +166,7 @@ roll:
 
 dspecial:
   title: Witch Time
-  image: dspecial.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTime.gif
   fields:
 
 spotdodge:
@@ -178,23 +175,21 @@ spotdodge:
 
 sspecial:
   title: Heel Slide
-  image: sspecial.gif
+  image: UPLOAD
   fields:
 
 sspecial2:
   title: After Burner Kick
-  image: sspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickUp.gif
   fields:
 
 sspecial3:
   title: After Burner Kick (Down)
-  image: sspecial3.gif
+  image: UPLOAD
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -202,30 +197,33 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUAir.gif
   fields:
 
 uspecial:
-  title: Witch Twist
-  image: uspecial.gif
+  title: Witch Twist (Ground)
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistG.gif
+  fields:
+
+uspecial2:
+  title: Witch Twist (Air)
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistA.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUTilt.gif
   fields:
