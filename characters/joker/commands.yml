@@ -9,72 +9,70 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://media.giphy.com/media/Qvpz1rmVVg8mZJLSYm/giphy.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/joker/JokerBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://media.giphy.com/media/XCx8fDI75x6rzqfmxa/200.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://media.giphy.com/media/hWQvMqdme27JmYWYAu/200.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://media.giphy.com/media/lOm28LASRXA6sbr9kI/giphy.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/joker/JokerDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://media.giphy.com/media/TL19jjcXBTUUsSeTvk/200.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://media.giphy.com/media/YrIRYrFmXRAYmUN6UK/200.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://media.giphy.com/media/dWkivZQikbPwRsfe4s/giphy.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/joker/JokerFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://media.giphy.com/media/VHr77AfmV7ZE3F4lJR/giphy.gif
   fields:
 
 ftilt2:
   title: Forward Tilt Down
-  image: ftilt2.gif
+  image: https://media.giphy.com/media/U4itD2UbXQZWOtys7e/giphy.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: ftilt3.gif
+  image: https://media.giphy.com/media/JPxzJJ16FwRsLsukLH/giphy.gif
   fields:
 
 getupattack: 
@@ -83,32 +81,32 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/joker/JokerDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/joker/JokerPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/joker/JokerGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab.gif
+  image: https://media.giphy.com/media/d5xSLu0QGhEcse3tBe/100.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://media.giphy.com/media/j45262N4HrZ90ZF4SW/100.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://media.giphy.com/media/TggDYQOTibhqrv61wc/100.gif
   fields:
 
 ledgeattack:
@@ -117,7 +115,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://media.giphy.com/media/QZ8Pd29IB4oEcgjot7/200.gif
   fields:
 
 oos:
@@ -126,37 +124,37 @@ oos:
   
 nspecial:
   title: Gun
-  image: nspecial.gif
+  image: https://media.giphy.com/media/kZidbaEuK71DuVeb0h/200.gif
   fields:
 
 nspecial2:
   title: Gun, Dash Forward
-  image: nspecial2.gif
+  image: https://media.giphy.com/media/f8gYx88rdn1wBmIEH1/100.gif
   fields:
 
 nspecial3:
   title: Gun, Dash Back
-  image: nspecial3.gif
+  image: https://media.giphy.com/media/IbTC8ySJ6ZvTrEH8O3/200.gif
   fields:
 
 nspecial4:
   title: Gun, Jump
-  image: nspecial4.gif
+  image: https://media.giphy.com/media/SWujFfylR5jfFFKRnm/giphy.gif
   fields:
 
 nspecial5:
   title: Gun, Spiral
-  image: nspecial5.gif
+  image: https://media.giphy.com/media/Ln9gLRA7TEzMWyNgHp/200.gif
   fields:
 
 nspecial6:
   title: Gun, Shoot Below
-  image: nspecial6.gif
+  image: https://media.giphy.com/media/LNrs1Op92BH0ERRzYG/giphy.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/joker/JokerPummel.gif
   fields:
 
 roll:
@@ -164,8 +162,23 @@ roll:
   fields:
 
 dspecial:
-  title: Rebel's Guard / Tetrakarn / Makarakarn
-  image: dspecial.gif
+  title: Rebel's Guard
+  image: https://ultimateframedata.com/hitboxes/joker/JokerRebelsGuardAttack.gif
+  fields:
+
+dspecial2:
+  title: Tetrakarn / Makarakarn
+  image: https://ultimateframedata.com/hitboxes/joker/JokerTetrakarn_Makarakarn.gif
+  fields:
+
+dspecial3:
+  title: Tetrakarn Counter Attack
+  image: https://ultimateframedata.com/hitboxes/joker/JokerTetrakarn.gif
+  fields:
+
+dspecial4:
+  title: Makarakarn Reflect
+  image: https://ultimateframedata.com/hitboxes/joker/JokerMakarakarn.gif
   fields:
 
 spotdodge:
@@ -173,19 +186,12 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Eiha
-  image: sspecial.gif
-  fields:
-
-sspecial2:
-  title: Eigaon
-  image: sspecial2.gif
+  title: Eiha / Eigaon
+  image: https://media.giphy.com/media/XcFLMD1ysq2xbD9V3M/200.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -193,29 +199,35 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://media.giphy.com/media/lrmGLUEgGOkmQ5TVVM/200.gif
   fields:
 
 uspecial:
   title: Grappling Hook
   fields:
 
+uspecial2:
+  title: Grappling Attack
+  fields:
+
+uspecial3:
+  title: Wings of Rebellion
+  fields:
+
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://media.giphy.com/media/H7lDdVWy1Zavv5j6eJ/200.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/joker/JokerUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://media.giphy.com/media/Z8l13FpfYXbaR4YPUh/200.gif
   fields:
