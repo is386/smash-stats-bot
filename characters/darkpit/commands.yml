@@ -9,62 +9,60 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitFTilt.gif
   fields:
 
 getupattack: 
@@ -73,42 +71,42 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitJab3.gif
   fields:
 
 jabfinisher:
   title: Jab Finisher
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitJabRapidEnd.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: jabRapid.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitJabRapid.gif
   fields:
 
 ledgeattack:
@@ -117,7 +115,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitNAir.gif
   fields:
 
 oos:
@@ -130,7 +128,7 @@ nspecial:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitPummel.gif
   fields:
 
 roll:
@@ -139,6 +137,7 @@ roll:
 
 dspecial:
   title: Guardian Orbitars
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitGuardianOrbitars.gif
   fields:
 
 spotdodge:
@@ -146,19 +145,27 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Electroshock Arm
-  image: sspecial.gif
+  title: Electroshock Arm Search (Ground)
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitElectroshockArmG.gif
   fields:
 
 sspecial2:
-  title: Electroshock Arm (Air)
-  image: sspecial2.gif
+  title: Electroshock Arm Search (Air)
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitElectroshockArmA.gif
+  fields:
+
+sspecial3:
+  title: Electroshock Arm Hit (Ground)
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitElectroshockArmHitG.gif
+  fields:
+
+sspecial4:
+  title: Electroshock Arm Hit (Air)
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitElectroshockArmHitA.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -166,7 +173,7 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitUAir.gif
   fields:
 
 uspecial:
@@ -175,20 +182,18 @@ uspecial:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/dark_pit/DarkPitUTilt.gif
   fields:
