@@ -9,7 +9,7 @@ airdodge:
 
 bair:
   title: Back Air
-  image: UPLOAD
+  image: https://media.giphy.com/media/RKGYtc92kIu7Zo9AkV/100.gif
   fields:
 
 bthrow:
@@ -19,17 +19,17 @@ bthrow:
 
 dair:
   title: Down Air
-  image: UPLOAD
+  image: https://media.giphy.com/media/QxGbr6Gj3h97bYVFyg/giphy.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: UPLOAD
+  image: https://media.giphy.com/media/Kf0dIMW4dzw4FqfKjr/200.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: UPLOAD
+  image: https://media.giphy.com/media/d9OAFSStp8ZkZutOje/100.gif
   fields:
 
 dtaunt:
@@ -42,17 +42,17 @@ dthrow:
 
 dtilt:
   title: Down Tilt
-  image: UPLOAD
+  image: https://media.giphy.com/media/hXJawJNyN1HjdofUuy/giphy.gif
   fields:
 
 fair:
   title: Forward Air
-  image: UPLOAD
+  image: https://media.giphy.com/media/McbHMmDg5pUJH9Hwff/200.gif
   fields:
       
 fsmash:
   title: Forward Smash
-  image: UPLOAD
+  image: https://media.giphy.com/media/iePCxhusmaOSSmKXNI/200.gif
   fields:    
 
 fthrow:
@@ -62,17 +62,17 @@ fthrow:
 
 ftilt:
   title: Forward Tilt
-  image: UPLOAD
+  image: https://media.giphy.com/media/eNkaueMDvxsL3AIhFA/giphy.gif
   fields:
 
 ftilt2:
   title: Forward Tilt Down
-  image: UPLOAD
+  image: https://media.giphy.com/media/fwtn5Fuw5AH1ZSTzhA/giphy.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: UPLOAD
+  image: https://media.giphy.com/media/kgO2SRz8NpvAc1xam3/giphy.gif
   fields: 
 
 getupattack: 
@@ -96,12 +96,12 @@ grabstanding:
 
 jab:
   title: Jab 1
-  image: UPLOAD
+  image: https://media.giphy.com/media/VboOEdIFc0ioTwgUhu/100.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: UPLOAD
+  image: https://media.giphy.com/media/PnbGfXtgTE2Fbv3CNQ/100.gif
   fields:
 
 ledgeattack:
@@ -110,7 +110,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: UPLOAD
+  image: https://media.giphy.com/media/igPxjrSnl9bnqIj1lO/100.gif
   fields:
 
 oos:
@@ -141,12 +141,12 @@ spotdodge:
 
 sspecial:
   title: Squal Hammer
-  image: UPLOAD
+  image: https://media.giphy.com/media/eNYLNGi5Nl2TtzMnZx/giphy.gif
   fields:
 
 sspecial2:
   title: Squal Hammer Alone
-  image: UPLOAD
+  image: https://media.giphy.com/media/kafSuWUM80yKCwDAg9/giphy.gif
   fields:
 
 staunt:
@@ -158,7 +158,7 @@ tripattack:
 
 uair:
   title: Up Air
-  image: UPLOAD
+  image: https://media.giphy.com/media/U8YyhriNR0S1XYWNyM/200.gif
   fields:
     
 uspecial:
@@ -168,7 +168,7 @@ uspecial:
 
 usmash:
   title: Up Smash
-  image: UPLOAD
+  image: https://media.giphy.com/media/L1bTia6rZ4LI2LVbmj/200.gif
   fields:
 
 utaunt:
@@ -181,5 +181,5 @@ uthrow:
 
 utilt:
   title: Up Tilt
-  image: UPLOAD
+  image: https://media.giphy.com/media/IguJlGvKVOC9pdUw9I/200.gif
   fields:
