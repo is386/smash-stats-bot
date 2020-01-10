@@ -9,27 +9,27 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntDSmash.gif
   fields:
 
 dtaunt:
@@ -39,42 +39,42 @@ dtaunt:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntFTilt.gif
   fields:
 
 ftilt2:
   title: Forward Tilt Down
-  image: ftilt2.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntFTiltDown.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: ftilt3.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntFTiltUp.gif
   fields:
 
 getupattack: 
@@ -83,42 +83,42 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntJab3.gif
   fields:
 
 jabfinisher:
   title: Rapid Jab Finish
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntJabRapidEnd.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntJabRapid.gif
   fields:
 
 ledgeattack:
@@ -127,7 +127,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntNAir.gif
   fields:
 
 oos:
@@ -135,13 +135,23 @@ oos:
   fields:
 
 nspecial:
-  title: Trick Shot
-  image: nspecial.jpg
+  title: Trick Shot (Stand)
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntTrickShotStand.png
+  fields:
+
+nspecial2:
+  title: Trick Shot (Fly)
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntTrickShotFly.png
+  fields:
+
+nspecial3:
+  title: Trick Shot (Explosion)
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntTrickShotExplosion.png
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntPummel.gif
   fields:
 
 roll:
@@ -157,14 +167,17 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Clay Shooting
-  image: sspecial.png
+  title: Clay Shooting (Frisbee)
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntClayShooting.png
+  fields:
+
+sspecial2:
+  title: Clay Shooting (Detonate)
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntClayShootingBurst.png
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -172,7 +185,7 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntUAir.gif
   fields:
 
 uspecial:
@@ -181,20 +194,18 @@ uspecial:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/duck_hunt/DuckHuntUTilt.gif
   fields:
