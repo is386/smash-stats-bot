@@ -9,62 +9,70 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffFTilt.gif
+  fields:
+
+ftilt2:
+  title: Forward Tilt Down
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffFTiltUp.gif
+  fields:
+
+ftilt3:
+  title: Forward Tilt Up
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffFTiltUp.gif
   fields:
 
 getupattack: 
@@ -73,27 +81,27 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffJab2.gif
   fields:
 
 ledgeattack:
@@ -102,7 +110,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffNAir.gif
   fields:
 
 oos:
@@ -110,13 +118,18 @@ oos:
   fields:
   
 nspecial:
-  title: Rollout
-  image: nspecial.png
+  title: Rollout (Ground)
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffRolloutG.png
+  fields:
+
+nspecial2:
+  title: Rollout (Air)
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffRolloutA.png
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffPummel.gif
   fields:
 
 roll:
@@ -125,7 +138,7 @@ roll:
 
 dspecial:
   title: Rest
-  image: dspecial.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffRest.gif
   fields:
 
 spotdodge:
@@ -134,13 +147,11 @@ spotdodge:
 
 sspecial:
   title: Pound
-  image: sspecial.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffPound.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -148,30 +159,28 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffUAir.gif
   fields:
 
 uspecial:
   title: Sing
-  image: uspecial.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffSing.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/jigglypuff/JigglypuffUTilt.gif
   fields:
