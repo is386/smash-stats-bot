@@ -9,62 +9,60 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfFTilt.gif
   fields:
 
 getupattack: 
@@ -73,22 +71,22 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfGrab.gif
   fields:
 
 jab:
   title: Jab
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfJab.gif
   fields:
 
 ledgeattack:
@@ -97,7 +95,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfNAir.gif
   fields:
 
 oos:
@@ -105,13 +103,28 @@ oos:
   fields:
 
 nspecial:
-  title: Warlock Punch
-  image: nspecial.gif
+  title: Warlock Punch (Ground)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfWarlockPunchG.gif
+  fields:
+
+nspecial2:
+  title: Warlock Punch (Ground, Reversed)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfWarlockPunchRG.gif
+  fields:
+
+nspecial3:
+  title: Warlock Punch (Air)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfWarlockPunchA.gif
+  fields:
+
+nspecial4:
+  title: Warlock Punch (Air, Reversed)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfWarlockPunchRA.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfPummel.gif
   fields:
 
 roll:
@@ -119,13 +132,18 @@ roll:
   fields:
 
 dspecial:
-  title: Wizard's Foot
-  image: dspecial.gif
+  title: Wizard's Foot (Ground)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfWizardsFootG.gif
   fields:
 
 dspecial2:
   title: Wizard's Foot (Air)
-  image: dspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfWizardsFootA.gif
+  fields:
+
+dspecial3:
+  title: Wizard's Foot (Landing)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfWizardsFootALand.gif
   fields:
 
 spotdodge:
@@ -133,19 +151,26 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Flame Choke
-  image: sspecial.gif
+  title: Flame Choke Search (Ground)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfFlameChokeG.gif
   fields:
 
 sspecial2:
-  title: Flame Choke (Air)
-  image: sspecial2.gif
+  title: Flame Choke Success (Ground)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfFlameChoke.gif
+  fields:
+
+sspecial3:
+  title: Flame Choke Search (Air)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfFlameChokeA.gif
+  fields:
+
+sspecial4:
+  title: Flame Choke Success (Air)
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -153,35 +178,33 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfUAir.gif
   fields:
 
 uspecial:
-  title: Dark Dive
-  image: uspecial.gif
+  title: Dark Dive (Rising)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfDarkDive.gif
   fields:
 
 uspecial2:
-  title: Dark Dive Success
-  image: uspecial2.gif
+  title: Dark Dive (Success)
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfDarkDiveCatch.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/ganondorf/GanondorfUTilt.gif
   fields:
