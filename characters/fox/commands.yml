@@ -9,72 +9,70 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxFTilt.gif
   fields:
 
 ftilt2:
   title: Forward Tilt Down
-  image: ftilt2.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxFTiltDown.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: ftilt3.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxFTiltUp.gif
   fields:
 
 getupattack: 
@@ -83,37 +81,37 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxJab2.gif
   fields:
 
 jabfinisher:
   title: Rapid Jab Finish
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxJabRapidEnd.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxJabRapid.gif
   fields:
 
 ledgeattack:
@@ -122,7 +120,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxNAir.gif
   fields:
 
 oos:
@@ -131,12 +129,12 @@ oos:
 
 nspecial:
   title: Blaster
-  image: nspecial.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxBlaster.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxPummel.gif
   fields:
 
 roll:
@@ -145,7 +143,7 @@ roll:
 
 dspecial:
   title: Reflector
-  image: dspecial.png
+  image: https://ultimateframedata.com/hitboxes/fox/FoxReflectorStart.gif
   fields:
 
 spotdodge:
@@ -153,14 +151,17 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Fox Illusion
-  image: sspecial.gif
+  title: Fox Illusion (Start)
+  image: https://ultimateframedata.com/hitboxes/fox/FoxReflectorStart.gif
+  fields:
+
+sspecial2:
+  title: Fox Illusion (Hold)
+  image: https://ultimateframedata.com/hitboxes/fox/FoxReflector.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -168,30 +169,28 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxUAir.gif
   fields:
 
 uspecial:
   title: Fire Fox
-  image: uspecial.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxFireFox.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxUTHrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/fox/FoxUTilt.gif
   fields:
