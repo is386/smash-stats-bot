@@ -9,62 +9,60 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinFSmashCharge.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinFTilt.gif
   fields:
 
 getupattack: 
@@ -73,42 +71,42 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinJab3.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinJabRapid.gif
   fields:
 
 jabfinisher:
   title: Jab Finisher
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinJabRapidEnd.gif
   fields:
 
 ledgeattack:
@@ -117,7 +115,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinNAir.gif
   fields:
 
 oos:
@@ -134,7 +132,7 @@ nspecial2:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinPummel.gif
   fields:
 
 roll:
@@ -143,7 +141,12 @@ roll:
 
 dspecial:
   title: Counter Surge
-  image: dspecial.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinCounterSurge.gif
+  fields:
+
+dspecial2:
+  title: Counter Surge Attack
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinCounterSurgeHit.gif
   fields:
 
 spotdodge:
@@ -151,24 +154,33 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Dragon Lunge
-  image: sspecial.gif
+  title: Dragon Lunge Pin (Ground)
   fields:
 
 sspecial2:
-  title: Dragon Lunge, Front Kick
-  image: sspecial2.gif
+  title: Dragon Lunge Pin (Air)
   fields:
 
 sspecial3:
-  title: Dragon Lunge, Back Kick
-  image: sspecial3.gif
+  title: Dragon Lunge Pin (Cancel)
+  fields:
+
+sspecial4:
+  title: Dragon Lunge Pin (Jump)
+  fields:
+
+sspecial5:
+  title: Dragon Lunge Pin (Kick)
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDragonLungeKick.gif
+  fields:
+
+sspecial6:
+  title: Dragon Lunge Pin (Back Kick)
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDragonLungeKickBack.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -176,30 +188,28 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinUAir.gif
   fields:
 
 uspecial:
   title: Dragon Ascent
-  image: uspecial.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDragonAscent.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinUTilt.gif
   fields:
