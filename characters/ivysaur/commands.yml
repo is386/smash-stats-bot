@@ -9,72 +9,70 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurFSmash.gif
   fields:
 
 fsmash2:
   title: Forward Smash Down
-  image: fsmash2.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurFSmashDown.gif
   fields:
 
 fsmash3:
   title: Forward Smash Up
-  image: fsmash3.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurFSmashUp.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurFTilt.gif
   fields:
 
 getupattack: 
@@ -83,37 +81,37 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurJab2.gif
   fields:
 
 jabfinisher:
   title: Rapid Jab Finish
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurJabRapidEnd.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurJabRapid.gif
   fields:
 
 ledgeattack:
@@ -122,7 +120,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurNAir.gif
   fields:
 
 oos:
@@ -130,13 +128,18 @@ oos:
   fields:
   
 nspecial:
-  title: Bullet Seed
-  image: nspecial.gif
+  title: Bullet Seed (Ground)
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurBulletSeedG.gif
+  fields:
+
+nspecial2:
+  title: Bullet Seed (Air)
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurBulletSeedA.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurPummel.gif
   fields:
 
 roll:
@@ -157,8 +160,6 @@ sspecial:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -166,7 +167,7 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurUAir.gif
   fields:
 
 uspecial:
@@ -175,20 +176,18 @@ uspecial:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/pt_ivysaur/IvysaurUTilt.gif
   fields:
