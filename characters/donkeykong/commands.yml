@@ -9,77 +9,75 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongFSmash.gif
   fields:
 
 fthrow:
-  title: Cargo Back Throw
-  image: fthrow.gif
+  title: Cargo Forward Throw
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongCargoFThrow.gif
   fields:
 
 fthrow2:
-  title: Cargo Forward Throw
-  image: fthrow2.gif
+  title: Cargo Back Throw
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongCargoBThrow.gif
   fields:
 
 fthrow3:
-  title: Cargo Down Throw
-  image: fthrow3.gif
+  title: Cargo Up Throw
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongCargoUThrow.gif
   fields:
 
 fthrow4:
-  title: Cargo Up Throw
-  image: fthrow4.gif
+  title: Cargo Down Throw
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongCargoDThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongFTilt.gif
   fields:
 
 getupattack: 
@@ -88,27 +86,27 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongJab2.gif
   fields:
 
 ledgeattack:
@@ -117,7 +115,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongNAir.gif
   fields:
 
 oos:
@@ -125,18 +123,28 @@ oos:
   fields:
 
 nspecial:
-  title: Giant Punch
-  image: nspecial.gif
+  title: Giant Punch (Ground)
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongGiantPunchG.gif
   fields:
 
 nspecial2:
-  title: Giant Punch (Max)
-  image: nspecial2.gif
+  title: Giant Punch (Air)
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongGiantPunchA.gif
+  fields:
+
+nspecial3:
+  title: Giant Punch (Max, Ground)
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongHeadbuttG.gif
+  fields:
+
+nspecial4:
+  title: Giant Punch (Max, Air)
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongHeadbuttA.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongPummel.gif
   fields:
 
 roll:
@@ -145,12 +153,12 @@ roll:
 
 dspecial:
   title: Hand Slap
-  image: dspecial.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongHandSlapG.gif
   fields:
 
 dspecial2:
   title: Hand Slap (Air)
-  image: dspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongHandSlapA.gif
   fields:
 
 spotdodge:
@@ -158,14 +166,17 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Headbutt
-  image: sspecial.gif
+  title: Headbutt (Ground
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongHeadbuttG.gif
+  fields:
+
+sspecial2:
+  title: Headbutt (Air)
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongHeadbuttA.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -173,35 +184,33 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongUAir.gif
   fields:
 
 uspecial:
-  title: Spinning Kong
-  image: uspecial.gif
+  title: Spinning Kong (Ground)
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongSpinningKongG.gif
   fields:
 
 uspecial2:
   title: Spinning Kong (Air)
-  image: uspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongSpinningKongA.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongUTilt.gif
   fields:
