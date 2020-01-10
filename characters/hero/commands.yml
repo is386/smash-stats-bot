@@ -9,67 +9,65 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFThrow.gif
   fields:
 
 ftilt:
-  title: Forward Tilt Shield
-  image: ftilt.gif
+  title: Forward Tilt 1 (Shield)
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFTilt1.gif
   fields:
 
 ftilt2:
-  title: Forward Tilt Sword
-  image: ftilt2.gif
+  title: Forward Tilt 2 (Sword)
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFTilt2.gif
   fields:
 
 getupattack: 
@@ -78,32 +76,32 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroJab3.gif
   fields:
 
 ledgeattack:
@@ -112,7 +110,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroNAir.gif
   fields:
 
 oos:
@@ -133,7 +131,7 @@ nspecial3:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroPummel.gif
   fields:
 
 roll:
@@ -150,7 +148,7 @@ bang:
 
 kaboom:
   title: Kaboom
-  image: dspecial3.gif
+  image: https://ultimateframedata.com/hitboxes/hero/Kaboom.gif
   fields:
 
 sizz:
@@ -159,7 +157,7 @@ sizz:
 
 sizzle:
   title: Sizzle
-  image: dspecial5.gif
+  image: https://ultimateframedata.com/hitboxes/hero/Sizzle.gif
   fields:
 
 whack:
@@ -168,17 +166,17 @@ whack:
 
 thwack:
   title: Thwack
-  image: dspecial7.png
+  image: https://ultimateframedata.com/hitboxes/hero/Thwack.png
   fields:
 
 kamikazee:
   title: Kamikazee
-  image: dspecial8.gif
+  image: https://ultimateframedata.com/hitboxes/hero/Kamikazee.gif
   fields:
 
 magicburst:
   title: Magic Burst
-  image: dspecial9.gif
+  image: https://ultimateframedata.com/hitboxes/hero/Magic%20Burst.gif
   fields:
 
 snooze:
@@ -187,11 +185,6 @@ snooze:
 
 heal:
   title: Heal
-  fields:
-
-flameslash:
-  title: Flameslash
-  image: dspecial12.gif
   fields:
 
 oomph:
@@ -208,7 +201,7 @@ bounce:
 
 kaclang:
   title: Kaclang
-  image: dspecial16.png
+  image: https://ultimateframedata.com/hitboxes/hero/HeroKaclang.png
   fields:
 
 zoom:
@@ -219,19 +212,24 @@ hocuspocus:
   title: Hocus Pocus
   fields:
 
+flameslash:
+  title: Flameslash
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFlameSlash.gif
+  fields:
+    
 kacrackleslash:
   title: Kacrackle Slash
-  image: dspecial19.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroKacrackleSlash.gif
   fields:
 
 hatchetman:
   title: Hatchet Man
-  image: dspecial20.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroHatchetMan.gif
   fields:
 
 metalslash:
   title: Metal Slash
-  image: dspecial21.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroMetalSlash.gif
   fields:
 
 psychup:
@@ -244,23 +242,21 @@ spotdodge:
 
 sspecial:
   title: Zap
-  image: sspecial.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroZap.gif
   fields:
 
 sspecial2:
   title: Zapple
-  image: sspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroZapple.gif
   fields:
 
 sspecial3:
   title: Kazap
-  image: sspecial3.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroKazap.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -268,7 +264,7 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroUAir.gif
   fields:
 
 uspecial:
@@ -285,20 +281,18 @@ uspecial3:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/hero/HeroUTilt.gif
   fields:
