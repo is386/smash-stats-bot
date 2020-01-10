@@ -9,62 +9,70 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyFAir.gif
   fields:
 
 fsmash:
-  title: Forward Smash
-  image: fsmash.gif
+  title: Forward Smash (Frying Pan)
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyFSmashFryingPan.gif
   fields:
+
+fsmash2:
+  title: Forward Smash (Golf Club)
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyFSmashGolfClub.gif
+  fields:
+
+fsmash3:
+  title: Forward Smash (Tennis Racket)
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyFSmashTennisRacket.gif
+  fields:    
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyFTilt.gif
   fields:
 
 getupattack: 
@@ -73,27 +81,27 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyJab2.gif
   fields:
 
 ledgeattack:
@@ -102,7 +110,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyNAir.gif
   fields:
 
 oos:
@@ -111,11 +119,16 @@ oos:
 
 nspecial:
   title: Toad
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyToad.gif
+  fields:
+
+nspecial2:
+  title: Toad Attack
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyPummel.gif
   fields:
 
 roll:
@@ -131,14 +144,21 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Daisy Bomber
-  image: sspecial.gif
+  title: Daisy Bomber (Detect)
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDaisyBomber.png
+  fields:
+
+sspecial2:
+  title: Daisy Bomber (Hit)
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDaisyBomberHit.gif
+  fields:
+
+sspecial3:
+  title: Daisy Bomber (Air)
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -146,30 +166,33 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyUAir.gif
   fields:
 
 uspecial:
-  title: Daisy Parasol
-  image: uspecial.gif
+  title: Daisy Parasol (Rising)
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDaisyParasol.gif
+  fields:
+
+uspecial2:
+  title: Daisy Parasol (Falling)
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyDaisyParasolFall.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/daisy/DaisyUTilt.gif
   fields:
