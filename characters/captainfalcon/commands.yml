@@ -1,6 +1,6 @@
 captainfalcon:
   title: Captain Falcon
-  image: hurtbox.png
+  image: UPLOAD
   fields:
 
 airdodge:
@@ -9,62 +9,70 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFSmash.gif
+  fields:
+
+fsmash2:
+  title: Forward Smash Down
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFSmashDown.gif
+  fields:
+
+fsmash3:
+  title: Forward Smash Up
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFSmashUp.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFTilt.gif
   fields:
 
 getupattack: 
@@ -73,37 +81,37 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconJab3.gif
   fields:
 
 jabfinisher:
   title: Rapid Jab Finisher
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconJabRapidEnd.gif
   fields:
 
 ledgeattack:
@@ -112,7 +120,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconNAir.gif
   fields:
 
 oos:
@@ -120,18 +128,33 @@ oos:
   fields:
 
 nspecial:
-  title: Falcon Punch
-  image: nspecial.gif
+  title: Falcon Punch (Ground)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconPunchG.gif
+  fields:
+
+nspecial2:
+  title: Falcon Punch (Ground, Reversed)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconPunchGR.gif
+  fields:
+
+nspecial3:
+  title: Falcon Punch (Air)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconPunchG.gif
+  fields:
+
+nspecial4:
+  title: Falcon Punch (Air, Reversed)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconPunchAR.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconPummel.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconJabRapid.gif
   fields:
 
 roll:
@@ -139,13 +162,18 @@ roll:
   fields:
 
 dspecial:
-  title: Falcon Kick
-  image: dspecial.gif
+  title: Falcon Kick (Ground)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconKickG.gif
   fields:
 
 dspecial2:
-  title: Falcon Kick Down
-  image: dspecial2.gif
+  title: Falcon Kick (Air)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconKickA.gif
+  fields:
+
+dspecial3:
+  title: Falcon Kick (Landing)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconKickALanding.gif
   fields:
 
 spotdodge:
@@ -153,14 +181,27 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Raptor Boost
-  image: sspecial.gif
+  title: Raptor Boost Hit (Ground)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostHitG.gif
+  fields:
+
+sspecial2:
+  title: Raptor Boost Hit (Air)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostHitA.gif
+  fields:
+
+sspecial3:
+  title: Raptor Boost Search (Ground)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostG.gif
+  fields:
+
+sspecial4:
+  title: Raptor Boost Search (Air)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostA.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -168,30 +209,38 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconUAir.gif
   fields:
 
 uspecial:
-  title: Falcon Dive
-  image: uspecial.gif
+  title: Falcon Dive (Ground)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconDiveG.gif
+  fields:
+
+uspecial2:
+  title: Falcon Dive (Air)
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconDiveA.gif
+  fields:
+
+uspecial3:
+  title: Falcon Dive Catch
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconDiveCatch.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconUTilt.gif
   fields:
