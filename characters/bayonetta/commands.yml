@@ -1,6 +1,6 @@
 bayonetta:
   title: Bayonetta
-  image: hurtbox.png
+  image: UPLOAD
   fields:
 
 airdodge:
@@ -81,12 +81,12 @@ ftilt:
   fields:
 
 ftilt2:
-  title: Forward Tilt Down
+  title: Forward Tilt 2
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt2.gif
   fields:
 
 ftilt3:
-  title: Forward Tilt Up
+  title: Forward Tilt 3
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt3.gif
   fields:
 
@@ -175,17 +175,27 @@ spotdodge:
 
 sspecial:
   title: Heel Slide
-  image: UPLOAD
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaHeelSlide.gif
   fields:
 
 sspecial2:
+  title: Heel Slide (End)
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaHeelSlideEnd.gif
+  fields:
+
+sspecial3:
   title: After Burner Kick
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickUp.gif
   fields:
 
-sspecial3:
-  title: After Burner Kick (Down)
-  image: UPLOAD
+sspecial4:
+  title: After Burner Kick Down
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickDown.gif
+  fields:
+
+sspecial5:
+  title: After Burner Kick Down (Landing)
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickLanding.gif
   fields:
 
 staunt:

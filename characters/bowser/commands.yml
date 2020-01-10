@@ -67,12 +67,12 @@ ftilt:
 
 ftilt2:
   title: Forward Tilt Down
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltUp.gif
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltDown.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltDown.gif
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltUp.gif
   fields:
 
 getupattack: 

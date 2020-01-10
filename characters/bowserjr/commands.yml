@@ -198,10 +198,15 @@ uair:
 
 uspecial:
   title: Abandon Ship
-  image: UPLOAD
+  image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrAbandonShip.gif
   fields:
 
 uspecial2:
+  title: Abandon Ship (Explosion)
+  image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrAbandonShipExplosion.png
+  fields:
+
+uspecial3:
   title: Abandon Ship (Hammer)
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrAbandonShipHammer.gif
   fields:
