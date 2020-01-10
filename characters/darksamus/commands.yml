@@ -9,82 +9,80 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmash.gif
   fields:
 
 fsmash2:
   title: Forward Smash Down
-  image: fsmash2.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmashDown.gif
   fields:
 
 fsmash3:
   title: Forward Smash Up
-  image: fsmash3.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmashUp.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTilt.gif
   fields:
 
 ftilt2:
   title: Forward Tilt Down
-  image: ftilt2.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTiltDown.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: ftilt3.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTiltDown.gif
   fields:
 
 getupattack: 
@@ -105,12 +103,12 @@ grabstanding:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusJab2.gif
   fields:
 
 ledgeattack:
@@ -119,7 +117,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusNAir.gif
   fields:
 
 oos:
@@ -128,17 +126,17 @@ oos:
   
 nspecial:
   title: Charge Shot
-  image: nspecial.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusChargeShotMin.gif
   fields:
 
 nspecial2:
   title: Charge Shot (Max)
-  image: nspecial.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusChargeShotMax.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusPummel.gif
   fields:
 
 roll:
@@ -147,7 +145,12 @@ roll:
 
 dspecial:
   title: Bomb
-  image: dspecial.png
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusBomb.png
+  fields:
+
+dspecial2:
+  title: Bomb (Explosion)
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusBombExplosion.png
   fields:
 
 spotdodge:
@@ -155,14 +158,17 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Homing / Super Missle
-  image: sspecial.png
+  title: Homing Missile
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusMissile.png
+  fields:
+
+sspecial2:
+  title: Super Missile
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusSuperMissile.png
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -170,30 +176,37 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusUAir.gif
   fields:
 
 uspecial:
-  title: Screw Attack
-  image: uspecial.gif
+  title: Screw Attack (Ground)
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusScrewAttackG.gif
+  fields:
+
+uspecial2:
+  title: Screw Attack (Air)
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusScrewAttackA.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusUTilt.gif
+  fields:
+
+zair:
+  title: Z Air
   fields:
