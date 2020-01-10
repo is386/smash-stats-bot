@@ -9,82 +9,80 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioFSmash.gif
   fields:
 
 fsmash2:
   title: Forward Smash Down
-  image: fsmash2.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioFSmashDown.gif
   fields:
 
 fsmash3:
   title: Forward Smash Up
-  image: fsmash3.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioFSmashUp.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt 
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioFTilt.gif
   fields:
 
 ftilt2:
   title: Forward Tilt Down
-  image: ftilt2.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioFTiltDown.gif
   fields:
 
 ftilt3:
   title: Forward Tilt Up
-  image: ftilt3.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioFTiltUp.gif
   fields:
 
 getupattack: 
@@ -93,32 +91,32 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioJab3.gif
   fields:
 
 ledgeattack:
@@ -127,7 +125,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioNAir.gif
   fields:
 
 oos:
@@ -136,12 +134,12 @@ oos:
 
 nspecial:
   title: Megavitamin Pill
-  image: nspecial.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioMegavitamin.png
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioPummel.gif
   fields:
 
 roll:
@@ -149,8 +147,13 @@ roll:
   fields:
 
 dspecial:
-  title: Dr. Tornado
-  image: dspecial.gif
+  title: Dr. Tornado (Ground)
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioDrTornadoG.gif
+  fields:
+
+dspecial2:
+  title: Dr. Tornado (Air)
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioDrTornadoA.gif
   fields:
 
 spotdodge:
@@ -159,13 +162,11 @@ spotdodge:
 
 sspecial:
   title: Super Sheet
-  image: sspecial.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioSuperSheet.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -173,30 +174,28 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioUAir.gif
   fields:
 
 uspecial:
   title: Super Jump Punch
-  image: uspecial.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioSuperJumpPunch.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/dr_mario/DrMarioUTilt.gif
   fields:
