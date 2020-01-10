@@ -9,62 +9,60 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudFTilt.gif
   fields:
 
 getupattack: 
@@ -73,32 +71,32 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudGrab.gif
   fields:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudJab3.gif
   fields:
 
 ledgeattack:
@@ -107,7 +105,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudNAir.gif
   fields:
 
 oos:
@@ -116,17 +114,17 @@ oos:
 
 nspecial:
   title: Blade Beam
-  image: nspecial.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudBladeBeam.gif
   fields:
 
 nspecial2:
   title: Limit Blade Beam
-  image: nspecial.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudBladeBeamLimit.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudPummel.gif
   fields:
 
 roll:
@@ -138,8 +136,13 @@ dspecial:
   fields:
 
 dspecial2:
-  title: Finishing Touch
-  image: dspecial2.gif
+  title: Finishing Touch (Ground)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudFinishingTouchG.gif
+  fields:
+
+dspecial3:
+  title: Finishing Touch (Air)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudFinishingTouchA.gif
   fields:
 
 spotdodge:
@@ -147,29 +150,47 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Cross Slash Hit 1
-  image: sspecial.gif
+  title: Cross Slash Hit 1 (Left)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudCrossSlash1Left.gif
   fields:
 
 sspecial2:
-  title: Cross Slash Hit 2
-  image: sspecial2.gif
+  title: Cross Slash Hit 1 (Right)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudCrossSlash1Right.gif
   fields:
-
+    
 sspecial3:
-  title: Cross Slash Hit 3
-  image: sspecial3.gif
+  title: Cross Slash Hit 2 (Left)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudCrossSlash2Left.gif
   fields:
 
 sspecial4:
-  title: Limit Cross Slash
-  image: sspecial4.gif
+  title: Cross Slash Hit 2 (Right)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudCrossSlash2Right.gif
+  fields:
+
+sspecial5:
+  title: Cross Slash Hit 3 (Left)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudCrossSlash3Left.gif
+  fields:
+
+sspecial6:
+  title: Cross Slash Hit 3 (Right)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudCrossSlash3Right.gif
+  fields:
+
+sspecial7:
+  title: Limit Cross Slash (Left)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudCrossSlashLimitLeft.gif
+  fields:
+
+sspecial8:
+  title: Limit Cross Slash (Right)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudCrossSlashLimitRight.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -177,35 +198,43 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudUAir.gif
   fields:
 
 uspecial:
-  title: Climhazzard
-  image: uspecial.gif
+  title: Climhazzard (Rising)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudClimhazzard.gif
   fields:
 
 uspecial2:
+  title: Climhazzard Followup (Falling)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudClimhazzardFall.gif
+  fields:
+
+uspecial3:
+  title: Climhazzard Followup (Landing)
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudClimhazzardLanding.gif
+  fields:
+
+uspecial4:
   title: Limit Climhazzard
-  image: uspecial.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudClimhazzardLimit.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/cloud/CloudUTilt.gif
   fields:
