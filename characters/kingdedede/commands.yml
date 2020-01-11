@@ -9,62 +9,60 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt 
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeFSmash.gif
   fields:
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeFthrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeFTilt.gif
   fields:
 
 getupattack: 
@@ -73,37 +71,37 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededePivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeGrab.gif
   fields:
 
 jab:
   title: Jab 1 
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeJab2.gif
   fields:
 
 jabfinisher:
   title: Rapid Jab Finish
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeJabRapidEnd.gif
   fields:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeJabRapid.gif
   fields:
 
 ledgeattack:
@@ -112,7 +110,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeNAir.gif
   fields:
 
 oos:
@@ -120,13 +118,22 @@ oos:
   fields:
   
 nspecial:
-  title: Inhale
-  image: nspecial.gif
+  title: Inhale (Start)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeInhaleStart.gif
+  fields:
+
+nspecial2:
+  title: Inhale (Suck)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeInhale.gif
+  fields:
+
+nspecial3:
+  title: Inhale (Spit)
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededePummel.gif
   fields:
 
 roll:
@@ -134,13 +141,23 @@ roll:
   fields:
 
 dspecial:
-  title: Jet Hammer
-  image: dspecial.gif
+  title: Jet Hammer (Ground)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeJetHammerG.gif
   fields:
 
 dspecial2:
-  title: Jet Hammer Full Charge
-  image: dspecial2.gif
+  title: Jet Hammer (Air)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeJetHammerA.gif
+  fields:
+
+dspecial3:
+  title: Jet Hammer Full Charge (Ground)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeJet%20HammerGMax.gif
+  fields:
+
+dspecial4:
+  title: Jet Hammer Full Charge (Air)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeJet%20HammerAMax.gif
   fields:
 
 spotdodge:
@@ -148,14 +165,22 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Gordo Throw
-  image: sspecial.gif
+  title: Gordo Throw (Toss)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeGordoThrow.gif
+  fields:
+
+sspecial2:
+  title: Gordo Throw (Gordo)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeGordo.gif
+  fields:
+
+sspecial3:
+  title: Gordo Throw (Wall Stick)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeGordoWall.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -163,30 +188,33 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeUAir.gif
   fields:
 
 uspecial:
   title: Super Dedede Jump
-  image: uspecial.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeSuperDededeJump1.gif
   fields:
-        
+    
+uspecial2:
+  title: Super Dedede Jump (Landing)
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeSuperDededeJumpLanding.gif
+  fields:
+
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt 
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/king_dedede/KingDededeUTilt.gif
   fields:
