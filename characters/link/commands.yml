@@ -9,67 +9,65 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt 
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash 1
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkFSmash1.gif
   fields:
 
 fsmash2:
   title: Forward Smash 2
-  image: fsmash2.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkFSmash2.gif
   fields:
     
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkFTilt.gif
   fields:
 
 getupattack: 
@@ -78,32 +76,32 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkGrab.gif
   fields:
 
 jab:
   title: Jab 1 
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkJab2.gif
   fields:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkJab3.gif
   fields:
 
 ledgeattack:
@@ -112,7 +110,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkNAir.gif
   fields:
 
 oos:
@@ -121,12 +119,12 @@ oos:
   
 nspecial:
   title: Hero's Bow
-  image: nspecial.png
+  image: https://ultimateframedata.com/hitboxes/link/LinkArrow.png
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkPummel.gif
   fields:
 
 roll:
@@ -143,13 +141,11 @@ spotdodge:
 
 sspecial:
   title: Boomerang
-  image: sspecial.png
+  image: https://ultimateframedata.com/hitboxes/link/LinkBoomerang.png
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -157,35 +153,33 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkUAir.gif
   fields:
 
 uspecial:
   title: Spin Attack
-  image: uspecial.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkSpinAttackG.gif
   fields:
      
 uspecial2:
   title: Spin Attack (Air)
-  image: uspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkSpinAttackA.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt 
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/link/LinkUTilt.gif
   fields:
