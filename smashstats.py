@@ -2,7 +2,7 @@ import discord
 from yaml import safe_load as yamlLoad
 
 prefix = "?"
-cmdPath = "characters/%s/commands.yml"
+cmdPath = "characters/%s.yml"
 embedColor = 00000000
 moveError1 = "The move **%s** does not exist."
 charError1 = "The character **%s** doesn't exist."
