@@ -125,22 +125,34 @@ async def on_message(req):
 
     # Checks if the move has multiple hitboxes
     matching = [i for i in cmdData.keys() if move in i]
+    actualMatching = []
     if len(matching) > 1:
         s = ""
 
         for i in range(len(matching)):
+            try:
+                m = cmdData[matching[i]]["image"]
+                actualMatching.append(matching[i])
+            except KeyError:
+                continue
             m = cmdData[matching[i]]["title"]
             s += ("\n %d. %s" % (i+1 ,m))
 
+        if not actualMatching:
+            await req.channel.send(hBoxError % move)
+            return
+
         resp = await req.channel.send(matchMsg % s)
 
-        for i in range(len(matching)):
+        for i in range(len(actualMatching)):
             await resp.add_reaction(nums[i])
 
         n = await WaitForReaction(req, resp)
         if n == -1:
             return
-        move = matching[n]
+
+        move = actualMatching[n]
+
         await resp.delete()
 
     # Sends the message response.
