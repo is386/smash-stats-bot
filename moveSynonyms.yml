@@ -169,6 +169,7 @@ usmash:
   - upwardssmash
 
 grabstanding:
+  - grab
   - sgrab
   - standinggrab
 
