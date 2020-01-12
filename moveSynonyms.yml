@@ -91,7 +91,7 @@ dtilt:
   - downwardtilt
   - downwardstilt
 
-utilt: 
+utilt:
   - uptilt
   - upwardtilt
   - upwardstilt
@@ -132,7 +132,6 @@ dspecial:
   - downb
   - db
 
-
 fsmash:
   - forwardsmash
   - forwardssmash
@@ -170,7 +169,6 @@ usmash:
   - upwardssmash
 
 grabstanding:
-  - grab
   - sgrab
   - standinggrab
 
@@ -259,11 +257,11 @@ tripattack:
   - tripatk
 
 input:
-  - inputs 
+  - inputs
   - commands
   - commandinput
   - command
-  - commandinputs 
-  - cmd 
-  - in 
-  - cmdin 
+  - commandinputs
+  - cmd
+  - in
+  - cmdin
