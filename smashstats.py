@@ -3,10 +3,8 @@ from yaml import safe_load as yamlLoad
 
 prefix = "?"
 cmdPath = "characters/%s/commands.yml"
-hboxPath = "characters/%s/hitboxes/"
 embedColor = 00000000
 moveError1 = "The move **%s** does not exist."
-moveError2 = "This character does not have the move **%s**."
 charError1 = "The character **%s** doesn't exist."
 charError2 = "The character **%s** has no data yet."
 hBoxError = "**%s** does not have a hitbox graphic."
@@ -40,7 +38,7 @@ def Translate(og, synFile):
 
 # Takes in a cmd name.
 # Returns an embed object and image file.
-def CreateImageEmbed(cmdData, char):
+def CreateImageEmbed(cmdData):
     try:
         imgURL = cmdData["image"]
     except KeyError:
@@ -105,6 +103,10 @@ async def on_message(req):
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
     cmdData = yamlLoad(open(cmdPath % char))
 
+    if cmdData == None:
+        await req.channel.send(charError2 % char)
+        return
+        
     # Parses the move name.
     move = char
     if len(msg) > 2:
@@ -115,13 +117,6 @@ async def on_message(req):
             if move == "Invalid":
                 await req.channel.send(moveError1 % tempMove)
                 return
-
-    if cmdData == None:
-        await req.channel.send(charError2 % char)
-        return
-    elif move not in list(cmdData.keys()):
-        await req.channel.send(moveError2 % tempMove)
-        return
 
     # Checks if the move has multiple hitboxes
     matching = [i for i in cmdData.keys() if move in i]
@@ -141,23 +136,25 @@ async def on_message(req):
         if not actualMatching:
             await req.channel.send(hBoxError % move)
             return
+        elif len(actualMatching) == 1:
+            move = actualMatching[0]
+        else:
+            resp = await req.channel.send(matchMsg % s)
 
-        resp = await req.channel.send(matchMsg % s)
+            for i in range(len(actualMatching)):
+                await resp.add_reaction(nums[i])
 
-        for i in range(len(actualMatching)):
-            await resp.add_reaction(nums[i])
+            n = await WaitForReaction(req, resp)
+            if n == -1:
+                return
 
-        n = await WaitForReaction(req, resp)
-        if n == -1:
-            return
+            move = actualMatching[n]
 
-        move = actualMatching[n]
-
-        await resp.delete()
+            await resp.delete()
 
     # Sends the message response.
     if cmd == "viz":
-        embed = CreateImageEmbed(cmdData[move], char)
+        embed = CreateImageEmbed(cmdData[move])
         if embed == False:
             await req.channel.send(hBoxError % cmdData[move]["title"])
             return
