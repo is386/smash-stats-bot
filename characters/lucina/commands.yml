@@ -9,62 +9,60 @@ airdodge:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaBAir.gif
   fields:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaBThrow.gif
   fields:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDAir.gif
   fields:
 
 dashattack:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDashAttack.gif
   fields:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDSmash.gif
   fields:
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDThrow.gif
   fields:
 
 dtilt:
   title: Down Tilt 
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDTilt.gif
   fields:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaFAir.gif
   fields:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaFSmash.gif
   fields:
     
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaFThrow.gif
   fields:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaFTilt.gif
   fields:
 
 getupattack: 
@@ -73,29 +71,28 @@ getupattack:
 
 grabdash:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDashGrab.gif
   fields:
 
 grabpivot:
   title: Pivot Grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaPivotGrab.gif
   fields:
 
 grabstanding:
   title: Standing Gif
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaGrab.gif
   fields:
 
 jab:
   title: Jab 1 
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaJab1.gif
   fields:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaJab2.gif
   fields:
-
 
 ledgeattack:
   title: Ledge Attack
@@ -103,7 +100,7 @@ ledgeattack:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaNAir.gif
   fields:
 
 oos:
@@ -112,22 +109,22 @@ oos:
   
 nspecial:
   title: Shield Breaker
-  image: nspecial.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaShieldbreaker.gif
   fields:
 
 nspecial2:
   title: Shield Breaker Down
-  image: nspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaShieldbreakerDown.gif
   fields:
 
 nspecial3:
   title: Shield Breaker Up
-  image: nspecial3.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaShieldbreakerUp.gif
   fields:
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaPummel.gif
   fields:
 
 roll:
@@ -136,12 +133,12 @@ roll:
 
 dspecial:
   title: Counter
-  image: dspecial.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaCounter.gif
   fields:
 
 dspecial2:
   title: Counter Attack
-  image: dspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaCounterHit.gif
   fields:
 
 spotdodge:
@@ -150,53 +147,51 @@ spotdodge:
 
 sspecial:
   title: Dancing Blade Hit 1
-  image: sspecial.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade1.gif
   fields:
 
 sspecial2:
   title: Dancing Blade Hit 2 Neutral
-  image: sspecial2.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade2.gif
   fields:
 
 sspecial3:
   title: Dancing Blade Hit 3 Neutral
-  image: sspecial3.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade3.gif
   fields:
 
 sspecial4:
   title: Dancing Blade Hit 4 Neutral
-  image: sspecial4.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade4.gif
   fields:
 
 sspecial5:
   title: Dancing Blade Hit 2 Up
-  image: sspecial5.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade2Up.gif
   fields:
 
 sspecial6:
   title: Dancing Blade Hit 3 Up
-  image: sspecial6.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade3Up.gif
   fields:
 
 sspecial7:
   title: Dancing Blade Hit 4 Up
-  image: sspecial7.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade4Up.gif
   fields:
 
 sspecial8:
   title: Dancing Blade Hit 3 Down
-  image: sspecial8.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade3Down.gif
   fields:
 
 sspecial9:
   title: Dancing Blade Hit 4 Down
-  image: sspecial9.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDancingBlade4Down.gif
   fields:
 
 staunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
 
 tripattack:
   title: Trip Getup Attack
@@ -204,30 +199,33 @@ tripattack:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaUAir.gif
   fields:
 
 uspecial:
-  title: Dolphin Slash
-  image: uspecial.gif
+  title: Dolphin Slash (Ground)
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDolphinSlashG.gif
+  fields:
+
+uspecial2:
+  title: Dolphin Slash (Air)
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaDolphinSlashA.gif
   fields:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaUSmash.gif
   fields:
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaUThrow.gif
   fields:
 
 utilt:
   title: Up Tilt 
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/lucina/LucinaUTilt.gif
   fields:
