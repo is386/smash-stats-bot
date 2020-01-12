@@ -1,0 +1,178 @@
+megaman:
+  title: Mega Man
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash (Min)
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManFSmashMinimum.gif
+  fields:
+
+fsmash2:
+  title: Forward Smash (Max)
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManFSmashMaximum.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManGrab.gif
+  fields:
+
+jab:
+  title: Jab
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManJab.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Metal Blade
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Leaf Shield
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManLeafShield.gif
+  fields:
+
+dspecial2:
+  title: Leaf Shield (Throw)
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManLeafShieldFly.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Crash Bomber (Bomb)
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManCrashBomber.png
+  fields:
+
+sspecial2:
+  title: Crash Bomber (Explosion)
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManCrashBomberExplosion.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManUAir.gif
+  fields:
+
+uspecial:
+  title: Rush Coil
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/mega_man/MegaManUTilt.gif
+  fields:
