@@ -293,7 +293,7 @@ sspecial4:
 
 dspecial:
   title: Skewer
-  image: dspecial.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleySkewer.gif
   fields:
     Active: 30-31
     FAF: 68
