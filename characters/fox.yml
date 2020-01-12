@@ -142,10 +142,15 @@ roll:
   fields:
 
 dspecial:
-  title: Reflector
+  title: Reflector (Start)
   image: https://ultimateframedata.com/hitboxes/fox/FoxReflectorStart.gif
   fields:
 
+dspecial2:
+  title: Reflector (Hold)
+  image: https://ultimateframedata.com/hitboxes/fox/FoxReflector.gif
+  fields:
+    
 spotdodge:
   title: Spot Dodge
   fields:
