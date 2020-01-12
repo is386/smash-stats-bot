@@ -15,7 +15,7 @@ ridley:
 
 jab:
   title: Jab 1
-  image: jab1.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyJab1.gif
   fields:
     Active: 4-5
     FAF: 24
@@ -24,7 +24,7 @@ jab:
 
 jab2:
   title: Jab 2
-  image: jab2.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyJab2.gif
   fields:
     Active: 5-6
     FAF: 27
@@ -33,7 +33,7 @@ jab2:
 
 jab3:
   title: Jab 3
-  image: jab3.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyJab3.gif
   fields:
     Active: 4-5
     FAF: 36
@@ -43,14 +43,14 @@ jab3:
 
 rapidjab:
   title: Rapid Jab
-  image: rapidJab.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyJabRapid.gif
   fields:
     Active: 4, 7, 10
     DMG: 0.8 (per hit)
 
 jabfinisher:
   title: Rapid Jab Finisher
-  image: jabFinish.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyJabRapidEnd.gif
   fields:
     Active:
     Adv: -38
@@ -59,7 +59,33 @@ jabfinisher:
 
 ftilt:
   title: Forward Tilt
-  image: ftilt.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyFTilt.gif
+  fields:
+    Active: 10-11
+    FAF: 33
+    Sour Shield Adv: -12
+    Sweet Shield Adv: -10
+    Sour DMG: 12.0
+    Sweet DMG: 15.6
+    Sour Kill %: 182
+    Sweet Kill %: 133
+
+ftilt2:
+  title: Forward Tilt Down
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyFTiltDown.gif
+  fields:
+    Active: 10-11
+    FAF: 33
+    Sour Shield Adv: -12
+    Sweet Shield Adv: -10
+    Sour DMG: 12.0
+    Sweet DMG: 15.6
+    Sour Kill %: 182
+    Sweet Kill %: 133
+
+ftilt3:
+  title: Forward Tilt Up
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyFTiltUp.gif
   fields:
     Active: 10-11
     FAF: 33
@@ -72,7 +98,7 @@ ftilt:
 
 dtilt:
   title: Down Tilt
-  image: dtilt.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyDTilt.gif
   fields:
     Active: 9-11
     FAF: 31
@@ -85,7 +111,7 @@ dtilt:
 
 utilt:
   title: Up Tilt
-  image: utilt.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyUTilt.gif
   fields:
     Active: 8-12
     Invul Head and Arms: 8-9
@@ -100,7 +126,7 @@ utilt:
 
 dash:
   title: Dash Attack
-  image: dash.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyDashAttack.gif
   fields:
     Active: 12-13
     FAF: 40
@@ -110,7 +136,7 @@ dash:
 
 fsmash:
   title: Forward Smash
-  image: fsmash.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyFSmash.gif
   fields:
     Active: 18-21
     FAF: 54
@@ -122,7 +148,7 @@ fsmash:
 
 dsmash:
   title: Down Smash
-  image: dsmash.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyDSmash.gif
   fields:
     Active: 24-27
     FAF: 58
@@ -134,7 +160,7 @@ dsmash:
 
 usmash:
   title: Up Smash
-  image: usmash.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyUSmash.gif
   fields:
     Active: 12-17
     Intagibility: 12-17 (Attack Leg)
@@ -147,7 +173,7 @@ usmash:
 
 nair:
   title: Neutral Air
-  image: nair.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyNAir.gif
   fields:
     Active: 8-20
     FAF: 40
@@ -162,7 +188,7 @@ nair:
 
 fair:
   title: Forward Air
-  image: fair.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyFAir.gif
   fields:
     Active: 10, 13, 16
     FAF: 42
@@ -176,7 +202,7 @@ fair:
 
 bair:
   title: Back Air
-  image: bair.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyBAir.gif
   fields:
     Active: 10-12
     FAF: 44
@@ -188,7 +214,7 @@ bair:
 
 uair:
   title: Up Air
-  image: uair.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyUAir.gif
   fields:
     Active: 11-13
     FAF: 40
@@ -202,7 +228,7 @@ uair:
 
 dair:
   title: Down Air
-  image: dair.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyDAir.gif
   fields:
     Active: 11-40
     Spike: 11-18
@@ -217,7 +243,6 @@ dair:
 
 nspecial:
   title: Plasma
-  image: nspecial.gif
   fields:
     Max Plasma Balls: 5
     Face Punch Lag: 56
@@ -229,8 +254,8 @@ nspecial:
     Full Charge Base DMG: 5.6 / 4.4 (late)
 
 sspecial:
-  title: Space Pirate Rush
-  image: sspecial.gif
+  title: Space Pirate Rush (Ground)
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushG.gif
   fields:
     Active: 22-34
     FAF: 79
@@ -241,6 +266,30 @@ sspecial:
     Wall Throw DMG: 14.4
     No/Full Drag No DI Kill %: 105.0 / 96.0
     No/Full Drag DI Kill %: 133.0 / 131.0
+
+sspecial2:
+  title: Space Pirate Rush (Air)
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushG.gif
+  fields:
+    Active: 22-34
+    FAF: 60
+    Aerial FAF: 61
+    Slam DMG: 4.8
+    DMG per 4 Active: 2.4
+    On Release DMG: 8.4
+    Wall Throw DMG: 14.4
+    No/Full Drag No DI Kill %: 105.0 / 96.0
+    No/Full Drag DI Kill %: 133.0 / 131.0
+        
+sspecial3:
+  title: Space Pirate Rush Success (Drag Start)
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushDragStart.gif
+  fields:
+
+sspecial4:
+  title: Space Pirate Rush (Dragging)
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushDrag.gif
+  fields:
 
 dspecial:
   title: Skewer
@@ -254,24 +303,42 @@ dspecial:
     Sweet DMG: 60.0
 
 uspecial:
-  title: Wing Blitz
-  image: uspecial.gif
+  title: Wing Blitz Forward
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzForward.gif
   fields:
-    Active Up: 34-57
-    Active Sideways: 36-55
-    Active Down: 37-59
-    Landing Lag (Down): 35
-    DMG Up: 21.6
-    DMG Sideways: 19.2
+    Active: 36-55
+    DMG: 19.2
+    Kill %: 100.0
+
+uspecial2:
+  title: Wing Blitz Back
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzBack.gif
+  fields:
+    Active: 36-55
+    DMG: 19.2
     DMG Down: 18.0 / 6.0 (Landing)
-    Kill % Up: 149.0
-    Kill % Forwards: 100.0
-    Kill % Backwards: 123.0
-    Kill % Down: 142.0
+    Kill %: 123.0
+
+uspecial3:
+  title: Wing Blitz Up
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzUp.gif
+  fields:
+    Active: 34-57
+    DMG: 21.6
+    Kill %: 149.0
+
+uspecial4:
+  title: Wing Blitz Down
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzDown.gif
+  fields:
+    Active: 37-59
+    Landing Lag: 35
+    DMG: 18.0 / 6.0 (Landing)
+    Kill %: 142.0
 
 fthrow:
   title: Forward Throw
-  image: fthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyFThrow.gif
   fields:
     Thrown On: 13
     FAF: 38
@@ -283,7 +350,7 @@ fthrow:
 
 bthrow:
   title: Back Throw
-  image: bthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyBThrow.gif
   fields:
     Thrown On: 18
     FAF: 46
@@ -294,7 +361,7 @@ bthrow:
 
 uthrow:
   title: Up Throw
-  image: uthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyUThrow.gif
   fields:
     Thrown On: 19
     FAF: 44
@@ -304,7 +371,7 @@ uthrow:
 
 dthrow:
   title: Down Throw
-  image: dthrow.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyDThrow.gif
   fields:
     Thrown On: 22
     FAF: 36
@@ -315,54 +382,43 @@ dthrow:
 
 standinggrab:
   title: Standing Grab
-  image: grabStanding.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyGrab.gif
   fields:
     Active: 8-10
     FAF: 35
 
 dashgrab:
   title: Dash Grab
-  image: grabDash.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyDashGrab.gif
   fields:
     Dash Active: 11-13
     Dash FAF: 43
 
 pivotgrab:
   title: Pivot grab
-  image: grabPivot.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyPivotGrab.gif
   fields:
     Pivot Active: 12-14
     Pivot FAF: 40
 
 pummel:
   title: Pummel
-  image: pummel.gif
+  image: https://ultimateframedata.com/hitboxes/ridley/RidleyPummel.gif
   fields:
-    Pummel Active: "??"
     Pummel FAF: 22
     Pummel DMG: 1.9
 
 dtaunt:
   title: Down Taunt
-  image: dtaunt.gif
-  fields:
-    Usage: Use down taunt in between nairs to do max damage and assert your dominance.
 
 utaunt:
   title: Up Taunt
-  image: utaunt.gif
-  fields:
-    Usage: Use up taunt to make your opponents ears bleed <:RidRoar:562498128255647745>
 
 sidetaunt:
   title: Side Taunt
-  image: staunt.gif
-  fields:
-    Usage: Use side taunt to flex on the kid whose parents just got eaten.
 
 roll:
   title: Roll and Spot Dodge
-  image: spotdodge.gif
   fields:
     Spot Dodge Invul: 3-18
     Spot Dodge FAF: 29
@@ -373,7 +429,6 @@ roll:
 
 airdodge:
   title: Air Dodge
-  image: airdodge.gif
   fields:
     Neutral Invul: 3-31
     Neutral FAF: 47
@@ -384,7 +439,6 @@ airdodge:
 
 oos:
   title: OOS Active
-  image: oos.gif
   fields:
     Grab: 8
     Grab Post Shield Stun: 12
@@ -398,24 +452,15 @@ oos:
 
 getup:
   title: Getup Attack
-  image: getupattack.gif
   fields:
     DMG: 8.8
 
 ledgeattack:
   title: Ledge Attack
-  image: ledgeattack.gif
   fields:
     DMG: 12.6
 
 tripattack:
   title: Trip Attack
-  image: tripattack.gif
   fields:
     DMG: 6.3
-
-parry:
-  title: Parry
-  image: parry.gif
-  fields:
-    Parry Joke: Bruh honestly, idk why you're looking for parry stats they're all the same <:Crocomire:583880666970718224>
