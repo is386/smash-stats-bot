@@ -123,15 +123,16 @@ async def on_message(req):
     actualMatching = []
     if len(matching) > 1:
         s = ""
-
+        b = 0
         for i in range(len(matching)):
             try:
                 m = cmdData[matching[i]]["image"]
                 actualMatching.append(matching[i])
             except KeyError:
+                b += 1
                 continue
             m = cmdData[matching[i]]["title"]
-            s += ("\n %d. %s" % (i+1 ,m))
+            s += ("\n %d. %s" % (i+1-b ,m))
 
         if not actualMatching:
             await req.channel.send(hBoxError % move)
