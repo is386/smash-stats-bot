@@ -1,0 +1,215 @@
+ness:
+  title: Ness
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/ness/NessBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/ness/NessBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/ness/NessDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/ness/NessDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/ness/NessDSmash.gif
+  fields:
+
+dsmash2:
+  title: Down Smash (Charge)
+  image: https://ultimateframedata.com/hitboxes/ness/NessDSmashCharge.png
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/ness/NessDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/ness/NessDtilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/ness/NessFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/ness/NessFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/ness/NessFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/ness/NessFTilt.gif
+  fields:
+
+ftilt2:
+  title: Forward Tilt Down
+  image: https://ultimateframedata.com/hitboxes/ness/NessFTiltUp.gif
+  fields:
+
+ftilt3:
+  title: Forward Tilt Up
+  image: https://ultimateframedata.com/hitboxes/ness/NessFTiltUp.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/ness/NessDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/ness/NessPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/ness/NessGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/ness/NessJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/ness/NessJab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/ness/NessJab3.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/ness/NessNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: PK Flash
+  image: https://ultimateframedata.com/hitboxes/ness/NessPKFlash.png
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/ness/NessPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: PSI Magnet (Pulse)
+  image: https://ultimateframedata.com/hitboxes/ness/NessPSIMagnet.gif
+  fields:
+
+dspecial2:
+  title: PSI Magnet (End)
+  image: https://ultimateframedata.com/hitboxes/ness/NessPSIMagnetEnd.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: PK Fire (Ground)
+  image: https://ultimateframedata.com/hitboxes/ness/NessPKFireG.gif
+  fields:
+
+sspecial2:
+  title: PK Fire (Air)
+  image: https://ultimateframedata.com/hitboxes/ness/NessPKFireA.gif
+  fields:
+
+sspecial3:
+  title: PK Fire (Pillar)
+  image: https://ultimateframedata.com/hitboxes/ness/NessPKFirePillar.png
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/ness/NessUAir.gif
+  fields:
+
+uspecial:
+  title: PK Thunder
+  fields:
+
+uspecial2:
+  title: PK Thunder 2
+  image: https://ultimateframedata.com/hitboxes/ness/NessPKThunder2.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/ness/NessUSmash.png
+  fields:
+
+usmash2:
+  title: Up Smash (Charge)
+  image: https://ultimateframedata.com/hitboxes/ness/NessUSmashCharge.png
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/ness/NessUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/ness/NessUTilt.gif
+  fields:
