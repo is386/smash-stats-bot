@@ -1,0 +1,244 @@
+miiswordfighter:
+  title: Mii Swordfighter
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterJab2.gifv
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterJab3.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Gale Strike
+  fields:
+
+nspecial2:
+  title: Shuriken of Light
+  fields:
+
+nspecial3:
+  title: Blurring Blade
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterBlurringBlade.gif
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Blade Counter
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterBladeCounter.gif
+  fields:
+
+dspecial2:
+  title: Blade Counter Attack
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterBladeCounterHit.gif
+  fields:
+
+dspecial3:
+  title: Reversal Slash
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterReversalSlash.gif
+  fields:
+
+dspecial4:
+  title: Power Thrust (Ground)
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterPowerThrustG.gif
+  fields:
+
+dspecial5:
+  title: Power Thrust (Air)
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterPowerThrustA.gif
+  fields:
+
+dspecial6:
+  title: Power Thrust (Air, Landing)
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterPowerThrustALanding.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Airborne Assault
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterAirborneAssault.gif
+  fields:
+
+sspecial2:
+  title: Airborne Assault (Hit)
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterAirborneAssaultHit.gif
+  fields:
+
+sspecial3:
+  title: Gale Stab
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterGaleStabHit.gif
+  fields:
+
+sspecial4:
+  title: Chakram
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterChakram.png
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterUAir.gif
+  fields:
+
+uspecial:
+  title: Stone Scabbard (Rising and Falling)
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterStoneScabbard.gif
+  fields:
+
+uspecial2:
+  title: Stone Scabbard (Landing)
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterStoneScabbardLanding.gif
+  fields:
+
+uspecial3:
+  title: Skyward Slash Dash
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterSkywardSlashDash.gif
+  fields:
+
+uspecial4:
+  title: Hero Spin (Ground)
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterHerosSpinG.gif
+  fields:
+
+uspecial5:
+  title: Hero Spin (Air)
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterHerosSpinA.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/mii_swordfighter/MiiSwordfighterUTilt.gif
+  fields:
