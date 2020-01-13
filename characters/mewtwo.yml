@@ -57,7 +57,7 @@ fsmash:
 
 fsmash2:
   title: Forward Smash Down
-  image: https://ultimateframedata.com/hitboxes/mewtwo/MewtwoFSmashUp.gif
+  image: https://ultimateframedata.com/hitboxes/mewtwo/MewtwoFSmashDown.gif
   fields:
 
 fsmash3:
