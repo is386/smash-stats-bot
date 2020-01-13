@@ -1,0 +1,230 @@
+miigunner:
+  title: Mii Gunner
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansJab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansJab3.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Charge Blast
+  fields:
+
+nspecial2:
+  title: Laser Blaze
+  fields:
+
+nspecial3:
+  title: Grenade Launch (Grenade)
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/MiiGunnerGrenadeLauncher.png
+  fields:
+
+nspecial4:
+  title: Grenade Launch (Explosion)
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/MiiGunnerGrenadeLauncher.png
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Echo Reflector (Start)
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansEchoReflectorStart.gif
+  fields:
+
+dspecial2:
+  title: Echo Reflector (Hold)
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansEchoReflector.gif
+  fields:
+
+dspecial3:
+  title: Bomb
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/MiiGunnerBombDrop.png
+  fields:
+
+dspecial4:
+  title: Bomb (Explosion)
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/MiiGunnerBombDropExplosion.png
+  fields:
+
+dspecial5:
+  title: Absorbing Vortex
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansAbsorbingVortex.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Flame Pillar
+  fields:
+
+sspecial2:
+  title: Stealth Burst
+  fields:
+
+sspecial3:
+  title: Gunner Missile (Homing)
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/MiiGunnerMiiMissile.png
+  fields:
+
+sspecial4:
+  title: Gunner Missile (Super)
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/MiiGunnerSuperMissile.png
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansUAir.gif
+  fields:
+
+uspecial:
+  title: Lunar Launch
+  fields:
+
+uspecial2:
+  title: Cannon Jump Kick
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansCannonJumpKick.gif
+  fields:
+
+uspecial3:
+  title: Arm Rocket
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/mii_gunner/SansUTilt.gif
+  fields:
