@@ -1,11 +1,5 @@
 jab:
-  - jab1
-
-jab2:
-  - jab2
-
-jab3:
-  - jab3
+  - jab
 
 rapidjab:
   - multijab
@@ -43,10 +37,15 @@ fair:
   - forwardsair
   - forwardaerial
   - forwardsaerial
+  - f-air
+  - faerial
+  - f-aerial
 
 nair:
   - neutralair
   - neutralaerial
+  - n-air
+  - n-aerial
 
 dair:
   - downair
@@ -55,6 +54,8 @@ dair:
   - downwardsair
   - downwardaerial
   - downwardsaerial
+  - d-air
+  - d-aerial
 
 bair:
   - backair
@@ -63,6 +64,8 @@ bair:
   - backwardsaerial
   - backwardaerial
   - backwardair
+  - b-air
+  - b-aerial
 
 uair:
   - upair
@@ -71,17 +74,23 @@ uair:
   - upwardsaerial
   - upwardsair
   - upwardair
+  - u-air
+  - u-aerial
+  - up-air
+  - up-aerial
 
 ftilt:
   - forwardtilt
   - forwardstilt
-
-ftilt2:
+  - f-tilt
+  - f-tilt
+  - forwarda
+  - forwardsa
+  - ftilt2
   - forwardtiltdown
   - forwardstiltdown
   - ftiltdown
-
-ftilt3:
+  - ftilt3
   - forwardtiltup
   - forwardstiltup
   - ftiltup
@@ -90,11 +99,19 @@ dtilt:
   - downtilt
   - downwardtilt
   - downwardstilt
+  - d-tilt
+  - downa
+  - downwarda
+  - downwardsa
 
 utilt:
   - uptilt
   - upwardtilt
   - upwardstilt
+  - upa
+  - upwardsa
+  - u-tilt
+  - up-tilt
 
 dashattack:
   - dash
@@ -105,6 +122,8 @@ nspecial:
   - neutralb
   - nb
   - b
+  - n-b
+  - n-special
 
 sspecial:
   - sidespecial
@@ -112,6 +131,13 @@ sspecial:
   - sidewayspecial
   - sidewaysspecial
   - sb
+  - s-b
+  - s-special
+  - forwardspecial
+  - forwardb
+  - fb
+  - fspecial
+  - f-b
 
 uspecial:
   - upb
@@ -122,6 +148,8 @@ uspecial:
   - recovery
   - ub
   - upspecial
+  - u-b
+  - u-special
 
 dspecial:
   - downspecial
@@ -131,6 +159,8 @@ dspecial:
   - downwardsspecial
   - downb
   - db
+  - d-b
+  - d-special
 
 fsmash:
   - forwardsmash
@@ -139,8 +169,8 @@ fsmash:
   - sidewayssmash
   - sidewaysmash
   - ssmash
-
-fsmash2:
+  - s-smash
+  - f-smash
   - forwardsmashdown
   - forwardssmashdown
   - sidesmashdown
@@ -148,8 +178,8 @@ fsmash2:
   - sidewaysmashdown
   - ssmashdown
   - fsmashdown
-
-fsmash3:
+  - f-smashdown
+  - s-smashdown
   - forwardsmashup
   - forwardssmashup
   - sidesmashup
@@ -157,66 +187,87 @@ fsmash3:
   - sidewaysmashup
   - ssmashup
   - fsmashup
+  - f-smashup
+  - s-smashup
 
 dsmash:
   - downsmash
   - downwardsmash
   - downwardssmash
+  - d-smash
 
 usmash:
   - upsmash
   - upwardsmash
   - upwardssmash
+  - u-smash
+  - up-smash
+
+grab:
+  - grab
 
 grabstanding:
-  - grab
-  - sgrab
   - standinggrab
+  - sgrab
+  - s-grab
 
 grabdash:
   - dgrab
   - dashgrab
+  - d-grab
 
 grabpivot:
   - pgrab
   - pivotgrab
+  - pivgrab
+  - grabpiv
+  - p-grab
 
 pummel:
   - pummel
+  - pum
+  - pumm
 
 fthrow:
   - forwardthrow
   - forwardsthrow
+  - f-throw
 
 dthrow:
   - downthrow
   - downwardthrow
   - downwardsthrow
+  - d-throw
 
 uthrow:
   - upthrow
   - upwardthrow
   - upwardsthrow
+  - u-throw
 
 bthrow:
   - backthrow
   - backwardthrow
   - backwardsthrow
+  - b-throw
 
 dtaunt:
   - downtaunt
   - downwardtaunt
   - downwardstaunt
+  - d-taunt
 
 utaunt:
   - uptaunt
   - upwardtaunt
   - upwardstaunt
+  - u-taunt
 
 sidetaunt:
   - sidewaytaunt
   - sidewaystaunt
   - staunt
+  - s-taunt
 
 roll:
   - spotdodge
