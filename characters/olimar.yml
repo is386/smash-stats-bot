@@ -1,0 +1,392 @@
+olimar:
+  title: Olimar
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air (Blue)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueBAir.gif
+  fields:
+
+bair2:
+  title: Back Air (Yellow)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowBAir.gif
+  fields:
+
+bair3:
+  title: Back Air (Red)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedBAir.gif
+  fields:
+
+bair4:
+  title: Back Air (White)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteBAir.gif
+  fields:
+
+bair5:
+  title: Back Air (Purple)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurpleBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarBThrow.gif
+  fields:
+
+dair:
+  title: Down Air (Blue)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueDAir.gif
+  fields:
+
+dair2:
+  title: Down Air (Yellow)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowDAir.gif
+  fields:
+
+dair3:
+  title: Down Air (Red)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedDAir.gif
+  fields:
+
+dair4:
+  title: Down Air (White)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteDAir.gif
+  fields:
+
+dair5:
+  title: Down Air (Purple)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurpleDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash (Blue, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueDSmash.gif
+  fields:
+
+dsmash2:
+  title: Down Smash (Yellow, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowDSmash.gif
+  fields:
+
+dsmash3:
+  title: Down Smash (Red, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedDSmash.gif
+  fields:
+
+dsmash4:
+  title: Down Smash (White, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteDSmash.gif
+  fields:
+
+dsmash5:
+  title: Down Smash (Purple, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurpleDSmash.gif
+  fields:
+
+dsmash6:
+  title: Down Smash (Late)
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air (Blue)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueFAir.gif
+  fields:
+
+fair2:
+  title: Forward Air (Yellow)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowFAir.gif
+  fields:
+
+fair3:
+  title: Forward Air (Red)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedFAir.gif
+  fields:
+
+fair4:
+  title: Forward Air (White)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteFAir.gif
+  fields:
+
+fair5:
+  title: Forward Air (Purple)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurpleFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash (Blue, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueFSmash.png
+  fields:
+
+fsmash2:
+  title: Forward Smash (Yellow, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowFSmash.png
+  fields:
+
+fsmash3:
+  title: Forward Smash (Red, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedFSmash.png
+  fields:
+
+fsmash4:
+  title: Forward Smash (White, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteFSmash.png
+  fields:
+
+fsmash5:
+  title: Forward Smash (Purple, Early)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurpleFSmash.png
+  fields:
+
+fsmash6:
+  title: Forward Smash (Late)
+  fields:
+
+fsmash7:
+  title: Forward Smash (Later)
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  fields:
+
+grabstanding:
+  title: Standing Grab (Blue)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueGrab.gif
+  fields:
+
+grabstanding2:
+  title: Standing Grab (Yellow)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowGrab.gif
+  fields:
+
+grabstanding3:
+  title: Standing Grab (Red)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedGrab.gif
+  fields:
+
+grabstanding4:
+  title: Standing Grab (White)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteGrab.gif
+  fields:
+
+grabstanding5:
+  title: Standing Grab (Purple)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurpleGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarJab2.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Pikmin Pluck
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Pikmin Order/Whistle
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarPikminOrder.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Pikmin Throw (Blue)
+  image: https://ultimateframedata.com/hitboxes/olimar/BluePikminThrow.gif
+  fields:
+
+sspecial2:
+  title: Pikmin Throw (Yellow)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowPikminThrow.gif
+  fields:
+
+sspecial3:
+  title: Pikmin Throw (Red)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedPikminThrow.gif
+  fields:
+
+sspecial4:
+  title: Pikmin Throw (White)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhitePikminThrow.gif
+  fields:
+
+sspecial5:
+  title: Pikmin Throw (Purple)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurplePikminThrow.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air (Blue)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueUAir.gif
+  fields:
+
+uair2:
+  title: Up Air (Yellow)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowUAir.gif
+  fields:
+
+uair3:
+  title: Up Air (Red)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedUAir.gif
+  fields:
+
+uair4:
+  title: Up Air (White)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteUAir.gif
+  fields:
+
+uair5:
+  title: Up Air (Purple)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurpleUAir.gif
+  fields:
+
+uspecial:
+  title: Winged Pikmin
+  fields:
+
+usmash:
+  title: Up Smash (Blue, Close)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueUSmash.gif
+  fields:
+
+usmash2:
+  title: Up Smash (Yellow, Close)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowUSmash.gif
+  fields:
+
+usmash3:
+  title: Up Smash (Red, Close)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedUSmash.gif
+  fields:
+
+usmash4:
+  title: Up Smash (White, Close)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteUSmash.gif
+  fields:
+
+usmash5:
+  title: Up Smash (Purple, Close)
+  image: https://ultimateframedata.com/hitboxes/olimar/PurpleUSmash.gif
+  fields:
+
+usmash6:
+  title: Up Smash (Far)
+  fields:
+
+usmash7:
+  title: Up Smash (Late)
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw (Olimar)
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarUThrow.gif
+  fields:
+
+uthrow2:
+  title: Up Throw (Blue)
+  image: https://ultimateframedata.com/hitboxes/olimar/BlueUThrow.gif
+  fields:
+
+uthrow3:
+  title: Up Throw (Yellow)
+  image: https://ultimateframedata.com/hitboxes/olimar/YellowUThrow.gif
+  fields:
+
+uthrow4:
+  title: Up Throw (Red)
+  image: https://ultimateframedata.com/hitboxes/olimar/RedUThrow.gif
+  fields:
+
+uthrow5:
+  title: Up Throw (White)
+  image: https://ultimateframedata.com/hitboxes/olimar/WhiteUThrow.gif
+  fields:
+
+uthrow6:
+  title: Up Throw (Purple)
+  image: https://ultimateframedata.com/hitboxes/olimar/PupleUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/olimar/OlimarUTilt.gif
+  fields:
