@@ -1,0 +1,198 @@
+peach:
+  title: Peach
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/peach/PeachBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/peach/PeachBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/peach/PeachDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/peach/PeachDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/peach/PeachDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/peach/PeachDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/peach/PeachDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/peach/PeachFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash (Frying Pan)
+  image: https://ultimateframedata.com/hitboxes/peach/PeachFSmashFryingPan.gif
+  fields:
+
+fsmash2:
+  title: Forward Smash (Golf Club)
+  image: https://ultimateframedata.com/hitboxes/peach/PeachFSmashGolfClub.gif
+  fields:
+
+fsmash3:
+  title: Forward Smash (Tennis Racket)
+  image: https://ultimateframedata.com/hitboxes/peach/PeachFSmashTennisRacket.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/peach/PeachFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/peach/PeachFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/peach/PeachDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/peach/PeachPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/peach/PeachGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/peach/PeachJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/peach/PeachJab2.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/peach/PeachNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Toad
+  image: https://ultimateframedata.com/hitboxes/peach/PeachToad.gif
+  fields:
+
+nspecial2:
+  title: Toad Attack
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/peach/PeachPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Turnip Pull
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Peach Bomber (Detect)
+  image: https://ultimateframedata.com/hitboxes/peach/PeachPeachBomber.png
+  fields:
+
+sspecial2:
+  title: Peach Bomber (Hit)
+  image: https://ultimateframedata.com/hitboxes/peach/PeachPeachBomberHit.gif
+  fields:
+
+sspecial3:
+  title: Peach Bomber (Air)
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/peach/PeachUAir.gif
+  fields:
+
+uspecial:
+  title: Peach Parasol (Rising)
+  image: https://ultimateframedata.com/hitboxes/peach/PeachPeachParasol.gif
+  fields:
+
+uspecial2:
+  title: Peach Parasol (Falling)
+  image: https://ultimateframedata.com/hitboxes/peach/PeachPeachParasolFall.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/peach/PeachUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/peach/PeachUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/peach/PeachUTilt.gif
+  fields:
