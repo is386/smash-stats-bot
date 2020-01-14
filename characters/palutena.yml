@@ -1,0 +1,185 @@
+palutena:
+  title: Palutena
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaJab1.gif
+  fields:
+
+jabfinisher:
+  title: Rapid Jab Finish
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaJabRapidEnd.gif
+  fields:
+
+rapidjab:
+  title: Rapid Jab
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaJabRapid.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Autoreticle
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaAutoreticle.gif
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Counter
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaCounter.gif
+  fields:
+
+dspecial2:
+  title: Counter (Attack)
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaCounterHit.gif
+  fields:
+
+dspecial3:
+  title: Counter (Reflect)
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaReflectBarrier.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Explosive Flame
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaExplosiveFlame.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaUAir.gif
+  fields:
+
+uspecial:
+  title: Warp
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/palutena/PalutenaUTilt.gif
+  fields:
