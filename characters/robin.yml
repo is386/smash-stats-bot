@@ -1,0 +1,248 @@
+Robin:
+  title: Robin
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air (Levin)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinBAirLevin.gif
+  fields:
+
+bair2:
+  title: Back Air (Bronze)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinBAirBronze.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinBThrow.gif
+  fields:
+
+dair:
+  title: Down Air (Levin)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDAirLevin.gif
+  fields:
+
+dair2:
+  title: Down Air (Bronze)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDAirBronze.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash (Levin)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDSmashLevin.gif
+  fields:
+
+dsmash2:
+  title: Down Smash (Bronze)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDSmashBronze.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air (Levin)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFAirLevin.gif
+  fields:
+
+fair2:
+  title: Forward Air (Bronze)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFAirBronze.gif
+  fields:
+
+fsmash:
+  title: Forward Smash (Levin)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFSmashLevin.gif
+  fields:
+
+fsmash2:
+  title: Forward Smash (Bronze)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFSmashBronze.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab3.gif
+  fields:
+
+jabfinisher:
+  title: Rapid Jab Finish
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJabRapidEnd.gif
+  fields:
+
+rapidjab:
+  title: Rapid Jab
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJabRapid.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air (Levin)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinNAirLevin.gif
+  fields:
+
+nair2:
+  title: Neutral Air (Bronze)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinNAirBronze.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Thunder
+  fields:
+
+nspecial2:
+  title: Elthunder
+  fields:
+
+nspecial3:
+  title: Arcthunder
+  fields:
+
+nspecial4:
+  title: Arcthunder (Vortex)
+  fields:
+
+nspecial5:
+  title: Thoron
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Nosferatu (Ground)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinNosferatu.gif
+  fields:
+
+dspecial2:
+  title: Nosferatu (Air)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinNosferatuA.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Arcfire
+  fields:
+
+sspecial3:
+  title: Arm Rotor (Mashing)
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air (Levin)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinUAirLevin.gif
+  fields:
+
+uair2:
+  title: Up Air (Bronze)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinUAirBronze.gif
+  fields:
+
+uspecial:
+  title: Elwind
+  fields:
+
+usmash:
+  title: Up Smash (Levin)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinUSmashLevin.gif
+  fields:
+
+usmash2:
+  title: Up Smash (Bronze)
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinUSmashBronze.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinUTilt.gif
+  fields:
