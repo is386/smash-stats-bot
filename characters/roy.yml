@@ -1,0 +1,227 @@
+roy:
+  title: Roy
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/roy/RoyBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/roy/RoyBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+  image: dtaunt.gif
+  fields:
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/roy/RoyFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/roy/RoyFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/roy/RoyFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/roy/RoyFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/roy/RoyPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/roy/RoyGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/roy/RoyJab.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/roy/RoyNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Flare Blade
+  image: https://ultimateframedata.com/hitboxes/roy/RoyFlareBlade.gif
+  fields:
+
+nspecial2:
+  title: Flare Blade (Max)
+  image: https://ultimateframedata.com/hitboxes/roy/RoyFlareBladeMax.gif
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/roy/RoyPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Counter
+  image: https://ultimateframedata.com/hitboxes/roy/RoyCounter.gif
+  fields:
+
+dspecial2:
+  title: Counter Attack
+  image: https://ultimateframedata.com/hitboxes/roy/RoyCounterHit.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Double Edged Dance Hit 1
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubleEdgedDance1.gif
+  fields:
+
+sspecial2:
+  title: DED Hit 2 Neutral
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubleEdgedDance2Side.gif
+  fields:
+
+sspecial3:
+  title: DED Hit 3 Neutral
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubleEdgedDance3Side.gif
+  fields:
+
+sspecial4:
+  title: DED Hit 4 Neutral
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubledEdgeDance4Side.gif
+  fields:
+
+sspecial5:
+  title: DED Hit 2 Up
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubleEdgedDance2Up.gif
+  fields:
+
+sspecial6:
+  title: DED Hit 3 Up
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubleEdgedDance3Up.gif
+  fields:
+
+sspecial7:
+  title: DED Hit 4 Up
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubleEdgedDance4Up.gif
+  fields:
+
+sspecial8:
+  title: DED Hit 3 Down
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubleEdgedDance3Down.gif
+  fields:
+
+sspecial9:
+  title: DED Hit 4 Down
+  image: https://ultimateframedata.com/hitboxes/roy/RoyDoubleEdgedDance4Down.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+  image: staunt.gif
+  fields:
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/roy/RoyUAir.gif
+  fields:
+
+uspecial:
+  title: Blazer (Ground)
+  image: https://ultimateframedata.com/hitboxes/roy/RoyBlazerG.gif
+  fields:
+
+uspecial2:
+  title: Blazer (Air)
+  image: https://ultimateframedata.com/hitboxes/roy/RoyBlazerA.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/roy/RoyUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+  image: utaunt.gif
+  fields:
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/roy/RoyUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/roy/RoyUTilt.gif
+  fields:
