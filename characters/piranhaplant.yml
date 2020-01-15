@@ -194,3 +194,8 @@ utilt:
   title: Up Tilt
   image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUTilt.gif
   fields:
+
+footstool:
+  title: Footstool Attack
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFootstoolAttack.gif
+  fields:
