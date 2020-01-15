@@ -4,12 +4,12 @@ from yaml import safe_load as yamlLoad
 prefix = "?"
 cmdPath = "characters/%s.yml"
 embedColor = 00000000
-moveError1 = "The move **%s** does not exist."
-charError1 = "The character **%s** doesn't exist (Character names can't have spaces)."
-charError2 = "The character **%s** has no data yet."
-hBoxError = "**%s** does not have a hitbox graphic."
+moveError1 = "The move **%s** does not exist. Contact 1nder if you feel that this is a mistake!"
+charError1 = "The character **%s** doesn't exist (Character names can't have spaces). Contact 1nder if you feel that this is a mistake!"
+charError2 = "The character **%s** has no data yet. Contact 1nder if you feel that this is a mistake!"
+hBoxError = "**%s** does not have a hitbox graphic. Contact 1nder if you feel that this is a mistake!"
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```%s```"
-nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣']
+nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 
 client = discord.Client()
 tokenFile = open("token", "r")
@@ -89,7 +89,7 @@ async def on_message(req):
 
     # Checks cmd type.
     cmd = msg[0][1:].lower()
-    if cmd != "viz" and cmd != "stats":
+    if cmd != "viz" and cmd != "stats" and cmd != "vis":
         return
 
     # Parses the character name.
@@ -154,13 +154,14 @@ async def on_message(req):
             await resp.delete()
 
     # Sends the message response.
-    if cmd == "viz":
+    if cmd == "viz" or cmd == "vis":
         embed = CreateImageEmbed(cmdData[move])
         if embed == False:
             await req.channel.send(hBoxError % cmdData[move]["title"])
             return
     else:
         return
+    embed.set_footer(text="You can send comments, questions, and suggestions to 1nder")
     await req.channel.send(embed=embed)
 
 
