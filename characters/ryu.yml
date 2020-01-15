@@ -1,0 +1,262 @@
+ryu:
+  title: Ryu
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt (Light)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuDTiltLight.gif
+  fields:
+
+dtilt2:
+  title: Down Tilt (Heavy)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuDTiltHeavy.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt (Light, Close)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFTiltLightClose.gif
+  fields:
+
+ftilt2:
+  title: Forward Tilt (Light, Far)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFTiltLight.gif
+  fields:
+
+ftilt3:
+  title: Forward Tilt (Heavy)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFTiltHeavy.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuGrab.gif
+  fields:
+
+jab:
+  title: Jab 1 (Light)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuJab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuJab3.gif
+  fields:
+
+jab4:
+  title: Jab (Heavy, Close)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuJabHeavyClose.gif
+  fields:
+
+jab5:
+  title: Jab (Heavy, Far)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuJabHeavy.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Hadouken
+  fields:
+
+nspecial2:
+  title: Shakunetsu Hadouken
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Focus Attack (Level 1)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFocusAttackLv1.gif
+  fields:
+
+dspecial2:
+  title: Focus Attack (Level 2)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFocusAttackLv2.gif
+  fields:
+
+dspecial3:
+  title: Focus Attack (Level 3)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuFocusAttackLv3.gif
+  fields:
+
+dspecial4:
+  title: Focus Attack (Dash Cancel)
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Tatsumaki Senpukyaku (Light)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuLight.gif
+  fields:
+
+sspecial2:
+  title: Tatsumaki Senpukyaku (Medium)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuMedium.gif
+  fields:
+
+sspecial3:
+  title: Tatsumaki Senpukyaku (Heavy)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuHeavy.gif
+  fields:
+
+sspecial4:
+  title: Tatsumaki Senpukyaku (Air)
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuUAir.gif
+  fields:
+
+uspecial:
+  title: Shoryuken (Light)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuShoryukenLight.gif
+  fields:
+
+uspecial2:
+  title: Shoryuken (Medium)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuShoryukenMedium.gif
+  fields:
+
+uspecial3:
+  title: Shoryuken (Heavy)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuShoryukenHeavy.gif
+  fields:
+
+uspecial4:
+  title: True Shoryuken (Light)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuShoryukenLightInput.gif
+  fields:
+
+uspecial5:
+  title: True Shoryuken (Medium)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuShoryukenMediumInput.gif
+  fields:
+
+uspecial6:
+  title: True Shoryuken (Heavy)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuShoryukenHeavyInput.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt (Light)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuUTiltLight.gif
+  fields:
+
+utilt2:
+  title: Up Tilt (Heavy)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuUTiltHeavy.gif
+  fields:
