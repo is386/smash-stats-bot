@@ -1,0 +1,222 @@
+snake:
+  title: Snake
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeBThrow.gif
+  fields:
+
+dair:
+  title: Down Air (Normal)
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt 1
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeFTilt1.gif
+  fields:
+
+ftilt2:
+  title: Forward Tilt 2
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeFTilt2.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/snake/SnakePivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeJab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeJab3.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Grenade
+  fields:
+
+nspecial2:
+  title: Grenade (Neutral Throw)
+  fields:
+
+nspecial3:
+  title: Grenade (Smash Throw)
+  fields:
+
+nspecial4:
+  title: Grenade (Underhand Throw)
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/snake/SnakePummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: C4 (Ground)
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeC4.png
+  fields:
+
+dspecial2:
+  title: C4 (Sticky)
+  image: https://ultimateframedata.com/hitboxes/snake/C4%20Explosion%20(Snake%20for%20Scale).png
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Nikita (Weak Hurtbox)
+  image: https://ultimateframedata.com/hitboxes/snake/Nikita%20Hurtbox%20(Weak).png
+  fields:
+
+sspecial2:
+  title: Nikita (Strong Hurtbox)
+  image: https://ultimateframedata.com/hitboxes/snake/Nikita%20Hurtbox%20(Weak).png
+  fields:
+
+sspecial3:
+  title: Nikita (Weak Explosion)
+  image: https://ultimateframedata.com/hitboxes/snake/Nikita%20Explosion%20(Weak).png
+  fields:
+
+sspecial4:
+  title: Nikita (Strong Explosion)
+  image: https://ultimateframedata.com/hitboxes/snake/Nikita%20Explosion%20(Strong).png
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeUAir.gif
+  fields:
+
+uspecial:
+  title: Cypher
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeCypher.png
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeUSmash.gif
+  fields:
+
+usmash2:
+  title: Up Smash (Mortar)
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeUSmashSearch.png
+  fields:
+
+usmash3:
+  title: Up Smash (Mortar Explosion)
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeUSmashExplosion.png
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/snake/SnakeUTilt.gif
+  fields:
