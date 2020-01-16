@@ -139,6 +139,15 @@ sspecial:
   - fspecial
   - f-b
 
+bspecial:
+  - backspecial
+  - backb
+  - backwardsspecial
+  - backwardspecial
+  - bb
+  - b-b
+  - b-special
+
 uspecial:
   - upb
   - upwardb
@@ -317,3 +326,8 @@ input:
   - cmd
   - in
   - cmdin
+
+zair:
+  - zaerial
+  - z-air
+  - z-aerial
