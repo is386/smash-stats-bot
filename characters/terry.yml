@@ -285,7 +285,7 @@ input2:
   image: https://ultimateframedata.com/hitboxes/terry/TerryBusterWolf.gif
   field:
 
-input2:
+input3:
   title: Buster Wolf (Hit)
   image: https://ultimateframedata.com/hitboxes/terry/TerryBusterWolfThrow.gif
   field:
