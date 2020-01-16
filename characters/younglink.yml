@@ -1,0 +1,199 @@
+younglink:
+  title: Young Link
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkBThrow.gif
+  fields:
+
+dair:
+  title: Down Air
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash 1
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkFSmash1.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt 1
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkFTilt1.gif
+  fields:
+
+ftilt2:
+  title: Forward Tilt 2
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkFTilt2.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkJab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkJab3.gif
+  fields:
+
+jabfinisher:
+  title: Rapid Jab Finish
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkJabRapidEnd.gif
+  fields:
+
+rapidjab:
+  title: Rapid Jab
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkJabRapid.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Fire Arrow
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkArrow.png
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Bomb Pull
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Boomerang
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkBoomerang.png
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkUAir.gif
+  fields:
+
+uspecial:
+  title: Spin Attack
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkSpinAttackG.gif
+  fields:
+
+uspecial2:
+  title: Spin Attack (Air)
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkSpinAttackA.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkUTilt.gif
+  fields:
+
+zair:
+  title: Zair
+  fields:
