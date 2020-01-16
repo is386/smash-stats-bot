@@ -1,0 +1,238 @@
+villager:
+  title: Villager
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerBThrow.gif
+  fields:
+
+dair:
+  title: Down Air 1
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerDAir1.gif
+  fields:
+
+dair2:
+  title: Down Air 2
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerDAir2.gif
+  fields:
+
+dair3:
+  title: Down Air 3
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerDAir3.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerJab2.gif
+  fields:
+
+jabfinisher:
+  title: Rapid Jab Finish 1
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerJab1End.gif
+  fields:
+
+jabfinisher2:
+  title: Rapid Jab Finish 2
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerJab2End.gif
+  fields:
+
+rapidjab:
+  title: Rapid Jab
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Pocket
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerPocket.png
+  fields:
+
+nspecial2:
+  title: Pocket (Throw)
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Timber (Plant/Water)
+  fields:
+
+dspecial2:
+  title: Timber (Tree Grow)
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerTimberGrowth.gif
+  fields:
+
+dspecial3:
+  title: Timber (Tree Fall)
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerTimberFall.gif
+  fields:
+
+dspecial4:
+  title: Timber (Axe)
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerTimberAxe.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Lloid Rocket (Fly)
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerLloidRocketFly.png
+  fields:
+
+sspecial2:
+  title: Lloid Rocket (Fall)
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerLloidRocketFall.png
+  fields:
+
+sspecial3:
+  title: Lloid Rocket (Explosion)
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerLloidRocketExplosion.png
+  fields:
+
+sspecial4:
+  title: Lloid Rocket (Wall Explosion)
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerLloidRocketWallExplosion.png
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air 1
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerUAir1.gif
+  fields:
+
+uair2:
+  title: Up Air 2
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerUAir2.gif
+  fields:
+
+uair3:
+  title: Up Air 3
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerUAir3.gif
+  fields:
+
+uspecial:
+  title: Balloon Trip
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerBalloonHurtbox.png
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/villager/VillagerUTilt.gif
+  fields:
