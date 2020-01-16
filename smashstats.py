@@ -161,7 +161,7 @@ async def on_message(req):
             return
     else:
         return
-    embed.set_footer(text="You can send comments, questions, and suggestions to 1nder")
+    embed.set_footer(text="You can send comments and questions to 1nder")
     await req.channel.send(embed=embed)
 
 
