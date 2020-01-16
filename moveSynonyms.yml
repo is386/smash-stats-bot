@@ -326,6 +326,8 @@ input:
   - cmd
   - in
   - cmdin
+  - super
+  - supers
 
 zair:
   - zaerial
