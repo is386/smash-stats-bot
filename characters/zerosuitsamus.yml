@@ -1,0 +1,201 @@
+zerosuitsamus:
+  title: Zero Suit Samus
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusBThrow.gif
+  fields:
+
+dair:
+  title: Down Air (Falling)
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusDAir.gif
+  fields:
+
+dair2:
+  title: Down Air (Landing)
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusDAirLanding.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusJab1.gif
+  fields:
+
+jab2:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusJab2.gif
+  fields:
+
+jab3:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusJab3.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Paralyzer
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Flip Jump
+  image:
+  fields:
+
+dspecial2:
+  title: Flip Jump (Kick)
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusFlipJumpKick.gif
+  fields:
+
+dspecial3:
+  title: Flip Jump (Bury)
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusFlipJumpFootstool.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Plasma Whip
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusPlasmaWhip.gif
+  fields:
+
+sspecial2:
+  title: Plasma Whip (Up)
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusPlasmaWhipUp.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusUAir.gif
+  fields:
+
+uspecial:
+  title: Boost Kick (Ground)
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusBoostKickG.gif
+  fields:
+
+uspecial2:
+  title: Boost Kick (Air)
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusBoostKickA.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/zero_suit_samus/ZeroSuitSamusUTilt.gif
+  fields:
+
+zair:
+  title: Zair
+  fields:
