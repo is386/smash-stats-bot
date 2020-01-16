@@ -1,0 +1,291 @@
+terry:
+  title: Terry
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBThrow.gif
+  fields:
+
+dair:
+  title: Down Air (Normal)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/terry/TerryDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/terry/TerryDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/terry/TerryDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/terry/TerryDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/terry/TerryFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/terry/TerryFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/terry/TerryFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/terry/TerryFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/terry/TerryDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/terry/TerryGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/terry/TerryJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/terry/TerryJab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/terry/TerryJab3.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/terry/TerryNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Power Wave (Weak, Ground)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerWaveGWeak.gif
+  fields:
+
+nspecial2:
+  title: Power Wave (Strong, Ground)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerWaveGStrong.gif
+  fields:
+
+nspecial3:
+  title: Power Wave (Weak, Air)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerWaveAWeak.gif
+  fields:
+
+nspecial4:
+  title: Power Wave (Strong, Air)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerWaveAStrong.gif
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Power Dunk Up (Weak)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkRiseWeak.gif
+  fields:
+
+dspecial2:
+  title: Power Dunk Up (Weak, Input)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkRiseWeakInput.gif
+  fields:
+
+dspecial3:
+  title: Power Dunk Down (Weak)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkWeak.gif
+  fields:
+
+dspecial4:
+  title: Power Dunk Up (Strong)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkRiseStrong.gif
+  fields:
+
+dspecial5:
+  title: Power Dunk Up (Strong, Input)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkRiseStrongInput.gif
+  fields:
+
+dspecial6:
+  title: Power Dunk Down (Strong)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkStrong.gif
+  fields:
+
+dspecial7:
+  title: Power Dunk Down (Strong, Input)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkSpike.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+spotdodgeatk:
+  title: Spot Dodge
+  image: https://ultimateframedata.com/hitboxes/terry/TerryUTiltBullshit.gif
+  fields:
+
+sspecial:
+  title: Burning Knuckle (Weak, Ground)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleGroundWeak.gif
+  fields:
+
+sspecial2:
+  title: Burning Knuckle (Strong, Ground)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleGroundStrong.gif
+  fields:
+
+sspecial3:
+  title: Burning Knuckle (Weak, Air)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleAirWeak.gif
+  fields:
+
+sspecial4:
+  title: Burning Knuckle Input (Strong, Air)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleAirStrong.gif
+  fields:
+
+sspecial5:
+  title: Burning Knuckle Input (Weak, Ground)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleGroundWeakInput.gif
+  fields:
+
+sspecial6:
+  title: Burning Knuckle Input (Strong, Ground)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleGroundStrongInput.gif
+  fields:
+
+sspecial7:
+  title: Burning Knuckle Input (Weak, Air)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleAirWeakInput.gif
+  fields:
+
+sspecial8:
+  title: Burning Knuckle Input (Strong, Air)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleAirStrongInput.gif
+  fields:
+
+bspecial:
+  title: Crack Shoot (Weak)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryCrackShootWeak.gif
+  fields:
+
+bspecial2:
+  title: Crack Shoot (Strong)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryCrackShootStrong.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/terry/TerryUAir.gif
+  fields:
+
+uspecial:
+  title: Rising Tackle
+  image: https://ultimateframedata.com/hitboxes/terry/TerryRisingTackle.gif
+  fields:
+
+uspecial2:
+  title: Rising Tackle (Input)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryRisingTackleCharged.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/terry/TerryUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/terry/TerryUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/terry/TerryUTilt.gif
+  fields:
+
+input:
+  title: Power Geyser
+  image: https://ultimateframedata.com/hitboxes/terry/TerryPowerGeyser.gif
+  field:
+
+input2:
+  title: Buster Wolf (Search)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBusterWolf.gif
+  field:
+
+input2:
+  title: Buster Wolf (Hit)
+  image: https://ultimateframedata.com/hitboxes/terry/TerryBusterWolfThrow.gif
+  field:
