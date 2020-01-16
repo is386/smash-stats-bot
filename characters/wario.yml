@@ -1,0 +1,216 @@
+wario:
+  title: Wario
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/wario/WarioBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/wario/WarioBThrow.gif
+  fields:
+
+dair:
+  title: Down Air (Normal)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/wario/WarioDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/wario/WarioDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/wario/WarioDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/wario/WarioDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/wario/WarioFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/wario/WarioFSmash.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/wario/WarioFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/wario/WarioFTilt.gif
+  fields:
+
+ftilt2:
+  title: Forward Tilt Down
+  image: https://ultimateframedata.com/hitboxes/wario/WarioFTiltDown.gif
+  fields:
+
+ftilt3:
+  title: Forward Tilt Up
+  image: https://ultimateframedata.com/hitboxes/wario/WarioFTiltUp.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/wario/WarioDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/wario/WarioPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/wario/WarioGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/wario/WarioJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/wario/WarioJab2.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/wario/WarioNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Chomp (Grab)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioChomp.gif
+  fields:
+
+nspecial2:
+  title: Chomp (Bite)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioChompBite.gif
+  fields:
+
+nspecial3:
+  title: Chomp (Explosion)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioChompBomb.gif
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/wario/WarioPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Waft (Toot)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioWarioWaftToot.gif
+  fields:
+
+dspecial2:
+  title: Waft (Low)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioWarioWaftLow.gif
+  fields:
+
+dspecial3:
+  title: Waft (Half)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioWarioWaftHalf.gif
+  fields:
+
+dspecial4:
+  title: Waft (Full)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioWarioWaftFull.gif
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Bike
+  image: https://ultimateframedata.com/hitboxes/wario/WarioBikeDrive.gif
+  fields:
+
+sspecial2:
+  title: Bike (Wheelie)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioBikeWheelie.gif
+  fields:
+
+sspecial3:
+  title: Bike (Turnaround)
+  image: https://ultimateframedata.com/hitboxes/wario/WarioBikeTurn.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/wario/WarioUAir.gif
+  fields:
+
+uspecial:
+  title: Corkscrew
+  image: https://ultimateframedata.com/hitboxes/wario/WarioCorkscrew.gif
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/wario/WarioUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/wario/WarioUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/wario/WarioUTilt.gif
+  fields:
