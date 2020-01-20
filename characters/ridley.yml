@@ -307,6 +307,7 @@ uspecial:
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzForward.gif
   fields:
     Active: 36-55
+    Intagibility: 39-58
     DMG: 19.2
     Kill %: 100.0
 
@@ -315,8 +316,8 @@ uspecial2:
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzBack.gif
   fields:
     Active: 36-55
+    Intagibility: 39-58
     DMG: 19.2
-    DMG Down: 18.0 / 6.0 (Landing)
     Kill %: 123.0
 
 uspecial3:
@@ -324,6 +325,7 @@ uspecial3:
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzUp.gif
   fields:
     Active: 34-57
+    Intagibility: 37-60
     DMG: 21.6
     Kill %: 149.0
 
@@ -332,6 +334,7 @@ uspecial4:
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzDown.gif
   fields:
     Active: 37-59
+    Intagibility: 37-62
     Landing Lag: 35
     DMG: 18.0 / 6.0 (Landing)
     Kill %: 142.0
