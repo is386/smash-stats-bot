@@ -4,10 +4,10 @@ from yaml import safe_load as yamlLoad
 prefix = "?"
 cmdPath = "characters/%s.yml"
 embedColor = 00000000
-moveError1 = "The move **%s** does not exist. Contact 1nder if you feel that this is a mistake!"
-charError1 = "The character **%s** doesn't exist (Character names can't have spaces). Contact 1nder if you feel that this is a mistake!"
-charError2 = "The character **%s** has no data yet. Contact 1nder if you feel that this is a mistake!"
-hBoxError = "**%s** does not have a hitbox graphic. Contact 1nder if you feel that this is a mistake!"
+moveError1 = "The move **%s** does not exist. `?help` for more."
+charError1 = "The character **%s** doesn't exist. `?help` for more."
+charError2 = "The character **%s** has no data yet. `?help` for more."
+hBoxError = "**%s** does not have a hitbox gif yet. `?help` for more."
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```%s```"
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 
@@ -46,6 +46,7 @@ def CreateImageEmbed(cmdData):
     embed = discord.Embed(title=cmdData["title"] ,color=embedColor)
     embed.set_image(url=imgURL)
     return embed
+    
 
 # Waits for a reaction on stats or viz and then sends the opposite command if the message is reacted to.
 async def WaitForReaction(req, resp):
@@ -89,80 +90,86 @@ async def on_message(req):
 
     # Checks cmd type.
     cmd = msg[0][1:].lower()
-    if cmd != "viz" and cmd != "stats" and cmd != "vis":
-        return
-
-    # Parses the character name.
-    char = msg[1].lower()
-    tempChar = char
-    char = Translate(char, "charSynonyms.yml")
-    if char == "Invalid":
-        await req.channel.send(charError1 % tempChar)
-        return
-
-    # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
-    cmdData = yamlLoad(open(cmdPath % char))
-
-    if cmdData == None:
-        await req.channel.send(charError2 % char)
-        return
-        
-    # Parses the move name.
-    move = char
-    if len(msg) > 2:
-        move = "".join(msg[2:]).lower()
-        if move not in cmdData.keys():
-            tempMove = move
-            move = Translate(move, "moveSynonyms.yml")
-            if move == "Invalid":
-                await req.channel.send(moveError1 % tempMove)
-                return
-
-    # Checks if the move has multiple hitboxes
-    matching = [i for i in cmdData.keys() if move in i]
-    actualMatching = []
-    if len(matching) > 1:
-        s = ""
-        b = 0
-        for i in range(len(matching)):
-            try:
-                m = cmdData[matching[i]]["image"]
-                actualMatching.append(matching[i])
-            except KeyError:
-                b += 1
-                continue
-            m = cmdData[matching[i]]["title"]
-            s += ("\n %d. %s" % (i+1-b ,m))
-
-        if not actualMatching:
-            await req.channel.send(hBoxError % move)
-            return
-        elif len(actualMatching) == 1:
-            move = actualMatching[0]
-        else:
-            resp = await req.channel.send(matchMsg % s)
-
-            for i in range(len(actualMatching)):
-                await resp.add_reaction(nums[i])
-
-            n = await WaitForReaction(req, resp)
-            if n == -1:
-                return
-
-            move = actualMatching[n]
-
-            await resp.delete()
-
-    # Sends the message response.
     if cmd == "viz" or cmd == "vis":
-        embed = CreateImageEmbed(cmdData[move])
-        if embed == False:
-            await req.channel.send(hBoxError % cmdData[move]["title"])
+
+        # Parses the character name.
+        char = msg[1].lower()
+        tempChar = char
+        char = Translate(char, "charSynonyms.yml")
+        if char == "Invalid":
+            await req.channel.send(charError1 % tempChar)
             return
+
+        # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
+        cmdData = yamlLoad(open(cmdPath % char))
+
+        if cmdData == None:
+            await req.channel.send(charError2 % char)
+            return
+            
+        # Parses the move name.
+        move = char
+        if len(msg) > 2:
+            move = "".join(msg[2:]).lower()
+            if move not in cmdData.keys():
+                tempMove = move
+                move = Translate(move, "moveSynonyms.yml")
+                if move == "Invalid":
+                    await req.channel.send(moveError1 % tempMove)
+                    return
+
+        # Checks if the move has multiple hitboxes
+        matching = [i for i in cmdData.keys() if move in i]
+        actualMatching = []
+        if len(matching) > 1:
+            s = ""
+            b = 0
+            for i in range(len(matching)):
+                try:
+                    m = cmdData[matching[i]]["image"]
+                    actualMatching.append(matching[i])
+                except KeyError:
+                    b += 1
+                    continue
+                m = cmdData[matching[i]]["title"]
+                s += ("\n %d. %s" % (i+1-b ,m))
+
+            if not actualMatching:
+                await req.channel.send(hBoxError % move)
+                return
+            elif len(actualMatching) == 1:
+                move = actualMatching[0]
+            else:
+                resp = await req.channel.send(matchMsg % s)
+
+                for i in range(len(actualMatching)):
+                    await resp.add_reaction(nums[i])
+
+                n = await WaitForReaction(req, resp)
+                if n == -1:
+                    return
+
+                move = actualMatching[n]
+
+                await resp.delete()
+
+        # Sends the message response.
+        if cmd == "viz" or cmd == "vis":
+            embed = CreateImageEmbed(cmdData[move])
+            if embed == False:
+                await req.channel.send(hBoxError % cmdData[move]["title"])
+                return
+        embed.set_footer(text="You can send comments and questions to 1nder")
+        await req.channel.send(embed=embed)
+        return 
+
+    elif cmd == "help":
+        helpMsg = open("help", "r").read()
+        await req.author.send(helpMsg)
+        return
     else:
         return
-    embed.set_footer(text="You can send comments and questions to 1nder")
-    await req.channel.send(embed=embed)
+
 
 
 client.run(token)
