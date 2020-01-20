@@ -124,6 +124,9 @@ nspecial:
   - b
   - n-b
   - n-special
+  - nspec
+  - neutralspec
+  - n-spec
 
 sspecial:
   - sidespecial
@@ -138,6 +141,13 @@ sspecial:
   - fb
   - fspecial
   - f-b
+  - fspec
+  - forwardspec
+  - forwardsspec
+  - sidespec
+  - sspec
+  - sidewayspec
+  - sidewaysspec
 
 bspecial:
   - backspecial
@@ -147,6 +157,11 @@ bspecial:
   - bb
   - b-b
   - b-special
+  - bspec
+  - b-spec
+  - backspec
+  - backwardspec
+  - backwardsspec
 
 uspecial:
   - upb
@@ -159,6 +174,11 @@ uspecial:
   - upspecial
   - u-b
   - u-special
+  - uspec
+  - u-spec
+  - upspec
+  - upwardspec
+  - upwardsspec
 
 dspecial:
   - downspecial
@@ -170,6 +190,11 @@ dspecial:
   - db
   - d-b
   - d-special
+  - dspec
+  - d-spec
+  - downspec
+  - downwardsspec
+  - downwardspec
 
 fsmash:
   - forwardsmash
