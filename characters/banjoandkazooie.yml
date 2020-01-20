@@ -65,7 +65,7 @@ ftilt:
   image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieFTilt.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -182,4 +182,10 @@ utaunt:
 
 uthrow:
   title: Up Throw
-  image: https://ultimateframedata.com/hitboxes/banjo_and
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieUThrow.gif
+  fields:
+
+utilt:
+  title: Up tilt
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieUTilt.gif
+  fields:
