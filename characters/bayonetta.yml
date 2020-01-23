@@ -12,6 +12,11 @@ bair:
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaBAir.gif
   fields:
 
+bair2:
+  title: Back Air (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/4/4d/BayonettaBAirBulletArtsSSBU.png/500px-BayonettaBAirBulletArtsSSBU.png
+  fields:
+
 bthrow:
   title: Back Throw
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaBThrow.gif
@@ -27,9 +32,19 @@ dair2:
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDAirLanding.gif
   fields:
 
+dair3:
+  title: Down Air (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/d/d6/BayonettaDAirLandingBulletArtsSSBU.png/500px-BayonettaDAirLandingBulletArtsSSBU.png
+  fields:
+
 dashattack:
   title: Dash Attack
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDashAttack.gif
+  fields:
+
+dashattack2:
+  title: Dash Attack (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/d/d2/BayonettaDashAttackBulletArtsSSBU.png/500px-BayonettaDashAttackBulletArtsSSBU.png
   fields:
 
 dsmash:
@@ -40,6 +55,11 @@ dsmash:
 dsmash2:
   title: Down Smash (Giant Foot)
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDSmashStomp.gif
+  fields:
+
+dsmash3:
+  title: Down Smash (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/f/f9/BayonettaDSmashBulletArtsSSBU.png/500px-BayonettaDSmashBulletArtsSSBU.png
   fields:
 
 dtaunt:
@@ -55,24 +75,59 @@ dtilt:
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDTilt.gif
   fields:
 
+dtilt2:
+  title: Down Tilt (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/5/59/BayonettaDTiltBulletArtsSSBU.png/500px-BayonettaDTiltBulletArtsSSBU.png
+  fields:
+
 fair:
   title: Forward Air 1
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir%201.gif
   fields:
 
 fair2:
+  title: Forward Air 1 (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/1/10/BayonettaFAir1BulletArtsSSBU.png/500px-BayonettaFAir1BulletArtsSSBU.png
+  fields:
+
+fair3:
   title: Forward Air 2
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir2.gif
   fields:
 
-fair3:
+fair4:
+  title: Forward Air 2  (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/8/89/BayonettaFAir2BulletArtsSSBU.png/500px-BayonettaFAir2BulletArtsSSBU.png
+  fields:
+
+fair5:
   title: Forward Air 3
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir3.gif
+  fields:
+
+fair6:
+  title: Forward Air 3  (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/e/ee/BayonettaFAir3BulletArtsSSBU.png/500px-BayonettaFAir3BulletArtsSSBU.png
   fields:
 
 fsmash:
   title: Forward Smash
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFSmash.gif
+  fields:
+
+fsmash2:
+  title: Forward Smash (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/7/7a/BayonettaFSmashBulletArtsSSBU.png/500px-BayonettaFSmashBulletArtsSSBU.png
+  fields:
+
+fsmash3:
+  title: Forward Smash (Bullet Arts Down)
+  image: https://www.ssbwiki.com/images/thumb/c/c9/BayonettaFSmashDownBulletArtsSSBU.png/500px-BayonettaFSmashDownBulletArtsSSBU.png
+  fields:
+
+fsmash4:
+  title: Forward Smash (Bullet Arts Up)
+  image: https://www.ssbwiki.com/images/thumb/c/cd/BayonettaFSmashUpBulletArtsSSBU.png/500px-BayonettaFSmashUpBulletArtsSSBU.png
   fields:
 
 fthrow:
@@ -86,13 +141,28 @@ ftilt:
   fields:
 
 ftilt2:
+  title: Forward Tilt (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/4/4c/BayonettaFTilt1BulletArtsSSBU.png/500px-BayonettaFTilt1BulletArtsSSBU.png
+  fields:
+
+ftilt3:
   title: Forward Tilt 2
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt2.gif
   fields:
 
-ftilt3:
+ftilt4:
+  title: Forward Tilt 2 (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/0/02/BayonettaFTilt2BulletArtsSSBU.png/500px-BayonettaFTilt2BulletArtsSSBU.png
+  fields:
+
+ftilt5:
   title: Forward Tilt 3
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt3.gif
+  fields:
+
+ftilt6:
+  title: Forward Tilt 3 (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/d/d0/BayonettaFTilt3BulletArtsSSBU.png/500px-BayonettaFTilt3BulletArtsSSBU.png
   fields:
 
 getupattack:
@@ -120,18 +190,38 @@ jab:
   fields:
 
 jab2:
+  title: Jab 1 (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/5/59/BayonettaJab1BulletArtsSSBU.png/500px-BayonettaJab1BulletArtsSSBU.png
+  fields:
+
+jab3:
   title: Jab 2
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab2.gif
   fields:
 
-jab3:
+jab4:
+  title: Jab 2 (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/8/8c/BayonettaJab2BulletArtsSSBU.png/500px-BayonettaJab2BulletArtsSSBU.png
+  fields:
+
+jab5:
   title: Jab 3
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab3.gif
+  fields:
+
+jab6:
+  title: Jab 3 (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/b/bb/BayonettaJab3BulletArtsSSBU.png/500px-BayonettaJab3BulletArtsSSBU.png
   fields:
 
 jabfinisher:
   title: Rapid Jab Finisher
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJabRapidEnd.gif
+  fields:
+
+jabfinisher2:
+  title: Rapid Jab Finisher (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/3/39/BayonettaRapidJabFinisherBulletArtsSSBU.png/500px-BayonettaRapidJabFinisherBulletArtsSSBU.png
   fields:
 
 ledgeattack:
@@ -141,6 +231,11 @@ ledgeattack:
 nair:
   title: Neutral Air
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaNAir.gif
+  fields:
+
+nair2:
+  title: Neutral Air (Bullet Arts)
+  image: https://www.ssbwiki.com/images/a/a3/BayonettaNAirHoldSSBU.gif
   fields:
 
 oos:
@@ -165,6 +260,11 @@ rapidjab:
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJabRapid.gif
   fields:
 
+rapidjab2:
+  title: Rapid Jab (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/c/c4/BayonettaRapidJabBulletArtsSSBU.png/500px-BayonettaRapidJabBulletArtsSSBU.png
+  fields:
+
 roll:
   title: Rolls
   fields:
@@ -184,6 +284,11 @@ sspecial:
   fields:
 
 sspecial2:
+  title: Heel Slide (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/6/67/BayonettaHeelSlideBulletArtsSSBU.png/500px-BayonettaHeelSlideBulletArtsSSBU.png
+  fields:
+
+sspecial3:
   title: Heel Slide (End)
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaHeelSlideEnd.gif
   fields:
@@ -194,11 +299,16 @@ sspecial3:
   fields:
 
 sspecial4:
+  title: After Burner Kick (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/c/cf/BayonettaAfterburnerKickBulletArtsSSBU.png/500px-BayonettaAfterburnerKickBulletArtsSSBU.png
+  fields:
+
+sspecial5:
   title: After Burner Kick Down
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickDown.gif
   fields:
 
-sspecial5:
+sspecial6:
   title: After Burner Kick Down (Landing)
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickLanding.gif
   fields:
@@ -215,6 +325,16 @@ uair:
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUAir.gif
   fields:
 
+uair2:
+  title: Up Air (Bullet Arts)
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUAir.gif
+  fields:
+
+uair3:
+  title: Up Air (Bullet Arts Hold)
+  image: https://www.ssbwiki.com/images/6/63/BayonettaUAirBulletArtsHeldSSBU.gif
+  fields:
+
 uspecial:
   title: Witch Twist (Ground)
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistG.gif
@@ -225,9 +345,19 @@ uspecial2:
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistA.gif
   fields:
 
+uspecial3:
+  title: Witch Twist (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/2/26/BayonettaWitchTwistBulletArtsSSBU.png/500px-BayonettaWitchTwistBulletArtsSSBU.png
+  fields:
+
 usmash:
   title: Up Smash
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUSmash.gif
+  fields:
+
+usmash2:
+  title: Up Smash (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/0/07/BayonettaUSmashBulletArtsSSBU.png/500px-BayonettaUSmashBulletArtsSSBU.png
   fields:
 
 utaunt:
@@ -241,4 +371,9 @@ uthrow:
 utilt:
   title: Up Tilt
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUTilt.gif
+  fields:
+
+utilt2:
+  title: Up Tilt (Bullet Arts)
+  image: https://www.ssbwiki.com/images/thumb/f/f9/BayonettaUTiltBulletArtsSSBU.png/500px-BayonettaUTiltBulletArtsSSBU.png
   fields:
