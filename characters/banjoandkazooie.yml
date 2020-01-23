@@ -22,6 +22,11 @@ dair:
   image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDAir.gif
   fields:
 
+dair2:
+  title: Down Air (Landing)
+  image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDAirLanding.gif
+  fields:
+
 dashattack:
   title: Dash Attack
   image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieDashAttack.gif

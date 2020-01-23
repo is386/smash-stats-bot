@@ -22,6 +22,11 @@ dair:
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDAir.gif
   fields:
 
+dair2:
+  title: Down Air (Landing)
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDAirLanding.gif
+  fields:
+
 dashattack:
   title: Dash Attack
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDashAttack.gif
@@ -90,7 +95,7 @@ ftilt3:
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt3.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
