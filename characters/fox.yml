@@ -75,7 +75,7 @@ ftilt3:
   image: https://ultimateframedata.com/hitboxes/fox/FoxFTiltUp.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -150,19 +150,14 @@ dspecial2:
   title: Reflector (Hold)
   image: https://ultimateframedata.com/hitboxes/fox/FoxReflector.gif
   fields:
-    
+
 spotdodge:
   title: Spot Dodge
   fields:
 
 sspecial:
-  title: Fox Illusion (Start)
-  image: https://ultimateframedata.com/hitboxes/fox/FoxReflectorStart.gif
-  fields:
-
-sspecial2:
-  title: Fox Illusion (Hold)
-  image: https://ultimateframedata.com/hitboxes/fox/FoxReflector.gif
+  title: Fox Illusion
+  image: https://ultimateframedata.com/hitboxes/fox/FoxFoxIllusion.png
   fields:
 
 staunt:
