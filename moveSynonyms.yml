@@ -244,6 +244,8 @@ grabstanding:
   - standinggrab
   - sgrab
   - s-grab
+  - standgrab 
+  - grabstand
 
 grabdash:
   - dgrab
