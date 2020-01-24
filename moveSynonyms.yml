@@ -244,7 +244,7 @@ grabstanding:
   - standinggrab
   - sgrab
   - s-grab
-  - standgrab 
+  - standgrab
   - grabstand
 
 grabdash:
@@ -344,7 +344,7 @@ tripattack:
   - tripgetupatk
   - tripatk
 
-input:
+command:
   - inputs
   - commands
   - commandinput
