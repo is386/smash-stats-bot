@@ -245,10 +245,24 @@ oos:
 
 nspecial:
   title: Bullet Climax
+  names:
+    - bullet
+    - bulletclimax
+    - bc
   fields:
 
 nspecial2:
   title: Bullet Climax (Full Charge)
+  names:
+    - bulletmax
+    - bulletclimaxmax
+    - bcm
+    - bulletfull
+    - bulletclimaxfull
+    - bcmf
+    - bulletfullcharge
+    - bulletclimaxfullcharge
+    - bcmfc
   fields:
 
 pummel:
@@ -370,12 +384,26 @@ uair3:
   fields:
 
 uspecial:
+  names:
+    - twist
+    - witchtwist
+    - wtt
+
+uspecial1:
   title: Witch Twist (Ground)
+  names:
+    - twistground
+    - witchtwistground
+    - wttg
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistG.gif
   fields:
 
 uspecial2:
   title: Witch Twist (Air)
+  names:
+    - twistair
+    - witchtwistair
+    - wtta
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistA.gif
   fields:
 
