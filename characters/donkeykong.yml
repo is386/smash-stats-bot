@@ -80,7 +80,7 @@ ftilt:
   image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongFTilt.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -134,12 +134,12 @@ nspecial2:
 
 nspecial3:
   title: Giant Punch (Max, Ground)
-  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongHeadbuttG.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongGiantPunchGMax.gif
   fields:
 
 nspecial4:
   title: Giant Punch (Max, Air)
-  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongHeadbuttA.gif
+  image: https://ultimateframedata.com/hitboxes/donkey_kong/DonkeyKongGiantPunchAMax.gif
   fields:
 
 pummel:
