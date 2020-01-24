@@ -1,0 +1,26 @@
+-----------------------------------------------------
+Thank you for using **Smash Stats Bot** by 1nder
+-----------------------------------------------------
+
+**Commands:**
+`?help` = sends this help message 
+
+`?viz [character name] [move name]` = send a gif of the specified move for the specified character.
+
+**Error Message Info:**
+`The move ____ does not exist.`
+This means that the character does not have the move you specified. If you get this error, try checking your spelling and typing the move without a number at the end (nspecial instead of nspecial2). Right now, move names cannot be used in the command, so that may also cause this error.
+
+`The character ____ doesn't exist. `
+This means that the character does not exist in Super Smash Bros. Ultimate. If you get this error, check your spelling and make sure you did not have any spaces in the name. Also, the bot may not have the exact spelling of the name you used. If that is the case, DM 1nder#5023 and he can add it to the bot.
+
+`The character ____ has no data yet.`
+This means that the character exists in the bot but has no data yet and therefore cannot be searched by the bot.
+
+`____ does not have a hitbox gif yet.`
+This means that the character does have the move that you specified, but Ultimate Frame Data did not have a gif for that move.
+
+**Additional Info:**
+Right now the bot is only for Smashcords since it is still incomplete. The remaining features are:
+    - Using move names for the commands. (`?viz mario fireball` instead of `?viz mario nspecial`)
+    - Frame data and other stats for every move.
