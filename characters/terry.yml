@@ -607,7 +607,7 @@ utilt:
   image: https://ultimateframedata.com/hitboxes/terry/TerryUTilt.gif
   fields:
 
-command:
+command1:
   title: Power Geyser
   names:
     - pg
