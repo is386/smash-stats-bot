@@ -113,22 +113,77 @@ oos:
   fields:
 
 nspecial:
+  names:
+    - powerwave
+    - pw
+
+nspecial1:
+  names:
+    - groundedpowerwave
+    - groundpowerwave
+    - groundedpw
+    - groundpw
+    - gpw
+    - pwground
+    - pwgrounded
+    - pwg
+
+nspecial2:
+  names:
+    - aerialpowerwave
+    - airpowerwave
+    - aerialpw
+    - airpw
+    - apw
+    - pwair
+    - pwaerial
+    - pwa
+
+nspecial11:
   title: Power Wave (Weak, Ground)
+  names:
+    - powerwaveweakgrounded
+    - powerwaveweakground
+    - groundedweakpowerwave
+    - groundweakpowerwave
+    - pwwg
+    - gwpw
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerWaveGWeak.gif
   fields:
 
-nspecial2:
+nspecial12:
   title: Power Wave (Strong, Ground)
+  names:
+    - powerwavesstronggrounded
+    - powerwavestrongground
+    - groundedstrongpowerwave
+    - groundstrongpowerwave
+    - pwsg
+    - gspw
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerWaveGStrong.gif
   fields:
 
-nspecial3:
+nspecial21:
   title: Power Wave (Weak, Air)
+  names:
+    - powerwavesweakair
+    - powerwaveweakaerial
+    - airweakpowerwave
+    - aerialweakpowerwave
+    - pwsa
+    - aspw
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerWaveAWeak.gif
   fields:
 
-nspecial4:
+nspecial22:
   title: Power Wave (Strong, Air)
+  names:
+    - powerwavesstrongair
+    - powerwavestrongaerial
+    - airstrongpowerwave
+    - aerialstrongpowerwave
+    - pssa
+    - asps
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerWaveAStrong.gif
   fields:
 
@@ -142,37 +197,113 @@ roll:
   fields:
 
 dspecial:
+  names:
+    - powerdunk
+    - pd
+    - dunk
+    - power
+
+dspecial2:
+  names:
+    - powerdunkcommand
+    - commandpowerdunk
+    - cpd
+    - pdc
+
+dspecial11:
   title: Power Dunk Up (Weak)
+  names:
+    - powerdunkupweak
+    - weakpowerdunkup
+    - weakuppowerdunk
+    - uppowerdunkweak
+    - pduw
+    - wpdu
+    - wupd
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkRiseWeak.gif
   fields:
 
-dspecial2:
-  title: Power Dunk Up (Weak, Input)
+dspecial21:
+  title: Power Dunk Up (Weak, Command)
+  names:
+    - powerdunkupweakcommand
+    - powerdunkcommandweak
+    - commandpowerdunkupweak
+    - commandweakpowerdunkup
+    - pduwc
+    - pducw
+    - cpduw
+    - cwpdu
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkRiseWeakInput.gif
   fields:
 
-dspecial3:
+dspecial12:
   title: Power Dunk Down (Weak)
+  names:
+    - powerdunkdownweakcommand
+    - powerdunkcommandweak
+    - commandpowerdunkdownweak
+    - commandweakpowerdunkdown
+    - pddwc
+    - pddcw
+    - cpddw
+    - cwpdd
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkWeak.gif
   fields:
 
-dspecial4:
+dspecial13:
   title: Power Dunk Up (Strong)
+  names:
+    - powerdunkupstrong
+    - powerdunkstrong
+    - powerdunkupstrong
+    - strongpowerdunkup
+    - pdus
+    - pdus
+    - pdus
+    - spdu
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkRiseStrong.gif
   fields:
 
-dspecial5:
-  title: Power Dunk Up (Strong, Input)
+dspecial22:
+  title: Power Dunk Up (Strong, Command)
+  names:
+    - powerdunkupstrongcommand
+    - powerdunkcommandstrong
+    - commandpowerdunkupstrong
+    - commandstrongpowerdunkup
+    - pdusc
+    - pducs
+    - cpdus
+    - cspdu
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkRiseStrongInput.gif
   fields:
 
-dspecial6:
+dspecial14:
   title: Power Dunk Down (Strong)
+  names:
+    - powerdunkdownstrong
+    - powerdunkstrong
+    - powerdunkdownstrong
+    - strongpowerdunkdown
+    - pdds
+    - pdds
+    - pdds
+    - spdd
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkStrong.gif
   fields:
 
-dspecial7:
-  title: Power Dunk Down (Strong, Input)
+dspecial23:
+  title: Power Dunk Down (Strong, Command)
+  names:
+    - powerdunkdownstrongcommand
+    - powerdunkcommandstrong
+    - commandpowerdunkdownstrong
+    - commandstrongpowerdunkdown
+    - pddsc
+    - pddcs
+    - cpdds
+    - cspdd
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerDunkSpike.gif
   fields:
 
@@ -182,56 +313,248 @@ spotdodge:
 
 spotdodgeatk:
   title: Spot Dodge
+  names:
+    - spotdodgeattack
+    - dodgeattack
+    - dodgeatk
   image: https://ultimateframedata.com/hitboxes/terry/TerryUTiltBullshit.gif
   fields:
 
 sspecial:
+  names:
+    - burningknuckle
+    - bk
+    - burning
+    - knuckle
+
+sspecial2:
+  names:
+    - commandburningknuckle
+    - cbk
+    - commandbk
+    - cmdbk
+    - bkc
+
+sspecial11:
   title: Burning Knuckle (Weak, Ground)
+  names:
+    - bkwg
+    - bkgw
+    - gwbk
+    - wgbk
+    - burningknuckleweakground
+    - burningknuckleweakgrounded
+    - burningknucklegroundweak
+    - burningknucklegroundedweak
+    - groundweakburningknuckle
+    - groundedweakburningknuckle
+    - weakgroundburningknuckle
+    - weakgroundedburningknuckle
   image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleGroundWeak.gif
   fields:
 
-sspecial2:
+sspecial12:
   title: Burning Knuckle (Strong, Ground)
+  names:
+    - bksg
+    - bkgs
+    - gwbk
+    - sgbk
+    - burningknucklestrongground
+    - burningknucklestronggrounded
+    - burningknucklegroundstrong
+    - burningknucklegroundedstrong
+    - groundstrongburningknuckle
+    - groundedstrongburningknuckle
+    - stronggroundburningknuckle
+    - stronggroundedburningknuckle
   image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleGroundStrong.gif
   fields:
 
-sspecial3:
+sspecial13:
   title: Burning Knuckle (Weak, Air)
+  names:
+    - bkwa
+    - bkaw
+    - awbk
+    - wabk
+    - burningknuckleweakair
+    - burningknuckleweakaerial
+    - burningknuckleairweak
+    - burningknuckleaerialweak
+    - airweakburningknuckle
+    - aerialweakburningknuckle
+    - weakairburningknuckle
+    - weakaerialburningknuckle
   image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleAirWeak.gif
   fields:
 
-sspecial4:
-  title: Burning Knuckle Input (Strong, Air)
+sspecial14:
+  title: Burning Knuckle (Strong, Air)
+  names:
+    - bksa
+    - bkas
+    - asbk
+    - sabk
+    - burningknucklestrongair
+    - burningknucklestrongaerial
+    - burningknuckleairstrong
+    - burningknuckleaerialstrong
+    - airstrongburningknuckle
+    - aerialstrongburningknuckle
+    - strongairburningknuckle
+    - strongaerialburningknuckle
   image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleAirStrong.gif
   fields:
 
-sspecial5:
-  title: Burning Knuckle Input (Weak, Ground)
+sspecial21:
+  title: Burning Knuckle Command (Weak, Ground)
+  names:
+    - cbkwg
+    - cbkgw
+    - cgwbk
+    - cwgbk
+    - bkwgc
+    - bkgwc
+    - gwbkc
+    - wgbkc
+    - commandburningknuckleweakground
+    - commandburningknuckleweakgrounded
+    - commandburningknucklegroundweak
+    - commandburningknucklegroundedweak
+    - commandgroundweakburningknuckle
+    - commandgroundedweakburningknuckle
+    - commandweakgroundburningknuckle
+    - commandweakgroundedburningknuckle
+    - burningknuckleweakgroundcommand
+    - burningknuckleweakgroundedcommand
+    - burningknucklegroundweakcommand
+    - burningknucklegroundedweakcommand
+    - groundweakburningknucklecommand
+    - groundedweakburningknucklecommand
+    - weakgroundburningknucklecommand
+    - weakgroundedburningknucklecommand
   image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleGroundWeakInput.gif
   fields:
 
-sspecial6:
-  title: Burning Knuckle Input (Strong, Ground)
+sspecial22:
+  title: Burning Knuckle Command (Strong, Ground)
+  names:
+    - cbksg
+    - cbkgs
+    - cgsbk
+    - csgbk
+    - bksgc
+    - bkgsc
+    - gsbkc
+    - sgbkc
+    - commandburningknucklestrongground
+    - commandburningknucklestronggrounded
+    - commandburningknucklegroundstrong
+    - commandburningknucklegroundedstrong
+    - commandgroundstrongburningknuckle
+    - commandgroundedstrongburningknuckle
+    - commandstronggroundburningknuckle
+    - commandstronggroundedburningknuckle
+    - burningknucklestronggroundcommand
+    - burningknucklestronggroundedcommand
+    - burningknucklegroundstrongcommand
+    - burningknucklegroundedstrongcommand
+    - groundstrongburningknucklecommand
+    - groundedstrongburningknucklecommand
+    - stronggroundburningknucklecommand
+    - stronggroundedburningknucklecommand
   image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleGroundStrongInput.gif
   fields:
 
-sspecial7:
-  title: Burning Knuckle Input (Weak, Air)
+sspecial23:
+  title: Burning Knuckle Command (Weak, Air)
+  names:
+    - cbkwa
+    - cbkaw
+    - cawbk
+    - cwabk
+    - bkwac
+    - bkawc
+    - awbkc
+    - wabkc
+    - commandburningknuckleweakair
+    - commandburningknuckleweakaerial
+    - commandburningknuckleairweak
+    - commandburningknuckleaerialweak
+    - commandairweakburningknuckle
+    - commandaerialweakburningknuckle
+    - commandweakairburningknuckle
+    - commandweakaerialburningknuckle
+    - burningknuckleweakaircommand
+    - burningknuckleweakaerialcommand
+    - burningknuckleairweakcommand
+    - burningknuckleaerialweakcommand
+    - airweakburningknucklecommand
+    - aerialweakburningknucklecommand
+    - weakairburningknucklecommand
+    - weakaerialburningknucklecommand
   image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleAirWeakInput.gif
   fields:
 
-sspecial8:
-  title: Burning Knuckle Input (Strong, Air)
+sspecial24:
+  title: Burning Knuckle Command (Strong, Air)
+  names:
+    - cbksa
+    - cbkas
+    - casbk
+    - csabk
+    - bksac
+    - bkasc
+    - asbkc
+    - sabkc
+    - commandburningknucklestrongair
+    - commandburningknucklestrongaerial
+    - commandburningknuckleairstrong
+    - commandburningknuckleaerialstrong
+    - commandairstrongburningknuckle
+    - commandaerialstrongburningknuckle
+    - commandstrongairburningknuckle
+    - commandstrongaerialburningknuckle
+    - burningknucklestrongaircommand
+    - burningknucklestrongaerialcommand
+    - burningknuckleairstrongcommand
+    - burningknuckleaerialstrongcommand
+    - airstrongburningknucklecommand
+    - aerialstrongburningknucklecommand
+    - strongairburningknucklecommand
+    - strongaerialburningknucklecommand
   image: https://ultimateframedata.com/hitboxes/terry/TerryBurningKnuckleAirStrongInput.gif
   fields:
 
 bspecial:
+  names:
+    - crackshoot
+    - crack
+    - shoot
+    - cs
+
+bspecial1:
   title: Crack Shoot (Weak)
+  names:
+    - crackshootweak
+    - weakcrackshoot
+    - csw
+    - wcs
+    - commandcs
+    - fscs
+    - commandcrackshoot
+    - ccs
   image: https://ultimateframedata.com/hitboxes/terry/TerryCrackShootWeak.gif
   fields:
 
 bspecial2:
   title: Crack Shoot (Strong)
+  names:
+    - crackshootstrong
+    - strongcrackshoot
+    - css
+    - scs
   image: https://ultimateframedata.com/hitboxes/terry/TerryCrackShootStrong.gif
   fields:
 
@@ -249,11 +572,20 @@ uair:
 
 uspecial:
   title: Rising Tackle
+  names:
+    - risingtackle
+    - rt
+    - tackle
+    - rising
   image: https://ultimateframedata.com/hitboxes/terry/TerryRisingTackle.gif
   fields:
 
 uspecial2:
-  title: Rising Tackle (Input)
+  title: Rising Tackle (Command)
+    - commandrisingtackle
+    - risingtacklecommand
+    - rtc
+    - crt
   image: https://ultimateframedata.com/hitboxes/terry/TerryRisingTackleCharged.gif
   fields:
 
@@ -275,17 +607,32 @@ utilt:
   image: https://ultimateframedata.com/hitboxes/terry/TerryUTilt.gif
   fields:
 
-input:
+command:
   title: Power Geyser
+  names:
+    - pg
+    - powergeyser
+    - geyser
   image: https://ultimateframedata.com/hitboxes/terry/TerryPowerGeyser.gif
   field:
 
-input2:
+command2:
+  names:
+    - bw
+    - busterwolf
+
+command21:
   title: Buster Wolf (Search)
+  names:
+    - busterwolfsearch
+    - bws
   image: https://ultimateframedata.com/hitboxes/terry/TerryBusterWolf.gif
   field:
 
-input3:
+command22:
   title: Buster Wolf (Hit)
+  names:
+    - busterwolfhit
+    - bwh
   image: https://ultimateframedata.com/hitboxes/terry/TerryBusterWolfThrow.gif
   field:
