@@ -95,7 +95,7 @@ ftilt3:
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrFTiltUp.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -144,6 +144,10 @@ oos:
 
 nspecial:
   title: Clown Cannon
+  names:
+    - clowncannon
+    - cannon
+    - cannonball
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrClownCannon.gif
   fields:
 
@@ -163,6 +167,8 @@ roll:
 
 dspecial:
   title: Mechakoopa
+  names:
+    - mechakoopa
   fields:
 
 spotdodge:
@@ -170,17 +176,56 @@ spotdodge:
   fields:
 
 sspecial:
+  names:
+    - clownkart
+    - kart
+    - clownkartdash
+    - clowncart
+    - cart
+    - clowncartdash
+    - ck
+    - cc
+
+sspecial1:
   title: Clown Kart Dash (Ground)
+  names:
+    - ckg
+    - gck
+    - clownkartground
+    - kartground
+    - clownkartdashground
+    - clowncartground
+    - cartground
+    - clowncartdashground
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrClownKartDashG.gif
   fields:
 
-sspecial:
+sspecial2:
   title: Clown Kart Dash (Air)
+  name:
+    - cka
+    - ack
+    - clownkartair
+    - kartair
+    - clownkartdashair
+    - clowncartair
+    - cartair
+    - clowncartdashair
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrClownKartDashA.gif
   fields:
 
 sspecial3:
-  title: Clown Kart Spinout
+  title: Clown Kart (Spinout)
+  name:
+    - spinout
+    - cks
+    - sck
+    - clownkartspinout
+    - kartspinout
+    - clownkartdashspinout
+    - clowncartspinout
+    - cartspinout
+    - clowncartdashspinout
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrClownKartDashSpinout.gif
   fields:
 
@@ -197,17 +242,32 @@ uair:
   fields:
 
 uspecial:
+  name:
+    - abandonship
+    - ship
+    - as
+
+uspecial1:
   title: Abandon Ship
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrAbandonShip.gif
   fields:
 
 uspecial2:
   title: Abandon Ship (Explosion)
+  name:
+    - abandonshipexplosion
+    - shipexplosion
+    - ase
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrAbandonShipExplosion.png
   fields:
 
 uspecial3:
   title: Abandon Ship (Hammer)
+  name:
+    - hammer
+    - abandonshiphammer
+    - shiphammer
+    - ash
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrAbandonShipHammer.gif
   fields:
 
