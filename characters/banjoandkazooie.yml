@@ -122,13 +122,20 @@ oos:
   title: Out of Shield Options
   fields:
 
-nspecial:
+nspecial1:
   title: Egg Firing
+  names:
+    - eggfiring
+    - ef
   image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieEggFiring.png
   fields:
 
 nspecial2:
   title: Breegull Blaster
+  names:
+    - breegull
+    - breegullblaster
+    - bb
   image: https://i.imgur.com/fQEqM6J.png
   fields:
 
@@ -148,6 +155,10 @@ roll:
 
 dspecial:
   title: Rear Egg
+  names:
+    - egg
+    - rearegg
+    - re
   image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Rear%20Egg.png
   fields:
 
@@ -157,6 +168,9 @@ spotdodge:
 
 sspecial:
   title: Wonderwing
+  names:
+    - wonderwing
+    - ww
   image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieWonderwing.gif
   fields:
 
@@ -174,6 +188,10 @@ uair:
 
 uspecial:
   title: Shock Spring Jump
+  names:
+    - shockspringjump
+    - shockspring
+    - spring
   image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Banjo_KazooieShockSpringJump.gif
   fields:
 
