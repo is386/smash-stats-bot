@@ -202,7 +202,7 @@ sspecial1:
 
 sspecial2:
   title: Clown Kart Dash (Air)
-  name:
+  names:
     - cka
     - ack
     - clownkartair
@@ -216,7 +216,7 @@ sspecial2:
 
 sspecial3:
   title: Clown Kart (Spinout)
-  name:
+  names:
     - spinout
     - cks
     - sck
@@ -243,7 +243,7 @@ uair:
 
 uspecial:
   title: Abandon Ship
-  name:
+  names:
     - abandonship
     - ship
     - as
@@ -252,7 +252,7 @@ uspecial:
 
 uspecial2:
   title: Abandon Ship (Explosion)
-  name:
+  names:
     - abandonshipexplosion
     - shipexplosion
     - ase
@@ -261,7 +261,7 @@ uspecial2:
 
 uspecial3:
   title: Abandon Ship (Hammer)
-  name:
+  names:
     - hammer
     - abandonshiphammer
     - shiphammer

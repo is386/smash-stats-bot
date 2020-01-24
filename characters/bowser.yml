@@ -199,7 +199,7 @@ sspecial2:
 
 sspecial3:
   title: Flying Slam (Falling)
-  name:
+  names:
     - flyingslamfalling
     - fallingflyingslam
     - fsf

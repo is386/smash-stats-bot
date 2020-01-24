@@ -159,6 +159,7 @@ dspecial:
     - egg
     - rearegg
     - re
+    - eggbomb
   image: https://ultimateframedata.com/hitboxes/banjo_and_kazooie/Rear%20Egg.png
   fields:
 
