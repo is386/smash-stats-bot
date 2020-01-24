@@ -14,6 +14,7 @@ bair:
 
 bair2:
   title: Back Air (Bullet Arts)
+  names:
   image: https://www.ssbwiki.com/images/thumb/4/4d/BayonettaBAirBulletArtsSSBU.png/500px-BayonettaBAirBulletArtsSSBU.png
   fields:
 
@@ -271,6 +272,9 @@ roll:
 
 dspecial:
   title: Witch Time
+  names:
+    - witchtime
+    - wt
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTime.gif
   fields:
 
@@ -278,38 +282,68 @@ spotdodge:
   title: Spot Dodge
   fields:
 
-sspecial:
+sspecial1:
   title: Heel Slide
+  names:
+    - heelslide
+    - heel
+    - slide
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaHeelSlide.gif
   fields:
 
-sspecial2:
+sspecial12:
   title: Heel Slide (Bullet Arts)
   image: https://www.ssbwiki.com/images/thumb/6/67/BayonettaHeelSlideBulletArtsSSBU.png/500px-BayonettaHeelSlideBulletArtsSSBU.png
   fields:
 
-sspecial3:
+sspecial13:
   title: Heel Slide (End)
+  names:
+    - heelslideend
+    - heelend
+    - slideend
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaHeelSlideEnd.gif
   fields:
 
-sspecial3:
+sspecial21:
   title: After Burner Kick
+  names:
+    - abk
+    - afterburnerkick
+    - kick
+    - burnerkick
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickUp.gif
   fields:
 
-sspecial4:
+sspecial22:
   title: After Burner Kick (Bullet Arts)
   image: https://www.ssbwiki.com/images/thumb/c/cf/BayonettaAfterburnerKickBulletArtsSSBU.png/500px-BayonettaAfterburnerKickBulletArtsSSBU.png
   fields:
 
-sspecial5:
+sspecial23:
   title: After Burner Kick Down
+  names:
+    - abkdown
+    - afterburnerkickdown
+    - kickdown
+    - burnerkickdown
+    - abkd
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickDown.gif
   fields:
 
-sspecial6:
+sspecial24:
   title: After Burner Kick Down (Landing)
+  names:
+    - abkdownlanding
+    - afterburnerkickdownlanding
+    - kickdownlanding
+    - burnerkickdownlanding
+    - abkdl
+    - abklanding
+    - afterburnerkicklanding
+    - kicklanding
+    - burnerkicklanding
+    - abkl
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickLanding.gif
   fields:
 
