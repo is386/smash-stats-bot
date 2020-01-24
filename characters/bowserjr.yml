@@ -242,13 +242,11 @@ uair:
   fields:
 
 uspecial:
+  title: Abandon Ship
   name:
     - abandonship
     - ship
     - as
-
-uspecial1:
-  title: Abandon Ship
   image: https://ultimateframedata.com/hitboxes/bowser_jr/BowserJrAbandonShip.gif
   fields:
 
