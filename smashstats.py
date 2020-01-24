@@ -12,7 +12,7 @@ matchMsg = "There are multiple hitboxes for this move. React with the hitbox you
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 
 client = discord.Client()
-tokenFile = open("token", "r")
+tokenFile = open("test", "r")
 token = tokenFile.read().strip()
 tokenFile.close()
 
@@ -21,7 +21,7 @@ tokenFile.close()
 # Returns "Invalid" if the move/char does not exist and returns the root move/char name if the move/char is a synonym.
 def Translate(og, synFile):
     # Dictionary with a "main" move/char name as the key and synonyms for the move/char as the values.
-    # Keeps the move/char name consistent while allowing for multiple ways to refer to a move/char. 
+    # Keeps the move/char name consistent while allowing for multiple ways to refer to a move/char.
     # Example: nair = neutral air, bayonetta = bayo
     synData = yamlLoad(open(synFile))
 
@@ -43,10 +43,10 @@ def CreateImageEmbed(cmdData):
         imgURL = cmdData["image"]
     except KeyError:
         return False
-    embed = discord.Embed(title=cmdData["title"] ,color=embedColor)
+    embed = discord.Embed(title=cmdData["title"], color=embedColor)
     embed.set_image(url=imgURL)
     return embed
-    
+
 
 # Waits for a reaction on stats or viz and then sends the opposite command if the message is reacted to.
 async def WaitForReaction(req, resp):
@@ -56,7 +56,7 @@ async def WaitForReaction(req, resp):
             e = str(reaction.emoji)
             return e in nums and user == req.author
 
-        # This loop prevents a bug where if you did two stats cmds and reacted to one of them, 
+        # This loop prevents a bug where if you did two stats cmds and reacted to one of them,
         # it would send the follow up message to both messages instead of the one that was reacted to.
         while True:
             await client.wait_for('reaction_add', timeout=120.0, check=CheckReaction)
@@ -74,6 +74,7 @@ async def WaitForReaction(req, resp):
         return -1
 
     return -1
+
 
 @client.event
 async def on_message(req):
@@ -106,7 +107,7 @@ async def on_message(req):
         if cmdData == None:
             await req.channel.send(charError2 % char)
             return
-            
+
         # Parses the move name.
         move = char
         if len(msg) > 2:
@@ -114,6 +115,10 @@ async def on_message(req):
             if move not in cmdData.keys():
                 tempMove = move
                 move = Translate(move, "moveSynonyms.yml")
+                if move == "Invalid":
+                    for i in cmdData.keys():
+                        if "names" in cmdData[i].keys() and tempMove in cmdData[i]["names"]:
+                            move = i
                 if move == "Invalid":
                     await req.channel.send(moveError1 % tempMove)
                     return
@@ -132,10 +137,10 @@ async def on_message(req):
                     b += 1
                     continue
                 m = cmdData[matching[i]]["title"]
-                s += ("\n %d. %s" % (i+1-b ,m))
+                s += ("\n %d. %s" % (i+1-b, m))
 
             if not actualMatching:
-                await req.channel.send(hBoxError % move)
+                await req.channel.send(hBoxError % cmdData[move]["title"])
                 return
             elif len(actualMatching) == 1:
                 move = actualMatching[0]
@@ -159,9 +164,10 @@ async def on_message(req):
             if embed == False:
                 await req.channel.send(hBoxError % cmdData[move]["title"])
                 return
-        embed.set_footer(text="You can send comments and questions to 1nder")
+        embed.set_footer(
+            text="You can send comments and questions to 1nder")
         await req.channel.send(embed=embed)
-        return 
+        return
 
     elif cmd == "help":
         helpMsg = open("help", "r").read()
@@ -169,7 +175,6 @@ async def on_message(req):
         return
     else:
         return
-
 
 
 client.run(token)
