@@ -80,7 +80,7 @@ ftilt3:
   image: https://ultimateframedata.com/hitboxes/ken/KenFTiltHeavy.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -136,7 +136,7 @@ nair:
 oos:
   title: Out of Shield Options
   fields:
-  
+
 nspecial:
   title: Hadouken
   fields:
@@ -223,7 +223,7 @@ uspecial4:
   title: True Shoryuken (Medium)
   image: https://ultimateframedata.com/hitboxes/ken/KenShoryukenMediumInput.gif
   fields:
-        
+
 uspecial5:
   title: Flame Shoryuken (Heavy)
   image: https://ultimateframedata.com/hitboxes/ken/KenShoryukenHeavy.gif
@@ -257,12 +257,12 @@ utilt2:
   image: https://ultimateframedata.com/hitboxes/ken/KenUTiltHeavy.gif
   fields:
 
-input:
+command:
   title: Nata Otoshi Geri
   image: https://ultimateframedata.com/hitboxes/ken/KenNataOtoshiGeri.gif
   fields:
 
-input2:
+command2:
   title: Oosoto Mawashi Geri
   image: https://ultimateframedata.com/hitboxes/ken/KenOosotoMawashiGeri.gif
-  fields:  
+  fields:
