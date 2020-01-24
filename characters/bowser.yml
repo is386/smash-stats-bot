@@ -75,7 +75,7 @@ ftilt3:
   image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltUp.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -119,6 +119,9 @@ oos:
 
 nspecial:
   title: Fire Breath
+  names:
+    - firebreath
+    - fire
   fields:
 
 pummel:
@@ -131,17 +134,37 @@ roll:
   fields:
 
 dspecial:
+  names:
+    - bowserbomb
+    - bb
+
+dspecial1:
   title: Bowser Bomb (Ground)
+  names:
+    - bowserbombground
+    - groundedbowserbomb
+    - gbb
+    - bbg
   image: https://ultimateframedata.com/hitboxes/bowser/BowserBowserBombG.gif
   fields:
 
 dspecial2:
   title: Bowser Bomb (Air)
+  names:
+    - bowserbombair
+    - aerialbowserbomb
+    - abb
+    - bba
   image: https://ultimateframedata.com/hitboxes/bowser/BowserBowserBomb.png
   fields:
 
 dspecial3:
   title: Bowser Bomb (Landing)
+  names:
+    - bowserbomblanding
+    - landingbowserbomb
+    - lbb
+    - bbl
   image: https://ultimateframedata.com/hitboxes/bowser/BowserBowserBombLanding.gif
   fields:
 
@@ -150,17 +173,37 @@ spotdodge:
   fields:
 
 sspecial:
+  names:
+    - flyingslam
+    - fs
+
+sspecial1:
   title: Flying Slam Grab (Ground)
+  names:
+    - flyingslamground
+    - groundedflyingslam
+    - fsg
+    - gfs
   image: https://ultimateframedata.com/hitboxes/bowser/BowserFlyingSlamGrabG.gif
   fields:
 
 sspecial2:
   title: Flying Slam Grab (Air)
+  names:
+    - flyingslamair
+    - aerialflyingslam
+    - fsa
+    - afs
   image: https://ultimateframedata.com/hitboxes/bowser/BowserFlyingSlamGrabA.gif
   fields:
 
 sspecial3:
   title: Flying Slam (Falling)
+  name:
+    - flyingslamfalling
+    - fallingflyingslam
+    - fsf
+    - ffs
   image: https://ultimateframedata.com/hitboxes/bowser/BowserFlyingSlam.gif
   fields:
 
@@ -177,12 +220,27 @@ uair:
   fields:
 
 uspecial:
+  names:
+    - whirlingfortress
+    - wf
+
+uspecial1:
   title: Whirling Fortress (Ground)
+  names:
+    - whirlingfortressground
+    - groundedwhirlingfortress
+    - wfg
+    - gwf
   image: https://ultimateframedata.com/hitboxes/bowser/BowserWhirlingFortressG.gif
   fields:
 
 uspecial2:
   title: Whirling Fortress (Air)
+  names:
+    - whirlingfortressair
+    - aerialwhirlingfortress
+    - wfa
+    - awf
   image: https://ultimateframedata.com/hitboxes/bowser/BowserWhirlingFortressA.gif
   fields:
 
