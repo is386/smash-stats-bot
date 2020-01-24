@@ -243,6 +243,11 @@ dair:
 
 nspecial:
   title: Plasma
+  names:
+    - plasma
+    - fire
+    - fireballs
+    - fireball
   fields:
     Max Plasma Balls: 5
     Face Punch Lag: 56
@@ -254,7 +259,25 @@ nspecial:
     Full Charge Base DMG: 5.6 / 4.4 (late)
 
 sspecial:
+  names:
+    - spr
+    - spacepiraterush
+
+sspecial1:
   title: Space Pirate Rush (Ground)
+  names:
+    - sprg
+    - gspr
+    - sprground
+    - sprgrounded
+    - groundspr
+    - groundedspr
+    - spacepiraterushg
+    - gspacepiraterush
+    - spacepiraterushground
+    - spacepiraterushgrounded
+    - groundspacepiraterush
+    - groundedspacepiraterush
   image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushG.gif
   fields:
     Active: 22-34
@@ -269,6 +292,19 @@ sspecial:
 
 sspecial2:
   title: Space Pirate Rush (Air)
+  names:
+  - spra
+  - aspr
+  - sprair
+  - spraerial
+  - airspr
+  - aerialspr
+  - spacepiraterusha
+  - aspacepiraterush
+  - spacepiraterushair
+  - spacepiraterushaerial
+  - airspacepiraterush
+  - aerialspacepiraterush
   image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushG.gif
   fields:
     Active: 22-34
@@ -280,19 +316,39 @@ sspecial2:
     Wall Throw DMG: 14.4
     No/Full Drag No DI Kill %: 105.0 / 96.0
     No/Full Drag DI Kill %: 133.0 / 131.0
-        
+
 sspecial3:
   title: Space Pirate Rush Success (Drag Start)
+  names:
+    - sprdragstart
+    - sprstart
+    - dragstartspr
+    - startspr
+    - spacepiraterushdragstart
+    - spacepiraterushstart
+    - dragstartspacepiraterush
+    - startspacepiraterush
   image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushDragStart.gif
   fields:
 
 sspecial4:
   title: Space Pirate Rush (Dragging)
+  names:
+    - sprdrag
+    - sprdragging
+    - dragspr
+    - draggingspr
+    - spacepiraterushdrag
+    - spacepiraterushdragging
+    - dragspacepiraterush
+    - draggingspacepiraterush
   image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushDrag.gif
   fields:
 
 dspecial:
   title: Skewer
+  names:
+    - skewer
   image: https://ultimateframedata.com/hitboxes/ridley/RidleySkewer.gif
   fields:
     Active: 30-31
@@ -303,7 +359,27 @@ dspecial:
     Sweet DMG: 60.0
 
 uspecial:
+  names:
+    - wingblitz
+    - wb
+
+uspecial1:
   title: Wing Blitz Forward
+  names:
+    - wingblitzforward
+    - wbf
+    - forwardwingblitz
+    - fwb
+    - wingblitzforwards
+    - forwardswingblitz
+    - wingblitzfront
+    - frontswingblitz
+    - wbforward
+    - wbforwards
+    - wbfront
+    - forwardwb
+    - forwardswb
+    - frontwb
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzForward.gif
   fields:
     Active: 36-55
@@ -313,6 +389,21 @@ uspecial:
 
 uspecial2:
   title: Wing Blitz Back
+  names:
+    - wingblitzbackward
+    - wbb
+    - backwardwingblitz
+    - bwb
+    - wingblitzbackwards
+    - backwardswingblitz
+    - wingblitzback
+    - backswingblitz
+    - wbbackward
+    - wbbackwards
+    - wbback
+    - backwardwb
+    - backwardswb
+    - backwb
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzBack.gif
   fields:
     Active: 36-55
@@ -322,6 +413,21 @@ uspecial2:
 
 uspecial3:
   title: Wing Blitz Up
+  names:
+    - wingblitzupward
+    - wbu
+    - upwardwingblitz
+    - uwb
+    - wingblitzupwards
+    - upwardswingblitz
+    - wingblitzup
+    - upswingblitz
+    - wbupward
+    - wbupwards
+    - wbup
+    - upwardwb
+    - upwardswb
+    - upwb
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzUp.gif
   fields:
     Active: 34-57
@@ -331,6 +437,21 @@ uspecial3:
 
 uspecial4:
   title: Wing Blitz Down
+  names:
+    - wingblitzdownward
+    - wbd
+    - downwardwingblitz
+    - dwb
+    - wingblitzdownwards
+    - downwardswingblitz
+    - wingblitzdown
+    - downswingblitz
+    - wbdownward
+    - wbdownwards
+    - wbdown
+    - downwardwb
+    - downwardswb
+    - downwb
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyWingBlitzDown.gif
   fields:
     Active: 37-59
