@@ -9,6 +9,7 @@ charError = "The character **%s** doesn't exist. `?help` for more."
 hBoxError = "**%s** does not have a hitbox gif yet. `?help` for more."
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```%s```"
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
+cmds = ["viz", "vis"]
 
 client = discord.Client()
 tokenFile = open("token", "r")
@@ -83,11 +84,10 @@ async def ParseMoveSelection(movesList, charData, req):
         await resp.add_reaction(nums[i])
 
     n = await WaitForReaction(req, resp)
-    if n == -1:
-        return False
-
     await resp.delete()
 
+    if n == -1:
+        return False
     return movesList[n]
 
 
@@ -153,60 +153,55 @@ async def on_message(req):
     if msg[0][0] != prefix:
         return
 
-    # Checks cmd type.
     cmd = msg[0][1:].lower()
-    if cmd == "viz" or cmd == "vis":
-
-        char = msg[1].lower()
-        charData = GetCharacter(char)
-
-        if not charData:
-            await req.channel.send(charError % char)
-            return
-
-        if len(msg) > 2:
-            move = "".join(msg[2:]).lower()
-            tempMove = move
-
-            if move not in charData.keys():
-                move = GetMove(move, charData)
-
-            if not move:
-                await req.channel.send(moveError % tempMove)
-                return
-
-            # Checks if the move has multiple hitboxes
-            matching = [i for i in charData.keys() if move in i]
-            if len(matching) > 1:
-                moves = GetMatchingMoves(matching, charData)
-                if not moves:
-                    await req.channel.send(hBoxError % charData[move]["title"])
-                    return
-                elif len(moves) == 1:
-                    move = moves[0]
-                else:
-                    move = await ParseMoveSelection(moves, charData, req)
-                    if not move:
-                        return
-        else:
-            move = char
-
-        # Sends the message response.
-        if cmd == "viz" or cmd == "vis":
-            embed = CreateImageEmbed(charData[move])
-            if embed == False:
-                await req.channel.send(hBoxError % charData[move]["title"])
-                return
-        embed.set_footer(
-            text="You can send comments and questions to 1nder")
-        await req.channel.send(embed=embed)
+    if cmd not in cmds:
         return
 
+    char = msg[1].lower()
+    charData = GetCharacter(char)
+
+    if not charData:
+        await req.channel.send(charError % char)
+        return
+
+    if len(msg) > 2:
+        move = "".join(msg[2:]).lower()
+        tempMove = move
+
+        if move not in charData.keys():
+            move = GetMove(move, charData)
+
+        if not move:
+            await req.channel.send(moveError % tempMove)
+            return
+
+        # Checks if the move has multiple hitboxes
+        matching = [i for i in charData.keys() if move in i]
+        if len(matching) > 1:
+            moves = GetMatchingMoves(matching, charData)
+            if not moves:
+                await req.channel.send(hBoxError % charData[move]["title"])
+                return
+            elif len(moves) == 1:
+                move = moves[0]
+            else:
+                move = await ParseMoveSelection(moves, charData, req)
+                if not move:
+                    return
+    else:
+        move = char
+
+    # Sends the message response.
+    if cmd == "viz" or cmd == "vis":
+        embed = CreateImageEmbed(charData[move])
+        if embed == False:
+            await req.channel.send(hBoxError % charData[move]["title"])
+            return
+        await req.channel.send(embed=embed)
+        return
     elif cmd == "help":
         helpMsg = open("help", "r").read()
         await req.author.send(helpMsg)
-        return
-    else:
         return
 
 
