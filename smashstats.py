@@ -3,7 +3,7 @@ from yaml import safe_load as yamlLoad
 from asyncio import TimeoutError
 
 prefix = "?"
-cmdPath = "characters/%s.yml"
+charPath = "characters/%s.yml"
 embedColor = 00000000
 moveError = "The move **%s** does not exist. `?help` for more."
 charError = "The character **%s** doesn't exist. `?help` for more."
@@ -19,11 +19,11 @@ tokenFile.close()
 
 
 # Takes a move/char and translates it based on the synonyms yaml.
-# Returns "Invalid" if the move/char does not exist and returns the root move/char name if the move/char is a synonym.
+# Returns False if the move/char does not exist and returns the root move/char name if the move/char is a synonym.
 def Translate(og, synFile):
     # Dictionary with a "main" move/char name as the key and synonyms for the move/char as the values.
     # Keeps the move/char name consistent while allowing for multiple ways to refer to a move/char.
-    # Example: nair = neutral air, bayonetta = bayo
+    # Example: nair = neutral air, bayonetta = bayo.
     synData = yamlLoad(open(synFile))
 
     synList = list(synData.keys())
@@ -37,13 +37,15 @@ def Translate(og, synFile):
     return False
 
 
+# Takes in a string that could be a character name.
+# Returns the data for the character. Returns False if the given character does not exist or has no data.
 def GetCharacter(char):
     char = Translate(char, "charSynonyms.yml")
-    if char == "Invalid":
+    if not char:
         return False
 
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
-    charData = yamlLoad(open(cmdPath % char))
+    charData = yamlLoad(open(charPath % char))
 
     if charData == None:
         return False
@@ -51,6 +53,8 @@ def GetCharacter(char):
     return charData
 
 
+# Takes in a move name and a character's move data.
+# Returns the move in a specific format. Returns False if the move was not found.
 def GetMove(ogMove, charData):
     move = Translate(ogMove, "moveSynonyms.yml")
     if not move:
@@ -60,6 +64,8 @@ def GetMove(ogMove, charData):
     return move
 
 
+# Takes in a move name and a character's move data.
+# Returns a list of moves that match the move name.
 def GetMatchingMoves(moves, charData):
     matching = []
 
@@ -70,6 +76,9 @@ def GetMatchingMoves(moves, charData):
     return matching
 
 
+# Takes in a list of moves, a character's move data, and the original request.
+# Sends a message to the user asking them to pick the move from the list.
+# Returns the move that the user picked.
 async def ParseMoveSelection(movesList, charData, req):
     msg = ""
     c = 0
@@ -84,7 +93,7 @@ async def ParseMoveSelection(movesList, charData, req):
     for i in range(len(movesList)):
         await resp.add_reaction(nums[i])
 
-    n = await WaitForReaction(req, resp)
+    n = await WaitForMoveSelection(req, resp)
     await resp.delete()
 
     if n == -1:
@@ -92,8 +101,8 @@ async def ParseMoveSelection(movesList, charData, req):
     return movesList[n]
 
 
-# Takes in a cmd name.
-# Returns an embed object and image file.
+# Takes in a character's data.
+# Returns an embed object with an image link.
 def CreateImageEmbed(charData):
     try:
         imgURL = charData["image"]
@@ -104,8 +113,10 @@ def CreateImageEmbed(charData):
     return embed
 
 
-# Waits for a reaction on stats or viz and then sends the opposite command if the message is reacted to.
-async def WaitForReaction(req, resp):
+# Takes in the original request, and the response the bot sent.
+# Returns a number based on the emoji they picked for the move selected.
+# Returns -1 if the user picks nothing.
+async def WaitForMoveSelection(req, resp):
     try:
         # Checks if the reaction to a message matches the indicated emoji.
         def CheckReaction(reaction, user):
@@ -159,13 +170,14 @@ async def on_message(req):
     if cmd not in cmds:
         return
 
+    # Gets character's move data.
     char = msg[1].lower()
     charData = GetCharacter(char)
-
     if not charData:
         await req.channel.send(charError % char)
         return
 
+    # Gets move data
     if len(msg) > 2:
         move = "".join(msg[2:]).lower()
         tempMove = move
