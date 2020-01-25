@@ -4,9 +4,8 @@ from yaml import safe_load as yamlLoad
 prefix = "?"
 cmdPath = "characters/%s.yml"
 embedColor = 00000000
-moveError1 = "The move **%s** does not exist. `?help` for more."
-charError1 = "The character **%s** doesn't exist. `?help` for more."
-charError2 = "The character **%s** has no data yet. `?help` for more."
+moveError = "The move **%s** does not exist. `?help` for more."
+charError = "The character **%s** doesn't exist. `?help` for more."
 hBoxError = "**%s** does not have a hitbox gif yet. `?help` for more."
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```%s```"
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
@@ -34,6 +33,20 @@ def Translate(og, synFile):
             return i
 
     return "Invalid"
+
+
+def GetCharacter(char):
+    char = Translate(char, "charSynonyms.yml")
+    if char == "Invalid":
+        return False
+
+    # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
+    charData = yamlLoad(open(cmdPath % char))
+
+    if charData == None:
+        return False
+
+    return charData
 
 
 # Takes in a cmd name.
@@ -75,11 +88,13 @@ async def WaitForReaction(req, resp):
 
     return -1
 
+
 # Sets the bots status on start up.
 @client.event
 async def on_ready():
     servers = list(client.guilds)
-    print(servers)
+    for s in servers:
+        print(s.name)
     await client.change_presence(status=discord.Status.do_not_disturb, activity=discord.Game(name="Type %shelp" % prefix))
 
 
@@ -100,19 +115,11 @@ async def on_message(req):
     cmd = msg[0][1:].lower()
     if cmd == "viz" or cmd == "vis":
 
-        # Parses the character name.
         char = msg[1].lower()
-        tempChar = char
-        char = Translate(char, "charSynonyms.yml")
-        if char == "Invalid":
-            await req.channel.send(charError1 % tempChar)
-            return
+        cmdData = GetCharacter(char)
 
-        # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
-        cmdData = yamlLoad(open(cmdPath % char))
-
-        if cmdData == None:
-            await req.channel.send(charError2 % char)
+        if not cmdData:
+            await req.channel.send(charError % char)
             return
 
         # Parses the move name.
@@ -127,7 +134,7 @@ async def on_message(req):
                         if "names" in cmdData[i].keys() and tempMove in cmdData[i]["names"]:
                             move = i
                 if move == "Invalid":
-                    await req.channel.send(moveError1 % tempMove)
+                    await req.channel.send(moveError % tempMove)
                     return
 
         # Checks if the move has multiple hitboxes
