@@ -75,6 +75,13 @@ async def WaitForReaction(req, resp):
 
     return -1
 
+# Sets the bots status on start up.
+@client.event
+async def on_ready():
+    servers = list(client.guilds)
+    print(servers)
+    await client.change_presence(status=discord.Status.do_not_disturb, activity=discord.Game(name="Type %shelp" % prefix))
+
 
 @client.event
 async def on_message(req):
