@@ -11,7 +11,7 @@ matchMsg = "There are multiple hitboxes for this move. React with the hitbox you
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 
 client = discord.Client()
-tokenFile = open("test", "r")
+tokenFile = open("token", "r")
 token = tokenFile.read().strip()
 tokenFile.close()
 
@@ -32,7 +32,7 @@ def Translate(og, synFile):
         if og in synData[i]:
             return i
 
-    return "Invalid"
+    return False
 
 
 def GetCharacter(char):
@@ -49,14 +49,23 @@ def GetCharacter(char):
     return charData
 
 
+def GetMove(ogMove, charData):
+    move = Translate(ogMove, "moveSynonyms.yml")
+    if not move:
+        for i in charData.keys():
+            if "names" in charData[i].keys() and ogMove in charData[i]["names"]:
+                move = i
+    return move
+
+
 # Takes in a cmd name.
 # Returns an embed object and image file.
-def CreateImageEmbed(cmdData):
+def CreateImageEmbed(charData):
     try:
-        imgURL = cmdData["image"]
+        imgURL = charData["image"]
     except KeyError:
         return False
-    embed = discord.Embed(title=cmdData["title"], color=embedColor)
+    embed = discord.Embed(title=charData["title"], color=embedColor)
     embed.set_image(url=imgURL)
     return embed
 
@@ -116,67 +125,65 @@ async def on_message(req):
     if cmd == "viz" or cmd == "vis":
 
         char = msg[1].lower()
-        cmdData = GetCharacter(char)
+        charData = GetCharacter(char)
 
-        if not cmdData:
+        if not charData:
             await req.channel.send(charError % char)
             return
 
-        # Parses the move name.
-        move = char
         if len(msg) > 2:
             move = "".join(msg[2:]).lower()
-            if move not in cmdData.keys():
-                tempMove = move
-                move = Translate(move, "moveSynonyms.yml")
-                if move == "Invalid":
-                    for i in cmdData.keys():
-                        if "names" in cmdData[i].keys() and tempMove in cmdData[i]["names"]:
-                            move = i
-                if move == "Invalid":
-                    await req.channel.send(moveError % tempMove)
-                    return
+            tempMove = move
 
-        # Checks if the move has multiple hitboxes
-        matching = [i for i in cmdData.keys() if move in i]
-        actualMatching = []
-        if len(matching) > 1:
-            s = ""
-            b = 0
-            for i in range(len(matching)):
-                try:
-                    m = cmdData[matching[i]]["image"]
-                    actualMatching.append(matching[i])
-                except KeyError:
-                    b += 1
-                    continue
-                m = cmdData[matching[i]]["title"]
-                s += ("\n %d. %s" % (i+1-b, m))
+            if move not in charData.keys():
+                move = GetMove(move, charData)
 
-            if not actualMatching:
-                await req.channel.send(hBoxError % cmdData[move]["title"])
+            if not move:
+                await req.channel.send(moveError % tempMove)
                 return
-            elif len(actualMatching) == 1:
-                move = actualMatching[0]
-            else:
-                resp = await req.channel.send(matchMsg % s)
 
-                for i in range(len(actualMatching)):
-                    await resp.add_reaction(nums[i])
+            # Checks if the move has multiple hitboxes
+            matching = [i for i in charData.keys() if move in i]
+            actualMatching = []
+            if len(matching) > 1:
+                s = ""
+                b = 0
+                for i in range(len(matching)):
+                    try:
+                        m = charData[matching[i]]["image"]
+                        actualMatching.append(matching[i])
+                    except KeyError:
+                        b += 1
+                        continue
+                    m = charData[matching[i]]["title"]
+                    s += ("\n %d. %s" % (i+1-b, m))
 
-                n = await WaitForReaction(req, resp)
-                if n == -1:
+                if not actualMatching:
+                    await req.channel.send(hBoxError % charData[move]["title"])
                     return
+                elif len(actualMatching) == 1:
+                    move = actualMatching[0]
+                else:
+                    resp = await req.channel.send(matchMsg % s)
 
-                move = actualMatching[n]
+                    for i in range(len(actualMatching)):
+                        await resp.add_reaction(nums[i])
 
-                await resp.delete()
+                    n = await WaitForReaction(req, resp)
+                    if n == -1:
+                        return
+
+                    move = actualMatching[n]
+
+                    await resp.delete()
+        else:
+            move = char
 
         # Sends the message response.
         if cmd == "viz" or cmd == "vis":
-            embed = CreateImageEmbed(cmdData[move])
+            embed = CreateImageEmbed(charData[move])
             if embed == False:
-                await req.channel.send(hBoxError % cmdData[move]["title"])
+                await req.channel.send(hBoxError % charData[move]["title"])
                 return
         embed.set_footer(
             text="You can send comments and questions to 1nder")
