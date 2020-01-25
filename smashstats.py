@@ -1,5 +1,6 @@
 import discord
 from yaml import safe_load as yamlLoad
+from asyncio import TimeoutError
 
 prefix = "?"
 cmdPath = "characters/%s.yml"
