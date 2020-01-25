@@ -124,7 +124,7 @@ utilt:
     Sour Kill %: 163
     Sweet Kill %: 160
 
-dash:
+dashattack:
   title: Dash Attack
   image: https://ultimateframedata.com/hitboxes/ridley/RidleyDashAttack.gif
   fields:
@@ -293,18 +293,18 @@ sspecial1:
 sspecial2:
   title: Space Pirate Rush (Air)
   names:
-  - spra
-  - aspr
-  - sprair
-  - spraerial
-  - airspr
-  - aerialspr
-  - spacepiraterusha
-  - aspacepiraterush
-  - spacepiraterushair
-  - spacepiraterushaerial
-  - airspacepiraterush
-  - aerialspacepiraterush
+    - spra
+    - aspr
+    - sprair
+    - spraerial
+    - airspr
+    - aerialspr
+    - spacepiraterusha
+    - aspacepiraterush
+    - spacepiraterushair
+    - spacepiraterushaerial
+    - airspacepiraterush
+    - aerialspacepiraterush
   image: https://ultimateframedata.com/hitboxes/ridley/RidleySpacePirateRushG.gif
   fields:
     Active: 22-34
