@@ -58,6 +58,39 @@ def GetMove(ogMove, charData):
     return move
 
 
+def GetMatchingMoves(moves, charData):
+    matching = []
+
+    for i in moves:
+        if "image" in charData[i]:
+            matching.append(i)
+
+    return matching
+
+
+async def ParseMoveSelection(movesList, charData, req):
+    msg = ""
+    c = 0
+
+    for i in movesList:
+        c += 1
+        moveName = charData[i]["title"]
+        msg += ("\n %d. %s" % (c, moveName))
+
+    resp = await req.channel.send(matchMsg % msg)
+
+    for i in range(len(movesList)):
+        await resp.add_reaction(nums[i])
+
+    n = await WaitForReaction(req, resp)
+    if n == -1:
+        return False
+
+    await resp.delete()
+
+    return movesList[n]
+
+
 # Takes in a cmd name.
 # Returns an embed object and image file.
 def CreateImageEmbed(charData):
@@ -144,38 +177,17 @@ async def on_message(req):
 
             # Checks if the move has multiple hitboxes
             matching = [i for i in charData.keys() if move in i]
-            actualMatching = []
             if len(matching) > 1:
-                s = ""
-                b = 0
-                for i in range(len(matching)):
-                    try:
-                        m = charData[matching[i]]["image"]
-                        actualMatching.append(matching[i])
-                    except KeyError:
-                        b += 1
-                        continue
-                    m = charData[matching[i]]["title"]
-                    s += ("\n %d. %s" % (i+1-b, m))
-
-                if not actualMatching:
+                moves = GetMatchingMoves(matching, charData)
+                if not moves:
                     await req.channel.send(hBoxError % charData[move]["title"])
                     return
-                elif len(actualMatching) == 1:
-                    move = actualMatching[0]
+                elif len(moves) == 1:
+                    move = moves[0]
                 else:
-                    resp = await req.channel.send(matchMsg % s)
-
-                    for i in range(len(actualMatching)):
-                        await resp.add_reaction(nums[i])
-
-                    n = await WaitForReaction(req, resp)
-                    if n == -1:
+                    move = await ParseMoveSelection(moves, charData, req)
+                    if not move:
                         return
-
-                    move = actualMatching[n]
-
-                    await resp.delete()
         else:
             move = char
 
