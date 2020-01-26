@@ -74,6 +74,7 @@ drmario:
   - docmario
   - doctormario
   - dr.mario
+  - dm
 
 duckhunt:
   - dh
@@ -218,6 +219,7 @@ mrgameandwatch:
   - mr.gameandwatch
   - mr.game&watch
   - mr.gnw
+  - gw
 
 ness:
   - ness
@@ -321,6 +323,7 @@ wiifittrainer:
   - wft
   - wiifit
   - trainer
+  - wf
 
 wolf:
   - wolf
