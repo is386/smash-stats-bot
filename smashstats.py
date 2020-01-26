@@ -13,7 +13,7 @@ nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️�
 cmds = ["viz", "vis"]
 
 client = discord.Client()
-tokenFile = open("token", "r")
+tokenFile = open("test", "r")
 token = tokenFile.read().strip()
 tokenFile.close()
 
@@ -143,6 +143,15 @@ async def WaitForMoveSelection(req, resp):
     return -1
 
 
+# Takes in a string that is a message that caused an error.
+# Saves that message in a log file.
+def LogError(msg):
+    logFile = open("log", "a")
+    logFile.write(msg + "\n")
+    logFile.close()
+    return
+
+
 # Sets the bots status on start up.
 @client.event
 async def on_ready():
@@ -173,6 +182,7 @@ async def on_message(req):
         charData = GetCharacter(char)
         if not charData:
             await req.channel.send(charError % char)
+            LogError(req.content)
             return
 
         # Gets move data
@@ -185,6 +195,7 @@ async def on_message(req):
 
             if not move:
                 await req.channel.send(moveError % tempMove)
+                LogError(req.content)
                 return
 
             # Checks if the move has multiple hitboxes
@@ -212,7 +223,9 @@ async def on_message(req):
         await req.channel.send(embed=embed)
         return
     elif cmd == "help":
-        helpMsg = open("help", "r").read()
+        helpFile = open("help", "r")
+        helpMsg = helpFile.read()
+        helpFile.close()
         await req.author.send(helpMsg)
         return
 
