@@ -167,43 +167,41 @@ async def on_message(req):
         return
 
     cmd = msg[0][1:].lower()
-    if cmd not in cmds:
-        return
-
-    # Gets character's move data.
-    char = msg[1].lower()
-    charData = GetCharacter(char)
-    if not charData:
-        await req.channel.send(charError % char)
-        return
-
-    # Gets move data
-    if len(msg) > 2:
-        move = "".join(msg[2:]).lower()
-        tempMove = move
-
-        if move not in charData.keys():
-            move = GetMove(move, charData)
-
-        if not move:
-            await req.channel.send(moveError % tempMove)
+    if cmd in cmds:
+        # Gets character's move data.
+        char = msg[1].lower()
+        charData = GetCharacter(char)
+        if not charData:
+            await req.channel.send(charError % char)
             return
 
-        # Checks if the move has multiple hitboxes
-        matching = [i for i in charData.keys() if move in i]
-        if len(matching) > 1:
-            moves = GetMatchingMoves(matching, charData)
-            if not moves:
-                await req.channel.send(hBoxError % charData[move]["title"])
+        # Gets move data
+        if len(msg) > 2:
+            move = "".join(msg[2:]).lower()
+            tempMove = move
+
+            if move not in charData.keys():
+                move = GetMove(move, charData)
+
+            if not move:
+                await req.channel.send(moveError % tempMove)
                 return
-            elif len(moves) == 1:
-                move = moves[0]
-            else:
-                move = await ParseMoveSelection(moves, charData, req)
-                if not move:
+
+            # Checks if the move has multiple hitboxes
+            matching = [i for i in charData.keys() if move in i]
+            if len(matching) > 1:
+                moves = GetMatchingMoves(matching, charData)
+                if not moves:
+                    await req.channel.send(hBoxError % charData[move]["title"])
                     return
-    else:
-        move = char
+                elif len(moves) == 1:
+                    move = moves[0]
+                else:
+                    move = await ParseMoveSelection(moves, charData, req)
+                    if not move:
+                        return
+        else:
+            move = char
 
     # Sends the message response.
     if cmd == "viz" or cmd == "vis":
