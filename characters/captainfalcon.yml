@@ -47,6 +47,7 @@ dtilt:
 
 fair:
   title: Forward Air
+  names: kneeofjustice
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFAir.gif
   fields:
 
@@ -75,7 +76,7 @@ ftilt:
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFTilt.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -128,22 +129,44 @@ oos:
   fields:
 
 nspecial:
+  names:
+    - falconpunch
+    - fp
+    - punch
+
+nspecial1:
   title: Falcon Punch (Ground)
+  names:
+    - falconpunchground
+    - fpg
+    - punchground
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconPunchG.gif
   fields:
 
 nspecial2:
   title: Falcon Punch (Ground, Reversed)
+  names:
+    - falconpunchgroundreversed
+    - fpgr
+    - punchgroundreversed
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconPunchGR.gif
   fields:
 
 nspecial3:
   title: Falcon Punch (Air)
+  names:
+    - falconpunchair
+    - fpa
+    - punchair
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconPunchG.gif
   fields:
 
 nspecial4:
   title: Falcon Punch (Air, Reversed)
+  names:
+    - falconpunchairreversed
+    - fpar
+    - punchairreversed
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconPunchAR.gif
   fields:
 
@@ -162,17 +185,35 @@ roll:
   fields:
 
 dspecial:
+  names:
+    - falconkick
+    - fk
+    - kick
+
+dspecial1:
   title: Falcon Kick (Ground)
+  names:
+    - falconkickground
+    - fkg
+    - kickground
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconKickG.gif
   fields:
 
 dspecial2:
   title: Falcon Kick (Air)
+  names:
+    - falconkickair
+    - fka
+    - kickair
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconKickA.gif
   fields:
 
 dspecial3:
   title: Falcon Kick (Landing)
+  names:
+    - falconkicklanding
+    - fkl
+    - kicklanding
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconKickALanding.gif
   fields:
 
@@ -181,22 +222,56 @@ spotdodge:
   fields:
 
 sspecial:
+  names:
+    - raptorboost
+    - rb
+    - raptor
+
+sspecial1:
+  names:
+    - raptorboosthit
+    - rph
+    - raptorhit
+
+sspecial2:
+  names:
+    - raptorboostsearch
+    - rps
+    - raptorsearch
+
+sspecial11:
   title: Raptor Boost Hit (Ground)
+  names:
+    - raptorboosthitground
+    - rphg
+    - raptorhitground
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostHitG.gif
   fields:
 
-sspecial2:
+sspecial12:
   title: Raptor Boost Hit (Air)
+  names:
+    - raptorboosthitair
+    - rpha
+    - raptorhitair
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostHitA.gif
   fields:
 
-sspecial3:
+sspecial21:
   title: Raptor Boost Search (Ground)
+  names:
+    - raptorboostsearchground
+    - rpsg
+    - raptorsearchground
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostG.gif
   fields:
 
-sspecial4:
+sspecial22:
   title: Raptor Boost Search (Air)
+  names:
+    - raptorboostsearchair
+    - rpsg
+    - raptorsearchair
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostA.gif
   fields:
 
@@ -213,17 +288,35 @@ uair:
   fields:
 
 uspecial:
+  names:
+    - fd
+    - falcondive
+    - dive
+
+uspecial1:
   title: Falcon Dive (Ground)
+  names:
+    - fdg
+    - falcondiveground
+    - diveground
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconDiveG.gif
   fields:
 
 uspecial2:
   title: Falcon Dive (Air)
+  names:
+    - fda
+    - falcondiveair
+    - diveair
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconDiveA.gif
   fields:
 
 uspecial3:
-  title: Falcon Dive Catch
+  title: Falcon Dive (Catch)
+  names:
+    - fdc
+    - falcondivecatch
+    - divecatch
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconFalconDiveCatch.gif
   fields:
 
