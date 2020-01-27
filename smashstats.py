@@ -182,7 +182,7 @@ async def on_message(req):
         for i in range(2, len(msg[1:]) + 2):
             # Gets character's move data.
             char = ''.join(e for e in "".join(
-                msg[1:i]) if e.isalnum()).lower()
+                msg[1:i]) if e.isalpha()).lower()
             temp = GetCharacter(char)
             if temp:
                 charData = temp
@@ -196,7 +196,7 @@ async def on_message(req):
         # Gets move data
         if len(msg) > moveIndex:
             move = ''.join(e for e in "".join(
-                msg[moveIndex:]) if e.isalnum()).lower().lower()
+                msg[moveIndex:]) if e.isalpha()).lower().lower()
             tempMove = move
 
             if move not in charData.keys():
