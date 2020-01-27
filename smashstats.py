@@ -236,6 +236,7 @@ async def on_message(req):
         helpMsg = helpFile.read()
         helpFile.close()
         await req.author.send(helpMsg)
+        await req.channel.send("Sent you a DM %s." % req.author.mention)
         return
 
 
