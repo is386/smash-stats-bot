@@ -80,6 +80,10 @@ ftilt:
   - forwardtiltup
   - forwardstiltup
   - ftiltup
+  - stilt
+  - sidestilt
+  - sidewaystilt
+  - sidewaytilt
 
 dtilt:
   - downtilt
