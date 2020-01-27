@@ -46,7 +46,7 @@ cloud:
   - cloud
 
 corrin:
-  - corrin
+  - corn
 
 daisy:
   - daisy
@@ -75,6 +75,8 @@ drmario:
   - doctormario
   - dr.mario
   - dm
+  - dmario
+  - doctor
 
 duckhunt:
   - dh
