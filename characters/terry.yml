@@ -582,6 +582,7 @@ uspecial:
 
 uspecial2:
   title: Rising Tackle (Command)
+  names:
     - commandrisingtackle
     - risingtacklecommand
     - rtc
