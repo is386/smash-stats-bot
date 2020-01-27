@@ -13,7 +13,7 @@ nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️�
 cmds = ["viz", "vis"]
 
 client = discord.Client()
-tokenFile = open("test", "r")
+tokenFile = open("token", "r")
 token = tokenFile.read().strip()
 tokenFile.close()
 
@@ -176,10 +176,17 @@ async def on_message(req):
         return
 
     cmd = msg[0][1:].lower()
+    moveIndex = 2
     if cmd in cmds:
-        # Gets character's move data.
-        char = ''.join(e for e in msg[1] if e.isalnum()).lower()
-        charData = GetCharacter(char)
+        for i in range(2, len(msg[1:]) + 1):
+            # Gets character's move data.
+            char = ''.join(e for e in "".join(
+                msg[1:i]) if e.isalnum()).lower()
+            charData = GetCharacter(char)
+            if charData:
+                moveIndex = i
+                break
+
         if not charData:
             await req.channel.send(charError % char)
             LogError(req.content)
@@ -188,7 +195,7 @@ async def on_message(req):
         # Gets move data
         if len(msg) > 2:
             move = ''.join(e for e in "".join(
-                msg[2:]) if e.isalnum()).lower().lower()
+                msg[moveIndex:]) if e.isalnum()).lower().lower()
             tempMove = move
 
             if move not in charData.keys():
