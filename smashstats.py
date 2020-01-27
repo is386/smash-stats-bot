@@ -178,7 +178,7 @@ async def on_message(req):
     cmd = msg[0][1:].lower()
     if cmd in cmds:
         # Gets character's move data.
-        char = msg[1].lower()
+        char = ''.join(e for e in msg[1] if e.isalnum()).lower()
         charData = GetCharacter(char)
         if not charData:
             await req.channel.send(charError % char)
@@ -187,7 +187,8 @@ async def on_message(req):
 
         # Gets move data
         if len(msg) > 2:
-            move = "".join(msg[2:]).lower()
+            move = ''.join(e for e in "".join(
+                msg[2:]) if e.isalnum()).lower().lower()
             tempMove = move
 
             if move not in charData.keys():
