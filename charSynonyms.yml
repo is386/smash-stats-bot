@@ -1,7 +1,6 @@
 banjoandkazooie:
   - banjo
   - bk
-  - banjo&kazooie
   - kazooie
 
 bayonetta:
@@ -11,7 +10,6 @@ bowser:
   - bowser
 
 bowserjr:
-  - bowserjr.
   - bjr
   - bj
   - koopakids
@@ -32,8 +30,6 @@ captainfalcon:
   - cptfalcon
   - cpt
   - captfalcon
-  - capt.falcon
-  - cpt.falcon
 
 charizard:
   - char
@@ -73,7 +69,6 @@ drmario:
   - doc
   - docmario
   - doctormario
-  - dr.mario
   - dm
   - dmario
   - doctor
@@ -148,9 +143,7 @@ kingdedede:
 
 kingkrool:
   - krool
-  - kingk.rool
   - rool
-  - k.rool
 
 kirby:
   - kirb
@@ -158,7 +151,6 @@ kirby:
 link:
   - bink
   - blink
-  - b.link
   - botwlink
 
 littlemac:
@@ -212,16 +204,14 @@ miiswordfighter:
   - miiswordy
 
 mrgameandwatch:
+  - mrgamewatch
+  - gamewatch
   - gnw
-  - g&w
   - gandw
   - gameandwatch
   - mrgnw
-  - mrgame&watch
-  - mr.gameandwatch
-  - mr.game&watch
-  - mr.gnw
   - gw
+  - mrgandw
 
 ness:
   - ness
@@ -231,7 +221,6 @@ olimar:
 
 pacman:
   - pac
-  - pac-man
 
 palutena:
   - palu
@@ -263,8 +252,7 @@ ridley:
   - riddles
 
 rob:
-  - r.o.b.
-  - r.o.b
+  - rob
 
 robin:
   - robin
@@ -273,11 +261,10 @@ rosalina:
   - rosa
   - luma
   - rosalinaandluma
-  - rosalina&luma
   - rosaandluma
-  - rosa&luma
   - rl
-  - r&l
+  - rosalinaluma
+  - rosaluma
 
 roy:
   - roy
@@ -312,7 +299,6 @@ terry:
 toonlink:
   - tink
   - tlink
-  - t.link
   - tl
 
 villager:
@@ -337,7 +323,6 @@ younglink:
   - yink
   - ylink
   - yunglink
-  - y.link
   - yl
 
 zelda:
