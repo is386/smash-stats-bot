@@ -177,15 +177,16 @@ async def on_message(req):
 
     cmd = msg[0][1:].lower()
     moveIndex = 2
+    charData = {}
     if cmd in cmds:
-        for i in range(2, len(msg[1:]) + 1):
+        for i in range(2, len(msg[1:]) + 2):
             # Gets character's move data.
             char = ''.join(e for e in "".join(
                 msg[1:i]) if e.isalnum()).lower()
-            charData = GetCharacter(char)
-            if charData:
+            temp = GetCharacter(char)
+            if temp:
+                charData = temp
                 moveIndex = i
-                break
 
         if not charData:
             await req.channel.send(charError % char)
@@ -193,7 +194,7 @@ async def on_message(req):
             return
 
         # Gets move data
-        if len(msg) > 2:
+        if len(msg) > moveIndex:
             move = ''.join(e for e in "".join(
                 msg[moveIndex:]) if e.isalnum()).lower().lower()
             tempMove = move
