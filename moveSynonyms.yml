@@ -345,6 +345,7 @@ tripattack:
   - tripatk
 
 command:
+  - input
   - inputs
   - commands
   - commandinput
