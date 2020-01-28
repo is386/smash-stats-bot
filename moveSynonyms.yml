@@ -103,6 +103,7 @@ utilt:
 dashattack:
   - dash
   - da
+  - dattack
 
 nspecial:
   - neutralspecial
