@@ -5,6 +5,8 @@ import discord
 import yaml
 from yaml import safe_load as yaml_load
 
+from secret import token
+
 prefix = "?"
 charPath = "characters/{}.yml"
 embed_color = 00000000
