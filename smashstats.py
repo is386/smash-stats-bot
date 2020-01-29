@@ -6,14 +6,14 @@ prefix = "?"
 charPath = "characters/%s.yml"
 embedColor = 00000000
 moveError = "The move **%s** does not exist. `?help` for more."
-charError = "The character **%s** doesn't exist. `?help` for more."
+charError = "That character doesn't exist. `?help` for more."
 hBoxError = "**%s** does not have a hitbox gif yet. `?help` for more."
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```%s```"
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 cmds = ["viz", "vis"]
 
 client = discord.Client()
-tokenFile = open("token", "r")
+tokenFile = open("test", "r")
 token = tokenFile.read().strip()
 tokenFile.close()
 
@@ -179,17 +179,21 @@ async def on_message(req):
     moveIndex = 2
     charData = {}
     if cmd in cmds:
+        # This iterates over the request and joins the character name until
+        # it is found. This helps when a user puts spaces in a character's
+        # name. This does slowdown the bot a bit though so I need to fix
+        # this soon.
         for i in range(2, len(msg[1:]) + 2):
             # Gets character's move data.
             char = ''.join(e for e in "".join(
-                msg[1:i]) if e.isalpha()).lower()
+                msg[1:i]) if e.isalnum()).lower()
             temp = GetCharacter(char)
             if temp:
                 charData = temp
                 moveIndex = i
 
         if not charData:
-            await req.channel.send(charError % char)
+            await req.channel.send(charError)
             LogError(req.content)
             return
 
