@@ -4,3 +4,4 @@ restart
 help
 log
 .idea/
+venv/
