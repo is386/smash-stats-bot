@@ -8,5 +8,6 @@ setup(
     license='GPL',
     author='is386',
     author_email='',
-    description=''
+    description='',
+    install_requires=['discord', 'PyYAML']
 )
