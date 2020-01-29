@@ -1,9 +1,9 @@
+from asyncio import TimeoutError
 from typing import List
 
 import discord
 import yaml
 from yaml import safe_load as yaml_load
-from asyncio import TimeoutError
 
 prefix = "?"
 charPath = "characters/{}.yml"
@@ -12,7 +12,7 @@ moveError = "The move **%s** does not exist. `?help` for more."
 charError = "That character doesn't exist. `?help` for more."
 hBoxError = "**%s** does not have a hitbox gif yet. `?help` for more."
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```{}```"
-nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
+number_emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 cmds = ["viz", "vis"]
 
 client = discord.Client()
@@ -120,9 +120,9 @@ async def parse_move_selection(moves: List[str], char_data: dict, message: disco
     response = await message.channel.send(matchMsg.format(msg))
 
     for i, _ in enumerate(moves):
-        await response.add_reaction(nums[i])
+        await response.add_reaction(number_emojis[i])
 
-    answer_index: int = await WaitForMoveSelection(message, response)
+    answer_index: int = await wait_for_move_selection(message, response)
     await response.delete()
 
     if answer_index == -1:
@@ -138,39 +138,37 @@ def create_image_embed(char_data: dict) -> discord.Embed:
     :raise: `KeyError`
     """
     try:
-        img_url = char_data["image"]
+        img_url: str = char_data["image"]
     except KeyError:
         raise KeyError("Character not found")
 
-    embed = discord.Embed(title=char_data["title"], color=embed_color)
+    embed: discord.Embed = discord.Embed(title=char_data["title"], color=embed_color)
     embed.set_image(url=img_url)
     return embed
 
 
-# Takes in the original request, and the response the bot sent.
-# Returns a number based on the emoji they picked for the move selected.
-# Returns -1 if the user picks nothing.
-async def WaitForMoveSelection(req, resp):
+async def wait_for_move_selection(req: discord.Message, resp: discord.Message) -> int:
+    """
+    Takes in the original request, and the response the bot sent.
+    :param req: `discord.Message`
+    :param resp: `discord.Message`
+    :return: `int` or -1 if nothing is chosen
+    """
     try:
-        # Checks if the reaction to a message matches the indicated emoji.
-        def CheckReaction(reaction, user):
-            e = str(reaction.emoji)
-            return e in nums and user == req.author
-
         # This loop prevents a bug where if you did two stats cmds and reacted to one of them,
         # it would send the follow up message to both messages instead of the one that was reacted to.
         while True:
-            await client.wait_for('reaction_add', timeout=120.0, check=CheckReaction)
+            await client.wait_for('reaction_add',
+                                  timeout=120.0,
+                                  check=lambda react, user: str(react.emoji) in number_emojis and user == req.author)
 
             # Updates the response sent earlier with the newly added reactions.
-            resp = await req.channel.fetch_message(resp.id)
-
-            for r in resp.reactions:
-                users = await r.users().flatten()
-                if r.count > 1 and req.author in users:
-                    n = nums.index(r.emoji)
+            resp = await req.channel.fetch_message(resp.id)  # TODO: Check if this is useful, resp should be the same
+            for reaction in resp.reactions:
+                users = await reaction.users().flatten()
+                if reaction.count > 1 and req.author in users:
+                    n = number_emojis.index(reaction.emoji)
                     return n
-
     except TimeoutError:
         return -1
 
