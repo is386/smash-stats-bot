@@ -1,9 +1,10 @@
 import discord
+import yaml
 from yaml import safe_load as yamlLoad
 from asyncio import TimeoutError
 
 prefix = "?"
-charPath = "characters/%s.yml"
+charPath = "characters/{}.yml"
 embedColor = 00000000
 moveError = "The move **%s** does not exist. `?help` for more."
 charError = "That character doesn't exist. `?help` for more."
@@ -18,12 +19,12 @@ token = tokenFile.read().strip()
 tokenFile.close()
 
 
-def translate(name, file_path):
+def translate(name: str, file_path: str) -> str:
     """
     Translates a synonyms (move or char) into the base name
     :param name: `str` name/synonym to translate
     :param file_path: `str` synonyms file path
-    :return: `str` on Success or `None` if not found
+    :return: `str` on success, an empty string if failed
     """
     # Dictionary with a "main" move/char name as the key and a list with synonyms for the move/char as the values.
     # Keeps the move/char name consistent while allowing for multiple ways to refer to a move/char.
@@ -40,21 +41,23 @@ def translate(name, file_path):
         if name in synData[key]:
             return key
 
-    return None
+    return ""
 
 
 # Takes in a string that could be a character name.
 # Returns the data for the character. Returns False if the given character does not exist or has no data.
-def GetCharacter(char):
-    char = translate(char, "charSynonyms.yml")
-    if not char:
-        return False
+def get_character(char: str) -> dict:
+    char: str = translate(char, "charSynonyms.yml")
+    if len(char) == 0:
+        return {}
 
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
-    charData = yamlLoad(open(charPath % char))
-
-    if charData == None:
-        return False
+    with open(charPath.format(char)) as f:
+        try:
+            charData: dict = yamlLoad(f)
+        except yaml.YAMLError as e:
+            print(e)
+            return {}
 
     return charData
 
@@ -193,7 +196,7 @@ async def on_message(req):
             # Gets character's move data.
             char = ''.join(e for e in "".join(
                 msg[1:i]) if e.isalnum()).lower()
-            temp = GetCharacter(char)
+            temp = get_character(char)
             if temp:
                 charData = temp
                 moveIndex = i
