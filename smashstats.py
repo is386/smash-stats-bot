@@ -1,3 +1,4 @@
+import re
 from asyncio import TimeoutError
 from typing import List
 
@@ -212,6 +213,8 @@ async def on_message(message: discord.Message):
     # This actually allows for the command to register from messages like "?vizbdfraibdfwuya character move"
     # not sure if wanted
     if msg[0].startswith(cmds):
+        for i, string in enumerate(msg):
+            msg[i] = re.sub(r"[^\w\d]", "", string)
         char_data: dict = get_character(msg[1].lower())
         if len(char_data) == 0:
             await message.channel.send(charError)
