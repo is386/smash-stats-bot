@@ -1,15 +1,17 @@
+from typing import List
+
 import discord
 import yaml
-from yaml import safe_load as yamlLoad
+from yaml import safe_load as yaml_load
 from asyncio import TimeoutError
 
 prefix = "?"
 charPath = "characters/{}.yml"
-embedColor = 00000000
+embed_color = 00000000
 moveError = "The move **%s** does not exist. `?help` for more."
 charError = "That character doesn't exist. `?help` for more."
 hBoxError = "**%s** does not have a hitbox gif yet. `?help` for more."
-matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```%s```"
+matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```{}```"
 nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 cmds = ["viz", "vis"]
 
@@ -31,7 +33,7 @@ def translate(name: str, file_path: str) -> str:
     # Example: nair = neutral air, bayonetta = bayo.
     # TODO: Database table with each synonym associated with the original name, better lookup performances
     with open(file_path, 'r') as f:
-        synData = yamlLoad(f)
+        synData = yaml_load(f)
 
     synList = list(synData.keys())
     if name in synList:
@@ -57,7 +59,7 @@ def get_character(char: str) -> dict:
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
     with open(charPath.format(char)) as f:
         try:
-            char_data: dict = yamlLoad(f)
+            char_data: dict = yaml_load(f)
         except yaml.YAMLError as e:
             print(e)
             return {}
@@ -83,50 +85,65 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
 
 # Takes in a move name and a character's move data.
 # Returns a list of moves that match the move name.
-def GetMatchingMoves(moves, charData):
+def get_matching_moves(moves: list, char_data: dict) -> list:
+    """
+    Returns the list of moves in the character data matching any of the moves passed in
+    :param moves: `list`
+    :param char_data: `dict`
+    :return: `list`
+    """
     matching = []
 
-    for i in moves:
-        if "image" in charData[i]:
-            matching.append(i)
+    for entry in moves:
+        if "image" in char_data[entry]:
+            matching.append(entry)
 
     return matching
 
 
-# Takes in a list of moves, a character's move data, and the original request.
-# Sends a message to the user asking them to pick the move from the list.
-# Returns the move that the user picked.
-async def ParseMoveSelection(movesList, charData, req):
-    msg = ""
-    c = 0
+async def parse_move_selection(moves: List[str], char_data: dict, message: discord.Message) -> str:
+    """
+    Async function to ask for user input on a list of moves to pick one.
+    :param moves: `List[str]`
+    :param char_data: `dict`
+    :param message: `discord.Message`
+    :return: `str` empty if failed
+    """
+    msg: str = ""
+    count_possibilities: int = 0
 
-    for i in movesList:
-        c += 1
-        moveName = charData[i]["title"]
-        msg += ("\n %d. %s" % (c, moveName))
+    for move in moves:
+        count_possibilities += 1
+        move_name = char_data[move]["title"]
+        msg += "\n {}. {}".format(count_possibilities, move_name)
 
-    resp = await req.channel.send(matchMsg % msg)
+    response = await message.channel.send(matchMsg.format(msg))
 
-    for i in range(len(movesList)):
-        await resp.add_reaction(nums[i])
+    for i, _ in enumerate(moves):
+        await response.add_reaction(nums[i])
 
-    n = await WaitForMoveSelection(req, resp)
-    await resp.delete()
+    answer_index: int = await WaitForMoveSelection(message, response)
+    await response.delete()
 
-    if n == -1:
-        return False
-    return movesList[n]
+    if answer_index == -1:
+        return ""
+    return moves[answer_index]
 
 
-# Takes in a character's data.
-# Returns an embed object with an image link.
-def CreateImageEmbed(charData):
+def create_image_embed(char_data: dict) -> discord.Embed:
+    """
+    Creates the embed object from the character data with the character image
+    :param char_data: `dict`
+    :return: `discord.Embed`
+    :raise: `KeyError`
+    """
     try:
-        imgURL = charData["image"]
+        img_url = char_data["image"]
     except KeyError:
-        return False
-    embed = discord.Embed(title=charData["title"], color=embedColor)
-    embed.set_image(url=imgURL)
+        raise KeyError("Character not found")
+
+    embed = discord.Embed(title=char_data["title"], color=embed_color)
+    embed.set_image(url=img_url)
     return embed
 
 
@@ -157,8 +174,6 @@ async def WaitForMoveSelection(req, resp):
     except TimeoutError:
         return -1
 
-    return -1
-
 
 # Takes in a string that is a message that caused an error.
 # Saves that message in a log file.
@@ -176,7 +191,8 @@ async def on_ready():
     for s in servers:
         print(s.name)
     print(len(servers))
-    await client.change_presence(status=discord.Status.do_not_disturb, activity=discord.Game(name="Type %shelp" % prefix))
+    await client.change_presence(status=discord.Status.do_not_disturb,
+                                 activity=discord.Game(name="Type %shelp" % prefix))
 
 
 @client.event
@@ -231,14 +247,14 @@ async def on_message(req):
             # Checks if the move has multiple hitboxes
             matching = [i for i in charData.keys() if move in i]
             if len(matching) > 1:
-                moves = GetMatchingMoves(matching, charData)
+                moves = get_matching_moves(matching, charData)
                 if not moves:
                     await req.channel.send(hBoxError % charData[move]["title"])
                     return
                 elif len(moves) == 1:
                     move = moves[0]
                 else:
-                    move = await ParseMoveSelection(moves, charData, req)
+                    move = await parse_move_selection(moves, charData, req)
                     if not move:
                         return
         else:
@@ -246,8 +262,8 @@ async def on_message(req):
 
     # Sends the message response.
     if cmd == "viz" or cmd == "vis":
-        embed = CreateImageEmbed(charData[move])
-        if embed == False:
+        embed = create_image_embed(charData[move])
+        if not embed:
             await req.channel.send(hBoxError % charData[move]["title"])
             return
         await req.channel.send(embed=embed)
