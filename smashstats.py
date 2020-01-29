@@ -18,29 +18,35 @@ token = tokenFile.read().strip()
 tokenFile.close()
 
 
-# Takes a move/char and translates it based on the synonyms yaml.
-# Returns False if the move/char does not exist and returns the root move/char name if the move/char is a synonym.
-def Translate(og, synFile):
-    # Dictionary with a "main" move/char name as the key and synonyms for the move/char as the values.
+def translate(name, file_path):
+    """
+    Translates a synonyms (move or char) into the base name
+    :param name: `str` name/synonym to translate
+    :param file_path: `str` synonyms file path
+    :return: `str` on Success or `None` if not found
+    """
+    # Dictionary with a "main" move/char name as the key and a list with synonyms for the move/char as the values.
     # Keeps the move/char name consistent while allowing for multiple ways to refer to a move/char.
     # Example: nair = neutral air, bayonetta = bayo.
-    synData = yamlLoad(open(synFile))
+    # TODO: Database table with each synonym associated with the original name, better lookup performances
+    with open(file_path, 'r') as f:
+        synData = yamlLoad(f)
 
     synList = list(synData.keys())
-    if og in synList:
-        return og
+    if name in synList:
+        return name
 
-    for i in synList:
-        if og in synData[i]:
-            return i
+    for key in synList:
+        if name in synData[key]:
+            return key
 
-    return False
+    return None
 
 
 # Takes in a string that could be a character name.
 # Returns the data for the character. Returns False if the given character does not exist or has no data.
 def GetCharacter(char):
-    char = Translate(char, "charSynonyms.yml")
+    char = translate(char, "charSynonyms.yml")
     if not char:
         return False
 
@@ -56,7 +62,7 @@ def GetCharacter(char):
 # Takes in a move name and a character's move data.
 # Returns the move in a specific format. Returns False if the move was not found.
 def GetMove(ogMove, charData):
-    move = Translate(ogMove, "moveSynonyms.yml")
+    move = translate(ogMove, "moveSynonyms.yml")
     if not move:
         for i in charData.keys():
             if "names" in charData[i].keys() and ogMove in charData[i]["names"]:
