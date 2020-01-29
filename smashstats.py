@@ -13,7 +13,7 @@ charError = "That character doesn't exist. `?help` for more."
 hBoxError = "**{}** does not have a hitbox gif yet. `?help` for more."
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```{}```"
 number_emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
-cmds = ["viz", "vis"]
+cmds = ("{}viz".format(prefix), "{}vis".format(prefix))
 
 client = discord.Client()
 tokenFile = open("test", "r")
@@ -210,9 +210,10 @@ async def on_message(message: discord.Message):
             "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(prefix))
         return
 
-    if any(map(lambda command: msg[0].startswith(prefix + command), cmds)):
-        char: str = msg[1].lower()
-        char_data: dict = get_character(char)
+    # This actually allows for the command to register from messages like "?vizbdfraibdfwuya character move"
+    # not sure if wanted
+    if msg[0].startswith(cmds):
+        char_data: dict = get_character(msg[1].lower())
         if len(char_data) == 0:
             await message.channel.send(charError)
             log_error(message.content)
@@ -220,10 +221,8 @@ async def on_message(message: discord.Message):
 
         # Gets move data
         move: str = msg[-1]
-
         if move not in char_data.keys():
             move = get_real_move_name(move, char_data)
-
         if len(move) == 0:
             await message.channel.send(moveError.format(move))
             log_error(message.content)
