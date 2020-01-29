@@ -44,9 +44,12 @@ def translate(name: str, file_path: str) -> str:
     return ""
 
 
-# Takes in a string that could be a character name.
-# Returns the data for the character. Returns False if the given character does not exist or has no data.
 def get_character(char: str) -> dict:
+    """
+    Returns the parsed Yaml of the character as a dictionary
+    :param char: `str` char name
+    :return: `dict` empty if failed
+    """
     char: str = translate(char, "charSynonyms.yml")
     if len(char) == 0:
         return {}
@@ -54,22 +57,27 @@ def get_character(char: str) -> dict:
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
     with open(charPath.format(char)) as f:
         try:
-            charData: dict = yamlLoad(f)
+            char_data: dict = yamlLoad(f)
         except yaml.YAMLError as e:
             print(e)
             return {}
 
-    return charData
+    return char_data
 
 
-# Takes in a move name and a character's move data.
-# Returns the move in a specific format. Returns False if the move was not found.
-def GetMove(ogMove, charData):
-    move = translate(ogMove, "moveSynonyms.yml")
-    if not move:
-        for i in charData.keys():
-            if "names" in charData[i].keys() and ogMove in charData[i]["names"]:
-                move = i
+def get_real_move_name(move_name: str, char_data: dict) -> str:
+    """
+    Extracts the move's code name from the character data
+    :param move_name: `str`
+    :param char_data: `dict`
+    :return: `str` empty if not found
+    """
+    move: str = translate(move_name, "moveSynonyms.yml")
+    if len(move) == 0:
+        entry_name: str
+        for entry_name in char_data.keys():
+            if "names" in char_data[entry_name].keys() and move_name in char_data[entry_name]["names"]:
+                move = entry_name
     return move
 
 
@@ -213,7 +221,7 @@ async def on_message(req):
             tempMove = move
 
             if move not in charData.keys():
-                move = GetMove(move, charData)
+                move = get_real_move_name(move, charData)
 
             if not move:
                 await req.channel.send(moveError % tempMove)
