@@ -204,7 +204,7 @@ async def on_message(message: discord.Message):
 
     # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] teh move
     msg: List[str] = message.content.split(" ", 1)
-    msg = msg.pop().rsplit()
+    msg += msg.pop().rsplit()
     if len(msg) < 2:
         await message.channel.send(
             "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(prefix))
