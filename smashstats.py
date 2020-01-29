@@ -8,9 +8,9 @@ from yaml import safe_load as yaml_load
 prefix = "?"
 charPath = "characters/{}.yml"
 embed_color = 00000000
-moveError = "The move **%s** does not exist. `?help` for more."
+moveError = "The move **{}** does not exist. `?help` for more."
 charError = "That character doesn't exist. `?help` for more."
-hBoxError = "**%s** does not have a hitbox gif yet. `?help` for more."
+hBoxError = "**{}** does not have a hitbox gif yet. `?help` for more."
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```{}```"
 number_emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 cmds = ["viz", "vis"]
@@ -198,85 +198,64 @@ async def on_ready():
 
 
 @client.event
-async def on_message(req):
-    if req.author == client.user:
+async def on_message(message: discord.Message):
+    if message.author.bot:
         return
 
-    # Parses the message for the command.
-    msg = req.content.split()
-    if not msg:
+    # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] teh move
+    msg: List[str] = message.content.split(" ", 1)
+    msg = msg.pop().rsplit()
+    if len(msg) < 2:
+        await message.channel.send(
+            "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(prefix))
         return
 
-    if msg[0][0] != prefix:
-        return
-
-    cmd = msg[0][1:].lower()
-    moveIndex = 2
-    charData = {}
-    if cmd in cmds:
-        # This iterates over the request and joins the character name until
-        # it is found. This helps when a user puts spaces in a character's
-        # name. This does slowdown the bot a bit though so I need to fix
-        # this soon.
-        for i in range(2, len(msg[1:]) + 2):
-            # Gets character's move data.
-            char = ''.join(e for e in "".join(
-                msg[1:i]) if e.isalnum()).lower()
-            temp = get_character(char)
-            if temp:
-                charData = temp
-                moveIndex = i
-
-        if not charData:
-            await req.channel.send(charError)
-            log_error(req.content)
+    if any(map(lambda command: msg[0].startswith(prefix + command), cmds)):
+        char: str = msg[1].lower()
+        char_data: dict = get_character(char)
+        if len(char_data) == 0:
+            await message.channel.send(charError)
+            log_error(message.content)
             return
 
         # Gets move data
-        if len(msg) > moveIndex:
-            move = ''.join(e for e in "".join(
-                msg[moveIndex:]) if e.isalpha()).lower().lower()
-            tempMove = move
+        move: str = msg[-1]
 
-            if move not in charData.keys():
-                move = get_real_move_name(move, charData)
+        if move not in char_data.keys():
+            move = get_real_move_name(move, char_data)
 
-            if not move:
-                await req.channel.send(moveError % tempMove)
-                log_error(req.content)
-                return
-
-            # Checks if the move has multiple hitboxes
-            matching = [i for i in charData.keys() if move in i]
-            if len(matching) > 1:
-                moves = get_matching_moves(matching, charData)
-                if not moves:
-                    await req.channel.send(hBoxError % charData[move]["title"])
-                    return
-                elif len(moves) == 1:
-                    move = moves[0]
-                else:
-                    move = await parse_move_selection(moves, charData, req)
-                    if not move:
-                        return
-        else:
-            move = char
-
-    # Sends the message response.
-    if cmd == "viz" or cmd == "vis":
-        embed = create_image_embed(charData[move])
-        if not embed:
-            await req.channel.send(hBoxError % charData[move]["title"])
+        if len(move) == 0:
+            await message.channel.send(moveError.format(move))
+            log_error(message.content)
             return
-        await req.channel.send(embed=embed)
-        return
-    elif cmd == "help":
-        helpFile = open("help", "r")
-        helpMsg = helpFile.read()
-        helpFile.close()
-        await req.author.send(helpMsg)
-        await req.channel.send("Sent you a DM %s." % req.author.mention)
-        return
+
+        # Checks if the move has multiple hitboxes
+        matching = [entry for entry in char_data.keys() if move in entry]
+        if len(matching) > 1:
+            moves: list = get_matching_moves(matching, char_data)
+            if len(moves) == 0:
+                await message.channel.send(hBoxError.format(char_data[move]["title"]))
+                return
+            elif len(moves) == 1:
+                move = moves[0]
+            else:
+                move = await parse_move_selection(moves, char_data, message)
+                if len(move) == 0:
+                    return
+
+        # Sends the message response.
+        try:
+            embed: discord.Embed = create_image_embed(char_data[move])
+        except KeyError as e:
+            print("An error has occurred during the creation of the embed:\n{}".format(e.args))
+            await message.channel.send(hBoxError.format(char_data[move]["title"]))
+            return
+        await message.channel.send(embed=embed)
+    elif msg[0].startswith("{}help".format(prefix)):
+        with open("help", "r") as helpFile:
+            helpMsg = helpFile.read()
+        await message.author.send(helpMsg)
+        await message.channel.send("Sent you a DM {}.".format(message.author.mention))
 
 
 client.run(token)
