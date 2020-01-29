@@ -15,11 +15,6 @@ matchMsg = "There are multiple hitboxes for this move. React with the hitbox you
 number_emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 cmds = ("{}viz".format(prefix), "{}vis".format(prefix))
 
-client = discord.Client()
-tokenFile = open("test", "r")
-token = tokenFile.read().strip()
-tokenFile.close()
-
 
 def translate(name: str, file_path: str) -> str:
     """
