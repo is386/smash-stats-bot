@@ -173,13 +173,14 @@ async def wait_for_move_selection(req: discord.Message, resp: discord.Message) -
         return -1
 
 
-# Takes in a string that is a message that caused an error.
-# Saves that message in a log file.
-def LogError(msg):
-    logFile = open("log", "a")
-    logFile.write(msg + "\n")
-    logFile.close()
-    return
+def log_error(msg: str):
+    """
+    Logs an error message
+    :param msg: `str`
+    :return: `None`
+    """
+    with open("log", "a") as log:
+        log.write(msg + "\n")
 
 
 # Sets the bots status on start up.
@@ -225,7 +226,7 @@ async def on_message(req):
 
         if not charData:
             await req.channel.send(charError)
-            LogError(req.content)
+            log_error(req.content)
             return
 
         # Gets move data
@@ -239,7 +240,7 @@ async def on_message(req):
 
             if not move:
                 await req.channel.send(moveError % tempMove)
-                LogError(req.content)
+                log_error(req.content)
                 return
 
             # Checks if the move has multiple hitboxes
