@@ -168,11 +168,7 @@ def log_error(msg: str):
 # Sets the bots status on start up.
 @client.event
 async def on_ready():
-    servers: list = client.guilds
-    server: discord.Guild
-    for server in servers:
-        print(server.name)
-    print(len(servers))
+    print("Total Servers: ", len(client.guilds))
     await client.change_presence(status=discord.Status.do_not_disturb,
                                  activity=discord.Game(
                                      name="Type {}help".format(prefix)
