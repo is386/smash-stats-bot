@@ -213,9 +213,7 @@ async def on_message(message: discord.Message):
             "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(prefix))
         return
 
-    # This actually allows for the command to register from messages like "?vizbdfraibdfwuya character move"
-    # not sure if wanted
-    if msg[0].startswith(cmds):
+    if msg[0] in cmds:
         for i, string in enumerate(msg):
             msg[i] = re.sub(r"[^\w\d]", "", string)
         char_data: dict = get_character(msg[1].lower())
