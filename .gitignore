@@ -1,8 +1,9 @@
 test
 token
 restart
-help
 log
 .idea/
 venv/
 secret.py
+.vscode
+__pycache__
