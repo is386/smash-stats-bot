@@ -12,9 +12,12 @@ from secret import token
 prefix = "?"
 charPath = "characters/{}.yml"
 embed_color = 00000000
+syntaxError = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(
+    prefix)
 moveError = "The move **{}** does not exist. `?help` for more."
 charError = "That character doesn't exist. `?help` for more."
 hBoxError = "**{}** does not have a hitbox gif yet. `?help` for more."
+embedError = "An error has occurred during the creation of the embed:\n{}"
 matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```{}```"
 number_emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣',
                  '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
@@ -188,12 +191,12 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
     :return: `None`
     """
     # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] the move
+    # TODO: Fix spaces issue for moves
     msg: List[str] = ctx.message.content.split(" ", 1)
     msg = msg.pop().rsplit(" ", 1)
 
     if len(msg) < 2:
-        await ctx.send(
-            "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(prefix))
+        await ctx.send(syntaxError.format(prefix))
         return
 
     # Removes special characters from character and move
@@ -237,8 +240,7 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
     try:
         embed: discord.Embed = create_image_embed(char_data[move])
     except KeyError as e:
-        print(
-            "An error has occurred during the creation of the embed:\n{}".format(e.args))
+        print(embedError.format(e.args))
         await ctx.send(hBoxError.format(char_data[move]["title"]))
         return
     await ctx.send(embed=embed)
