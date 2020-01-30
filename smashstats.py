@@ -84,24 +84,6 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
     return move
 
 
-# Takes in a move name and a character's move data.
-# Returns a list of moves that match the move name.
-def get_matching_moves(moves: list, char_data: dict) -> list:
-    """
-    Returns the list of moves in the character data matching any of the moves passed in
-    :param moves: `list`
-    :param char_data: `dict`
-    :return: `list`
-    """
-    matching = []
-
-    for entry in moves:
-        if "image" in char_data[entry]:
-            matching.append(entry)
-
-    return matching
-
-
 async def parse_move_selection(moves: List[str], char_data: dict, message: discord.Message) -> str:
     """
     Async function to ask for user input on a list of moves to pick one.
@@ -214,8 +196,11 @@ async def on_message(message: discord.Message):
         return
 
     if msg[0] in cmds:
+        # Removes special characters from character name
         for i, string in enumerate(msg):
             msg[i] = re.sub(r"[^\w\d]", "", string)
+
+        # Gets character data
         char_data: dict = get_character(msg[1].lower())
         if len(char_data) == 0:
             await message.channel.send(charError)
@@ -226,22 +211,27 @@ async def on_message(message: discord.Message):
         move: str = msg[-1]
         if move not in char_data.keys():
             move = get_real_move_name(move, char_data)
+
         if len(move) == 0:
             await message.channel.send(moveError.format(move))
             log_error(message.content)
             return
 
-        # Checks if the move has multiple hitboxes
-        matching = [entry for entry in char_data.keys() if move in entry]
-        if len(matching) > 1:
-            moves: list = get_matching_moves(matching, char_data)
-            if len(moves) == 0:
-                await message.channel.send(hBoxError.format(char_data[move]["title"]))
+        # Finds moves that match parsed move. If so, that move has multiple hitboxes.
+        matching_moves = [entry for entry in char_data.keys() if move in entry]
+        if len(matching_moves) > 1:
+            # Removes the matching moves that do not have an image
+            for i in matching_moves:
+                if "image" not in char_data[i]:
+                    matching_moves.remove(i)
+
+            if len(matching_moves) == 0:
+                await message.channel.send(hBoxError.format(move))
                 return
-            elif len(moves) == 1:
-                move = moves[0]
+            elif len(matching_moves) == 1:
+                move = matching_moves[0]
             else:
-                move = await parse_move_selection(moves, char_data, message)
+                move = await parse_move_selection(matching_moves, char_data, message)
                 if len(move) == 0:
                     return
 
@@ -254,7 +244,7 @@ async def on_message(message: discord.Message):
             await message.channel.send(hBoxError.format(char_data[move]["title"]))
             return
         await message.channel.send(embed=embed)
-    elif msg[0].startswith("{}help".format(prefix)):
+    elif "{}help".format(prefix) in msg[0]:
         with open("help", "r") as helpFile:
             helpMsg = helpFile.read()
         await message.author.send(helpMsg)
