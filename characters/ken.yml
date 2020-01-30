@@ -174,22 +174,28 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Tatsumaki Senpukyaku (Start)
-  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuStart.gif
+  title: Tatsumaki Senpukyaku (Weak, Ground)
+  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuWeakGrounded.gif
   fields:
 
 sspecial2:
-  title: Tatsumaki Senpukyaku (Weak)
-  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuWeak.gif
+  title: Tatsumaki Senpukyaku (Strong, Ground)
+  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuStrongGrounded.gif
   fields:
 
 sspecial3:
-  title: Tatsumaki Senpukyaku (Strong)
-  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuStrong.gif
+  title: Tatsumaki Senpukyaku (Start, Air)
+  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuStart.gif
   fields:
 
 sspecial4:
-  title: Tatsumaki Senpukyaku (Air)
+  title: Tatsumaki Senpukyaku (Weak, Air)
+  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuWeak.gif
+  fields:
+
+sspecial5:
+  title: Tatsumaki Senpukyaku (Strong, Air)
+  image: https://ultimateframedata.com/hitboxes/ken/KenTatsumakiSenpukyakuStrong.gif
   fields:
 
 staunt:

@@ -22,6 +22,11 @@ dair:
   image: https://ultimateframedata.com/hitboxes/toon_link/ToonLinkDAir.gif
   fields:
 
+dair2:
+  title: Down Air (Landing)
+  image: https://ultimateframedata.com/hitboxes/toon_link/ToonLinkDAirLanding.gif
+  fields:
+
 dashattack:
   title: Dash Attack
   image: https://ultimateframedata.com/hitboxes/toon_link/ToonLinkDashAttack.gif

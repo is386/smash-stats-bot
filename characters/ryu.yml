@@ -178,17 +178,32 @@ spotdodge:
   fields:
 
 sspecial:
-  title: Tatsumaki Senpukyaku (Light)
-  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuLight.gif
+  title: Tatsumaki Senpukyaku (Light, Ground)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuLightGrounded.gif
   fields:
 
 sspecial2:
-  title: Tatsumaki Senpukyaku (Medium)
-  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuMedium.gif
+  title: Tatsumaki Senpukyaku (Medium, Ground)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuMediumGrounded.gif
   fields:
 
 sspecial3:
-  title: Tatsumaki Senpukyaku (Heavy)
+  title: Tatsumaki Senpukyaku (Heavy, Ground)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuHeavyGrounded.gif
+  fields:
+
+sspecial4:
+  title: Tatsumaki Senpukyaku (Light, Air)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuLight.gif
+  fields:
+
+sspecial5:
+  title: Tatsumaki Senpukyaku (Medium, Air)
+  image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuMedium.gif
+  fields:
+
+sspecial6:
+  title: Tatsumaki Senpukyaku (Heavy, Air)
   image: https://ultimateframedata.com/hitboxes/ryu/RyuTatsumakiSenpukyakuHeavy.gif
   fields:
 

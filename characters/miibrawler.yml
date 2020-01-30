@@ -250,12 +250,12 @@ sspecial6:
 
 sspecial7:
   title: Suplex Grab (Air)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSuplexG.gif
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSuplexA.gif
   fields:
 
 sspecial8:
   title: Suplex Success
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSuplexG.gif
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSuplexHit.gif
   fields:
 
 staunt:

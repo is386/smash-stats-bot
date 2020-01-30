@@ -75,7 +75,7 @@ ftilt3:
   image: https://media.giphy.com/media/JPxzJJ16FwRsLsukLH/giphy.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -121,7 +121,7 @@ nair:
 oos:
   title: Out of Shield Options
   fields:
-  
+
 nspecial:
   title: Gun
   image: https://media.giphy.com/media/kZidbaEuK71DuVeb0h/200.gif
@@ -149,7 +149,7 @@ nspecial5:
 
 nspecial6:
   title: Gun, Shoot Below
-  image: https://media.giphy.com/media/LNrs1Op92BH0ERRzYG/giphy.gif
+  image: https://media.giphy.com/media/jt3o9rgfhljHVMCuzG/giphy.gif
   fields:
 
 pummel:
