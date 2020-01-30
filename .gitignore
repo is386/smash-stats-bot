@@ -3,3 +3,6 @@ token
 restart
 help
 log
+.idea/
+venv/
+secret.py
