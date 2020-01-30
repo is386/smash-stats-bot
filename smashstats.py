@@ -13,7 +13,7 @@ nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️�
 cmds = ["viz", "vis"]
 
 client = discord.Client()
-tokenFile = open("test", "r")
+tokenFile = open("token", "r")
 token = tokenFile.read().strip()
 tokenFile.close()
 
@@ -216,11 +216,12 @@ async def on_message(req):
             if len(matching) > 1:
                 moves = GetMatchingMoves(matching, charData)
                 if not moves:
-                    await req.channel.send(hBoxError % charData[move]["title"])
+                    await req.channel.send(hBoxError % move)
                     return
                 elif len(moves) == 1:
                     move = moves[0]
                 else:
+                    tempMove = move
                     move = await ParseMoveSelection(moves, charData, req)
                     if not move:
                         return
