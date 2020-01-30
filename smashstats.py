@@ -187,9 +187,9 @@ async def on_message(message: discord.Message):
     if message.author.bot:
         return
 
-    # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] teh move
+    # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] the move
     msg: List[str] = message.content.split(" ", 1)
-    msg += msg.pop().rsplit()
+    msg += msg.pop().rsplit(" ", 1)
 
     if msg[0] in cmds:
         if len(msg) < 2:
@@ -197,7 +197,7 @@ async def on_message(message: discord.Message):
                 "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(prefix))
             return
 
-        # Removes special characters from character name
+        # Removes special characters from character and move
         for i, string in enumerate(msg):
             msg[i] = re.sub(r"[^\w\d]", "", string)
 
@@ -210,11 +210,10 @@ async def on_message(message: discord.Message):
 
         # Gets move data
         move: str = msg[-1]
-        if move not in char_data.keys():
-            move = get_real_move_name(move, char_data)
-
-        if len(move) == 0:
-            await message.channel.send(moveError.format(move))
+        tempMove: str = move
+        move = get_real_move_name(move, char_data)
+        if len(move) == 0 or move not in char_data.keys():
+            await message.channel.send(moveError.format(tempMove))
             log_error(message.content)
             return
 
