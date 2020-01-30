@@ -22,8 +22,10 @@ select_msg: str = "There are multiple hitboxes for this move. React with the hit
 number_emojis: List[str] = ['1️⃣', '2️⃣', '3️⃣', '4️⃣',
                             '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 
-bot: discord.ext.commands.Bot = commands.Bot(command_prefix=prefix)
-bot.remove_command("help")
+bot: discord.ext.commands.Bot = commands.Bot(
+    command_prefix=prefix,
+    help_command=None,
+    activity=discord.Game(status_msg.format(prefix)))
 
 
 def translate(name: str, file_path: str) -> str:
@@ -167,19 +169,6 @@ def log_error(msg: str):
     """
     with open("log", "a") as log:
         log.write(msg + "\n")
-
-
-@bot.event
-async def on_ready():
-    """
-    Async function to display the total servers and set the bot's status.
-    :return: `None`
-    """
-    print("Total Servers: ", len(bot.guilds))
-    await bot.change_presence(status=discord.Status.do_not_disturb,
-                              activity=discord.Game(
-                                  name=status_msg.format(prefix)
-                              ))
 
 
 @bot.command(name='viz')
