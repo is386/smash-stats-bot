@@ -93,12 +93,10 @@ async def parse_move_selection(moves: List[str], char_data: dict, message: disco
     :return: `str` empty if failed
     """
     msg: str = ""
-    count_possibilities: int = 0
 
-    for move in moves:
-        count_possibilities += 1
+    for i, move in enumerate(moves):
         move_name = char_data[move]["title"]
-        msg += "\n {}. {}".format(count_possibilities, move_name)
+        msg += "\n {}. {}".format(i+1, move_name)
 
     response = await message.channel.send(matchMsg.format(msg))
 
@@ -147,7 +145,6 @@ async def wait_for_move_selection(req: discord.Message, resp: discord.Message) -
                                   check=lambda react, user: str(react.emoji) in number_emojis and user == req.author)
 
             # Updates the response sent earlier with the newly added reactions.
-            # TODO: Check if this is useful, resp should be the same
             resp = await req.channel.fetch_message(resp.id)
             for reaction in resp.reactions:
                 users = await reaction.users().flatten()
@@ -160,7 +157,7 @@ async def wait_for_move_selection(req: discord.Message, resp: discord.Message) -
 
 def log_error(msg: str):
     """
-    Logs an error message
+    Logs a message that caused an error.
     :param msg: `str`
     :return: `None`
     """
@@ -235,7 +232,6 @@ async def on_message(message: discord.Message):
                 if len(move) == 0:
                     return
 
-        # Sends the message response.
         try:
             embed: discord.Embed = create_image_embed(char_data[move])
         except KeyError as e:
