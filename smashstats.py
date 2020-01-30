@@ -3,6 +3,7 @@ from asyncio import TimeoutError
 from typing import List
 
 import discord
+from discord.ext import commands
 import yaml
 from yaml import safe_load as yaml_load
 
@@ -19,7 +20,8 @@ number_emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣',
                  '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 cmds = ("{}viz".format(prefix), "{}vis".format(prefix))
 
-client = discord.Client()
+bot = commands.Bot(command_prefix='?')
+bot.remove_command("help")
 
 
 def translate(name: str, file_path: str) -> str:
@@ -84,7 +86,7 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
     return move
 
 
-async def parse_move_selection(moves: List[str], char_data: dict, message: discord.Message) -> str:
+async def parse_move_selection(moves: List[str], char_data: dict, ctx: discord.ext.commands.Context) -> str:
     """
     Async function to ask for user input on a list of moves to pick one.
     :param moves: `List[str]`
@@ -98,12 +100,12 @@ async def parse_move_selection(moves: List[str], char_data: dict, message: disco
         move_name = char_data[move]["title"]
         msg += "\n {}. {}".format(i+1, move_name)
 
-    response = await message.channel.send(matchMsg.format(msg))
+    response = await ctx.send(matchMsg.format(msg))
 
     for i, _ in enumerate(moves):
         await response.add_reaction(number_emojis[i])
 
-    answer_index: int = await wait_for_move_selection(message, response)
+    answer_index: int = await wait_for_move_selection(ctx, response)
     await response.delete()
 
     if answer_index == -1:
@@ -129,7 +131,7 @@ def create_image_embed(char_data: dict) -> discord.Embed:
     return embed
 
 
-async def wait_for_move_selection(req: discord.Message, resp: discord.Message) -> int:
+async def wait_for_move_selection(ctx: discord.ext.commands.Context, resp: discord.Message) -> int:
     """
     Takes in the original request, and the response the bot sent.
     :param req: `discord.Message`
@@ -140,15 +142,15 @@ async def wait_for_move_selection(req: discord.Message, resp: discord.Message) -
         # This loop prevents a bug where if you did two stats cmds and reacted to one of them,
         # it would send the follow up message to both messages instead of the one that was reacted to.
         while True:
-            await client.wait_for('reaction_add',
-                                  timeout=120.0,
-                                  check=lambda react, user: str(react.emoji) in number_emojis and user == req.author)
+            await bot.wait_for('reaction_add',
+                               timeout=120.0,
+                               check=lambda react, user: str(react.emoji) in number_emojis and user == ctx.author)
 
             # Updates the response sent earlier with the newly added reactions.
-            resp = await req.channel.fetch_message(resp.id)
+            resp = await ctx.channel.fetch_message(resp.id)
             for reaction in resp.reactions:
                 users = await reaction.users().flatten()
-                if reaction.count > 1 and req.author in users:
+                if reaction.count > 1 and ctx.author in users:
                     n = number_emojis.index(reaction.emoji)
                     return n
     except TimeoutError:
@@ -165,82 +167,94 @@ def log_error(msg: str):
         log.write(msg + "\n")
 
 
-# Sets the bots status on start up.
-@client.event
+@bot.event
 async def on_ready():
-    print("Total Servers: ", len(client.guilds))
-    await client.change_presence(status=discord.Status.do_not_disturb,
-                                 activity=discord.Game(
-                                     name="Type {}help".format(prefix)
-                                 ))
+    """
+    Async function to display the total servers and set the bot's status.
+    :return: `None`
+    """
+    print("Total Servers: ", len(bot.guilds))
+    await bot.change_presence(status=discord.Status.do_not_disturb,
+                              activity=discord.Game(
+                                  name="Type {}help".format(prefix)
+                              ))
 
 
-@client.event
-async def on_message(message: discord.Message):
-    if message.author.bot:
+@bot.command(name='viz')
+async def visualize_hitbox(ctx: discord.ext.commands.Context):
+    """
+    Async function to sends an embedded message with a hitbox visual.
+    :param ctx: `discord.ext.commands.Context`
+    :return: `None`
+    """
+    # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] the move
+    msg: List[str] = ctx.message.content.split(" ", 1)
+    msg = msg.pop().rsplit(" ", 1)
+
+    if len(msg) < 2:
+        await ctx.send(
+            "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(prefix))
         return
 
-    # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] the move
-    msg: List[str] = message.content.split(" ", 1)
-    msg += msg.pop().rsplit(" ", 1)
+    # Removes special characters from character and move
+    for i, string in enumerate(msg):
+        msg[i] = re.sub(r"[^\w\d]", "", string)
 
-    if msg[0] in cmds:
-        if len(msg) < 2:
-            await message.channel.send(
-                "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(prefix))
+    # Gets character data
+    char_data: dict = get_character(msg[0].lower())
+    if len(char_data) == 0:
+        await ctx.send(charError)
+        log_error(ctx.message.content)
+        return
+
+    # Gets move data
+    move: str = msg[-1]
+    tempMove: str = move
+    move = get_real_move_name(move, char_data)
+    if len(move) == 0 or move not in char_data.keys():
+        await ctx.send(moveError.format(tempMove))
+        log_error(ctx.message.content)
+        return
+
+    # Finds moves that match parsed move. If so, that move has multiple hitboxes.
+    matching_moves = [entry for entry in char_data.keys() if move in entry]
+    if len(matching_moves) > 1:
+        # Removes the matching moves that do not have an image
+        for i in matching_moves:
+            if "image" not in char_data[i]:
+                matching_moves.remove(i)
+
+        if len(matching_moves) == 0:
+            await ctx.send(hBoxError.format(move))
             return
-
-        # Removes special characters from character and move
-        for i, string in enumerate(msg):
-            msg[i] = re.sub(r"[^\w\d]", "", string)
-
-        # Gets character data
-        char_data: dict = get_character(msg[1].lower())
-        if len(char_data) == 0:
-            await message.channel.send(charError)
-            log_error(message.content)
-            return
-
-        # Gets move data
-        move: str = msg[-1]
-        tempMove: str = move
-        move = get_real_move_name(move, char_data)
-        if len(move) == 0 or move not in char_data.keys():
-            await message.channel.send(moveError.format(tempMove))
-            log_error(message.content)
-            return
-
-        # Finds moves that match parsed move. If so, that move has multiple hitboxes.
-        matching_moves = [entry for entry in char_data.keys() if move in entry]
-        if len(matching_moves) > 1:
-            # Removes the matching moves that do not have an image
-            for i in matching_moves:
-                if "image" not in char_data[i]:
-                    matching_moves.remove(i)
-
-            if len(matching_moves) == 0:
-                await message.channel.send(hBoxError.format(move))
+        elif len(matching_moves) == 1:
+            move = matching_moves[0]
+        else:
+            move = await parse_move_selection(matching_moves, char_data, ctx)
+            if len(move) == 0:
                 return
-            elif len(matching_moves) == 1:
-                move = matching_moves[0]
-            else:
-                move = await parse_move_selection(matching_moves, char_data, message)
-                if len(move) == 0:
-                    return
 
-        try:
-            embed: discord.Embed = create_image_embed(char_data[move])
-        except KeyError as e:
-            print(
-                "An error has occurred during the creation of the embed:\n{}".format(e.args))
-            await message.channel.send(hBoxError.format(char_data[move]["title"]))
-            return
-        await message.channel.send(embed=embed)
-    elif "{}help".format(prefix) in msg[0]:
-        with open("help", "r") as helpFile:
-            helpMsg = helpFile.read()
-        await message.author.send(helpMsg)
-        await message.channel.send("Sent you a DM {}.".format(message.author.mention))
+    try:
+        embed: discord.Embed = create_image_embed(char_data[move])
+    except KeyError as e:
+        print(
+            "An error has occurred during the creation of the embed:\n{}".format(e.args))
+        await ctx.send(hBoxError.format(char_data[move]["title"]))
+        return
+    await ctx.send(embed=embed)
 
 
-client.run(token)
+@bot.command(name='help')
+async def send_help(ctx: discord.ext.commands.Context):
+    """
+    Async function to send a direct message with the help text.
+    :param ctx: `discord.ext.commands.Context`
+    :return: `None`
+    """
+    with open("help", "r") as helpFile:
+        helpMsg = helpFile.read()
+    await ctx.author.send(helpMsg)
+    await ctx.send("Sent you a DM {}.".format(ctx.author.mention))
+
+
+bot.run(token)
