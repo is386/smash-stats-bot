@@ -1,0 +1,198 @@
+byleth:
+  title: Byleth
+  image: hurtbox.png
+  fields:
+
+airdodge:
+  title: Airdodge
+  fields:
+
+bair:
+  title: Back Air
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethBAir.gif
+  fields:
+
+bthrow:
+  title: Back Throw
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethBThrow.gif
+  fields:
+
+dair:
+  title: Down Air (Normal)
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethDAir.gif
+  fields:
+
+dashattack:
+  title: Dash Attack
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethDashAttack.gif
+  fields:
+
+dsmash:
+  title: Down Smash
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethDSmash.gif
+  fields:
+
+dtaunt:
+  title: Down Taunt
+
+dthrow:
+  title: Down Throw
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethDThrow.gif
+  fields:
+
+dtilt:
+  title: Down Tilt
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethDTilt.gif
+  fields:
+
+fair:
+  title: Forward Air
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethFAir.gif
+  fields:
+
+fsmash:
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethFSmash.gif
+  fields:
+
+fsmash2:
+  title: Forward Smash Down
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethFSmashDown.gif
+  fields:
+
+fsmash3:
+  title: Forward Smash Up
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethFSmashUp.gif
+  fields:
+
+fthrow:
+  title: Forward Throw
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethFThrow.gif
+  fields:
+
+ftilt:
+  title: Forward Tilt
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethFTilt.gif
+  fields:
+
+getupattack:
+  title: Getup Attack
+  fields:
+
+grabdash:
+  title: Dash Grab
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethDashGrab.gif
+  fields:
+
+grabpivot:
+  title: Pivot Grab
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethPivotGrab.gif
+  fields:
+
+grabstanding:
+  title: Standing Grab
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethGrab.gif
+  fields:
+
+jab:
+  title: Jab 1
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethJab1.gif
+  fields:
+
+jab2:
+  title: Jab 2
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethJab2.gif
+  fields:
+
+jab3:
+  title: Jab 3
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethJab3.gif
+  fields:
+
+jabfinisher:
+  title: Rapid Jab Finish
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethJapRapidFinisher.gif
+  fields:
+
+rapidjab:
+  title: Rapid Jab
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethJapRapid.gif
+  fields:
+
+ledgeattack:
+  title: Ledge Attack
+  fields:
+
+nair:
+  title: Neutral Air
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethNAir.gif
+  fields:
+
+oos:
+  title: Out of Shield Options
+  fields:
+
+nspecial:
+  title: Failnaught
+  fields:
+
+pummel:
+  title: Pummel
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethPummel.gif
+  fields:
+
+roll:
+  title: Rolls
+  fields:
+
+dspecial:
+  title: Aymr
+  fields:
+
+spotdodge:
+  title: Spot Dodge
+  fields:
+
+sspecial:
+  title: Areadbhar (Ground)
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethAreadbharGrounded.gif
+  fields:
+
+sspecial2:
+  title: Areadbhar (Air)
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethAreadbharAerial.gif
+  fields:
+
+staunt:
+  title: Side Taunt
+
+tripattack:
+  title: Trip Getup Attack
+  fields:
+
+uair:
+  title: Up Air
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethUAir.gif
+  fields:
+
+uspecial:
+  title: Sword of the Creator
+  fields:
+
+usmash:
+  title: Up Smash
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethUSmash.gif
+  fields:
+
+utaunt:
+  title: Up Taunt
+
+uthrow:
+  title: Up Throw
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethUThrow.gif
+  fields:
+
+utilt:
+  title: Up Tilt
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethUTilt.gif
+  fields:
