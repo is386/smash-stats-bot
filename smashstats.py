@@ -10,20 +10,19 @@ from yaml import safe_load as yaml_load
 from secret import token
 
 prefix = "?"
-charPath = "characters/{}.yml"
-embed_color = 00000000
-syntaxError = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`".format(
-    prefix)
-moveError = "The move **{}** does not exist. `?help` for more."
-charError = "That character doesn't exist. `?help` for more."
-hBoxError = "**{}** does not have a hitbox gif yet. `?help` for more."
-embedError = "An error has occurred during the creation of the embed:\n{}"
-matchMsg = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```{}```"
-number_emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣',
-                 '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
-cmds = ("{}viz".format(prefix), "{}vis".format(prefix))
+char_path: str = "characters/{}.yml"
+embed_color: int = 00000000
+status_msg: str = "Type {}help"
+syntax_error: str = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`"
+move_error: str = "The move **{}** does not exist. `?help` for more."
+char_error: str = "That character doesn't exist. `?help` for more."
+hbox_error: str = "**{}** does not have a hitbox gif yet. `?help` for more."
+embed_error: str = "An error has occurred during the creation of the embed:\n{}"
+select_msg: str = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```{}```"
+number_emojis: List[str] = ['1️⃣', '2️⃣', '3️⃣', '4️⃣',
+                            '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 
-bot = commands.Bot(command_prefix='?')
+bot: discord.ext.commands.Bot = commands.Bot(command_prefix=prefix)
 bot.remove_command("help")
 
 
@@ -39,14 +38,14 @@ def translate(name: str, file_path: str) -> str:
     # Example: nair = neutral air, bayonetta = bayo.
     # TODO: Database table with each synonym associated with the original name, better lookup performances
     with open(file_path, 'r') as f:
-        synData = yaml_load(f)
+        synonyms: dict = yaml_load(f)
 
-    synList = list(synData.keys())
-    if name in synList:
+    code_names: List[str] = list(synonyms.keys())
+    if name in code_names:
         return name
 
-    for key in synList:
-        if name in synData[key]:
+    for key in code_names:
+        if name in synonyms[key]:
             return key
 
     return ""
@@ -63,7 +62,7 @@ def get_character(char: str) -> dict:
         return {}
 
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
-    with open(charPath.format(char)) as f:
+    with open(char_path.format(char)) as f:
         try:
             char_data: dict = yaml_load(f)
         except yaml.YAMLError as e:
@@ -103,7 +102,7 @@ async def parse_move_selection(moves: List[str], char_data: dict, ctx: discord.e
         move_name = char_data[move]["title"]
         msg += "\n {}. {}".format(i+1, move_name)
 
-    response = await ctx.send(matchMsg.format(msg))
+    response: discord.Message = await ctx.send(select_msg.format(msg))
 
     for i, _ in enumerate(moves):
         await response.add_reaction(number_emojis[i])
@@ -152,9 +151,9 @@ async def wait_for_move_selection(ctx: discord.ext.commands.Context, resp: disco
             # Updates the response sent earlier with the newly added reactions.
             resp = await ctx.channel.fetch_message(resp.id)
             for reaction in resp.reactions:
-                users = await reaction.users().flatten()
+                users: List[discord.User] = await reaction.users().flatten()
                 if reaction.count > 1 and ctx.author in users:
-                    n = number_emojis.index(reaction.emoji)
+                    n: int = number_emojis.index(reaction.emoji)
                     return n
     except TimeoutError:
         return -1
@@ -179,7 +178,7 @@ async def on_ready():
     print("Total Servers: ", len(bot.guilds))
     await bot.change_presence(status=discord.Status.do_not_disturb,
                               activity=discord.Game(
-                                  name="Type {}help".format(prefix)
+                                  name=status_msg.format(prefix)
                               ))
 
 
@@ -194,9 +193,8 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
     # TODO: Fix spaces issue for moves
     msg: List[str] = ctx.message.content.split(" ", 1)
     msg = msg.pop().rsplit(" ", 1)
-
     if len(msg) < 2:
-        await ctx.send(syntaxError.format(prefix))
+        await ctx.send(syntax_error.format(prefix))
         return
 
     # Removes special characters from character and move
@@ -206,16 +204,16 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
     # Gets character data
     char_data: dict = get_character(msg[0].lower())
     if len(char_data) == 0:
-        await ctx.send(charError)
+        await ctx.send(char_error)
         log_error(ctx.message.content)
         return
 
     # Gets move data
     move: str = msg[-1]
-    tempMove: str = move
+    orig_move: str = move
     move = get_real_move_name(move, char_data)
     if len(move) == 0 or move not in char_data.keys():
-        await ctx.send(moveError.format(tempMove))
+        await ctx.send(move_error.format(orig_move))
         log_error(ctx.message.content)
         return
 
@@ -228,7 +226,7 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
                 matching_moves.remove(i)
 
         if len(matching_moves) == 0:
-            await ctx.send(hBoxError.format(move))
+            await ctx.send(hbox_error.format(move))
             return
         elif len(matching_moves) == 1:
             move = matching_moves[0]
@@ -240,8 +238,8 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
     try:
         embed: discord.Embed = create_image_embed(char_data[move])
     except KeyError as e:
-        print(embedError.format(e.args))
-        await ctx.send(hBoxError.format(char_data[move]["title"]))
+        print(embed_error.format(e.args))
+        await ctx.send(hbox_error.format(char_data[move]["title"]))
         return
     await ctx.send(embed=embed)
 
@@ -253,9 +251,9 @@ async def send_help(ctx: discord.ext.commands.Context):
     :param ctx: `discord.ext.commands.Context`
     :return: `None`
     """
-    with open("help", "r") as helpFile:
-        helpMsg = helpFile.read()
-    await ctx.author.send(helpMsg)
+    with open("help", "r") as help_file:
+        help_msg: str = help_file.read()
+    await ctx.author.send(help_msg)
     await ctx.send("Sent you a DM {}.".format(ctx.author.mention))
 
 
