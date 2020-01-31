@@ -30,6 +30,103 @@ bot: discord.ext.commands.Bot = commands.Bot(
     activity=discord.Game(status_msg.format(prefix)))
 
 
+@bot.command(name='viz')
+async def visualize_hitbox(ctx: discord.ext.commands.Context):
+    """
+    Async function to sends an embedded message with a hitbox visual.
+    :param ctx: `discord.ext.commands.Context`
+    :return: `None`
+    """
+    move_data: dict = await get_move_data(ctx)
+    if len(move_data) == 0:
+        return
+
+    try:
+        embed: discord.Embed = create_image_embed(move_data)
+        await ctx.send(embed=embed)
+    except KeyError as e:
+        print(embed_error.format(e.args))
+        await ctx.send(hbox_error.format(move_data["title"]))
+
+
+@bot.command(name='help')
+async def send_help(ctx: discord.ext.commands.Context):
+    """
+    Async function to send a direct message with the help text.
+    :param ctx: `discord.ext.commands.Context`
+    :return: `None`
+    """
+    with open("help", "r") as help_file:
+        help_msg: str = help_file.read()
+    await ctx.author.send(help_msg)
+    await ctx.send("Sent you a DM {}.".format(ctx.author.mention))
+
+
+async def get_move_data(ctx: discord.ext.commands.Context) -> dict:
+    """
+    Gets the YAML data for a character's move
+    :param ctx: `discord.ext.commands.Context` message that has the character and move
+    :return: `dict` on success, an empty dictionary on fail
+    """
+    msg: List[str] = ctx.message.content.split()
+    if len(msg) < 2:
+        await ctx.send(syntax_error.format(prefix))
+        return {}
+
+    # Removes special characters from character and move
+    for i, string in enumerate(msg):
+        msg[i] = re.sub(r"[^\w\d]", "", string)
+
+    # Parses the full character and move name
+    if len(msg) <= 10:
+        char, move = split_char_move(msg[1:])
+        if len(char) == 0:
+            await ctx.send(char_error)
+            log_error(char)
+            return {}
+        elif len(move) == 0:
+            await ctx.send(syntax_error.format(prefix))
+            return {}
+    else:
+        await ctx.send("That message is too long!")
+        return {}
+
+    # Gets character data
+    try:
+        char_data: dict = get_character(char.lower())
+    except yaml.YAMLError as e:
+        print(e)
+        return {}
+
+    # Gets move data
+    orig_move: str = move
+    move = get_real_move_name(move, char_data)
+    if move not in char_data.keys():
+        await ctx.send(move_error.format(orig_move))
+        log_error(orig_move)
+        return {}
+
+    # Finds moves that match parsed move. If so, that move has multiple hitboxes.
+    matching_moves = [entry for entry in char_data.keys() if move in entry]
+    if len(matching_moves) > 1:
+        # Removes the matching moves that do not have an image
+        for i in matching_moves:
+            if "image" not in char_data[i]:
+                matching_moves.remove(i)
+
+        if len(matching_moves) == 0:
+            await ctx.send(hbox_error.format(move))
+            return {}
+        elif len(matching_moves) == 1:
+            move = matching_moves[0]
+        else:
+            move = await parse_move_selection(matching_moves, char_data, ctx)
+            if len(move) == 0:
+                return {}
+
+    return char_data[move]
+
+
 def translate(name: str, file_path: str) -> str:
     """
     Translates a synonyms (move or char) into the base name
@@ -74,6 +171,7 @@ def get_character(char: str) -> dict:
     Returns the parsed Yaml of the character as a dictionary
     :param char: `str` char name
     :return: `dict` empty if failed
+    :raise: `yaml.YAMLError`
     """
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
     with open(char_path.format(char)) as f:
@@ -180,92 +278,6 @@ def log_error(msg: str):
     """
     with open("log", "a") as log:
         log.write(msg + "\n")
-
-
-@bot.command(name='viz')
-async def visualize_hitbox(ctx: discord.ext.commands.Context):
-    """
-    Async function to sends an embedded message with a hitbox visual.
-    :param ctx: `discord.ext.commands.Context`
-    :return: `None`
-    """
-    # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] the move
-    msg: List[str] = ctx.message.content.split()
-    if len(msg) < 2:
-        await ctx.send(syntax_error.format(prefix))
-        return
-
-    # Removes special characters from character and move
-    for i, string in enumerate(msg):
-        msg[i] = re.sub(r"[^\w\d]", "", string)
-
-    # Parses the full character and move name
-    if len(msg) <= 10:
-        char, move = split_char_move(msg[1:])
-        if len(char) == 0:
-            await ctx.send(char_error)
-            log_error(ctx.message.content)
-            return
-        elif len(move) == 0:
-            await ctx.send(syntax_error.format(prefix))
-            return
-    else:
-        await ctx.send("That message is too long!")
-        return
-
-    # Gets character data
-    try:
-        char_data: dict = get_character(char.lower())
-    except yaml.YAMLError as e:
-        print(e)
-        return
-
-    # Gets move data
-    orig_move: str = move
-    move = get_real_move_name(move, char_data)
-    if move not in char_data.keys():
-        await ctx.send(move_error.format(orig_move))
-        log_error(ctx.message.content)
-        return
-
-    # Finds moves that match parsed move. If so, that move has multiple hitboxes.
-    matching_moves = [entry for entry in char_data.keys() if move in entry]
-    if len(matching_moves) > 1:
-        # Removes the matching moves that do not have an image
-        for i in matching_moves:
-            if "image" not in char_data[i]:
-                matching_moves.remove(i)
-
-        if len(matching_moves) == 0:
-            await ctx.send(hbox_error.format(move))
-            return
-        elif len(matching_moves) == 1:
-            move = matching_moves[0]
-        else:
-            move = await parse_move_selection(matching_moves, char_data, ctx)
-            if len(move) == 0:
-                return
-
-    try:
-        embed: discord.Embed = create_image_embed(char_data[move])
-    except KeyError as e:
-        print(embed_error.format(e.args))
-        await ctx.send(hbox_error.format(char_data[move]["title"]))
-        return
-    await ctx.send(embed=embed)
-
-
-@bot.command(name='help')
-async def send_help(ctx: discord.ext.commands.Context):
-    """
-    Async function to send a direct message with the help text.
-    :param ctx: `discord.ext.commands.Context`
-    :return: `None`
-    """
-    with open("help", "r") as help_file:
-        help_msg: str = help_file.read()
-    await ctx.author.send(help_msg)
-    await ctx.send("Sent you a DM {}.".format(ctx.author.mention))
 
 
 bot.run(token)
