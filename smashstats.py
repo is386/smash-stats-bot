@@ -202,9 +202,9 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
 async def parse_move_selection(moves: List[str], char_data: dict, ctx: discord.ext.commands.Context) -> str:
     """
     Async function to ask for user input on a list of moves to pick one.
+    :param ctx: `discord.ext.commands.Context`
     :param moves: `List[str]`
     :param char_data: `dict`
-    :param message: `discord.Message`
     :return: `str` empty if failed
     """
     msg: str = ""
@@ -247,7 +247,7 @@ def create_image_embed(char_data: dict) -> discord.Embed:
 async def wait_for_move_selection(ctx: discord.ext.commands.Context, resp: discord.Message) -> int:
     """
     Takes in the original request, and the response the bot sent.
-    :param req: `discord.Message`
+    :param ctx: `discord.ext.commands.Context`
     :param resp: `discord.Message`
     :return: `int` or -1 if nothing is chosen
     """
