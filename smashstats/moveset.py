@@ -5,8 +5,8 @@ from discord import Message
 from discord.ext.commands import Context
 from yaml import safe_load, YAMLError
 
-import reactions
-import translator
+from smashstats import reactions
+from smashstats import translator
 
 
 char_path: str = "characters/{}.yml"
@@ -22,7 +22,7 @@ select_msg: str = "There are multiple hitboxes for this move. React with the hit
 async def get_move_data(ctx: Context) -> dict:
     """
     Gets the YAML data for a character's move
-    :param ctx: `discord.ext.commands.Context` message that has the character and move
+    :param ctx: `Context` message that has the character and move
     :return: `dict` on success, an empty dictionary on fail
     """
     msg: List[str] = ctx.message.content.split()
@@ -134,7 +134,7 @@ async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) 
     Async function to ask for user input on a list of moves to pick one.
     :param moves: `List[str]`
     :param char_data: `dict`
-    :param message: `discord.Message`
+    :param ctx: `Context`
     :return: `str` empty if failed
     """
     msg: str = ""
