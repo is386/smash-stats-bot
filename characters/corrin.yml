@@ -51,7 +51,12 @@ fair:
   fields:
 
 fsmash:
-  title: Forward Smash
+  title: Forward Smash (Hit)
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinFSmash.png
+  fields:
+
+fsmash2:
+  title: Forward Smash (Charge)
   image: https://ultimateframedata.com/hitboxes/corrin/CorrinFSmashCharge.gif
   fields:
 
@@ -65,7 +70,7 @@ ftilt:
   image: https://ultimateframedata.com/hitboxes/corrin/CorrinFTilt.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -155,6 +160,7 @@ spotdodge:
 
 sspecial:
   title: Dragon Lunge Pin (Ground)
+  image: https://ultimateframedata.com/hitboxes/corrin/CorrinDragonLunge.png
   fields:
 
 sspecial2:
