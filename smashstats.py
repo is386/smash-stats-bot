@@ -11,6 +11,8 @@ from secret import token
 
 prefix = "?"
 char_path: str = "characters/{}.yml"
+char_syns_path: str = "charSynonyms.yml"
+move_syns_path: str = "moveSynonyms.yml"
 embed_color: int = 00000000
 status_msg: str = "Type {}help"
 syntax_error: str = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`"
@@ -53,23 +55,32 @@ def translate(name: str, file_path: str) -> str:
     return ""
 
 
+def split_char_move(msg: list) -> tuple:
+    """
+    Splits the character from the move name
+    :param msg: `list` original msg
+    :return: `tuple` like: (char, move), can be unpacked on call
+    """
+    acc: str = msg.pop(0)
+    char: str = translate(acc, char_syns_path)
+    while char == "" and len(msg) > 0:
+        acc += msg.pop(0)
+        char = translate(acc, char_syns_path)
+    return char, ''.join(msg)
+
+
 def get_character(char: str) -> dict:
     """
     Returns the parsed Yaml of the character as a dictionary
     :param char: `str` char name
     :return: `dict` empty if failed
     """
-    char: str = translate(char, "charSynonyms.yml")
-    if len(char) == 0:
-        return {}
-
     # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
     with open(char_path.format(char)) as f:
         try:
             char_data: dict = yaml_load(f)
-        except yaml.YAMLError as e:
-            print(e)
-            return {}
+        except yaml.YAMLError:
+            raise yaml.YAMLError()
 
     return char_data
 
@@ -81,7 +92,7 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
     :param char_data: `dict`
     :return: `str` empty if not found
     """
-    move: str = translate(move_name, "moveSynonyms.yml")
+    move: str = translate(move_name, move_syns_path)
     if len(move) == 0:
         entry_name: str
         for entry_name in char_data.keys():
@@ -179,9 +190,8 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
     :return: `None`
     """
     # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] the move
-    # TODO: Fix spaces issue for moves
     msg: List[str] = ctx.message.content.split(" ", 1)
-    msg = msg.pop().rsplit(" ", 1)
+    msg = msg.pop().rsplit()
     if len(msg) < 2:
         await ctx.send(syntax_error.format(prefix))
         return
@@ -190,18 +200,31 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
     for i, string in enumerate(msg):
         msg[i] = re.sub(r"[^\w\d]", "", string)
 
+    # Parses the full character and move name
+    if len(msg) <= 10:
+        char, move = split_char_move(msg)
+        if len(char) == 0:
+            await ctx.send(char_error)
+            log_error(ctx.message.content)
+            return
+        elif len(move) == 0:
+            await ctx.send(syntax_error.format(prefix))
+            return
+    else:
+        await ctx.send("That message is too long!")
+        return
+
     # Gets character data
-    char_data: dict = get_character(msg[0].lower())
-    if len(char_data) == 0:
-        await ctx.send(char_error)
-        log_error(ctx.message.content)
+    try:
+        char_data: dict = get_character(char.lower())
+    except yaml.YAMLError as e:
+        print(e)
         return
 
     # Gets move data
-    move: str = msg[-1]
     orig_move: str = move
     move = get_real_move_name(move, char_data)
-    if len(move) == 0 or move not in char_data.keys():
+    if move not in char_data.keys():
         await ctx.send(move_error.format(orig_move))
         log_error(ctx.message.content)
         return
