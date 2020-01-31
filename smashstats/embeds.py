@@ -7,7 +7,7 @@ def create_image_embed(char_data: dict) -> Embed:
     """
     Creates the embed object from the character data with the character image.
     :param char_data: `dict`
-    :return: `discord.Embed`
+    :return: `Embed`
     :raise: `KeyError`
     """
     try:

@@ -9,14 +9,15 @@ number_emojis: List[str] = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣
                             '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 
 
-async def move_selection(ctx: Context, resp: Message, n: int) -> int:
+async def move_selection(ctx: Context, resp: Message, emoji_count: int) -> int:
     """
-    Takes in the original request, and the response the bot sent.
-    :param req: `discord.Message`
-    :param resp: `discord.Message`
+    Waits for the user to pick a number emoji.
+    :param ctx: `Context`
+    :param resp: `Message`
+    :param n: `int`
     :return: `int` or -1 if nothing is chosen
     """
-    for i in range(n):
+    for i in range(emoji_count):
         await resp.add_reaction(number_emojis[i])
 
     try:
