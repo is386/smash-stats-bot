@@ -190,8 +190,7 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
     :return: `None`
     """
     # Parses the message so that msg[0] is the command, msg[1] the character and msg[2] the move
-    msg: List[str] = ctx.message.content.split(" ", 1)
-    msg = msg.pop().rsplit()
+    msg: List[str] = ctx.message.content.split()
     if len(msg) < 2:
         await ctx.send(syntax_error.format(prefix))
         return
@@ -202,7 +201,7 @@ async def visualize_hitbox(ctx: discord.ext.commands.Context):
 
     # Parses the full character and move name
     if len(msg) <= 10:
-        char, move = split_char_move(msg)
+        char, move = split_char_move(msg[1:])
         if len(char) == 0:
             await ctx.send(char_error)
             log_error(ctx.message.content)
