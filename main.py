@@ -1,17 +1,34 @@
+import sqlite3
+
 from discord import Game, Embed
 from discord.ext import commands
 
 from smashstats import moveset, embeds
 from secret import token
 
-prefix = "?"
+default_prefix = "?"
 status_msg: str = "Type {}help"
 embed_error: str = "An error has occurred during the creation of the embed:\n{}"
 
+
+async def get_prefix(bot, ctx) -> str:
+    conn: sqlite3.Connection = sqlite3.connect("prefixes.db")
+    c: sqlite3.Cursor = conn.cursor()
+    c = c.execute(
+        "SELECT prefix FROM prefixes WHERE server_id={}".format(ctx.guild.id))
+
+    if c == None:
+        return default_prefix
+
+    p = c.fetchone()[0]
+    conn.close()
+    return p
+
+
 bot: commands.Bot = commands.Bot(
-    command_prefix=prefix,
+    command_prefix=get_prefix,
     help_command=None,
-    activity=Game(status_msg.format(prefix)))
+    activity=Game(status_msg.format(default_prefix)))
 
 
 @bot.command(name='viz', aliases=['vis'])
