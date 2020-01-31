@@ -30,7 +30,7 @@ bot: discord.ext.commands.Bot = commands.Bot(
     activity=discord.Game(status_msg.format(prefix)))
 
 
-@bot.command(name='viz')
+@bot.command(name='viz', aliases=['vis'])
 async def visualize_hitbox(ctx: discord.ext.commands.Context):
     """
     Async function to sends an embedded message with a hitbox visual.
