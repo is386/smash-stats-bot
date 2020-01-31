@@ -7,3 +7,4 @@ venv/
 secret.py
 .vscode
 __pycache__
+prefixes.db
