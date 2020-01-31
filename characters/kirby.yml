@@ -40,7 +40,7 @@ dthrow:
   fields:
 
 dtilt:
-  title: Down Tilt 
+  title: Down Tilt
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyDTilt.gif
   fields:
 
@@ -63,7 +63,7 @@ fsmash3:
   title: Forward Smash Up
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyFSmashUp.gif
   fields:
-    
+
 fthrow:
   title: Forward Throw
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyFThrow.gif
@@ -84,7 +84,7 @@ ftilt3:
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyFTiltUp.gif
   fields:
 
-getupattack: 
+getupattack:
   title: Getup Attack
   fields:
 
@@ -104,7 +104,7 @@ grabstanding:
   fields:
 
 jab:
-  title: Jab 1 
+  title: Jab 1
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyJab1.gif
   fields:
 
@@ -135,7 +135,7 @@ nair:
 oos:
   title: Out of Shield Options
   fields:
-  
+
 nspecial:
   title: Inhale (Start)
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyInhaleStar.gif
@@ -160,12 +160,12 @@ roll:
   fields:
 
 dspecial:
-  title: Stone (Ground)
+  title: Stone
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyStone.png
   fields:
 
 dspecial2:
-  title: Stone (Air)
+  title: Stone (Landing)
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyStoneLanding.png
   fields:
 
@@ -209,7 +209,7 @@ uspecial:
   title: Final Cutter
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyFinalCutter.gif
   fields:
-        
+
 usmash:
   title: Up Smash
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyUSmash.gif
@@ -224,6 +224,6 @@ uthrow:
   fields:
 
 utilt:
-  title: Up Tilt 
+  title: Up Tilt
   image: https://ultimateframedata.com/hitboxes/kirby/KirbyUTilt.gif
   fields:

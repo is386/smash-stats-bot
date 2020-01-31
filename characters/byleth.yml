@@ -146,7 +146,13 @@ roll:
   fields:
 
 dspecial:
-  title: Aymr
+  title: Aymr (Axe)
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethAymr.gif
+  fields:
+
+dspecial2:
+  title: Aymr (Super Armor)
+  image: https://ultimateframedata.com/hitboxes/byleth/BylethAymrSuperArmor.gif
   fields:
 
 spotdodge:
