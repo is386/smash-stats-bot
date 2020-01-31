@@ -12,6 +12,12 @@ embed_error: str = "An error has occurred during the creation of the embed:\n{}"
 
 
 async def get_prefix(bot, ctx) -> str:
+    """
+    Async function to get the server's custom prefix
+    :param bot: `commands.Bot`
+    :param ctx: `Context`
+    :return: `str`
+    """
     conn: sqlite3.Connection = sqlite3.connect("prefixes.db")
     c: sqlite3.Cursor = conn.cursor()
     c = c.execute(
@@ -34,7 +40,7 @@ bot: commands.Bot = commands.Bot(
 @bot.command(name='viz', aliases=['vis'])
 async def visualize_hitbox(ctx: commands.Context):
     """
-    Async function to sends an embedded message with a hitbox visual.
+    Async function to send an embedded message with a hitbox visual.
     :param ctx: `Context`
     :return: `None`
     """
