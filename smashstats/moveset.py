@@ -32,7 +32,7 @@ async def get_move_data(ctx: Context) -> dict:
 
     # Removes special characters from character and move
     for i, string in enumerate(msg):
-        msg[i] = sub(r"[^\w\d_]", "", string)
+        msg[i] = sub(r"[^\w\d]|[_\-]", "", string)
 
     # Parses the full character and move name
     if len(msg) <= 10:
