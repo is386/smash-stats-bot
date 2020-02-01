@@ -1,9 +1,9 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='SmashStats',
     version='0.1',
-    packages=find_packages(),
+    packages=[''],
     url='https://github.com/is386/SmashStats/blob/refactor/smashstats.py',
     license='GPL',
     author='is386',
