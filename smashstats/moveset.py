@@ -82,7 +82,13 @@ async def get_move_data(ctx: Context) -> dict:
     return char_data[move]
 
 
-def get_all_similar(path: str, match: str):
+def get_all_similar(path: str, match: str) -> List[str]:
+    """
+    returns a list of all similar names in the synonyms file in path
+    :param path: `str`
+    :param match: `str`
+    :return: `List[str]`
+    """
     with open(path, 'r') as f:
         synonyms: dict = safe_load(f)
 
