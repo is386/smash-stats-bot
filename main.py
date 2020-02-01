@@ -77,9 +77,9 @@ async def set_prefix(ctx: commands.Context, prefix: str):
     """
     Async function to send a direct message with the help text.
     :param ctx: `Context`
+    :param prefix: `str`
     :return: `None`
     """
-    # TODO: If the user does not have permissions, send a message saying they can't use this cmd.
     # TODO: If the user is missing an argument, tell them the correct format.
     # TODO: If the server_id exists, then update. Else do an insert. Right now theres only update.
 
@@ -93,6 +93,19 @@ async def set_prefix(ctx: commands.Context, prefix: str):
         'UPDATE prefixes SET prefix="{}" WHERE server_id={}'.format(prefix, ctx.guild.id))
     conn.commit()
     conn.close()
-    await ctx.send("Your new prefix has been set to `{}`".format(prefix))
+    await ctx.send("Your new prefix has been set to **{}**".format(prefix))
+
+
+@set_prefix.error
+async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
+    """
+    Async function to send a message if a user is missing permissions to change the prefix.
+    :param ctx: `Context`
+    :param error: `commands.CommandError`
+    :return: `None`
+    """
+    if isinstance(error, commands.MissingPermissions):
+        await ctx.send("{} you need the permission **Administrator** to set the prefix.".format(ctx.author.mention))
+
 
 bot.run(token)
