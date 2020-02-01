@@ -16,7 +16,7 @@ def trans(name: str, file_path: str) -> list:
     with open(file_path, 'r') as f:
         synonyms: dict = safe_load(f)
 
-    code_names: List[str] = [code_name for code_name in list(synonyms.keys()) if name in code_name]
+    code_names: List[str] = [name] if name in list(synonyms.keys()) else []
     code_names += [item[0] for item in synonyms.items() if name in item[1]]
 
     return code_names
