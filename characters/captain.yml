@@ -222,56 +222,22 @@ spotdodge:
   fields:
 
 sspecial:
-  names:
-    - raptorboost
-    - rb
-    - raptor
-
-sspecial1:
-  names:
-    - raptorboosthit
-    - rph
-    - raptorhit
-
-sspecial2:
-  names:
-    - raptorboostsearch
-    - rps
-    - raptorsearch
-
-sspecial11:
   title: Raptor Boost Hit (Ground)
-  names:
-    - raptorboosthitground
-    - rphg
-    - raptorhitground
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostHitG.gif
   fields:
 
-sspecial12:
+sspecial2:
   title: Raptor Boost Hit (Air)
-  names:
-    - raptorboosthitair
-    - rpha
-    - raptorhitair
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostHitA.gif
   fields:
 
-sspecial21:
+sspecial3:
   title: Raptor Boost Search (Ground)
-  names:
-    - raptorboostsearchground
-    - rpsg
-    - raptorsearchground
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostG.gif
   fields:
 
-sspecial22:
+sspecial4:
   title: Raptor Boost Search (Air)
-  names:
-    - raptorboostsearchair
-    - rpsg
-    - raptorsearchair
   image: https://ultimateframedata.com/hitboxes/captain_falcon/CaptainFalconRaptorBoostA.gif
   fields:
 

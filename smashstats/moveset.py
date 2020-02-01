@@ -67,7 +67,7 @@ async def get_move_data(ctx: Context) -> dict:
     if len(matching_moves) > 1:
         # Removes the matching moves that do not have an image
         for i in matching_moves:
-            if "image" not in char_data[i]:
+            if "image" not in char_data[i].keys():
                 matching_moves.remove(i)
 
         if len(matching_moves) == 0:
