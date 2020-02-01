@@ -10,6 +10,8 @@ db_name = "prefixes.db"
 default_prefix = "?"
 status_msg: str = "Type {}help"
 embed_error: str = "An error has occurred during the creation of the embed:\n{}"
+prefix_error1: str = "{} you need the permission **Administrator** to set the prefix."
+prefix_error2: str = "You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`"
 
 
 async def get_prefix(bot, ctx) -> str:
@@ -83,15 +85,15 @@ async def set_prefix(ctx: commands.Context, prefix: str):
     # TODO: If the server_id exists, then update. Else do an insert. Right now theres only update.
 
     if len(prefix) > 3:
-        ctx.send("That prefix is too long. It must 3 characters or less.")
+        await ctx.send("That prefix is too long. It must 3 characters or less.")
         return
 
-    conn: sqlite3.Connection = sqlite3.connect(db_name)
-    c: sqlite3.Cursor = conn.cursor()
-    c.execute(
-        'UPDATE prefixes SET prefix="{}" WHERE server_id={}'.format(prefix, ctx.guild.id))
-    conn.commit()
-    conn.close()
+    with sqlite3.connect(db_name) as conn:
+        c: sqlite3.Cursor = conn.cursor()
+        x = "INSERT INTO prefixes (server_id, prefix) VALUES({}, '{}') ON CONFLICT(server_id) DO UPDATE SET prefix='{}'".format(
+            ctx.guild.id, prefix, prefix)
+        c.execute(x)
+        conn.commit()
     await ctx.send("Your new prefix has been set to **{}**".format(prefix))
 
 
@@ -104,9 +106,9 @@ async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
     :return: `None`
     """
     if isinstance(error, commands.MissingPermissions):
-        await ctx.send("{} you need the permission **Administrator** to set the prefix.".format(ctx.author.mention))
+        await ctx.send(prefix_error1.format(ctx.author.mention))
     elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`".format(ctx.prefix))
+        await ctx.send(prefix_error2.format(ctx.prefix))
 
 
 bot.run(token)
