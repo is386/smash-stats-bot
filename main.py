@@ -80,7 +80,6 @@ async def set_prefix(ctx: commands.Context, prefix: str):
     :param prefix: `str`
     :return: `None`
     """
-    # TODO: If the user is missing an argument, tell them the correct format.
     # TODO: If the server_id exists, then update. Else do an insert. Right now theres only update.
 
     if len(prefix) > 3:
@@ -106,6 +105,8 @@ async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
     """
     if isinstance(error, commands.MissingPermissions):
         await ctx.send("{} you need the permission **Administrator** to set the prefix.".format(ctx.author.mention))
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`".format(ctx.prefix))
 
 
 bot.run(token)
