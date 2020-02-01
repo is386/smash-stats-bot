@@ -2,12 +2,12 @@ from typing import List
 from yaml import safe_load
 
 
-def trans(name: str, file_path: str) -> str:
+def trans(name: str, file_path: str) -> list:
     """
     Translates a synonyms (move or char) into the base name
     :param name: `str` name/synonym to translate
     :param file_path: `str` synonyms file path
-    :return: `str` on success, an empty string if failed
+    :return: `list` list of all the possible matches, empty if none
     """
     # Dictionary with a "main" move/char name as the key and a list with synonyms for the move/char as the values.
     # Keeps the move/char name consistent while allowing for multiple ways to refer to a move/char.
@@ -16,12 +16,7 @@ def trans(name: str, file_path: str) -> str:
     with open(file_path, 'r') as f:
         synonyms: dict = safe_load(f)
 
-    code_names: List[str] = list(synonyms.keys())
-    if name in code_names:
-        return name
+    code_names: List[str] = [code_name for code_name in list(synonyms.keys()) if name in code_name]
+    code_names += [item[0] for item in synonyms.items() if name in item[1]]
 
-    for key in code_names:
-        if name in synonyms[key]:
-            return key
-
-    return ""
+    return code_names
