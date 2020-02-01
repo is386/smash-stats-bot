@@ -1,5 +1,5 @@
-banjoandkazooie:
-  - banjo
+banjo:
+  - banjoandkazooie
   - bk
   - kazooie
   - banjokazooie
@@ -24,7 +24,8 @@ bowserjr:
 byleth:
   - byleth
 
-captainfalcon:
+captain:
+  - captainfalcon
   - falcon
   - cap
   - capt
@@ -56,16 +57,15 @@ darksamus:
   - ds
   - damus
   - dsamus
-  - darks
   - darksam
   - dsam
 
-diddykong:
-  - diddy
+diddy:
+  - diddykongg
 
-donkeykong:
+donkey:
   - dk
-  - donkey
+  - donkeykong
 
 drmario:
   - doc
@@ -104,8 +104,6 @@ iceclimbers:
   - popo
   - ic
   - ics
-  - climbers
-  - climber
 
 ike:
   - ike
@@ -241,7 +239,6 @@ pikachu:
 
 piranhaplant:
   - plant
-  - piranha
   - pp
   - pplant
 
@@ -312,7 +309,7 @@ villager:
 wario:
   - wario
 
-wiifittrainer:
+wiifit:
   - wft
   - wiifit
   - trainer
