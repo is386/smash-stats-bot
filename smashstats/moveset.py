@@ -32,7 +32,6 @@ async def get_move_data(ctx: Context) -> dict:
 
     # Removes special characters from character and move
     for i, string in enumerate(msg):
-        print(string)
         msg[i] = sub(r"[^\w\d]", "", string).lower()
 
     # Parses the full character and move name
@@ -58,7 +57,7 @@ async def get_move_data(ctx: Context) -> dict:
     # Gets move data
     orig_move: str = move
     move = get_real_move_name(move, char_data)
-    if move not in char_data.keys():
+    if len(move) == 0:
         await ctx.send(move_error.format(orig_move))
         return {}
 
