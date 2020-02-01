@@ -82,6 +82,16 @@ async def get_move_data(ctx: Context) -> dict:
     return char_data[move]
 
 
+def get_all_similar(path: str, match: str):
+    with open(path, 'r') as f:
+        synonyms: dict = safe_load(f)
+
+    matching: List[str] = [code_name for code_name in list(synonyms.keys()) if match in code_name]
+    matching += [to_match for item in synonyms.values() for to_match in item if match in to_match]
+
+    return matching
+
+
 def split_char_move(msg: list) -> tuple:
     """
     Splits the character from the move name
@@ -89,7 +99,8 @@ def split_char_move(msg: list) -> tuple:
     :return: `tuple` like: (char, move), can be unpacked on call
     """
     acc: str = msg.pop(0)
-    matching: list = translator.trans(acc, char_syns_path)
+
+    matching: List[str] = get_all_similar(char_syns_path, acc)
     if len(matching) < 1:
         return '', ''
 
@@ -97,7 +108,7 @@ def split_char_move(msg: list) -> tuple:
     while len(matching) > 0 and len(msg) > 0:
         tmp: str = msg.pop(0)
         acc += tmp
-        matching = translator.trans(acc, char_syns_path)
+        matching = [match for match in matching if acc in match]
         if len(matching) < 1:
             msg.insert(0, tmp)
             break
