@@ -86,8 +86,10 @@ def get_all_similar(path: str, match: str):
     with open(path, 'r') as f:
         synonyms: dict = safe_load(f)
 
-    matching: List[str] = [code_name for code_name in list(synonyms.keys()) if match in code_name]
-    matching += [to_match for item in synonyms.values() for to_match in item if match in to_match]
+    matching: List[str] = [code_name for code_name in list(
+        synonyms.keys()) if match in code_name]
+    matching += [to_match for item in synonyms.values()
+                 for to_match in item if match in to_match]
 
     return matching
 
@@ -148,7 +150,7 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
         for entry_name in char_data.keys():
             if "names" in char_data[entry_name].keys() and move_name in char_data[entry_name]["names"]:
                 return entry_name
-    return move.pop()
+    return move.pop() if len(move) != 0 else ""
 
 
 async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) -> str:
