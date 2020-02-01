@@ -18,3 +18,15 @@ def test_split_char_move():
     msg = "?viz wolf forward tilt".split()
     char, move = split_char_move(msg[1:])
     assert char == "wolf" and move == "forwardtilt"
+    msg = "?viz rob nair".split()
+    char, move = split_char_move(msg[1:])
+    assert char == "rob" and move == "nair"
+    msg = "?viz robin nair".split()
+    char, move = split_char_move(msg[1:])
+    assert char == "robin" and move == "nair"
+    msg = "?viz mario nair".split()
+    char, move = split_char_move(msg[1:])
+    assert char == "mario" and move == "nair"
+    msg = "?viz dr mario nair".split()
+    char, move = split_char_move(msg[1:])
+    assert char == "drmario" and move == "nair"
