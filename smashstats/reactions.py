@@ -4,7 +4,7 @@ from typing import List
 from discord import Message, User
 from discord.ext.commands import Context
 
-timeout = 120.0
+timeout = 60.0
 number_emojis: List[str] = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣',
                             '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
 

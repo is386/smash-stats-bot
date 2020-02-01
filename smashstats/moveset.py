@@ -16,7 +16,7 @@ syntax_error: str = "You have to specify a character and a move\nCorrect syntax:
 move_error: str = "The move **{}** does not exist. `?help` for more."
 char_error: str = "That character doesn't exist. `?help` for more."
 hbox_error: str = "**{}** does not have a hitbox gif yet. `?help` for more."
-select_msg: str = "There are multiple hitboxes for this move. React with the hitbox you would like (Sender Only):\n```{}```"
+select_msg: str = "There are multiple hitboxes for this move. React within 60s with the hitbox you would like (Sender Only):\n```{}```"
 
 
 async def get_move_data(ctx: Context) -> dict:
@@ -56,7 +56,8 @@ async def get_move_data(ctx: Context) -> dict:
 
     # Gets move data
     orig_move: str = move
-    move = get_real_move_name(move, char_data)
+    if move not in char_data.keys():
+        move = get_real_move_name(move, char_data)
     if len(move) == 0:
         await ctx.send(move_error.format(orig_move))
         return {}
@@ -68,7 +69,6 @@ async def get_move_data(ctx: Context) -> dict:
         for i in matching_moves:
             if "image" not in char_data[i].keys():
                 matching_moves.remove(i)
-
         if len(matching_moves) == 0:
             await ctx.send(hbox_error.format(move))
             return {}
@@ -145,8 +145,11 @@ async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) 
 
     response: Message = await ctx.send(select_msg.format(msg))
     answer_index: int = await reactions.move_selection(ctx, response, len(moves))
-    await response.delete()
 
     if answer_index == -1:
+        await response.edit(content="You took too long to select a move.")
+        await response.clear_reactions()
         return ""
+
+    await response.delete()
     return moves[answer_index]
