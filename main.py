@@ -29,8 +29,8 @@ async def visualize_hitbox(ctx: commands.Context):
         embed: Embed = embeds.create_image_embed(move_data)
         await ctx.send(embed=embed)
     except KeyError as e:
-        print(embed_error.format(e.args))
         await ctx.send(moveset.hbox_error.format(move_data["title"]))
+        print(embed_error.format(e.args))
 
 
 @bot.command(name='help')
