@@ -25,14 +25,14 @@ async def get_move_data(ctx: Context) -> dict:
     :param ctx: `Context` message that has the character and move
     :return: `dict` on success, an empty dictionary on fail
     """
-    msg: List[str] = ctx.message.content.split()
+    msg: List[str] = ctx.message.content.lower().split()
     if len(msg) < 2:
         await ctx.send(syntax_error.format(ctx.prefix))
         return {}
 
     # Removes special characters from character and move
     for i, string in enumerate(msg):
-        msg[i] = sub(r"[^\w\d]", "", string).lower()
+        msg[i] = sub(r"[^\w\d]|[_\-]", "", string)
 
     # Parses the full character and move name
     if len(msg) <= 10:
@@ -82,6 +82,16 @@ async def get_move_data(ctx: Context) -> dict:
     return char_data[move]
 
 
+def get_all_similar(path: str, match: str):
+    with open(path, 'r') as f:
+        synonyms: dict = safe_load(f)
+
+    matching: List[str] = [code_name for code_name in list(synonyms.keys()) if match in code_name]
+    matching += [to_match for item in synonyms.values() for to_match in item if match in to_match]
+
+    return matching
+
+
 def split_char_move(msg: list) -> tuple:
     """
     Splits the character from the move name
@@ -89,11 +99,23 @@ def split_char_move(msg: list) -> tuple:
     :return: `tuple` like: (char, move), can be unpacked on call
     """
     acc: str = msg.pop(0)
-    char: str = translator.trans(acc, char_syns_path)
-    while char == "" and len(msg) > 0:
-        acc += msg.pop(0)
-        char = translator.trans(acc, char_syns_path)
-    return char, ''.join(msg)
+
+    matching: List[str] = get_all_similar(char_syns_path, acc)
+    if len(matching) < 1:
+        return '', ''
+
+    char: str = acc
+    while len(matching) > 0 and len(msg) > 0:
+        tmp: str = msg.pop(0)
+        acc += tmp
+        matching = [match for match in matching if acc in match]
+        if len(matching) < 1:
+            msg.insert(0, tmp)
+            break
+        char = acc
+
+    # Can be made much better once we have an actual Database. Sorry
+    return translator.trans(char, char_syns_path)[0], ''.join(msg)
 
 
 def get_character(char: str) -> dict:
@@ -120,13 +142,13 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
     :param char_data: `dict`
     :return: `str` empty if not found
     """
-    move: str = translator.trans(move_name, move_syns_path)
+    move: list = translator.trans(move_name, move_syns_path)
     if len(move) == 0:
         entry_name: str
         for entry_name in char_data.keys():
             if "names" in char_data[entry_name].keys() and move_name in char_data[entry_name]["names"]:
-                move = entry_name
-    return move
+                return entry_name
+    return move.pop()
 
 
 async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) -> str:
