@@ -311,7 +311,7 @@ wario:
 
 wiifit:
   - wft
-  - wiifit
+  - wiifittrainer
   - trainer
   - wf
 
@@ -330,6 +330,6 @@ younglink:
 zelda:
   - zelda
 
-zerosuitsamus:
-  - zerosuit
+zerosuit:
+  - zerosuitsamus
   - zss
