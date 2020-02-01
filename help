@@ -3,7 +3,12 @@ Thank you for using **Smash Stats Bot** by 1nder
 ---------------------------------------------------------
 
 **Commands:**
-`?help` = sends this help message 
+
+Default Prefix = `?`
+
+`?help` = sends this help message.
+
+`?prefix [prefix]` = admins can use this to set a custom prefix.
 
 `?viz [character name] [move name]` = send a gif of the specified move for the specified character.
 
