@@ -13,7 +13,7 @@ embed_error: str = "An error has occurred during the creation of the embed:\n{}"
 prefix_error1: str = "{} you need the permission **Administrator** to set the prefix."
 prefix_error2: str = "You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`"
 
-prefix_conn: sqlite3.Connection = database.connect_to_prefix_db("prefixes.db")
+prefix_conn: sqlite3.Connection = database.connect_to_prefix_db(db_name)
 
 
 async def get_prefix(bot, ctx) -> str:
