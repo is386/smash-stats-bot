@@ -4,7 +4,8 @@ from yaml import safe_load
 
 def trans(name: str, file_path: str) -> list:
     """
-    Translates a synonyms (move or char) into the base name
+    Translate a synonyms (move or char) into the base name.
+
     :param name: `str` name/synonym to translate
     :param file_path: `str` synonyms file path
     :return: `list` list of all the possible matches, empty if none

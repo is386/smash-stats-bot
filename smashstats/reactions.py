@@ -11,10 +11,11 @@ number_emojis: List[str] = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣
 
 async def move_selection(ctx: Context, resp: Message, emoji_count: int) -> int:
     """
-    Waits for the user to pick a number emoji.
-    :param ctx: `Context`
-    :param resp: `Message`
-    :param n: `int`
+    Wait for the user to pick a number emoji.
+
+    :param ctx: `Context` original message context
+    :param resp: `Message` message to add reactions to
+    :param n: `int` number of emojis to react with
     :return: `int` or -1 if nothing is chosen
     """
     for i in range(emoji_count):

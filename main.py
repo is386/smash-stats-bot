@@ -18,12 +18,13 @@ prefix_conn: Connection = database.connect_to_prefix_db(db_name)
 
 async def get_prefix(bot, ctx) -> str:
     """
-    Async function to get the server's custom prefix
-    :param bot: `commands.Bot`
-    :param ctx: `Context`
-    :return: `str`
+    Async function to get the server's custom prefix.
+
+    :param bot: `commands.Bot` the bot object that will use the prefix
+    :param ctx: `Context` original user message's context
+    :return: `str` the prefix
     """
-    if ctx.guild == None:
+    if ctx.guild is None:
         return default_prefix
 
     c: Cursor = prefix_conn.cursor()
@@ -47,7 +48,8 @@ bot: commands.Bot = commands.Bot(
 async def visualize_hitbox(ctx: commands.Context):
     """
     Async function to send an embedded message with a hitbox visual.
-    :param ctx: `Context`
+
+    :param ctx: `Context` original user message's context
     :return: `None`
     """
     move_data: dict = await moveset.get_move_data(ctx)
@@ -66,7 +68,8 @@ async def visualize_hitbox(ctx: commands.Context):
 async def send_help(ctx: commands.Context):
     """
     Async function to send a direct message with the help text.
-    :param ctx: `Context`
+
+    :param ctx: `Context` original user message's context
     :return: `None`
     """
     with open("help", "r") as help_file:
@@ -80,8 +83,9 @@ async def send_help(ctx: commands.Context):
 async def set_prefix(ctx: commands.Context, prefix: str):
     """
     Async function to send a direct message with the help text.
-    :param ctx: `Context`
-    :param prefix: `str`
+
+    :param ctx: `Context` original user message's context
+    :param prefix: `str` the desired prefix
     :return: `None`
     """
     if len(prefix) > 3:
@@ -106,7 +110,11 @@ async def set_prefix(ctx: commands.Context, prefix: str):
 @set_prefix.error
 async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
     """
-    Async function to send a message if a user is missing permissions to change the prefix.: param ctx: `Context`: param error: `commands.CommandError`: return: `None`
+    Async function to send a message if a user is missing permissions to change the prefix.
+
+    :param ctx: `Context` original user message's context
+    :param error: `commands.CommandError` the error invoked by the user
+    :return: `None`
     """
     if isinstance(error, commands.MissingPermissions):
         await ctx.send(prefix_error1.format(ctx.author.mention))
