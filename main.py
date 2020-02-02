@@ -1,4 +1,4 @@
-import sqlite3
+from sqlite3 import Connection, Cursor
 
 from discord import Game, Embed
 from discord.ext import commands
@@ -13,7 +13,7 @@ embed_error: str = "An error has occurred during the creation of the embed:\n{}"
 prefix_error1: str = "{} you need the permission **Administrator** to set the prefix."
 prefix_error2: str = "You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`"
 
-prefix_conn: sqlite3.Connection = database.connect_to_prefix_db(db_name)
+prefix_conn: Connection = database.connect_to_prefix_db(db_name)
 
 
 async def get_prefix(bot, ctx) -> str:
@@ -26,7 +26,7 @@ async def get_prefix(bot, ctx) -> str:
     if ctx.guild == None:
         return default_prefix
 
-    c: sqlite3.Cursor = prefix_conn.cursor()
+    c: Cursor = prefix_conn.cursor()
     c = c.execute(
         "SELECT prefix FROM prefixes WHERE server_id=?", (ctx.guild.id,))
     rows = c.fetchall()
@@ -88,7 +88,7 @@ async def set_prefix(ctx: commands.Context, prefix: str):
         await ctx.send("That prefix is too long. It must 3 characters or less.")
         return
 
-    c: sqlite3.Cursor = prefix_conn.cursor()
+    c: Cursor = prefix_conn.cursor()
     c.execute("""
         INSERT INTO
             prefixes (server_id, prefix)
