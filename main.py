@@ -3,7 +3,7 @@ import sqlite3
 from discord import Game, Embed
 from discord.ext import commands
 
-from smashstats import moveset, embeds
+from smashstats import moveset, embeds, database
 from secret import token
 
 db_name = "prefixes.db"
@@ -13,6 +13,8 @@ embed_error: str = "An error has occurred during the creation of the embed:\n{}"
 prefix_error1: str = "{} you need the permission **Administrator** to set the prefix."
 prefix_error2: str = "You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`"
 
+prefix_conn: sqlite3.Connection = database.connect_to_prefix_db("prefixes.db")
+
 
 async def get_prefix(bot, ctx) -> str:
     """
@@ -21,18 +23,23 @@ async def get_prefix(bot, ctx) -> str:
     :param ctx: `Context`
     :return: `str`
     """
-    conn: sqlite3.Connection = sqlite3.connect(db_name)
-    c: sqlite3.Cursor = conn.cursor()
-    c = c.execute(
-        "SELECT prefix FROM prefixes WHERE server_id={}".format(ctx.guild.id))
+    c: sqlite3.Cursor = prefix_conn.cursor()
+    c = c.execute("""
+        SELECT
+            prefix
+        FROM
+            prefixes
+        WHERE
+            server_id=%(server_id)d
+    """, {
+        'server_id': ctx.guild.id
+    })
     rows = c.fetchall()
 
     if len(rows) == 0:
         return default_prefix
 
-    p = rows[0][0]
-    conn.close()
-    return p
+    return rows[0][0]
 
 
 bot: commands.Bot = commands.Bot(
@@ -82,28 +89,32 @@ async def set_prefix(ctx: commands.Context, prefix: str):
     :param prefix: `str`
     :return: `None`
     """
-    # TODO: If the server_id exists, then update. Else do an insert. Right now theres only update.
-
     if len(prefix) > 3:
         await ctx.send("That prefix is too long. It must 3 characters or less.")
         return
 
-    with sqlite3.connect(db_name) as conn:
-        c: sqlite3.Cursor = conn.cursor()
-        x = "INSERT INTO prefixes (server_id, prefix) VALUES({}, '{}') ON CONFLICT(server_id) DO UPDATE SET prefix='{}'".format(
-            ctx.guild.id, prefix, prefix)
-        c.execute(x)
-        conn.commit()
+    c: sqlite3.Cursor = prefix_conn.cursor()
+    c.execute("""
+        INSERT INTO
+            prefixes (server_id, prefix)
+        VALUES
+            (%(server_id)d, %(prefix)s)
+        ON CONFLICT
+            (server_id)
+        DO UPDATE SET
+            prefix=%(prefix)s
+    """, {
+        'server_id': ctx.guild.id,
+        'prefix': prefix
+    })
+    prefix_conn.commit()
     await ctx.send("Your new prefix has been set to **{}**".format(prefix))
 
 
 @set_prefix.error
 async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
     """
-    Async function to send a message if a user is missing permissions to change the prefix.
-    :param ctx: `Context`
-    :param error: `commands.CommandError`
-    :return: `None`
+    Async function to send a message if a user is missing permissions to change the prefix.: param ctx: `Context`: param error: `commands.CommandError`: return: `None`
     """
     if isinstance(error, commands.MissingPermissions):
         await ctx.send(prefix_error1.format(ctx.author.mention))
