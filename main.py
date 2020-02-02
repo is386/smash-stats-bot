@@ -24,16 +24,8 @@ async def get_prefix(bot, ctx) -> str:
     :return: `str`
     """
     c: sqlite3.Cursor = prefix_conn.cursor()
-    c = c.execute("""
-        SELECT
-            prefix
-        FROM
-            prefixes
-        WHERE
-            server_id=%(server_id)d
-    """, {
-        'server_id': ctx.guild.id
-    })
+    c = c.execute(
+        "SELECT prefix FROM prefixes WHERE server_id=?", (ctx.guild.id,))
     rows = c.fetchall()
 
     if len(rows) == 0:
@@ -98,15 +90,12 @@ async def set_prefix(ctx: commands.Context, prefix: str):
         INSERT INTO
             prefixes (server_id, prefix)
         VALUES
-            (%(server_id)d, %(prefix)s)
+            (?, ?)
         ON CONFLICT
             (server_id)
         DO UPDATE SET
-            prefix=%(prefix)s
-    """, {
-        'server_id': ctx.guild.id,
-        'prefix': prefix
-    })
+            prefix=?
+    """, (ctx.guild.id, prefix, prefix))
     prefix_conn.commit()
     await ctx.send("Your new prefix has been set to **{}**".format(prefix))
 
