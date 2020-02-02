@@ -14,7 +14,7 @@ async def move_selection(ctx: Context, resp: Message, emoji_count: int) -> int:
     Waits for the user to pick a number emoji.
     :param ctx: `Context`
     :param resp: `Message`
-    :param n: `int`
+    :param emoji_count: `int`
     :return: `int` or -1 if nothing is chosen
     """
     for i in range(emoji_count):
