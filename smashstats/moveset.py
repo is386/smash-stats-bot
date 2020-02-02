@@ -8,7 +8,6 @@ from yaml import safe_load, YAMLError
 from smashstats import reactions
 from smashstats import translator
 
-
 char_path: str = "characters/{}.yml"
 char_syns_path: str = "synonyms/characters.yml"
 move_syns_path: str = "synonyms/moves.yml"
@@ -138,7 +137,9 @@ def get_character(char: str) -> dict:
         try:
             char_data: dict = safe_load(f)
         except YAMLError:
-            raise YAMLError()
+            raise YAMLError
+        except FileNotFoundError:
+            raise FileNotFoundError
 
     return char_data
 
@@ -171,7 +172,7 @@ async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) 
 
     for i, move in enumerate(moves):
         move_name = char_data[move]["title"]
-        msg += "\n {}. {}".format(i+1, move_name)
+        msg += "\n {}. {}".format(i + 1, move_name)
 
     response: Message = await ctx.send(select_msg.format(msg))
     answer_index: int = await reactions.move_selection(ctx, response, len(moves))
