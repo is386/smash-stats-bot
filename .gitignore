@@ -8,3 +8,4 @@ secret.py
 .vscode
 __pycache__
 *.db
+.mypy_cache

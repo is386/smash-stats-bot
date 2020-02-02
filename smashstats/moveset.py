@@ -21,7 +21,8 @@ select_msg: str = "There are multiple hitboxes for this move. React within 60s w
 
 async def get_move_data(ctx: Context) -> dict:
     """
-    Gets the YAML data for a character's move
+    Get the YAML data for a character's move.
+
     :param ctx: `Context` message that has the character and move
     :return: `dict` on success, an empty dictionary on fail
     """
@@ -83,6 +84,13 @@ async def get_move_data(ctx: Context) -> dict:
 
 
 def get_all_similar(path: str, match: str):
+    """
+    Get the matching synonyms.
+
+    :param path: `str` path to synonyms yaml file
+    :param match: `str` name to match
+    :return: `List[str]`
+    """
     with open(path, 'r') as f:
         synonyms: dict = safe_load(f)
 
@@ -96,7 +104,8 @@ def get_all_similar(path: str, match: str):
 
 def split_char_move(msg: list) -> tuple:
     """
-    Splits the character from the move name
+    Split the character from the move name.
+
     :param msg: `list` original msg
     :return: `tuple` like: (char, move), can be unpacked on call
     """
@@ -122,7 +131,8 @@ def split_char_move(msg: list) -> tuple:
 
 def get_character(char: str) -> dict:
     """
-    Returns the parsed Yaml of the character as a dictionary
+    Get the parsed Yaml of the character as a dictionary.
+
     :param char: `str` char name
     :return: `dict` empty if failed
     :raise: `yaml.YAMLError`
@@ -139,9 +149,10 @@ def get_character(char: str) -> dict:
 
 def get_real_move_name(move_name: str, char_data: dict) -> str:
     """
-    Extracts the move's code name from the character data
-    :param move_name: `str`
-    :param char_data: `dict`
+    Extract the move's code name from the character data.
+
+    :param move_name: `str` user given move name
+    :param char_data: `dict` character's yaml data
     :return: `str` empty if not found
     """
     move: list = translator.trans(move_name, move_syns_path)
@@ -156,16 +167,17 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
 async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) -> str:
     """
     Async function to ask for user input on a list of moves to pick one.
-    :param moves: `List[str]`
-    :param char_data: `dict`
-    :param ctx: `Context`
+
+    :param moves: `List[str]` moves that are similar
+    :param char_data: `dict` character's yaml data
+    :param ctx: `Context` original message context
     :return: `str` empty if failed
     """
     msg: str = ""
 
     for i, move in enumerate(moves):
         move_name = char_data[move]["title"]
-        msg += "\n {}. {}".format(i+1, move_name)
+        msg += "\n {}. {}".format(i + 1, move_name)
 
     response: Message = await ctx.send(select_msg.format(msg))
     answer_index: int = await reactions.move_selection(ctx, response, len(moves))
