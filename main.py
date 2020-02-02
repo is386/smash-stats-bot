@@ -23,6 +23,9 @@ async def get_prefix(bot, ctx) -> str:
     :param ctx: `Context`
     :return: `str`
     """
+    if ctx.guild == None:
+        return default_prefix
+
     c: sqlite3.Cursor = prefix_conn.cursor()
     c = c.execute(
         "SELECT prefix FROM prefixes WHERE server_id=?", (ctx.guild.id,))
