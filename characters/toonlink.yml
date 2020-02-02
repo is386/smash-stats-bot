@@ -56,8 +56,8 @@ fair:
   fields:
 
 fsmash:
-  title: Forward Smash 1
-  image: https://ultimateframedata.com/hitboxes/toon_link/ToonLinkFSmash1.gif
+  title: Forward Smash
+  image: https://ultimateframedata.com/hitboxes/toon_link/ToonLinkFSmash.gif
   fields:
 
 fthrow:

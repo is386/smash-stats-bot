@@ -55,6 +55,11 @@ fsmash:
   image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkFSmash1.gif
   fields:
 
+fsmash2:
+  title: Forward Smash 2
+  image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkFSmash2.gif
+  fields:
+
 fthrow:
   title: Forward Throw
   image: https://ultimateframedata.com/hitboxes/young_link/YoungLinkFThrow.gif
