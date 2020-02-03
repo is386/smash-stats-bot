@@ -66,17 +66,18 @@ async def get_move_data(ctx: Context) -> dict:
     # Finds moves that match parsed move. If so, that move has multiple hitboxes.
     matching_moves = [entry for entry in char_data.keys() if move in entry]
     if len(matching_moves) > 1:
+        selection_moves = []
         # Removes the matching moves that do not have an image
         for i in matching_moves:
-            if "image" not in char_data[i].keys():
-                matching_moves.remove(i)
-        if len(matching_moves) == 0:
+            if "image" in char_data[i].keys():
+                selection_moves.append(i)
+        if len(selection_moves) == 0:
             await ctx.send(hbox_error.format(move))
             return {}
-        elif len(matching_moves) == 1:
-            move = matching_moves[0]
+        elif len(selection_moves) == 1:
+            move = selection_moves[0]
         else:
-            move = await parse_move_selection(matching_moves, char_data, ctx)
+            move = await parse_move_selection(selection_moves, char_data, ctx)
             if len(move) == 0:
                 return {}
 
