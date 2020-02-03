@@ -1,12 +1,10 @@
----------------------------------------------------------
+--------------------------------------------------------------
 Thank you for using **Smash Stats Bot** by 1nder
----------------------------------------------------------
+--------------------------------------------------------------
 
 **Commands:**
 
 Default Prefix = `?`
-
-`?help` = sends this help message.
 
 `?prefix [prefix]` = admins can use this to set a custom prefix.
 
