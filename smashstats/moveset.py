@@ -70,7 +70,7 @@ async def get_move_data(ctx: Context) -> dict:
         # Removes the matching moves that do not have an image
         for i in matching_moves:
             if "image" in char_data[i].keys():
-                selection_moves.append(i)
+                selection_moves.append(str(i))
         if len(selection_moves) == 0:
             await ctx.send(hbox_error.format(move))
             return {}
