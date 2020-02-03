@@ -1,4 +1,4 @@
-from re import sub
+from re import sub, search, Match
 from typing import List
 
 from discord import Message
@@ -57,11 +57,19 @@ async def get_move_data(ctx: Context) -> dict:
 
     # Gets move data
     orig_move: str = move
+    n_match: Match = search(r'\d+$', string)
+    n = ""
+    if n_match is not None:
+        n = move[n_match.start():n_match.end()]
+        move = move[:n_match.start()]
+
     if move not in char_data.keys():
         move = get_real_move_name(move, char_data)
-    if len(move) == 0:
+    if len(move) == 0 or move + n not in char_data.keys():
         await ctx.send(move_error.format(orig_move))
         return {}
+
+    move += n
 
     # Finds moves that match parsed move. If so, that move has multiple hitboxes.
     matching_moves = [entry for entry in char_data.keys() if move in entry]
