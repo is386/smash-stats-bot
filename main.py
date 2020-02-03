@@ -35,11 +35,11 @@ async def get_prefix(bot, ctx) -> str:
     if len(rows) == 0:
         return default_prefix
 
-    return rows[0][0]
+    return commands.when_mentioned_or(rows[0][0])(bot, ctx)
 
 
 bot: commands.Bot = commands.Bot(
-    command_prefix=commands.when_mentioned_or(get_prefix),
+    command_prefix=get_prefix,
     help_command=None,
     activity=Game(status_msg))
 
