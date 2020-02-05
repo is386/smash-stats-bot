@@ -1,210 +1,166 @@
-metaknight:
-  title: Meta Knight
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt 1
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFTilt1.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt 2
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFTilt2.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt 3
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFTilt3.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightGrab.gif
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finish
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightJabRapidEnd.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightJabRapid.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Mach Tornado
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightMachTornado.gif
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
+  title: Down Smash
+dspecial1:
+  fields: null
   title: Dimensional Cape
-  fields:
-
 dspecial2:
-  title: Dimensional Cape Attack (Ground, Front)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDimensionalCapeGroundForward.gif
-  fields:
-
+  title: Dimensional Cape Attack (Ground, Front)
 dspecial3:
-  title: Dimensional Cape Attack (Ground, Back)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDimensionalCapeGroundBack.gif
-  fields:
-
+  title: Dimensional Cape Attack (Ground, Back)
 dspecial4:
-  title: Dimensional Cape Attack (Air, Front)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDimensionalCapeAirForward.gif
-  fields:
-
+  title: Dimensional Cape Attack (Air, Front)
 dspecial5:
-  title: Dimensional Cape Attack (Air, Back)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDimensionalCapeAirBack.gif
-  fields:
-
-spotdodge:
+  title: Dimensional Cape Attack (Air, Back)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFTilt1.gif
+  title: Forward Tilt 1
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFTilt2.gif
+  title: Forward Tilt 2
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightFTilt3.gif
+  title: Forward Tilt 3
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightGrab.gif
+  title: Standing Grab
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightJabRapidEnd.gif
+  title: Rapid Jab Finish
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+metaknight1:
+  fields: null
+  image: hurtbox.png
+  title: Meta Knight
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightMachTornado.gif
+  title: Mach Tornado
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightJabRapid.gif
+  title: Rapid Jab
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Drill Rush (Start)
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDrillRush.gif
-  fields:
-
+  title: Drill Rush (Start)
 sspecial2:
-  title: Drill Rush (End)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightDrillRushEnd.gif
-  fields:
-
-staunt:
+  title: Drill Rush (End)
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightUAir.gif
-  fields:
-
-uspecial:
-  title: Shuttle Loop (Ground)
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightShuttleLoopG.gif
-  fields:
-
-uspecial2:
-  title: Shuttle Loop (Air)
-  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightShuttleLoopA.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightShuttleLoopG.gif
+  title: Shuttle Loop (Ground)
+uspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightShuttleLoopA.gif
+  title: Shuttle Loop (Air)
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/meta_knight/MetaKnightUTilt.gif
-  fields:
+  title: Up Tilt

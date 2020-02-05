@@ -1,319 +1,253 @@
-miibrawler:
-  title: Mii Brawler
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFSmash.gif
-  fields:
-
-fsmash2:
-  title: Forward Smash Down
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFSmashDown.gif
-  fields:
-
-fsmash3:
-  title: Forward Smash Up
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFSmashUp.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFTilt.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt Down
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFTiltDown.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt Up
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFTiltUp.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerJab2.gif
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finish
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerJabRapidEnd.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerJabRapid.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Shot Put
-  fields:
-
-nspecial2:
-  title: Exploding Side Kick
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerExplodingSideKick.gif
-  fields:
-
-nspecial3:
-  title: Flying Mach Punch (Hit)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFlashingMachPunch.gif
-  fields:
-
-nspecial4:
-  title: Flying Mach Punch (Miss)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFlashingMachPunch.gif
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Head-On Assault (Rising)
+  title: Down Smash
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHead-OnAssault.gif
-  fields:
-
-dspecial2:
-  title: Head-On Assault (Falling)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHead-OnAssaultFall.gif
-  fields:
-
-dspecial3:
-  title: Head-On Assault (Landing)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHead-OnAssaultLanding.gif
-  fields:
-
-dspecial4:
-  title: Head-On Assault (Air)
-  fields:
-
-dspecial5:
-  title: Feint Jump
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFeintJump.gif
-  fields:
-
-dspecial6:
-  title: Feint Jump (Auto Kick)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFeintJumpAutoKick.gif
-  fields:
-
-dspecial7:
-  title: Counter Throw (Counter)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerCounterThrow.gif
-  fields:
-
-dspecial8:
-  title: Counter Throw (Grab, Ground)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerCounterThrowGrabG.gif
-  fields:
-
-dspecial9:
-  title: Counter Throw (Grab, Air)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerCounterThrowGrabA.gif
-  fields:
-
+  title: Head-On Assault (Rising)
 dspecial10:
-  title: Counter Throw (Throw)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerCounterThrowGrabA.gif
-  fields:
-
-spotdodge:
+  title: Counter Throw (Throw)
+dspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHead-OnAssaultFall.gif
+  title: Head-On Assault (Falling)
+dspecial3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHead-OnAssaultLanding.gif
+  title: Head-On Assault (Landing)
+dspecial4:
+  fields: null
+  title: Head-On Assault (Air)
+dspecial5:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFeintJump.gif
+  title: Feint Jump
+dspecial6:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFeintJumpAutoKick.gif
+  title: Feint Jump (Auto Kick)
+dspecial7:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerCounterThrow.gif
+  title: Counter Throw (Counter)
+dspecial8:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerCounterThrowGrabG.gif
+  title: Counter Throw (Grab, Ground)
+dspecial9:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerCounterThrowGrabA.gif
+  title: Counter Throw (Grab, Air)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFSmash.gif
+  title: Forward Smash
+fsmash2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFSmashDown.gif
+  title: Forward Smash Down
+fsmash3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFSmashUp.gif
+  title: Forward Smash Up
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFTilt.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFTiltDown.gif
+  title: Forward Tilt Down
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFTiltUp.gif
+  title: Forward Tilt Up
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerJab2.gif
+  title: Jab 2
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerJabRapidEnd.gif
+  title: Rapid Jab Finish
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+miibrawler1:
+  fields: null
+  image: hurtbox.png
+  title: Mii Brawler
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  title: Shot Put
+nspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerExplodingSideKick.gif
+  title: Exploding Side Kick
+nspecial3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFlashingMachPunch.gif
+  title: Flying Mach Punch (Hit)
+nspecial4:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerFlashingMachPunch.gif
+  title: Flying Mach Punch (Miss)
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerJabRapid.gif
+  title: Rapid Jab
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Onslaught (Ground, Start)
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerOnslaughtG.gif
-  fields:
-
+  title: Onslaught (Ground, Start)
 sspecial2:
-  title: Onslaught (Ground, Hit)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerOnslaughtHitG.gif
-  fields:
-
+  title: Onslaught (Ground, Hit)
 sspecial3:
-  title: Onslaught (Air, Start)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerOnslaughtA.gif
-  fields:
-
+  title: Onslaught (Air, Start)
 sspecial4:
-  title: Onslaught (Air, Hit)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerOnslaughtHitA.gif
-  fields:
-
+  title: Onslaught (Air, Hit)
 sspecial5:
-  title: Burning Dropkick
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerBurningDropkick.gif
-  fields:
-
+  title: Burning Dropkick
 sspecial6:
-  title: Suplex Grab (Ground)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSuplexG.gif
-  fields:
-
+  title: Suplex Grab (Ground)
 sspecial7:
-  title: Suplex Grab (Air)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSuplexA.gif
-  fields:
-
+  title: Suplex Grab (Air)
 sspecial8:
-  title: Suplex Success
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSuplexHit.gif
-  fields:
-
-staunt:
+  title: Suplex Success
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerUAir.gif
-  fields:
-
-uspecial:
-  title: Soaring Axe Kick (Rising)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSoaringAxeKickRise.gif
-  fields:
-
-uspecial2:
-  title: Soaring Axe Kick (Falling)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSoaringAxeKickFall.png
-  fields:
-
-uspecial3:
-  title: Soaring Axe Kick (Landing)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSoaringAxeKickLanding.gif
-  fields:
-
-uspecial4:
-  title: Helicopter Kick (Ground)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHelicopterKickG.gif
-  fields:
-
-uspecial5:
-  title: Helicopter Kick (Air)
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHelicopterKickA.gif
-  fields:
-
-uspecial6:
-  title: Thrust Uppercut
-  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerThrustUppercut.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSoaringAxeKickRise.gif
+  title: Soaring Axe Kick (Rising)
+uspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSoaringAxeKickFall.png
+  title: Soaring Axe Kick (Falling)
+uspecial3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerSoaringAxeKickLanding.gif
+  title: Soaring Axe Kick (Landing)
+uspecial4:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHelicopterKickG.gif
+  title: Helicopter Kick (Ground)
+uspecial5:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerHelicopterKickA.gif
+  title: Helicopter Kick (Air)
+uspecial6:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerThrustUppercut.gif
+  title: Thrust Uppercut
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mii_brawler/MiiBrawlerUTilt.gif
-  fields:
+  title: Up Tilt

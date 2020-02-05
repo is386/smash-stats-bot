@@ -1,188 +1,148 @@
-pacman:
-  title: Pac-Man
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFTilt.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt Down
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFTiltDown.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt Up
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFTiltUp.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManJab3.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Bonus Fruit
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/pac_man/PacManPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
+  title: Down Smash
+dspecial1:
+  fields: null
   title: Fire Hydrant
-  fields:
-
-spotdodge:
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFTilt.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFTiltDown.gif
+  title: Forward Tilt Down
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManFTiltUp.gif
+  title: Forward Tilt Up
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManJab2.gif
+  title: Jab 2
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManJab3.gif
+  title: Jab 3
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  title: Bonus Fruit
+oos1:
+  fields: null
+  title: Out of Shield Options
+pacman1:
+  fields: null
+  image: hurtbox.png
+  title: Pac-Man
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pac_man/PacManPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Power Pellet (Early)
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManPowerPelletEarly.gif
-  fields:
-
+  title: Power Pellet (Early)
 sspecial2:
-  title: Power Pellet (Late)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManPowerPelletLate.gif
-  fields:
-
-staunt:
+  title: Power Pellet (Late)
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManUAir.gif
-  fields:
-
-uspecial:
-  title: Pac-Jump
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  title: Pac-Jump
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pac_man/PacManUTilt.gif
-  fields:
+  title: Up Tilt

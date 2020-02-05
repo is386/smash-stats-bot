@@ -1,185 +1,146 @@
-wiifittrainer:
-  title: WiiFitTrainer
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerBThrow.gif
-  fields:
-
-dair:
-  title: Down Air (Normal)
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air (Normal)
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerFTilt.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerJab3.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Sun Salutation
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerSunSalutationMin.png
-  fields:
-
-nspecial2:
-  title: Sun Salutation (Max)
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerSunSalutationMax.png
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
+  title: Down Smash
+dspecial1:
+  fields: null
   title: Deep Breathing
-  fields:
-
-spotdodge:
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerFTilt.gif
+  title: Forward Tilt
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerJab2.gif
+  title: Jab 2
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerJab3.gif
+  title: Jab 3
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerSunSalutationMin.png
+  title: Sun Salutation
+nspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerSunSalutationMax.png
+  title: Sun Salutation (Max)
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Header (Hit)
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerHeader.gif
-  fields:
-
+  title: Header (Hit)
 sspecial2:
-  title: Header (Ball)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/Soccerball.png
-  fields:
-
-staunt:
+  title: Header (Ball)
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerUAir.gif
-  fields:
-
-uspecial:
-  title: Super Hoop
-  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerSuperHoop.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerSuperHoop.gif
+  title: Super Hoop
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/wii_fit_trainer/WiiFitTrainerUTilt.gif
-  fields:
+  title: Up Tilt
+wiifittrainer1:
+  fields: null
+  image: hurtbox.png
+  title: WiiFitTrainer

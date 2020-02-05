@@ -1,205 +1,162 @@
-inkling:
-  title: Inkling
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingFTilt.gif
-  fields:
-
-getupattack: 
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingJab3.gif
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finish
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingJabRapidEnd.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingJabRapid.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Splatter Shot
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Splat Bomb (Throw)
+  title: Down Smash
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingSplatBomb.gif
-  fields:
-
+  title: Splat Bomb (Throw)
 dspecial2:
-  title: Splat Bomb (Explosion)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingSplatBombExplosion.gif
-  fields:
-
-spotdodge:
+  title: Splat Bomb (Explosion)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingFTilt.gif
+  title: Forward Tilt
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingGrab.gif
+  title: Standing Grab
+inkling1:
+  fields: null
+  image: hurtbox.png
+  title: Inkling
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingJab2.gif
+  title: Jab 2
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingJab3.gif
+  title: Jab 3
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingJabRapidEnd.gif
+  title: Rapid Jab Finish
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  title: Splatter Shot
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingJabRapid.gif
+  title: Rapid Jab
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Splat Roller (Ground)
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingSplatRollerG.png
-  fields:
-
+  title: Splat Roller (Ground)
 sspecial2:
-  title: Splat Roller (Air)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingSplatRollerA.png
-  fields:
-
+  title: Splat Roller (Air)
 sspecial3:
-  title: Splat Roller (No Ink)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingSplatRollerNoInk.png
-  fields:
-
-staunt:
+  title: Splat Roller (No Ink)
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingUAir.gif
-  fields:
-
-uspecial:
-  title: Super Jump
-  image: https://ultimateframedata.com/hitboxes/inkling/InklingSuperJump.gif
-  fields:
-
-usmash:
-  title: Up Smash (Ink)
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingUSmash.gif
-  fields:
-
+  title: Up Smash (Ink)
 usmash2:
-  title: Up Smash (No Ink)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingUSmashNoInk.gif
-  fields:
-
-utaunt:
+  title: Up Smash (No Ink)
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/inkling/InklingSuperJump.gif
+  title: Super Jump
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/inkling/InklingUTilt_.gif
-  fields:
+  title: Up Tilt

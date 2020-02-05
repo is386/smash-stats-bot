@@ -1,175 +1,138 @@
-pichu:
-  title: Pichu
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuDAir.gif
-  fields:
-
+  title: Down Air
 dair2:
-  title: Down Air (Landing)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuDAirLanding.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air (Landing)
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuFTilt.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuGrab.gif
-  fields:
-
-jab:
-  title: Jab
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuJab.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Thunderjolt (Ground)
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuThunderJoltG.png
-  fields:
-
-nspecial2:
-  title: Thunderjolt (Air)
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuThunderJoltA.png
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/pichu/PichuPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Thunder
+  title: Down Smash
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuThunderHit.gif
-  fields:
-
-spotdodge:
+  title: Thunder
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuFTilt.gif
+  title: Forward Tilt
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuJab.gif
+  title: Jab
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuThunderJoltG.png
+  title: Thunderjolt (Ground)
+nspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuThunderJoltA.png
+  title: Thunderjolt (Air)
+oos1:
+  fields: null
+  title: Out of Shield Options
+pichu1:
+  fields: null
+  image: hurtbox.png
+  title: Pichu
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/pichu/PichuPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Skull Bash
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuSkullBash.gif
-  fields:
-
-staunt:
+  title: Skull Bash
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuUAir.gif
-  fields:
-
-uspecial:
-  title: Agility
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  title: Agility
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/pichu/PichuUTilt.gif
-  fields:
+  title: Up Tilt

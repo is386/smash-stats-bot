@@ -1,263 +1,205 @@
-bowser:
-  title: Bowser
-  image: UPLOAD
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bowser1:
+  fields: null
+  image: UPLOAD
+  title: Bowser
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTilt.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt Down
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltDown.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt Up
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltUp.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserPivotrGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserJab2.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Fire Breath
-  names:
-    - firebreath
-    - fire
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  names:
-    - bowserbomb
-    - bb
-
+  title: Down Smash
 dspecial1:
-  title: Bowser Bomb (Ground)
-  names:
-    - bowserbombground
-    - groundedbowserbomb
-    - gbb
-    - bbg
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserBowserBombG.gif
-  fields:
-
+  names:
+  - bowserbombground
+  - groundedbowserbomb
+  - gbb
+  - bbg
+  title: Bowser Bomb (Ground)
 dspecial2:
-  title: Bowser Bomb (Air)
-  names:
-    - bowserbombair
-    - aerialbowserbomb
-    - abb
-    - bba
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserBowserBomb.png
-  fields:
-
+  names:
+  - bowserbombair
+  - aerialbowserbomb
+  - abb
+  - bba
+  title: Bowser Bomb (Air)
 dspecial3:
-  title: Bowser Bomb (Landing)
-  names:
-    - bowserbomblanding
-    - landingbowserbomb
-    - lbb
-    - bbl
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserBowserBombLanding.gif
-  fields:
-
-spotdodge:
+  names:
+  - bowserbomblanding
+  - landingbowserbomb
+  - lbb
+  - bbl
+  title: Bowser Bomb (Landing)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTilt.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltDown.gif
+  title: Forward Tilt Down
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserFTiltUp.gif
+  title: Forward Tilt Up
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserPivotrGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserJab2.gif
+  title: Jab 2
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  names:
+  - firebreath
+  - fire
+  title: Fire Breath
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  names:
-    - flyingslam
-    - fs
-
 sspecial1:
-  title: Flying Slam Grab (Ground)
-  names:
-    - flyingslamground
-    - groundedflyingslam
-    - fsg
-    - gfs
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserFlyingSlamGrabG.gif
-  fields:
-
+  names:
+  - flyingslamground
+  - groundedflyingslam
+  - fsg
+  - gfs
+  title: Flying Slam Grab (Ground)
 sspecial2:
-  title: Flying Slam Grab (Air)
-  names:
-    - flyingslamair
-    - aerialflyingslam
-    - fsa
-    - afs
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserFlyingSlamGrabA.gif
-  fields:
-
+  names:
+  - flyingslamair
+  - aerialflyingslam
+  - fsa
+  - afs
+  title: Flying Slam Grab (Air)
 sspecial3:
-  title: Flying Slam (Falling)
-  names:
-    - flyingslamfalling
-    - fallingflyingslam
-    - fsf
-    - ffs
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserFlyingSlam.gif
-  fields:
-
-staunt:
+  names:
+  - flyingslamfalling
+  - fallingflyingslam
+  - fsf
+  - ffs
+  title: Flying Slam (Falling)
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserUAir.gif
-  fields:
-
-uspecial:
-  names:
-    - whirlingfortress
-    - wf
-
-uspecial1:
-  title: Whirling Fortress (Ground)
-  names:
-    - whirlingfortressground
-    - groundedwhirlingfortress
-    - wfg
-    - gwf
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserWhirlingFortressG.gif
-  fields:
-
-uspecial2:
-  title: Whirling Fortress (Air)
-  names:
-    - whirlingfortressair
-    - aerialwhirlingfortress
-    - wfa
-    - awf
-  image: https://ultimateframedata.com/hitboxes/bowser/BowserWhirlingFortressA.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserWhirlingFortressG.gif
+  names:
+  - whirlingfortressground
+  - groundedwhirlingfortress
+  - wfg
+  - gwf
+  title: Whirling Fortress (Ground)
+uspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bowser/BowserWhirlingFortressA.gif
+  names:
+  - whirlingfortressair
+  - aerialwhirlingfortress
+  - wfa
+  - awf
+  title: Whirling Fortress (Air)
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bowser/BowserUTilt.gif
-  fields:
+  title: Up Tilt

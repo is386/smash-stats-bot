@@ -1,225 +1,178 @@
-incineroar:
-  title: Incineroar
-  image: hurtbox.png
-  fields:
-    
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt 
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFTilt.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt Down
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFTiltUp.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt Up
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFTiltUp.gif
-  fields:
-
-getupattack: 
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarJab3.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Darkest Lariat (Ground)
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDarkestLariatG.gif
-  fields:
-
-nspecial2:
-  title: Darkest Lariat (Air)
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDarkestLariatA.gif
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
+  title: Down Smash
+dspecial1:
+  fields: null
   title: Revenge
-  fields:
-
 dspecial2:
-  title: Revenge (Attack)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarRevenge.gif
-  fields:
-
-spotdodge:
+  title: Revenge (Attack)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFTilt.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFTiltUp.gif
+  title: Forward Tilt Down
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarFTiltUp.gif
+  title: Forward Tilt Up
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarGrab.gif
+  title: Standing Grab
+incineroar1:
+  fields: null
+  image: hurtbox.png
+  title: Incineroar
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarJab2.gif
+  title: Jab 2
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarJab3.gif
+  title: Jab 3
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDarkestLariatG.gif
+  title: Darkest Lariat (Ground)
+nspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarDarkestLariatA.gif
+  title: Darkest Lariat (Air)
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Alolan Whip Grab (Ground)
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarAlolanWhipG.gif
-  fields:
-
+  title: Alolan Whip Grab (Ground)
 sspecial2:
-  title: Alolan Whip Grab (Air)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarAlolanWhipA.gif
-  fields:
-
+  title: Alolan Whip Grab (Air)
 sspecial3:
-  title: Alolan Whip Lariat Attack
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarAlolanWhipLariat.gif
-  fields:
-
+  title: Alolan Whip Lariat Attack
 sspecial4:
-  title: Alolan Whip Back Body Drop
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarAlolanWhipEarly.gif
-  fields:
-
+  title: Alolan Whip Back Body Drop
 sspecial5:
-  title: Alolan Whip Failure
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarAlolanWhipFailure.gif
-  fields:
-    
-staunt:
+  title: Alolan Whip Failure
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarUAir.gif
-  fields:
-
-uspecial:
-  title: Cross Chop (Rise)
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarCrossChopRise.gif
-  fields:
-
-uspecial2:
-  title: Cross Chop (Fall)
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarCrossChopFall.gif
-  fields:
-
-uspecial3:
-  title: Cross Chop (Landing)
-  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarCrossChopLanding.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarCrossChopRise.gif
+  title: Cross Chop (Rise)
+uspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarCrossChopFall.gif
+  title: Cross Chop (Fall)
+uspecial3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarCrossChopLanding.gif
+  title: Cross Chop (Landing)
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/incineroar/IncineroarUTilt.gif
-  fields:
+  title: Up Tilt
