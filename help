@@ -12,7 +12,7 @@ Default Prefix = `?`
 
 **Error Message Info:**
 `The move ____ does not exist.`
-This means that the character does not have the move you specified. If you get this error, try checking your spelling and typing the move without a number at the end (nspecial instead of nspecial2). Right now, move names cannot be used in the command, so that may also cause this error.
+This means that the character does not have the move you specified. If you get this error, try checking your spelling. Right now, move names cannot be used in the command (Except Terry and Hero down special), so that may also cause this error.
 
 `That character doesn't exist. `
 This means that the character does not exist in Super Smash Bros. Ultimate. If you get this error, check your spelling. The bot may not have the exact spelling of the name you used. If that is the case, DM 1nder#5023 and he can add it to the bot.
