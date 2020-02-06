@@ -15,7 +15,7 @@ async def move_selection(ctx: Context, resp: Message, emoji_count: int) -> int:
 
     :param ctx: `Context` original message context
     :param resp: `Message` message to add reactions to
-    :param n: `int` number of emojis to react with
+    :param emoji_count: `int` number of emojis to react with
     :return: `int` or -1 if nothing is chosen
     """
     for i in range(emoji_count):
