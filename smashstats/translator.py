@@ -1,4 +1,5 @@
 from typing import List
+
 from yaml import safe_load
 
 
@@ -18,6 +19,6 @@ def trans(name: str, file_path: str) -> list:
         synonyms: dict = safe_load(f)
 
     code_names: List[str] = [name] if name in list(synonyms.keys()) else []
-    code_names += [item[0] for item in synonyms.items() if name in item[1]]
+    code_names += [item[0] for item in synonyms.items() if any(map(lambda x: name in x, item[1]))]
 
     return code_names

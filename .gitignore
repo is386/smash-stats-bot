@@ -9,3 +9,4 @@ secret.py
 __pycache__
 *.db
 .mypy_cache
+.pytest_cache
