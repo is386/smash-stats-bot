@@ -1,244 +1,192 @@
-Robin:
-  title: Robin
+Robin1:
+  fields: null
   image: hurtbox.png
-  fields:
-
-airdodge:
+  title: Robin
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air (Levin)
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinBAirLevin.gif
-  fields:
-
+  title: Back Air (Levin)
 bair2:
-  title: Back Air (Bronze)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinBAirBronze.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air (Bronze)
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinBThrow.gif
-  fields:
-
-dair:
-  title: Down Air (Levin)
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinDAirLevin.gif
-  fields:
-
+  title: Down Air (Levin)
 dair2:
-  title: Down Air (Bronze)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinDAirBronze.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air (Bronze)
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash (Levin)
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinDSmashLevin.gif
-  fields:
-
+  title: Down Smash (Levin)
 dsmash2:
-  title: Down Smash (Bronze)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinDSmashBronze.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air (Levin)
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinFAirLevin.gif
-  fields:
-
-fair2:
-  title: Forward Air (Bronze)
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinFAirBronze.gif
-  fields:
-
-fsmash:
-  title: Forward Smash (Levin)
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinFSmashLevin.gif
-  fields:
-
-fsmash2:
-  title: Forward Smash (Bronze)
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinFSmashBronze.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinFTilt.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab3.gif
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finish
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinJabRapidEnd.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinJabRapid.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air (Levin)
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinNAirLevin.gif
-  fields:
-
-nair2:
-  title: Neutral Air (Bronze)
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinNAirBronze.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Thunder
-  fields:
-
-nspecial2:
-  title: Elthunder
-  fields:
-
-nspecial3:
-  title: Arcthunder
-  fields:
-
-nspecial4:
-  title: Arcthunder (Vortex)
-  fields:
-
-nspecial5:
-  title: Thoron
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Nosferatu (Ground)
+  title: Down Smash (Bronze)
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinNosferatu.gif
-  fields:
-
+  title: Nosferatu (Ground)
 dspecial2:
-  title: Nosferatu (Air)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinNosferatuA.gif
-  fields:
-
-spotdodge:
+  title: Nosferatu (Air)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFAirLevin.gif
+  title: Forward Air (Levin)
+fair2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFAirBronze.gif
+  title: Forward Air (Bronze)
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFSmashLevin.gif
+  title: Forward Smash (Levin)
+fsmash2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFSmashBronze.gif
+  title: Forward Smash (Bronze)
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinFTilt.gif
+  title: Forward Tilt
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab2.gif
+  title: Jab 2
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJab3.gif
+  title: Jab 3
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJabRapidEnd.gif
+  title: Rapid Jab Finish
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinNAirLevin.gif
+  title: Neutral Air (Levin)
+nair2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinNAirBronze.gif
+  title: Neutral Air (Bronze)
+nspecial1:
+  fields: null
+  title: Thunder
+nspecial2:
+  fields: null
+  title: Elthunder
+nspecial3:
+  fields: null
+  title: Arcthunder
+nspecial4:
+  fields: null
+  title: Arcthunder (Vortex)
+nspecial5:
+  fields: null
+  title: Thoron
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJabRapid.gif
+  title: Rapid Jab
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
+sspecial1:
+  fields: null
   title: Arcfire
-  fields:
-
-staunt:
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air (Levin)
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinUAirLevin.gif
-  fields:
-
+  title: Up Air (Levin)
 uair2:
-  title: Up Air (Bronze)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinUAirBronze.gif
-  fields:
-
-uspecial:
-  title: Elwind
-  fields:
-
-usmash:
-  title: Up Smash (Levin)
+  title: Up Air (Bronze)
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinUSmashLevin.gif
-  fields:
-
+  title: Up Smash (Levin)
 usmash2:
-  title: Up Smash (Bronze)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinUSmashBronze.gif
-  fields:
-
-utaunt:
+  title: Up Smash (Bronze)
+uspecial1:
+  fields: null
+  title: Elwind
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/Robin/RobinUTilt.gif
-  fields:
+  title: Up Tilt

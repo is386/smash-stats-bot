@@ -1,203 +1,160 @@
-mario:
-  title: Mario
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioBThrow.gif
-  fields:
-
-dair:
-  title: Down Air (Normal)
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioDAir.gif
-  fields:
-
+  title: Down Air (Normal)
 dair2:
-  title: Down Air (Landing)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioDAirLanding.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air (Landing)
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/mario/MarioDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/mario/MarioDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/mario/MarioFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/mario/MarioFSmash.gif
-  fields:
-
-fsmash2:
-  title: Forward Smash Down
-  image: https://ultimateframedata.com/hitboxes/mario/MarioFSmashDown.gif
-  fields:
-
-fsmash3:
-  title: Forward Smash Up
-  image: https://ultimateframedata.com/hitboxes/mario/MarioFSmashUp.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/mario/MarioFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/mario/MarioFTilt.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt Down
-  image: https://ultimateframedata.com/hitboxes/mario/MarioFTiltDown.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt Up
-  image: https://ultimateframedata.com/hitboxes/mario/MarioFTiltUp.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/mario/MarioDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/mario/MarioPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/mario/MarioGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/mario/MarioJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/mario/MarioJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/mario/MarioJab3.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/mario/MarioNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Fireball
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/mario/MarioPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
+  title: Down Smash
+dspecial1:
+  fields: null
   title: F.L.U.D.D.
-  fields:
-
 dspecial2:
+  fields: null
   title: F.L.U.D.D. (Max)
-  fields:
-
-spotdodge:
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioFSmash.gif
+  title: Forward Smash
+fsmash2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioFSmashDown.gif
+  title: Forward Smash Down
+fsmash3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioFSmashUp.gif
+  title: Forward Smash Up
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioFTilt.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioFTiltDown.gif
+  title: Forward Tilt Down
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioFTiltUp.gif
+  title: Forward Tilt Up
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioJab2.gif
+  title: Jab 2
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioJab3.gif
+  title: Jab 3
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+mario1:
+  fields: null
+  image: hurtbox.png
+  title: Mario
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  title: Fireball
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Cape
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioCape.gif
-  fields:
-
-staunt:
+  title: Cape
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioUAir.gif
-  fields:
-
-uspecial:
-  title: Super Jump Punch
-  image: https://ultimateframedata.com/hitboxes/mario/MarioSuperJumpPunch.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mario/MarioSuperJumpPunch.gif
+  title: Super Jump Punch
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mario/MarioUTilt.gif
-  fields:
+  title: Up Tilt

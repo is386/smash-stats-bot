@@ -1,212 +1,167 @@
-darksamus:
-  title: Dark Samus
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+darksamus1:
+  fields: null
+  image: hurtbox.png
+  title: Dark Samus
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmash.gif
-  fields:
-
-fsmash2:
-  title: Forward Smash Down
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmashDown.gif
-  fields:
-
-fsmash3:
-  title: Forward Smash Up
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmashUp.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTilt.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt Down
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTiltDown.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt Up
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTiltDown.gif
-  fields:
-
-getupattack: 
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusJab2.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-  
-nspecial:
-  title: Charge Shot
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusChargeShotMin.gif
-  fields:
-
-nspecial2:
-  title: Charge Shot (Max)
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusChargeShotMax.gif
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Bomb
+  title: Down Smash
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusBomb.png
-  fields:
-
+  title: Bomb
 dspecial2:
-  title: Bomb (Explosion)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusBombExplosion.png
-  fields:
-
-spotdodge:
+  title: Bomb (Explosion)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmash.gif
+  title: Forward Smash
+fsmash2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmashDown.gif
+  title: Forward Smash Down
+fsmash3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFSmashUp.gif
+  title: Forward Smash Up
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTilt.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTiltDown.gif
+  title: Forward Tilt Down
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusFTiltDown.gif
+  title: Forward Tilt Up
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusJab2.gif
+  title: Jab 2
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusChargeShotMin.gif
+  title: Charge Shot
+nspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusChargeShotMax.gif
+  title: Charge Shot (Max)
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Homing Missile
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusMissile.png
-  fields:
-
+  title: Homing Missile
 sspecial2:
-  title: Super Missile
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusSuperMissile.png
-  fields:
-
-staunt:
+  title: Super Missile
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusUAir.gif
-  fields:
-
-uspecial:
-  title: Screw Attack (Ground)
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusScrewAttackG.gif
-  fields:
-
-uspecial2:
-  title: Screw Attack (Air)
-  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusScrewAttackA.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusScrewAttackG.gif
+  title: Screw Attack (Ground)
+uspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusScrewAttackA.gif
+  title: Screw Attack (Air)
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/dark_samus/DarkSamusUTilt.gif
-  fields:
-
-zair:
+  title: Up Tilt
+zair1:
+  fields: null
   title: Z Air
-  fields:

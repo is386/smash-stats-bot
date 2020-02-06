@@ -1,211 +1,167 @@
-zelda:
-  title: Zelda
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFTilt.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt Down
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFTiltDown.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt Up
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFTiltUp.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaJab1.gif
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finish
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaJabRapidEnd.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaJabRapid.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Nayru's Love
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaNayrusLove.gif
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Phantom Slash (Kick)
+  title: Down Smash
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/PhantomKick.gif
-  fields:
-
+  title: Phantom Slash (Kick)
 dspecial2:
-  title: Phantom Slash (Punch)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/PhantomPunch.gif
-  fields:
-
+  title: Phantom Slash (Punch)
 dspecial3:
-  title: Phantom Slash (Swing 1)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/PhantomSwing1.gif
-  fields:
-
+  title: Phantom Slash (Swing 1)
 dspecial4:
-  title: Phantom Slash (Swing 2)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/PhantomSwing2.gif
-  fields:
-
+  title: Phantom Slash (Swing 2)
 dspecial5:
-  title: Phantom Slash (Swing 3)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/PhantomSwing3.gif
-  fields:
-
-spotdodge:
+  title: Phantom Slash (Swing 3)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFTilt.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFTiltDown.gif
+  title: Forward Tilt Down
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaFTiltUp.gif
+  title: Forward Tilt Up
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaJab1.gif
+  title: Jab 1
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaJabRapidEnd.gif
+  title: Rapid Jab Finish
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaNayrusLove.gif
+  title: Nayru's Love
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaJabRapid.gif
+  title: Rapid Jab
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Din's Fire
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaDinsFire.png
-  fields:
-
-staunt:
+  title: Din's Fire
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaUAir.gif
-  fields:
-
-uspecial:
-  title: Farore's Wind (Ground)
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaNFaroresWindG.gif
-  fields:
-
-uspecial2:
-  title: Farore's Wind (Air)
-  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaNFaroresWindA.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaNFaroresWindG.gif
+  title: Farore's Wind (Ground)
+uspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/zelda/ZeldaNFaroresWindA.gif
+  title: Farore's Wind (Air)
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/zelda/ZeldaUTilt.gif
-  fields:
+  title: Up Tilt
+zelda1:
+  fields: null
+  image: hurtbox.png
+  title: Zelda

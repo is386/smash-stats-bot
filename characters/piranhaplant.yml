@@ -1,201 +1,159 @@
-piranhaplant:
-  title: PiranhaPlant
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt 1
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFTilt1.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt 2
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFTilt2.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJab3.gif
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finish
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJabRapidEnd.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJabRapid.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Ptooie
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPtooie.gif
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Long Stem Strike
+  title: Down Smash
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantLong-StemStrike.gif
-  fields:
-
-spotdodge:
-  title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Poison Breath
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPoisonBreathMin.gif
-  fields:
-
-sspecial2:
-  title: Poison Breath (Max)
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPoisonBreathMax.gif
-  fields:
-
-staunt:
-  title: Side Taunt
-
-tripattack:
-  title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUAir.gif
-  fields:
-
-uspecial:
-  title: Piranhacopter
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPiranhacopter.gif
-  fields:
-
-usmash:
-  title: Up Smash
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUSmash.gif
-  fields:
-
-utaunt:
-  title: Up Taunt
-
-uthrow:
-  title: Up Throw
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
-  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUTilt.gif
-  fields:
-
-footstool:
-  title: Footstool Attack
+  title: Long Stem Strike
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFAir.gif
+  title: Forward Air
+footstool1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFootstoolAttack.gif
-  fields:
+  title: Footstool Attack
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFTilt1.gif
+  title: Forward Tilt 1
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantFTilt2.gif
+  title: Forward Tilt 2
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJab2.gif
+  title: Jab 2
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJab3.gif
+  title: Jab 3
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJabRapidEnd.gif
+  title: Rapid Jab Finish
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPtooie.gif
+  title: Ptooie
+oos1:
+  fields: null
+  title: Out of Shield Options
+piranhaplant1:
+  fields: null
+  image: hurtbox.png
+  title: PiranhaPlant
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantJabRapid.gif
+  title: Rapid Jab
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
+  title: Spot Dodge
+sspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPoisonBreathMin.gif
+  title: Poison Breath
+sspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPoisonBreathMax.gif
+  title: Poison Breath (Max)
+staunt1:
+  title: Side Taunt
+tripattack1:
+  fields: null
+  title: Trip Getup Attack
+uair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUAir.gif
+  title: Up Air
+usmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUSmash.gif
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantPiranhacopter.gif
+  title: Piranhacopter
+utaunt1:
+  title: Up Taunt
+uthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUThrow.gif
+  title: Up Throw
+utilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/piranha_plant/PiranhaPlantUTilt.gif
+  title: Up Tilt

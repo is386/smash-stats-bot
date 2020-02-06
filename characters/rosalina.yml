@@ -1,289 +1,229 @@
-rosalina:
-  title: Rosalina and Luma
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air (Rosalina)
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaBAir.gif
-  fields:
-
+  title: Back Air (Rosalina)
 bair2:
-  title: Back Air (Luma)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air (Luma)
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaBThrow.gif
-  fields:
-
-dair:
-  title: Down Air (Rosalina)
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDAir.gif
-  fields:
-
+  title: Down Air (Rosalina)
 dair2:
-  title: Down Air (Luma)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack (Rosalina)
+  title: Down Air (Luma)
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDashAttack.gif
-  fields:
-
+  title: Dash Attack (Rosalina)
 dashattack2:
-  title: Dash Attack (Luma)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash (Rosalina)
+  title: Dash Attack (Luma)
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDSmash.gif
-  fields:
-
+  title: Down Smash (Rosalina)
 dsmash2:
-  title: Down Smash (Luma)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDTilt.gif
-  fields:
-
-dtilt2:
-  title: Down Tilt (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFAir.gif
-  fields:
-
-fair2:
-  title: Forward Air (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFSmash.gif
-  fields:
-
-fsmash2:
-  title: Forward Smash Down (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFSmashDown.gif
-  fields:
-
-fsmash3:
-  title: Forward Smash Up (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFSmashUp.gif
-  fields:
-
-fsmash4:
-  title: Forward Smash (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFSmash.gif
-  fields:
-
-fsmash5:
-  title: Forward Smash Down (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFSmashDown.gif
-  fields:
-
-fsmash6:
-  title: Forward Smash Up (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFSmashUp.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFTilt.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFTilt.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaGrab.gif
-  fields:
-
-jab:
-  title: Jab 1 (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2 (Rosalina)
-  image: httphttps://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3 (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaJabRapidEnd.gif
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finish (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/Robin/RobinJabRapidEnd.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaJabRapid.gif
-  fields:
-
-jab4:
-  title: Jab 1 (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJab1.gif
-  fields:
-
-jab5:
-  title: Jab 2 (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJab2.gif
-  fields:
-
-jab6:
-  title: Jab 3 (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJab3.gif
-  fields:
-
-jabfinisher2:
-  title: Rapid Jab Finish (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJabRapidEnd.gif
-  fields:
-
-rapidjab2:
-  title: Rapid Jab (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJabRapid.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air (Rosalina)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaNAir.gif
-  fields:
-
-nair2:
-  title: Neutral Air (Luma)
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Luma Shot
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaLumaShot.gif
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Gravitation Pull
+  title: Down Smash (Luma)
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaGravitationalPull.gif
-  fields:
-
-spotdodge:
+  title: Gravitation Pull
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDTilt.gif
+  title: Down Tilt (Rosalina)
+dtilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaDTilt.gif
+  title: Down Tilt (Luma)
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFAir.gif
+  title: Forward Air (Rosalina)
+fair2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFAir.gif
+  title: Forward Air (Luma)
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFSmash.gif
+  title: Forward Smash (Rosalina)
+fsmash2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFSmashDown.gif
+  title: Forward Smash Down (Rosalina)
+fsmash3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFSmashUp.gif
+  title: Forward Smash Up (Rosalina)
+fsmash4:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFSmash.gif
+  title: Forward Smash (Luma)
+fsmash5:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFSmashDown.gif
+  title: Forward Smash Down (Luma)
+fsmash6:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFSmashUp.gif
+  title: Forward Smash Up (Luma)
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaFTilt.gif
+  title: Forward Tilt (Rosalina)
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaFTilt.gif
+  title: Forward Tilt (Luma)
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaJab1.gif
+  title: Jab 1 (Rosalina)
+jab2:
+  fields: null
+  image: httphttps://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaJab2.gif
+  title: Jab 2 (Rosalina)
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaJabRapidEnd.gif
+  title: Jab 3 (Rosalina)
+jab4:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJab1.gif
+  title: Jab 1 (Luma)
+jab5:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJab2.gif
+  title: Jab 2 (Luma)
+jab6:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJab3.gif
+  title: Jab 3 (Luma)
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/Robin/RobinJabRapidEnd.gif
+  title: Rapid Jab Finish (Rosalina)
+jabfinisher2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJabRapidEnd.gif
+  title: Rapid Jab Finish (Luma)
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaNAir.gif
+  title: Neutral Air (Rosalina)
+nair2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaNAir.gif
+  title: Neutral Air (Luma)
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaLumaShot.gif
+  title: Luma Shot
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaJabRapid.gif
+  title: Rapid Jab (Rosalina)
+rapidjab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaJabRapid.gif
+  title: Rapid Jab (Luma)
+roll1:
+  fields: null
+  title: Rolls
+rosalina1:
+  fields: null
+  image: hurtbox.png
+  title: Rosalina and Luma
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
+sspecial1:
+  fields: null
   title: Star Bits
-  fields:
-
-staunt:
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air (Rosalina)
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaUAir.gif
-  fields:
-
+  title: Up Air (Rosalina)
 uair2:
-  title: Up Air (Luma)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaUAir.gif
-  fields:
-
-uspecial:
-  title: Launch Star
-  fields:
-
-usmash:
-  title: Up Smash (Rosalina)
+  title: Up Air (Luma)
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaUSmash.gif
-  fields:
-
+  title: Up Smash (Rosalina)
 usmash2:
-  title: Up Smash (Luma)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash (Luma)
+uspecial1:
+  fields: null
+  title: Launch Star
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt (Rosalina)
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/RosalinaUTilt.gif
-  fields:
-
+  title: Up Tilt (Rosalina)
 utilt2:
-  title: Up Tilt (Luma)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/rosalina_and_luma/LumaUTilt.gif
-  fields:
+  title: Up Tilt (Luma)

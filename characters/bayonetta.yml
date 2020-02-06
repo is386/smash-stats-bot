@@ -1,440 +1,356 @@
-bayonetta:
-  title: Bayonetta
-  image: UPLOAD
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaBAir.gif
-  fields:
-
+  title: Back Air
 bair2:
-  title: Back Air (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/4/4d/BayonettaBAirBulletArtsSSBU.png/500px-BayonettaBAirBulletArtsSSBU.png
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air (Bullet Arts)
+bayonetta1:
+  fields: null
+  image: UPLOAD
+  title: Bayonetta
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDAir.gif
-  fields:
-
+  title: Down Air
 dair2:
-  title: Down Air (Landing)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDAirLanding.gif
-  fields:
-
+  title: Down Air (Landing)
 dair3:
-  title: Down Air (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/d/d6/BayonettaDAirLandingBulletArtsSSBU.png/500px-BayonettaDAirLandingBulletArtsSSBU.png
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air (Bullet Arts)
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDashAttack.gif
-  fields:
-
+  title: Dash Attack
 dashattack2:
-  title: Dash Attack (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/d/d2/BayonettaDashAttackBulletArtsSSBU.png/500px-BayonettaDashAttackBulletArtsSSBU.png
-  fields:
-
-dsmash:
-  title: Down Smash (Bayo's Foot)
+  title: Dash Attack (Bullet Arts)
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDSmash.gif
-  fields:
-
+  title: Down Smash (Bayo's Foot)
 dsmash2:
-  title: Down Smash (Giant Foot)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDSmashStomp.gif
-  fields:
-
+  title: Down Smash (Giant Foot)
 dsmash3:
-  title: Down Smash (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/f/f9/BayonettaDSmashBulletArtsSSBU.png/500px-BayonettaDSmashBulletArtsSSBU.png
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDTilt.gif
-  fields:
-
-dtilt2:
-  title: Down Tilt (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/5/59/BayonettaDTiltBulletArtsSSBU.png/500px-BayonettaDTiltBulletArtsSSBU.png
-  fields:
-
-fair:
-  title: Forward Air 1
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir%201.gif
-  fields:
-
-fair2:
-  title: Forward Air 1 (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/1/10/BayonettaFAir1BulletArtsSSBU.png/500px-BayonettaFAir1BulletArtsSSBU.png
-  fields:
-
-fair3:
-  title: Forward Air 2
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir2.gif
-  fields:
-
-fair4:
-  title: Forward Air 2  (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/8/89/BayonettaFAir2BulletArtsSSBU.png/500px-BayonettaFAir2BulletArtsSSBU.png
-  fields:
-
-fair5:
-  title: Forward Air 3
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir3.gif
-  fields:
-
-fair6:
-  title: Forward Air 3  (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/e/ee/BayonettaFAir3BulletArtsSSBU.png/500px-BayonettaFAir3BulletArtsSSBU.png
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFSmash.gif
-  fields:
-
-fsmash2:
-  title: Forward Smash (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/7/7a/BayonettaFSmashBulletArtsSSBU.png/500px-BayonettaFSmashBulletArtsSSBU.png
-  fields:
-
-fsmash3:
-  title: Forward Smash (Bullet Arts Down)
-  image: https://www.ssbwiki.com/images/thumb/c/c9/BayonettaFSmashDownBulletArtsSSBU.png/500px-BayonettaFSmashDownBulletArtsSSBU.png
-  fields:
-
-fsmash4:
-  title: Forward Smash (Bullet Arts Up)
-  image: https://www.ssbwiki.com/images/thumb/c/cd/BayonettaFSmashUpBulletArtsSSBU.png/500px-BayonettaFSmashUpBulletArtsSSBU.png
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt1.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/4/4c/BayonettaFTilt1BulletArtsSSBU.png/500px-BayonettaFTilt1BulletArtsSSBU.png
-  fields:
-
-ftilt3:
-  title: Forward Tilt 2
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt2.gif
-  fields:
-
-ftilt4:
-  title: Forward Tilt 2 (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/0/02/BayonettaFTilt2BulletArtsSSBU.png/500px-BayonettaFTilt2BulletArtsSSBU.png
-  fields:
-
-ftilt5:
-  title: Forward Tilt 3
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt3.gif
-  fields:
-
-ftilt6:
-  title: Forward Tilt 3 (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/d/d0/BayonettaFTilt3BulletArtsSSBU.png/500px-BayonettaFTilt3BulletArtsSSBU.png
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab1.gif
-  fields:
-
-jab2:
-  title: Jab 1 (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/5/59/BayonettaJab1BulletArtsSSBU.png/500px-BayonettaJab1BulletArtsSSBU.png
-  fields:
-
-jab3:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab2.gif
-  fields:
-
-jab4:
-  title: Jab 2 (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/8/8c/BayonettaJab2BulletArtsSSBU.png/500px-BayonettaJab2BulletArtsSSBU.png
-  fields:
-
-jab5:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab3.gif
-  fields:
-
-jab6:
-  title: Jab 3 (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/b/bb/BayonettaJab3BulletArtsSSBU.png/500px-BayonettaJab3BulletArtsSSBU.png
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finisher
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJabRapidEnd.gif
-  fields:
-
-jabfinisher2:
-  title: Rapid Jab Finisher (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/3/39/BayonettaRapidJabFinisherBulletArtsSSBU.png/500px-BayonettaRapidJabFinisherBulletArtsSSBU.png
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaNAir.gif
-  fields:
-
-nair2:
-  title: Neutral Air (Bullet Arts)
-  image: https://www.ssbwiki.com/images/a/a3/BayonettaNAirHoldSSBU.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Bullet Climax
-  names:
-    - bullet
-    - bulletclimax
-    - bc
-  fields:
-
-nspecial2:
-  title: Bullet Climax (Full Charge)
-  names:
-    - bulletmax
-    - bulletclimaxmax
-    - bcm
-    - bulletfull
-    - bulletclimaxfull
-    - bcmf
-    - bulletfullcharge
-    - bulletclimaxfullcharge
-    - bcmfc
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaPummel.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJabRapid.gif
-  fields:
-
-rapidjab2:
-  title: Rapid Jab (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/c/c4/BayonettaRapidJabBulletArtsSSBU.png/500px-BayonettaRapidJabBulletArtsSSBU.png
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Witch Time
-  names:
-    - witchtime
-    - wt
+  title: Down Smash (Bullet Arts)
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTime.gif
-  fields:
-
-spotdodge:
+  names:
+  - witchtime
+  - wt
+  title: Witch Time
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDTilt.gif
+  title: Down Tilt
+dtilt2:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/5/59/BayonettaDTiltBulletArtsSSBU.png/500px-BayonettaDTiltBulletArtsSSBU.png
+  title: Down Tilt (Bullet Arts)
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir%201.gif
+  title: Forward Air 1
+fair2:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/1/10/BayonettaFAir1BulletArtsSSBU.png/500px-BayonettaFAir1BulletArtsSSBU.png
+  title: Forward Air 1 (Bullet Arts)
+fair3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir2.gif
+  title: Forward Air 2
+fair4:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/8/89/BayonettaFAir2BulletArtsSSBU.png/500px-BayonettaFAir2BulletArtsSSBU.png
+  title: Forward Air 2  (Bullet Arts)
+fair5:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFAir3.gif
+  title: Forward Air 3
+fair6:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/e/ee/BayonettaFAir3BulletArtsSSBU.png/500px-BayonettaFAir3BulletArtsSSBU.png
+  title: Forward Air 3  (Bullet Arts)
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFSmash.gif
+  title: Forward Smash
+fsmash2:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/7/7a/BayonettaFSmashBulletArtsSSBU.png/500px-BayonettaFSmashBulletArtsSSBU.png
+  title: Forward Smash (Bullet Arts)
+fsmash3:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/c/c9/BayonettaFSmashDownBulletArtsSSBU.png/500px-BayonettaFSmashDownBulletArtsSSBU.png
+  title: Forward Smash (Bullet Arts Down)
+fsmash4:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/c/cd/BayonettaFSmashUpBulletArtsSSBU.png/500px-BayonettaFSmashUpBulletArtsSSBU.png
+  title: Forward Smash (Bullet Arts Up)
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt1.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/4/4c/BayonettaFTilt1BulletArtsSSBU.png/500px-BayonettaFTilt1BulletArtsSSBU.png
+  title: Forward Tilt (Bullet Arts)
+ftilt3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt2.gif
+  title: Forward Tilt 2
+ftilt4:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/0/02/BayonettaFTilt2BulletArtsSSBU.png/500px-BayonettaFTilt2BulletArtsSSBU.png
+  title: Forward Tilt 2 (Bullet Arts)
+ftilt5:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaFTilt3.gif
+  title: Forward Tilt 3
+ftilt6:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/d/d0/BayonettaFTilt3BulletArtsSSBU.png/500px-BayonettaFTilt3BulletArtsSSBU.png
+  title: Forward Tilt 3 (Bullet Arts)
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/5/59/BayonettaJab1BulletArtsSSBU.png/500px-BayonettaJab1BulletArtsSSBU.png
+  title: Jab 1 (Bullet Arts)
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab2.gif
+  title: Jab 2
+jab4:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/8/8c/BayonettaJab2BulletArtsSSBU.png/500px-BayonettaJab2BulletArtsSSBU.png
+  title: Jab 2 (Bullet Arts)
+jab5:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJab3.gif
+  title: Jab 3
+jab6:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/b/bb/BayonettaJab3BulletArtsSSBU.png/500px-BayonettaJab3BulletArtsSSBU.png
+  title: Jab 3 (Bullet Arts)
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJabRapidEnd.gif
+  title: Rapid Jab Finisher
+jabfinisher2:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/3/39/BayonettaRapidJabFinisherBulletArtsSSBU.png/500px-BayonettaRapidJabFinisherBulletArtsSSBU.png
+  title: Rapid Jab Finisher (Bullet Arts)
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaNAir.gif
+  title: Neutral Air
+nair2:
+  fields: null
+  image: https://www.ssbwiki.com/images/a/a3/BayonettaNAirHoldSSBU.gif
+  title: Neutral Air (Bullet Arts)
+nspecial1:
+  fields: null
+  names:
+  - bullet
+  - bulletclimax
+  - bc
+  title: Bullet Climax
+nspecial2:
+  fields: null
+  names:
+  - bulletmax
+  - bulletclimaxmax
+  - bcm
+  - bulletfull
+  - bulletclimaxfull
+  - bcmf
+  - bulletfullcharge
+  - bulletclimaxfullcharge
+  - bcmfc
+  title: Bullet Climax (Full Charge)
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaJabRapid.gif
+  title: Rapid Jab
+rapidjab2:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/c/c4/BayonettaRapidJabBulletArtsSSBU.png/500px-BayonettaRapidJabBulletArtsSSBU.png
+  title: Rapid Jab (Bullet Arts)
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
 sspecial1:
-  title: Heel Slide
-  names:
-    - heelslide
-    - heel
-    - slide
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaHeelSlide.gif
-  fields:
-
+  names:
+  - heelslide
+  - heel
+  - slide
+  title: Heel Slide
 sspecial12:
-  title: Heel Slide (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/6/67/BayonettaHeelSlideBulletArtsSSBU.png/500px-BayonettaHeelSlideBulletArtsSSBU.png
-  fields:
-
+  title: Heel Slide (Bullet Arts)
 sspecial13:
-  title: Heel Slide (End)
-  names:
-    - heelslideend
-    - heelend
-    - slideend
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaHeelSlideEnd.gif
-  fields:
-
+  names:
+  - heelslideend
+  - heelend
+  - slideend
+  title: Heel Slide (End)
 sspecial21:
-  title: After Burner Kick
-  names:
-    - abk
-    - afterburnerkick
-    - kick
-    - burnerkick
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickUp.gif
-  fields:
-
+  names:
+  - abk
+  - afterburnerkick
+  - kick
+  - burnerkick
+  title: After Burner Kick
 sspecial22:
-  title: After Burner Kick (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/c/cf/BayonettaAfterburnerKickBulletArtsSSBU.png/500px-BayonettaAfterburnerKickBulletArtsSSBU.png
-  fields:
-
+  title: After Burner Kick (Bullet Arts)
 sspecial23:
-  title: After Burner Kick Down
-  names:
-    - abkdown
-    - afterburnerkickdown
-    - kickdown
-    - burnerkickdown
-    - abkd
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickDown.gif
-  fields:
-
+  names:
+  - abkdown
+  - afterburnerkickdown
+  - kickdown
+  - burnerkickdown
+  - abkd
+  title: After Burner Kick Down
 sspecial24:
-  title: After Burner Kick Down (Landing)
-  names:
-    - abkdownlanding
-    - afterburnerkickdownlanding
-    - kickdownlanding
-    - burnerkickdownlanding
-    - abkdl
-    - abklanding
-    - afterburnerkicklanding
-    - kicklanding
-    - burnerkicklanding
-    - abkl
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaAfterburnerKickLanding.gif
-  fields:
-
-staunt:
+  names:
+  - abkdownlanding
+  - afterburnerkickdownlanding
+  - kickdownlanding
+  - burnerkickdownlanding
+  - abkdl
+  - abklanding
+  - afterburnerkicklanding
+  - kicklanding
+  - burnerkicklanding
+  - abkl
+  title: After Burner Kick Down (Landing)
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUAir.gif
-  fields:
-
+  title: Up Air
 uair2:
-  title: Up Air (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/1/1c/BayonettaUAirBulletArts.png/500px-BayonettaUAirBulletArts.png
-  fields:
-
+  title: Up Air (Bullet Arts)
 uair3:
-  title: Up Air (Bullet Arts Hold)
+  fields: null
   image: https://www.ssbwiki.com/images/6/63/BayonettaUAirBulletArtsHeldSSBU.gif
-  fields:
-
-uspecial:
-  names:
-    - twist
-    - witchtwist
-    - wtt
-
-uspecial1:
-  title: Witch Twist (Ground)
-  names:
-    - twistground
-    - witchtwistground
-    - wttg
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistG.gif
-  fields:
-
-uspecial2:
-  title: Witch Twist (Air)
-  names:
-    - twistair
-    - witchtwistair
-    - wtta
-  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistA.gif
-  fields:
-
-uspecial3:
-  title: Witch Twist (Bullet Arts)
-  image: https://www.ssbwiki.com/images/thumb/2/26/BayonettaWitchTwistBulletArtsSSBU.png/500px-BayonettaWitchTwistBulletArtsSSBU.png
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air (Bullet Arts Hold)
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUSmash.gif
-  fields:
-
+  title: Up Smash
 usmash2:
-  title: Up Smash (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/0/07/BayonettaUSmashBulletArtsSSBU.png/500px-BayonettaUSmashBulletArtsSSBU.png
-  fields:
-
-utaunt:
+  title: Up Smash (Bullet Arts)
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistG.gif
+  names:
+  - twistground
+  - witchtwistground
+  - wttg
+  title: Witch Twist (Ground)
+uspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaWitchTwistA.gif
+  names:
+  - twistair
+  - witchtwistair
+  - wtta
+  title: Witch Twist (Air)
+uspecial3:
+  fields: null
+  image: https://www.ssbwiki.com/images/thumb/2/26/BayonettaWitchTwistBulletArtsSSBU.png/500px-BayonettaWitchTwistBulletArtsSSBU.png
+  title: Witch Twist (Bullet Arts)
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/bayonetta/BayonettaUTilt.gif
-  fields:
-
+  title: Up Tilt
 utilt2:
-  title: Up Tilt (Bullet Arts)
+  fields: null
   image: https://www.ssbwiki.com/images/thumb/f/f9/BayonettaUTiltBulletArtsSSBU.png/500px-BayonettaUTiltBulletArtsSSBU.png
-  fields:
+  title: Up Tilt (Bullet Arts)

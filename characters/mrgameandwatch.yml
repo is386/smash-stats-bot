@@ -1,196 +1,155 @@
-mrgameandwatch:
-  title: Mr. Game & Watch
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchBair.gif
-  fields:
-
+  title: Back Air
 bair2:
-  title: Back Air (Landing)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchBairLanding.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air (Landing)
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDair.gif
-  fields:
-
+  title: Down Air
 dair2:
-  title: Down Air (Landing)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDairLanding.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air (Landing)
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFTilt.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchGrab.gif
-  fields:
-
-jab:
-  title: Jab
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchJab.gif
-  fields:
-
-jabfinisher:
-  title: Rapid Jab Finish
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchJabRapidEnd.gif
-  fields:
-
-rapidjab:
-  title: Rapid Jab
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchJabRapid.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Chef (Hit)
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchChef.gif
-  fields:
-
-nspecial2:
-  title: Chef (Projectiles)
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchChef.png
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Oil Panic (Catch)
+  title: Down Smash
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchOilPanic.png
-  fields:
-
+  title: Oil Panic (Catch)
 dspecial2:
-  title: Oil Panic (Throw)
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchOilPanic.gif
-  fields:
-
-spotdodge:
+  title: Oil Panic (Throw)
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFTilt.gif
+  title: Forward Tilt
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchJab.gif
+  title: Jab
+jabfinisher1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchJabRapidEnd.gif
+  title: Rapid Jab Finish
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+mrgameandwatch1:
+  fields: null
+  image: hurtbox.png
+  title: Mr. Game & Watch
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchChef.gif
+  title: Chef (Hit)
+nspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchChef.png
+  title: Chef (Projectiles)
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchPummel.gif
+  title: Pummel
+rapidjab:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchJabRapid.gif
+  title: Rapid Jab
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Judge
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchJudge8.gif
-  fields:
-
-staunt:
+  title: Judge
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchUAir.gif
-  fields:
-
-uspecial:
-  title: Fire
-  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFireA.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchFireA.gif
+  title: Fire
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/mr_game_and_watch/MrGame_WatchUTilt.gif
-  fields:
+  title: Up Tilt

@@ -1,4 +1,4 @@
-from re import sub
+from re import sub, search, Match
 from typing import List
 
 from discord import Message
@@ -56,11 +56,29 @@ async def get_move_data(ctx: Context) -> dict:
 
     # Gets move data
     orig_move: str = move
+
+    # Checks if the move ends in a number
+    n_match: Match = search(r'\d+$', move)
+    n = ""
+
+    # Removes the number if there is one
+    if n_match is not None:
+        n = move[n_match.start():n_match.end()]
+        move = move[:n_match.start()]
+
     if move not in char_data.keys():
         move = get_real_move_name(move, char_data)
-    if len(move) == 0:
+
+    # This checks if the move plus the number is in the moveset
+    # Also checks if there was a number in the given move. This is
+    # to prevent the case where a numberless move is given and
+    # the bot thinks its not in the moveset (since all moves end in a 1 now)
+    if len(move) == 0 or (move + n not in char_data.keys() and len(n) != 0):
         await ctx.send(move_error.format(orig_move))
         return {}
+
+    # Appends the number back to the move
+    move = move + n
 
     # Finds moves that match parsed move. If so, that move has multiple hitboxes.
     matching_moves = [entry for entry in char_data.keys() if move in entry]
@@ -79,6 +97,12 @@ async def get_move_data(ctx: Context) -> dict:
             move = await parse_move_selection(selection_moves, char_data, ctx)
             if len(move) == 0:
                 return {}
+    # If there are no matches and the move didn't have a number on it
+    # appends 1 to the end so that it can be found in the character's
+    # moveset (all moves end in a 1 now even if theres no second part)
+    # ex: nair = nair1 in the yaml
+    elif len(n) == 0:
+        move += "1"
 
     return char_data[move]
 

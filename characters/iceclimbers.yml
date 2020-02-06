@@ -1,185 +1,146 @@
-iceclimbers:
-    title: Ice Climbers
-    image: hurtbox.png
-    fields:
-  
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://media.giphy.com/media/RKGYtc92kIu7Zo9AkV/100.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://media.giphy.com/media/QxGbr6Gj3h97bYVFyg/giphy.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://media.giphy.com/media/Kf0dIMW4dzw4FqfKjr/200.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://media.giphy.com/media/d9OAFSStp8ZkZutOje/100.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://media.giphy.com/media/hXJawJNyN1HjdofUuy/giphy.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://media.giphy.com/media/McbHMmDg5pUJH9Hwff/200.gif
-  fields:
-      
-fsmash:
-  title: Forward Smash
-  image: https://media.giphy.com/media/iePCxhusmaOSSmKXNI/200.gif
-  fields:    
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://media.giphy.com/media/eNkaueMDvxsL3AIhFA/giphy.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt Down
-  image: https://media.giphy.com/media/fwtn5Fuw5AH1ZSTzhA/giphy.gif
-  fields:
-
-ftilt3:
-  title: Forward Tilt Up
-  image: https://media.giphy.com/media/kgO2SRz8NpvAc1xam3/giphy.gif
-  fields: 
-
-getupattack: 
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://media.giphy.com/media/VboOEdIFc0ioTwgUhu/100.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://media.giphy.com/media/PnbGfXtgTE2Fbv3CNQ/100.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://media.giphy.com/media/igPxjrSnl9bnqIj1lO/100.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Ice Shot
-  image: https://ultimateframedata.com/hitboxes/ice_climbers/IceClimbersIceShot.png
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
+  title: Down Smash
+dspecial1:
+  fields: null
   title: Blizzard
-  fields:
-
-spotdodge:
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://media.giphy.com/media/hXJawJNyN1HjdofUuy/giphy.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://media.giphy.com/media/McbHMmDg5pUJH9Hwff/200.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://media.giphy.com/media/iePCxhusmaOSSmKXNI/200.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://media.giphy.com/media/eNkaueMDvxsL3AIhFA/giphy.gif
+  title: Forward Tilt
+ftilt2:
+  fields: null
+  image: https://media.giphy.com/media/fwtn5Fuw5AH1ZSTzhA/giphy.gif
+  title: Forward Tilt Down
+ftilt3:
+  fields: null
+  image: https://media.giphy.com/media/kgO2SRz8NpvAc1xam3/giphy.gif
+  title: Forward Tilt Up
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoGrab.gif
+  title: Standing Grab
+iceclimbers1:
+  fields: null
+  image: hurtbox.png
+  title: Ice Climbers
+jab1:
+  fields: null
+  image: https://media.giphy.com/media/VboOEdIFc0ioTwgUhu/100.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://media.giphy.com/media/PnbGfXtgTE2Fbv3CNQ/100.gif
+  title: Jab 2
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+nair1:
+  fields: null
+  image: https://media.giphy.com/media/igPxjrSnl9bnqIj1lO/100.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/ice_climbers/IceClimbersIceShot.png
+  title: Ice Shot
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Squal Hammer
+sspecial1:
+  fields: null
   image: https://media.giphy.com/media/eNYLNGi5Nl2TtzMnZx/giphy.gif
-  fields:
-
+  title: Squal Hammer
 sspecial2:
-  title: Squal Hammer Alone
+  fields: null
   image: https://media.giphy.com/media/kafSuWUM80yKCwDAg9/giphy.gif
-  fields:
-
-staunt:
+  title: Squal Hammer Alone
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://media.giphy.com/media/U8YyhriNR0S1XYWNyM/200.gif
-  fields:
-    
-uspecial:
-  title: Belay
-  image: https://ultimateframedata.com/hitboxes/ice_climbers/NanaBelay.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://media.giphy.com/media/L1bTia6rZ4LI2LVbmj/200.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/ice_climbers/NanaBelay.gif
+  title: Belay
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/ice_climbers/PopoUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://media.giphy.com/media/IguJlGvKVOC9pdUw9I/200.gif
-  fields:
+  title: Up Tilt

@@ -1,231 +1,183 @@
-lucina:
-  title: Lucina
-  image: hurtbox.png
-  fields:
-
-airdodge:
+airdodge1:
+  fields: null
   title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
+bair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
+  title: Back Air
+bthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
+  title: Back Throw
+dair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
+  title: Down Air
+dashattack1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
+  title: Dash Attack
+dsmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/marth/MarthDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/marth/MarthDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/marth/MarthFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/marth/MarthFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/marth/MarthFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt
-  image: https://ultimateframedata.com/hitboxes/marth/MarthFTilt.gif
-  fields:
-
-getupattack:
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/marth/MarthDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/marth/MarthPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/marth/MarthGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/marth/MarthJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/marth/MarthJab2.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/marth/MarthNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Shield Breaker
-  image: https://ultimateframedata.com/hitboxes/marth/MarthShieldbreaker.gif
-  fields:
-
-nspecial2:
-  title: Shield Breaker Down
-  image: https://ultimateframedata.com/hitboxes/marth/MarthShieldbreakerUp.gif
-  fields:
-
-nspecial3:
-  title: Shield Breaker Up
-  image: https://ultimateframedata.com/hitboxes/marth/MarthShieldbreakerUp.gif
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/marth/MarthPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Counter
+  title: Down Smash
+dspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthCounter.gif
-  fields:
-
+  title: Counter
 dspecial2:
-  title: Counter Attack
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthCounterHit.gif
-  fields:
-
-spotdodge:
+  title: Counter Attack
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthFAir.gif
+  title: Forward Air
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthFTilt.gif
+  title: Forward Tilt
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthGrab.gif
+  title: Standing Grab
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthJab2.gif
+  title: Jab 2
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+lucina1:
+  fields: null
+  image: hurtbox.png
+  title: Lucina
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthShieldbreaker.gif
+  title: Shield Breaker
+nspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthShieldbreakerUp.gif
+  title: Shield Breaker Down
+nspecial3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthShieldbreakerUp.gif
+  title: Shield Breaker Up
+oos1:
+  fields: null
+  title: Out of Shield Options
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Dancing Blade Hit 1
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade1.gif
-  fields:
-
+  title: Dancing Blade Hit 1
 sspecial2:
-  title: Dancing Blade Hit 2 Neutral
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade2.gif
-  fields:
-
+  title: Dancing Blade Hit 2 Neutral
 sspecial3:
-  title: Dancing Blade Hit 3 Neutral
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade3.gif
-  fields:
-
+  title: Dancing Blade Hit 3 Neutral
 sspecial4:
-  title: Dancing Blade Hit 4 Neutral
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade4.gif
-  fields:
-
+  title: Dancing Blade Hit 4 Neutral
 sspecial5:
-  title: Dancing Blade Hit 2 Up
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade2Up.gif
-  fields:
-
+  title: Dancing Blade Hit 2 Up
 sspecial6:
-  title: Dancing Blade Hit 3 Up
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade3Up.gif
-  fields:
-
+  title: Dancing Blade Hit 3 Up
 sspecial7:
-  title: Dancing Blade Hit 4 Up
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade4Up.gif
-  fields:
-
+  title: Dancing Blade Hit 4 Up
 sspecial8:
-  title: Dancing Blade Hit 3 Down
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade3Down.gif
-  fields:
-
+  title: Dancing Blade Hit 3 Down
 sspecial9:
-  title: Dancing Blade Hit 4 Down
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthDancingBlade4Down.gif
-  fields:
-
-staunt:
+  title: Dancing Blade Hit 4 Down
+staunt1:
   title: Side Taunt
-
-tripattack:
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthUAir.gif
-  fields:
-
-uspecial:
-  title: Dolphin Slash (Ground)
-  image: https://ultimateframedata.com/hitboxes/marth/MarthDolphinSlashG.gif
-  fields:
-
-uspecial2:
-  title: Dolphin Slash (Air)
-  image: https://ultimateframedata.com/hitboxes/marth/MarthDolphinSlashG.gif
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthDolphinSlashG.gif
+  title: Dolphin Slash (Ground)
+uspecial2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/marth/MarthDolphinSlashG.gif
+  title: Dolphin Slash (Air)
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/marth/MarthUTilt.gif
-  fields:
+  title: Up Tilt

@@ -1,298 +1,233 @@
-hero:
-  title: Hero
-  image: hurtbox.png
-  fields:
-
-airdodge:
-  title: Airdodge
-  fields:
-
-bair:
-  title: Back Air
-  image: https://ultimateframedata.com/hitboxes/hero/HeroBAir.gif
-  fields:
-
-bthrow:
-  title: Back Throw
-  image: https://ultimateframedata.com/hitboxes/hero/HeroBThrow.gif
-  fields:
-
-dair:
-  title: Down Air
-  image: https://ultimateframedata.com/hitboxes/hero/HeroDAir.gif
-  fields:
-
-dashattack:
-  title: Dash Attack
-  image: https://ultimateframedata.com/hitboxes/hero/HeroDashAttack.gif
-  fields:
-
-dsmash:
-  title: Down Smash
-  image: https://ultimateframedata.com/hitboxes/hero/HeroDSmash.gif
-  fields:
-
-dtaunt:
-  title: Down Taunt
-
-dthrow:
-  title: Down Throw
-  image: https://ultimateframedata.com/hitboxes/hero/HeroDThrow.gif
-  fields:
-
-dtilt:
-  title: Down Tilt
-  image: https://ultimateframedata.com/hitboxes/hero/HeroDTilt.gif
-  fields:
-
-fair:
-  title: Forward Air
-  image: https://ultimateframedata.com/hitboxes/hero/HeroFAir.gif
-  fields:
-
-fsmash:
-  title: Forward Smash
-  image: https://ultimateframedata.com/hitboxes/hero/HeroFSmash.gif
-  fields:
-
-fthrow:
-  title: Forward Throw
-  image: https://ultimateframedata.com/hitboxes/hero/HeroFThrow.gif
-  fields:
-
-ftilt:
-  title: Forward Tilt 1 (Shield)
-  image: https://ultimateframedata.com/hitboxes/hero/HeroFTilt1.gif
-  fields:
-
-ftilt2:
-  title: Forward Tilt 2 (Sword)
-  image: https://ultimateframedata.com/hitboxes/hero/HeroFTilt2.gif
-  fields:
-
-getupattack: 
-  title: Getup Attack
-  fields:
-
-grabdash:
-  title: Dash Grab
-  image: https://ultimateframedata.com/hitboxes/hero/HeroDashGrab.gif
-  fields:
-
-grabpivot:
-  title: Pivot Grab
-  image: https://ultimateframedata.com/hitboxes/hero/HeroPivotGrab.gif
-  fields:
-
-grabstanding:
-  title: Standing Grab
-  image: https://ultimateframedata.com/hitboxes/hero/HeroGrab.gif
-  fields:
-
-jab:
-  title: Jab 1
-  image: https://ultimateframedata.com/hitboxes/hero/HeroJab1.gif
-  fields:
-
-jab2:
-  title: Jab 2
-  image: https://ultimateframedata.com/hitboxes/hero/HeroJab2.gif
-  fields:
-
-jab3:
-  title: Jab 3
-  image: https://ultimateframedata.com/hitboxes/hero/HeroJab3.gif
-  fields:
-
-ledgeattack:
-  title: Ledge Attack
-  fields:
-
-nair:
-  title: Neutral Air
-  image: https://ultimateframedata.com/hitboxes/hero/HeroNAir.gif
-  fields:
-
-oos:
-  title: Out of Shield Options
-  fields:
-
-nspecial:
-  title: Frizz
-  fields:
-
-nspecial2:
-  title: Frizzle
-  fields:
-
-nspecial3:
-  title: Kafrizz
-  fields:
-
-pummel:
-  title: Pummel
-  image: https://ultimateframedata.com/hitboxes/hero/HeroPummel.gif
-  fields:
-
-roll:
-  title: Rolls
-  fields:
-
-dspecial:
-  title: Menu/Select
-  fields:
-
-bang:
-  title: Bang
-  fields:
-
-kaboom:
-  title: Kaboom
-  image: https://ultimateframedata.com/hitboxes/hero/Kaboom.gif
-  fields:
-
-sizz:
-  title: Sizz
-  fields:
-
-sizzle:
-  title: Sizzle
-  image: https://ultimateframedata.com/hitboxes/hero/Sizzle.gif
-  fields:
-
-whack:
-  title: Whack
-  fields:
-
-thwack:
-  title: Thwack
-  image: https://ultimateframedata.com/hitboxes/hero/Thwack.png
-  fields:
-
-kamikazee:
-  title: Kamikazee
-  image: https://ultimateframedata.com/hitboxes/hero/Kamikazee.gif
-  fields:
-
-magicburst:
-  title: Magic Burst
-  image: https://ultimateframedata.com/hitboxes/hero/Magic%20Burst.gif
-  fields:
-
-snooze:
-  title: Snooze
-  fields:
-
-heal:
-  title: Heal
-  fields:
-
-oomph:
-  title: Oomph
-  fields:
-
-acceleratle:
+acceleratle1:
+  fields: null
   title: Acceleratle
-  fields:
-
-bounce:
+airdodge1:
+  fields: null
+  title: Airdodge
+bair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroBAir.gif
+  title: Back Air
+bang1:
+  fields: null
+  title: Bang
+bounce1:
+  fields: null
   title: Bounce
-  fields:
-
-kaclang:
-  title: Kaclang
-  image: https://ultimateframedata.com/hitboxes/hero/HeroKaclang.png
-  fields:
-
-zoom:
-  title: Zoom
-  fields:
-
-hocuspocus:
-  title: Hocus Pocus
-  fields:
-
-flameslash:
-  title: Flameslash
+bthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroBThrow.gif
+  title: Back Throw
+dair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDAir.gif
+  title: Down Air
+dashattack1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDashAttack.gif
+  title: Dash Attack
+dsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDSmash.gif
+  title: Down Smash
+dspecial1:
+  fields: null
+  title: Menu/Select
+dtaunt1:
+  title: Down Taunt
+dthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDThrow.gif
+  title: Down Throw
+dtilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDTilt.gif
+  title: Down Tilt
+fair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFAir.gif
+  title: Forward Air
+flameslash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroFlameSlash.gif
-  fields:
-    
-kacrackleslash:
-  title: Kacrackle Slash
-  image: https://ultimateframedata.com/hitboxes/hero/HeroKacrackleSlash.gif
-  fields:
-
-hatchetman:
-  title: Hatchet Man
+  title: Flameslash
+fsmash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFSmash.gif
+  title: Forward Smash
+fthrow1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFThrow.gif
+  title: Forward Throw
+ftilt1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFTilt1.gif
+  title: Forward Tilt 1 (Shield)
+ftilt2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroFTilt2.gif
+  title: Forward Tilt 2 (Sword)
+getupattack1:
+  fields: null
+  title: Getup Attack
+grabdash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroDashGrab.gif
+  title: Dash Grab
+grabpivot1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroPivotGrab.gif
+  title: Pivot Grab
+grabstanding1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroGrab.gif
+  title: Standing Grab
+hatchetman1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroHatchetMan.gif
-  fields:
-
-metalslash:
-  title: Metal Slash
+  title: Hatchet Man
+heal1:
+  fields: null
+  title: Heal
+hero1:
+  fields: null
+  image: hurtbox.png
+  title: Hero
+hocuspocus1:
+  fields: null
+  title: Hocus Pocus
+jab1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroJab1.gif
+  title: Jab 1
+jab2:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroJab2.gif
+  title: Jab 2
+jab3:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroJab3.gif
+  title: Jab 3
+kaboom1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/Kaboom.gif
+  title: Kaboom
+kaclang1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroKaclang.png
+  title: Kaclang
+kacrackleslash1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroKacrackleSlash.gif
+  title: Kacrackle Slash
+kamikazee1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/Kamikazee.gif
+  title: Kamikazee
+ledgeattack1:
+  fields: null
+  title: Ledge Attack
+magicburst1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/Magic%20Burst.gif
+  title: Magic Burst
+metalslash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroMetalSlash.gif
-  fields:
-
-psychup:
+  title: Metal Slash
+nair1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroNAir.gif
+  title: Neutral Air
+nspecial1:
+  fields: null
+  title: Frizz
+nspecial2:
+  fields: null
+  title: Frizzle
+nspecial3:
+  fields: null
+  title: Kafrizz
+oomph1:
+  fields: null
+  title: Oomph
+oos1:
+  fields: null
+  title: Out of Shield Options
+psychup1:
+  fields: null
   title: Psych Up
-  fields:
-
-spotdodge:
+pummel1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/HeroPummel.gif
+  title: Pummel
+roll1:
+  fields: null
+  title: Rolls
+sizz1:
+  fields: null
+  title: Sizz
+sizzle1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/Sizzle.gif
+  title: Sizzle
+snooze1:
+  fields: null
+  title: Snooze
+spotdodge1:
+  fields: null
   title: Spot Dodge
-  fields:
-
-sspecial:
-  title: Zap
+sspecial1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroZap.gif
-  fields:
-
+  title: Zap
 sspecial2:
-  title: Zapple
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroZapple.gif
-  fields:
-
+  title: Zapple
 sspecial3:
-  title: Kazap
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroKazap.gif
-  fields:
-
-staunt:
+  title: Kazap
+staunt1:
   title: Side Taunt
-
-tripattack:
+thwack1:
+  fields: null
+  image: https://ultimateframedata.com/hitboxes/hero/Thwack.png
+  title: Thwack
+tripattack1:
+  fields: null
   title: Trip Getup Attack
-  fields:
-
-uair:
-  title: Up Air
+uair1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroUAir.gif
-  fields:
-
-uspecial:
-  title: Woosh
-  fields:
-
-uspecial2:
-  title: Swoosh
-  fields:
-
-uspecial3:
-  title: Kaswoosh
-  fields:
-
-usmash:
-  title: Up Smash
+  title: Up Air
+usmash1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroUSmash.gif
-  fields:
-
-utaunt:
+  title: Up Smash
+uspecial1:
+  fields: null
+  title: Woosh
+uspecial2:
+  fields: null
+  title: Swoosh
+uspecial3:
+  fields: null
+  title: Kaswoosh
+utaunt1:
   title: Up Taunt
-
-uthrow:
-  title: Up Throw
+uthrow1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroUThrow.gif
-  fields:
-
-utilt:
-  title: Up Tilt
+  title: Up Throw
+utilt1:
+  fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroUTilt.gif
-  fields:
+  title: Up Tilt
+whack1:
+  fields: null
+  title: Whack
+zoom1:
+  fields: null
+  title: Zoom
