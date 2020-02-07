@@ -43,6 +43,7 @@ fair:
 nair:
   - neutralair
   - neutralaerial
+  - naerial
 
 dair:
   - downair
@@ -51,6 +52,7 @@ dair:
   - downwardsair
   - downwardaerial
   - downwardsaerial
+  - daerial
 
 bair:
   - backair
@@ -59,6 +61,7 @@ bair:
   - backwardsaerial
   - backwardaerial
   - backwardair
+  - baerial
 
 uair:
   - upair
@@ -67,6 +70,7 @@ uair:
   - upwardsaerial
   - upwardsair
   - upwardair
+  - uaerial
 
 ftilt:
   - forwardtilt

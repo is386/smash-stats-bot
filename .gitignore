@@ -8,5 +8,6 @@ secret.py
 .vscode
 __pycache__
 *.db
+!synonyms.db
 .mypy_cache
 .pytest_cache
