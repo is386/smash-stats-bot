@@ -1,12 +1,12 @@
 from re import sub, search, Match
+from sqlite3 import Connection
 from typing import List
 
 from discord import Message
 from discord.ext.commands import Context
 from yaml import safe_load, YAMLError
 
-from smashstats import reactions
-from smashstats import translator
+from smashstats import database, translator, reactions
 
 char_path: str = "characters/{}.yml"
 char_syns_path: str = "synonyms/characters.yml"
@@ -16,6 +16,7 @@ move_error: str = "The move **{}** does not exist. `?help` for more."
 char_error: str = "That character doesn't exist. `?help` for more."
 hbox_error: str = "**{}** does not have a hitbox gif yet. `?help` for more."
 select_msg: str = "There are multiple hitboxes for this move. React within 60s with the hitbox you would like (Sender Only):\n```{}```"
+synonyms_db: Connection = database.connect_to_synonyms_db()
 
 
 async def get_move_data(ctx: Context) -> dict:
@@ -181,13 +182,13 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
     :param char_data: `dict` character's yaml data
     :return: `str` empty if not found
     """
-    move: list = translator.trans(move_name, move_syns_path)
+    move: str = database.select_move(move_name, synonyms_db)
     if len(move) == 0:
         entry_name: str
         for entry_name in char_data.keys():
             if "names" in char_data[entry_name].keys() and move_name in char_data[entry_name]["names"]:
                 return entry_name
-    return move.pop() if len(move) != 0 else ""
+    return move
 
 
 async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) -> str:
