@@ -1,4 +1,4 @@
-acceleratle1:
+dspecial13:
   fields: null
   title: Acceleratle
 airdodge1:
@@ -8,10 +8,10 @@ bair1:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroBAir.gif
   title: Back Air
-bang1:
+dspecial2:
   fields: null
   title: Bang
-bounce1:
+dspecial14:
   fields: null
   title: Bounce
 bthrow1:
@@ -47,7 +47,7 @@ fair1:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroFAir.gif
   title: Forward Air
-flameslash1:
+dspecial18:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroFlameSlash.gif
   title: Flameslash
@@ -82,18 +82,18 @@ grabstanding1:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroGrab.gif
   title: Standing Grab
-hatchetman1:
+dspecial20:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroHatchetMan.gif
   title: Hatchet Man
-heal1:
+dspecial11:
   fields: null
   title: Heal
 hero1:
   fields: null
   image: hurtbox.png
   title: Hero
-hocuspocus1:
+dspecial17:
   fields: null
   title: Hocus Pocus
 jab1:
@@ -108,30 +108,30 @@ jab3:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroJab3.gif
   title: Jab 3
-kaboom1:
+dspecial3:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/Kaboom.gif
   title: Kaboom
-kaclang1:
+dspecial15:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroKaclang.png
   title: Kaclang
-kacrackleslash1:
+dspecial19:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroKacrackleSlash.gif
   title: Kacrackle Slash
-kamikazee1:
+dspecial8:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/Kamikazee.gif
   title: Kamikazee
 ledgeattack1:
   fields: null
   title: Ledge Attack
-magicburst1:
+dspecial9:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/Magic%20Burst.gif
   title: Magic Burst
-metalslash1:
+dspecial21:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroMetalSlash.gif
   title: Metal Slash
@@ -148,13 +148,13 @@ nspecial2:
 nspecial3:
   fields: null
   title: Kafrizz
-oomph1:
+dspecial12:
   fields: null
   title: Oomph
 oos1:
   fields: null
   title: Out of Shield Options
-psychup1:
+dspecial22:
   fields: null
   title: Psych Up
 pummel1:
@@ -164,14 +164,14 @@ pummel1:
 roll1:
   fields: null
   title: Rolls
-sizz1:
+dspecial4:
   fields: null
   title: Sizz
-sizzle1:
+dspecial5:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/Sizzle.gif
   title: Sizzle
-snooze1:
+dspecial10:
   fields: null
   title: Snooze
 spotdodge1:
@@ -191,7 +191,7 @@ sspecial3:
   title: Kazap
 staunt1:
   title: Side Taunt
-thwack1:
+dspecial7:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/Thwack.png
   title: Thwack
@@ -225,9 +225,9 @@ utilt1:
   fields: null
   image: https://ultimateframedata.com/hitboxes/hero/HeroUTilt.gif
   title: Up Tilt
-whack1:
+dspecial6:
   fields: null
   title: Whack
-zoom1:
+dspecial16:
   fields: null
   title: Zoom
