@@ -101,7 +101,7 @@ async def get_move_data(ctx: Context) -> dict:
     # appends 1 to the end so that it can be found in the character's
     # moveset (all moves end in a 1 now even if theres no second part)
     # ex: nair = nair1 in the yaml
-    elif len(n) == 0:
+    elif move[-1].isalpha():
         move += "1"
 
     return char_data[move]
@@ -186,6 +186,9 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
         entry_name: str
         for entry_name in char_data.keys():
             if "names" in char_data[entry_name].keys() and move_name in char_data[entry_name]["names"]:
+                return entry_name
+            # DUCT TAPE FOR HERO'S SPELLS LOL IGNORE FOR NOW
+            elif "title" in char_data[entry_name].keys() and move_name == "".join(char_data[entry_name]["title"].split()).lower():
                 return entry_name
     return move.pop() if len(move) != 0 else ""
 
