@@ -8,7 +8,7 @@ from secret import token
 
 db_name = "prefixes.db"
 default_prefix = "?"
-status_msg: str = "@Smash Stats help"
+status_msg: str = "?help"
 embed_error: str = "An error has occurred during the creation of the embed:\n{}"
 prefix_error1: str = "{} you need the permission **Administrator** to set the prefix."
 prefix_error2: str = "You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`"
