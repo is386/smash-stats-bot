@@ -6,7 +6,7 @@ from discord.ext import commands
 from smashstats import moveset, embeds, database
 from secret import token
 
-db_name = "prefixes.db"
+db_name = "databases/prefixes.db"
 default_prefix = "?"
 status_msg: str = "?help"
 embed_error: str = "An error has occurred during the creation of the embed:\n{}"

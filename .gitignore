@@ -9,5 +9,6 @@ secret.py
 __pycache__
 *.db
 !synonyms.db
+!characters.db
 .mypy_cache
 .pytest_cache
