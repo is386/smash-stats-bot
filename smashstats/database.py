@@ -61,7 +61,7 @@ def get_similar_chars(char_name: str, db: Connection) -> List[str]:
             characters
         WHERE
             name LIKE ?""", (char_name,))
-    rows = c.fetchall()
+    rows: List = c.fetchall()
     chars = [row[0] for row in rows]
 
     c = db.execute("""
@@ -88,7 +88,7 @@ def select_char(char_name: str, db: Connection) -> str:
     """
     c: Cursor = db.cursor()
     c = db.execute("SELECT name FROM characters where name=?", (char_name,))
-    rows = c.fetchall()
+    rows: List = c.fetchall()
 
     if len(rows) != 0:
         return rows[0][0]
@@ -121,7 +121,7 @@ def select_move(move_name: str, db: Connection) -> str:
     """
     c: Cursor = db.cursor()
     c = db.execute("SELECT name FROM moves where name=?", (move_name,))
-    rows = c.fetchall()
+    rows: List = c.fetchall()
 
     if len(rows) != 0:
         return rows[0][0]
@@ -136,12 +136,36 @@ def select_move(move_name: str, db: Connection) -> str:
         AND
             move_synonyms.move_id = moves.id
     """, (move_name,))
-    rows = c.fetchall()
+    rows: List = c.fetchall()
 
     if len(rows) == 0:
         return ""
 
     return rows[0][0]
+
+
+def select_move_data(char_name: str, move_name: str, db: Connection) -> List[str]:
+    """
+    Get the name, title, and image of a move from the character's table.
+
+    :param char_name: `str` name of the character
+    :param move_name: `str` name of the move
+    :param db: `Connection` connection to the characters db
+    :return: `List[str]`
+    """
+    c: Cursor = db.cursor()
+    c = db.execute("""
+        SELECT
+            name, title, image
+        FROM
+            {}
+        WHERE name=?""".format(char_name), (move_name,))
+    row: List = c.fetchall()[0]
+
+    if len(row) == 0:
+        return []
+
+    return [row[0], row[1], row[2]]
 
 
 def char_has_move(char_name: str, move_name: str, db: Connection) -> bool:
@@ -161,7 +185,7 @@ def char_has_move(char_name: str, move_name: str, db: Connection) -> bool:
             {}
         WHERE
             name=?""".format(char_name), (move_name,))
-    rows = c.fetchall()
+    rows: List = c.fetchall()
 
     if len(rows) == 0:
         return False
@@ -184,7 +208,7 @@ def get_move_list(char_name: str, db: Connection) -> List[str]:
         FROM
             {}
     """.format(char_name))
-    rows = c.fetchall()
+    rows: List = c.fetchall()
 
     if len(rows) == 0:
         return []
@@ -209,7 +233,7 @@ def move_has_hitbox(char_name: str, move_name: str, db: Connection) -> bool:
             {}
         WHERE
             name=?""".format(char_name), (move_name,))
-    rows = c.fetchall()
+    rows: List = c.fetchall()
 
     if len(rows) == 0:
         return False
@@ -234,7 +258,7 @@ def get_move_title(char_name: str, move_name: str, db: Connection) -> str:
             {}
         WHERE
             name=?""".format(char_name), (move_name,))
-    rows = c.fetchall()
+    rows: List = c.fetchall()
 
     if len(rows) == 0:
         return ""
