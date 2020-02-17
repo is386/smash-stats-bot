@@ -26,7 +26,7 @@ async def get_move(ctx: Context) -> dict:
     msg: List[str] = ctx.message.content.lower().split()
     if len(msg) < 2:
         await ctx.send(syntax_error.format(ctx.prefix))
-        return {}
+        return None
 
     # Removes special characters from character and move
     for i, string in enumerate(msg):
@@ -37,13 +37,13 @@ async def get_move(ctx: Context) -> dict:
         char, move = split_char_move(msg[1:])
         if len(char) == 0:
             await ctx.send(char_error)
-            return {}
+            return None
         elif len(move) == 0:
             await ctx.send(syntax_error.format(ctx.prefix))
-            return {}
+            return None
     else:
         await ctx.send("That message is too long!")
-        return {}
+        return None
 
     # Gets move data
     orig_move: str = move
@@ -63,7 +63,7 @@ async def get_move(ctx: Context) -> dict:
     # Checks if the move exists or if the move with the number exists
     if len(move) == 0 or (not database.char_has_move(char, move + n, chars_db) and len(n) != 0):
         await ctx.send(move_error.format(orig_move))
-        return {}
+        return None
 
     # Appends the number back to the move
     move = move + n
@@ -79,13 +79,13 @@ async def get_move(ctx: Context) -> dict:
                 selection_moves.append(str(i))
         if len(selection_moves) == 0:
             await ctx.send(hbox_error.format(move))
-            return {}
+            return None
         elif len(selection_moves) == 1:
             move = selection_moves[0]
         else:
             move = await parse_move_selection(char, selection_moves, ctx)
             if len(move) == 0:
-                return {}
+                return None
 
     elif move[-1].isalpha():
         move += "1"
