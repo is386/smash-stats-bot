@@ -2,7 +2,7 @@ from sqlite3 import Connection, Cursor, connect
 from typing import List
 
 
-def connect_to_prefix_db(db_name: str):
+def connect_to_prefix_db(db_name: str) -> Connection:
     """
     Connect to the given DB and create a prefixes table.
 
@@ -22,7 +22,7 @@ def connect_to_prefix_db(db_name: str):
     return conn
 
 
-def connect_to_synonyms_db():
+def connect_to_synonyms_db() -> Connection:
     """
     Connect to the synonyms database.
 
@@ -32,7 +32,7 @@ def connect_to_synonyms_db():
     return conn
 
 
-def connect_to_characters_db():
+def connect_to_characters_db() -> Connection:
     """
     Connect to the synonyms database.
 
@@ -42,7 +42,7 @@ def connect_to_characters_db():
     return conn
 
 
-def get_similar_chars(char_name: str, db: Connection):
+def get_similar_chars(char_name: str, db: Connection) -> List[str]:
     """
     Return a list of matches for the given character name.
 
@@ -78,7 +78,7 @@ def get_similar_chars(char_name: str, db: Connection):
     return chars
 
 
-def select_char(char_name: str, db: Connection):
+def select_char(char_name: str, db: Connection) -> str:
     """
     Get the code name of the given character name.
 
@@ -111,7 +111,7 @@ def select_char(char_name: str, db: Connection):
     return rows[0][0]
 
 
-def select_move(move_name: str, db: Connection):
+def select_move(move_name: str, db: Connection) -> str:
     """
     Get the code name of the given move.
 
@@ -136,6 +136,104 @@ def select_move(move_name: str, db: Connection):
         AND
             move_synonyms.move_id = moves.id
     """, (move_name,))
+    rows = c.fetchall()
+
+    if len(rows) == 0:
+        return ""
+
+    return rows[0][0]
+
+
+def char_has_move(char_name: str, move_name: str, db: Connection) -> bool:
+    """
+    Check if the character has the given move.
+
+    :param char_name: `str` name of the character
+    :param move_name: `str` name of the move
+    :param db: `Connection` connection to the characters db
+    :return: `bool`
+    """
+    c: Cursor = db.cursor()
+    c = db.execute("""
+        SELECT
+            name
+        FROM
+            {}
+        WHERE
+            name=?""".format(char_name), (move_name,))
+    rows = c.fetchall()
+
+    if len(rows) == 0:
+        return False
+
+    return True
+
+
+def get_move_list(char_name: str, db: Connection) -> List[str]:
+    """
+    Get a list of the moves the character has.
+
+    :param char_name: `str` name of the character
+    :param db: `Connection` connection to the characters db
+    :return: `List[str]`
+    """
+    c: Cursor = db.cursor()
+    c = db.execute("""
+        SELECT
+            name
+        FROM
+            {}
+    """.format(char_name))
+    rows = c.fetchall()
+
+    if len(rows) == 0:
+        return []
+
+    return [row[0] for row in rows]
+
+
+def move_has_hitbox(char_name: str, move_name: str, db: Connection) -> bool:
+    """
+    Check if the given move has a hitbox gif.
+
+    :param char_name: `str` name of the character
+    :param move_name: `str` name of the move
+    :param db: `Connection` connection to the characters db
+    :return: `bool`
+    """
+    c: Cursor = db.cursor()
+    c = db.execute("""
+        SELECT
+            image
+        FROM
+            {}
+        WHERE
+            name=?""".format(char_name), (move_name,))
+    rows = c.fetchall()
+
+    if len(rows) == 0:
+        return False
+
+    return True
+
+
+def get_move_title(char_name: str, move_name: str, db: Connection) -> str:
+    """
+    Get the full move name.
+
+    :param char_name: `str` name of the character
+    :param move_name: `str` name of the move
+    :param db: `Connection` connection to the characters db
+    :return: `bool`
+    """
+    c: Cursor = db.cursor()
+    c = db.execute("""
+        SELECT
+            title
+        FROM
+            {}
+        WHERE
+            name=?""".format(char_name), (move_name,))
     rows = c.fetchall()
 
     if len(rows) == 0:
