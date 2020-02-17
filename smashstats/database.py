@@ -28,7 +28,17 @@ def connect_to_synonyms_db():
 
     :return: `Connection` connection to db
     """
-    conn: Connection = connect("synonyms.db")
+    conn: Connection = connect("databases/synonyms.db")
+    return conn
+
+
+def connect_to_characters_db():
+    """
+    Connect to the synonyms database.
+
+    :return: `Connection` connection to db
+    """
+    conn: Connection = connect("databases/characters.db")
     return conn
 
 
