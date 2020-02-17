@@ -1,4 +1,5 @@
 from sqlite3 import Connection, Cursor, connect
+from typing import List
 
 
 def connect_to_prefix_db(db_name: str):
@@ -31,11 +32,47 @@ def connect_to_synonyms_db():
     return conn
 
 
-def select_character(char_name: str, db: Connection):
+def get_similar_chars(char_name: str, db: Connection):
+    """
+    Return a list of matches for the given character name.
+
+    :param char_name: `str` name of the character
+    :param db: `Connection` connection to the synonyms db
+    :return: `List[str]`
+    """
+    chars: List[str] = []
+    char_name = "%{}%".format(char_name)
+    c: Cursor = db.cursor()
+
+    c = db.execute("""
+        SELECT
+            name
+        FROM
+            characters
+        WHERE
+            name LIKE ?""", (char_name,))
+    rows = c.fetchall()
+    chars = [row[0] for row in rows]
+
+    c = db.execute("""
+        SELECT
+            synonym
+        FROM
+            char_synonyms
+        WHERE
+            char_synonyms.synonym LIKE ?
+    """, (char_name,))
+    rows = c.fetchall()
+    chars = chars + [row[0] for row in rows]
+
+    return chars
+
+
+def select_char(char_name: str, db: Connection):
     """
     Get the code name of the given character name.
 
-    :param char_name: `str` name of the character
+    :param move_name: `str` name of the character
     :param db: `Connection` connection to the synonyms db
     :return: `str`
     """
@@ -66,9 +103,9 @@ def select_character(char_name: str, db: Connection):
 
 def select_move(move_name: str, db: Connection):
     """
-    Get the code name of the given character name.
+    Get the code name of the given move.
 
-    :param move_name: `str` name of the character
+    :param move_name: `str` name of the move
     :param db: `Connection` connection to the synonyms db
     :return: `str`
     """
