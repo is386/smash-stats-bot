@@ -1,4 +1,5 @@
 from sqlite3 import Connection, Cursor, connect
+from typing import List
 
 
 def connect_to_prefix_db(db_name: str):
@@ -19,3 +20,115 @@ def connect_to_prefix_db(db_name: str):
     """)
     conn.commit()
     return conn
+
+
+def connect_to_synonyms_db():
+    """
+    Connect to the synonyms database.
+
+    :return: `Connection` connection to db
+    """
+    conn: Connection = connect("synonyms.db")
+    return conn
+
+
+def get_similar_chars(char_name: str, db: Connection):
+    """
+    Return a list of matches for the given character name.
+
+    :param char_name: `str` name of the character
+    :param db: `Connection` connection to the synonyms db
+    :return: `List[str]`
+    """
+    chars: List[str] = []
+    char_name = "%{}%".format(char_name)
+    c: Cursor = db.cursor()
+
+    c = db.execute("""
+        SELECT
+            name
+        FROM
+            characters
+        WHERE
+            name LIKE ?""", (char_name,))
+    rows = c.fetchall()
+    chars = [row[0] for row in rows]
+
+    c = db.execute("""
+        SELECT
+            synonym
+        FROM
+            char_synonyms
+        WHERE
+            char_synonyms.synonym LIKE ?
+    """, (char_name,))
+    rows = c.fetchall()
+    chars = chars + [row[0] for row in rows]
+
+    return chars
+
+
+def select_char(char_name: str, db: Connection):
+    """
+    Get the code name of the given character name.
+
+    :param move_name: `str` name of the character
+    :param db: `Connection` connection to the synonyms db
+    :return: `str`
+    """
+    c: Cursor = db.cursor()
+    c = db.execute("SELECT name FROM characters where name=?", (char_name,))
+    rows = c.fetchall()
+
+    if len(rows) != 0:
+        return rows[0][0]
+
+    c = db.execute("""
+        SELECT
+            characters.name
+        FROM
+            characters, char_synonyms
+        WHERE
+            char_synonyms.synonym = ?
+        AND
+            char_synonyms.char_id = characters.id
+    """, (char_name,))
+    rows = c.fetchall()
+
+    if len(rows) == 0:
+        return ""
+
+    return rows[0][0]
+
+
+def select_move(move_name: str, db: Connection):
+    """
+    Get the code name of the given move.
+
+    :param move_name: `str` name of the move
+    :param db: `Connection` connection to the synonyms db
+    :return: `str`
+    """
+    c: Cursor = db.cursor()
+    c = db.execute("SELECT name FROM moves where name=?", (move_name,))
+    rows = c.fetchall()
+
+    if len(rows) != 0:
+        return rows[0][0]
+
+    c = db.execute("""
+        SELECT
+            moves.name
+        FROM
+            moves, move_synonyms
+        WHERE
+            move_synonyms.synonym = ?
+        AND
+            move_synonyms.move_id = moves.id
+    """, (move_name,))
+    rows = c.fetchall()
+
+    if len(rows) == 0:
+        return ""
+
+    return rows[0][0]

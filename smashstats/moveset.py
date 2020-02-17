@@ -1,21 +1,20 @@
 from re import sub, search, Match
+from sqlite3 import Connection
 from typing import List
 
 from discord import Message
 from discord.ext.commands import Context
 from yaml import safe_load, YAMLError
 
-from smashstats import reactions
-from smashstats import translator
+from smashstats import database, reactions
 
 char_path: str = "characters/{}.yml"
-char_syns_path: str = "synonyms/characters.yml"
-move_syns_path: str = "synonyms/moves.yml"
 syntax_error: str = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`"
 move_error: str = "The move **{}** does not exist. `?help` for more."
 char_error: str = "That character doesn't exist. `?help` for more."
 hbox_error: str = "**{}** does not have a hitbox gif yet. `?help` for more."
 select_msg: str = "There are multiple hitboxes for this move. React within 60s with the hitbox you would like (Sender Only):\n```{}```"
+synonyms_db: Connection = database.connect_to_synonyms_db()
 
 
 async def get_move_data(ctx: Context) -> dict:
@@ -107,25 +106,6 @@ async def get_move_data(ctx: Context) -> dict:
     return char_data[move]
 
 
-def get_all_similar(path: str, match: str):
-    """
-    Get the matching synonyms.
-
-    :param path: `str` path to synonyms yaml file
-    :param match: `str` name to match
-    :return: `List[str]`
-    """
-    with open(path, 'r') as f:
-        synonyms: dict = safe_load(f)
-
-    matching: List[str] = [code_name for code_name in list(
-        synonyms.keys()) if match in code_name]
-    matching += [to_match for item in synonyms.values()
-                 for to_match in item if match in to_match]
-
-    return matching
-
-
 def split_char_move(msg: list) -> tuple:
     """
     Split the character from the move name.
@@ -134,8 +114,7 @@ def split_char_move(msg: list) -> tuple:
     :return: `tuple` like: (char, move), can be unpacked on call
     """
     acc: str = msg.pop(0)
-
-    matching: List[str] = get_all_similar(char_syns_path, acc)
+    matching: List[str] = database.get_similar_chars(acc, synonyms_db)
     if len(matching) < 1:
         return '', ''
 
@@ -149,8 +128,7 @@ def split_char_move(msg: list) -> tuple:
             break
         char = acc
 
-    # Can be made much better once we have an actual Database. Sorry
-    return translator.trans(char, char_syns_path)[0], ''.join(msg)
+    return database.select_char(char, synonyms_db), ''.join(msg)
 
 
 def get_character(char: str) -> dict:
@@ -181,7 +159,7 @@ def get_real_move_name(move_name: str, char_data: dict) -> str:
     :param char_data: `dict` character's yaml data
     :return: `str` empty if not found
     """
-    move: list = translator.trans(move_name, move_syns_path)
+    move: str = database.select_move(move_name, synonyms_db)
     if len(move) == 0:
         entry_name: str
         for entry_name in char_data.keys():
