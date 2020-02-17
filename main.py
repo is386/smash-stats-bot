@@ -3,7 +3,7 @@ from sqlite3 import Connection, Cursor
 from discord import Game, Embed
 from discord.ext import commands
 
-from smashstats import moveset, embeds, database
+from smashstats import moveset, embeds, database, move_model
 from secret import token
 
 db_name = "databases/prefixes.db"
@@ -52,15 +52,13 @@ async def visualize_hitbox(ctx: commands.Context):
     :param ctx: `Context` original user message's context
     :return: `None`
     """
-    move_data: dict = await moveset.get_move(ctx)
-    if len(move_data) == 0:
-        return
+    move: move_model.Move = await moveset.get_move(ctx)
 
     try:
-        embed: Embed = embeds.create_image_embed(move_data)
+        embed: Embed = embeds.create_image_embed(move)
         await ctx.send(embed=embed)
     except KeyError as e:
-        await ctx.send(moveset.hbox_error.format(move_data["title"]))
+        await ctx.send(moveset.hbox_error.format(move.get_title()))
         print(embed_error.format(e.args))
 
 

@@ -5,9 +5,8 @@ from typing import List
 from discord import Message
 from discord.ext.commands import Context
 
-from smashstats import database, reactions, Move
+from smashstats import database, reactions, move_model
 
-char_path: str = "characters/{}.yml"
 syntax_error: str = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`"
 move_error: str = "The move **{}** does not exist. `?help` for more."
 char_error: str = "That character doesn't exist. `?help` for more."
@@ -91,7 +90,7 @@ async def get_move(ctx: Context) -> dict:
     elif move[-1].isalpha():
         move += "1"
 
-    return get_move_data()
+    return get_move_data(char, move)
 
 
 def split_char_move(msg: list) -> tuple:
@@ -158,5 +157,13 @@ async def parse_move_selection(char: str, moves: List[str], ctx: Context) -> str
     return moves[answer_index]
 
 
-def get_move_data():
-    return Move
+def get_move_data(char: str, move: str) -> move_model.Move:
+    """
+    Return a move object with the code name, title, and image.
+
+    :param char: `str` character's name
+    :param move: `str` move name
+    :return: `move_mode.Move`
+    """
+    move_data: List[str] = database.select_move_data(char, move, chars_db)
+    return move_model.Move(move_data[0], move_data[1], move_data[2])
