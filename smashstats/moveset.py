@@ -4,9 +4,8 @@ from typing import List
 
 from discord import Message
 from discord.ext.commands import Context
-from yaml import safe_load, YAMLError
 
-from smashstats import database, reactions
+from smashstats import database, reactions, Move
 
 char_path: str = "characters/{}.yml"
 syntax_error: str = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`"
@@ -18,7 +17,7 @@ synonyms_db: Connection = database.connect_to_synonyms_db()
 chars_db: Connection = database.connect_to_characters_db()
 
 
-async def get_move_data(ctx: Context) -> dict:
+async def get_move(ctx: Context) -> dict:
     """
     Get the YAML data for a character's move.
 
@@ -47,13 +46,6 @@ async def get_move_data(ctx: Context) -> dict:
         await ctx.send("That message is too long!")
         return {}
 
-    # Gets character data
-    try:
-        char_data: dict = get_character(char.lower())
-    except YAMLError as e:
-        print(e)
-        return {}
-
     # Gets move data
     orig_move: str = move
 
@@ -66,27 +58,25 @@ async def get_move_data(ctx: Context) -> dict:
         n = move[n_match.start():n_match.end()]
         move = move[:n_match.start()]
 
-    if move not in char_data.keys():
-        move = get_real_move_name(move, char_data)
+    if not database.char_has_move(char, move, chars_db):
+        move = get_real_move_name(move)
 
-    # This checks if the move plus the number is in the moveset
-    # Also checks if there was a number in the given move. This is
-    # to prevent the case where a numberless move is given and
-    # the bot thinks its not in the moveset (since all moves end in a 1 now)
-    if len(move) == 0 or (move + n not in char_data.keys() and len(n) != 0):
+    # Checks if the move exists or if the move with the number exists
+    if len(move) == 0 or (not database.char_has_move(char, move + n, chars_db) and len(n) != 0):
         await ctx.send(move_error.format(orig_move))
         return {}
 
     # Appends the number back to the move
     move = move + n
+    moveset = database.get_move_list(char, chars_db)
 
     # Finds moves that match parsed move. If so, that move has multiple hitboxes.
-    matching_moves = [entry for entry in char_data.keys() if move in entry]
+    matching_moves = [entry for entry in moveset if move in entry]
     if len(matching_moves) > 1:
         selection_moves = []
         # Removes the matching moves that do not have an image
         for i in matching_moves:
-            if "image" in char_data[i].keys():
+            if database.move_has_hitbox(char, i, chars_db):
                 selection_moves.append(str(i))
         if len(selection_moves) == 0:
             await ctx.send(hbox_error.format(move))
@@ -94,17 +84,14 @@ async def get_move_data(ctx: Context) -> dict:
         elif len(selection_moves) == 1:
             move = selection_moves[0]
         else:
-            move = await parse_move_selection(selection_moves, char_data, ctx)
+            move = await parse_move_selection(char, selection_moves, ctx)
             if len(move) == 0:
                 return {}
-    # If there are no matches and the move didn't have a number on it
-    # appends 1 to the end so that it can be found in the character's
-    # moveset (all moves end in a 1 now even if theres no second part)
-    # ex: nair = nair1 in the yaml
+
     elif move[-1].isalpha():
         move += "1"
 
-    return char_data[move]
+    return get_move_data()
 
 
 def split_char_move(msg: list) -> tuple:
@@ -132,59 +119,31 @@ def split_char_move(msg: list) -> tuple:
     return database.select_char(char, synonyms_db), ''.join(msg)
 
 
-def get_character(char: str) -> dict:
-    """
-    Get the parsed Yaml of the character as a dictionary.
-
-    :param char: `str` char name
-    :return: `dict` empty if failed
-    :raise: `yaml.YAMLError`
-    """
-    # Dictionary with command name as the key and the command attributes (title, text, image, etc.) as the values.
-    with open(char_path.format(char)) as f:
-        try:
-            char_data: dict = safe_load(f)
-        except YAMLError:
-            raise YAMLError
-        except FileNotFoundError:
-            raise FileNotFoundError
-
-    return char_data
-
-
-def get_real_move_name(move_name: str, char_data: dict) -> str:
+def get_real_move_name(move_name: str) -> str:
     """
     Extract the move's code name from the character data.
 
     :param move_name: `str` user given move name
-    :param char_data: `dict` character's yaml data
     :return: `str` empty if not found
     """
     move: str = database.select_move(move_name, synonyms_db)
-    if len(move) == 0:
-        entry_name: str
-        for entry_name in char_data.keys():
-            if "names" in char_data[entry_name].keys() and move_name in char_data[entry_name]["names"]:
-                return entry_name
-            # DUCT TAPE FOR HERO'S SPELLS LOL IGNORE FOR NOW
-            elif "title" in char_data[entry_name].keys() and move_name == "".join(char_data[entry_name]["title"].split()).lower():
-                return entry_name
-    return move.pop() if len(move) != 0 else ""
+    # TODO: Implement a way to use canon move names
+    return move
 
 
-async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) -> str:
+async def parse_move_selection(char: str, moves: List[str], ctx: Context) -> str:
     """
     Async function to ask for user input on a list of moves to pick one.
 
+    :param moves: `str` character's name
     :param moves: `List[str]` moves that are similar
-    :param char_data: `dict` character's yaml data
     :param ctx: `Context` original message context
     :return: `str` empty if failed
     """
     msg: str = ""
 
     for i, move in enumerate(moves):
-        move_name = char_data[move]["title"]
+        move_name = database.get_move_title(char, move, chars_db)
         msg += "\n {}. {}".format(i + 1, move_name)
 
     response: Message = await ctx.send(select_msg.format(msg))
@@ -197,3 +156,7 @@ async def parse_move_selection(moves: List[str], char_data: dict, ctx: Context) 
 
     await response.delete()
     return moves[answer_index]
+
+
+def get_move_data():
+    return Move

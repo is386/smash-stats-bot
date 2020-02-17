@@ -52,7 +52,7 @@ async def visualize_hitbox(ctx: commands.Context):
     :param ctx: `Context` original user message's context
     :return: `None`
     """
-    move_data: dict = await moveset.get_move_data(ctx)
+    move_data: dict = await moveset.get_move(ctx)
     if len(move_data) == 0:
         return
 
