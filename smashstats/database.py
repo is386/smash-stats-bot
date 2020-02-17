@@ -235,7 +235,7 @@ def move_has_hitbox(char_name: str, move_name: str, db: Connection) -> bool:
             name=?""".format(char_name), (move_name,))
     rows: List = c.fetchall()
 
-    if len(rows) == 0:
+    if rows[0][0] == None:
         return False
 
     return True
