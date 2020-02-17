@@ -53,8 +53,14 @@ async def visualize_hitbox(ctx: commands.Context):
     :return: `None`
     """
     move: move_model.Move = await moveset.get_move(ctx)
-    if len(move.get_image()) == 0:
+
+    if move is None:
+        return
+
+    if move.get_image() is None:
         await ctx.send(moveset.hbox_error.format(move.get_title()))
+        return
+
     embed: Embed = embeds.create_image_embed(move)
     await ctx.send(embed=embed)
 
