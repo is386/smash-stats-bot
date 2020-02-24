@@ -61,7 +61,24 @@ async def visualize_hitbox(ctx: commands.Context):
         await ctx.send(moveset.hbox_error.format(move.get_title()))
         return
 
-    embed: Embed = embeds.create_image_embed(move)
+    embed: Embed = embeds.create_viz_embed(move)
+    await ctx.send(embed=embed)
+
+
+@bot.command(name='stats', aliases=['stat', 'data'])
+async def send_stats(ctx: commands.Context):
+    """
+    Async function to send an embedded message with a move's stats.
+
+    :param ctx: `Context` original user message's context
+    :return: `None`
+    """
+    move: move_model.Move = await moveset.get_move(ctx)
+
+    if move is None:
+        return
+
+    embed: Embed = embeds.create_stats_embed(move)
     await ctx.send(embed=embed)
 
 

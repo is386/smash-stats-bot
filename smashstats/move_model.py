@@ -204,12 +204,12 @@ class Move:
         :return: `str`
         """
         return {
-            "startup": self.startup,
-            "onshield": self.on_shield,
-            "activeon": self.active_on,
-            "totalframes": self.total_frames,
-            "landinglag": self.landing_lag,
-            "basedmg": self.base_dmg,
-            "shieldlag": self.shield_lag,
-            "shieldstun": self.shield_stun
+            "Startup": self.startup,
+            "On Shield": self.on_shield,
+            "Active On": self.active_on,
+            "Total Frames": self.total_frames,
+            "Landing Lag": self.landing_lag,
+            "Base Damage": self.base_dmg,
+            "Shield Lag": self.shield_lag,
+            "Shield Stun": self.shield_stun
         }
