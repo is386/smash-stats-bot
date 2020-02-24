@@ -144,6 +144,20 @@ def select_move(move_name: str, db: Connection) -> str:
     return rows[0][0]
 
 
+def get_char_id(char_name: str, db: Connection) -> int:
+    """
+    Get the character's id in the db.
+
+    :param char_name: `str` name of the character
+    :param db: `Connection` connection to the characters db
+    :return: `int`
+    """
+    c: Cursor = db.cursor()
+    c = db.execute("SELECT id FROM char_names WHERE name = ?", (char_name,))
+    row: List = c.fetchall()[0]
+    return row[0]
+
+
 def select_move_data(char_name: str, move_name: str, db: Connection) -> List[str]:
     """
     Get the name, title, and image of a move from the character's table.
@@ -154,12 +168,18 @@ def select_move_data(char_name: str, move_name: str, db: Connection) -> List[str
     :return: `List[str]`
     """
     c: Cursor = db.cursor()
+    i: int = get_char_id(char_name, db)
     c = db.execute("""
-        SELECT
-            name, title, image
-        FROM
-            {}
-        WHERE name=?""".format(char_name), (move_name,))
+            SELECT
+                frame_data.name, title, image
+            FROM
+                frame_data, char_names
+            WHERE
+                frame_data.name = ?
+            AND
+                char_names.id = ?
+            AND
+                char_names.id = frame_data.char_id""", (move_name, i))
     row: List = c.fetchall()[0]
 
     if len(row) == 0:
@@ -178,13 +198,18 @@ def char_has_move(char_name: str, move_name: str, db: Connection) -> bool:
     :return: `bool`
     """
     c: Cursor = db.cursor()
+    i: int = get_char_id(char_name, db)
     c = db.execute("""
-        SELECT
-            name
-        FROM
-            {}
-        WHERE
-            name=?""".format(char_name), (move_name,))
+            SELECT
+                frame_data.name
+            FROM
+                frame_data, char_names
+            WHERE
+                frame_data.name = ?
+            AND
+                char_names.id = ?
+            AND
+                char_names.id = frame_data.char_id""", (move_name, i))
     rows: List = c.fetchall()
 
     if len(rows) == 0:
@@ -202,12 +227,9 @@ def get_move_list(char_name: str, db: Connection) -> List[str]:
     :return: `List[str]`
     """
     c: Cursor = db.cursor()
-    c = db.execute("""
-        SELECT
-            name
-        FROM
-            {}
-    """.format(char_name))
+    i: int = get_char_id(char_name, db)
+    c = db.execute(
+        "SELECT name FROM frame_data WHERE char_id = ?", (i,))
     rows: List = c.fetchall()
 
     if len(rows) == 0:
@@ -226,16 +248,21 @@ def move_has_hitbox(char_name: str, move_name: str, db: Connection) -> bool:
     :return: `bool`
     """
     c: Cursor = db.cursor()
+    i: int = get_char_id(char_name, db)
     c = db.execute("""
-        SELECT
-            image
-        FROM
-            {}
-        WHERE
-            name=?""".format(char_name), (move_name,))
+            SELECT
+                image
+            FROM
+                frame_data, char_names
+            WHERE
+                frame_data.name = ?
+            AND
+                char_names.id = ?
+            AND
+                char_names.id = frame_data.char_id""", (move_name, i))
     rows: List = c.fetchall()
 
-    if rows[0][0] == None:
+    if rows[0][0] is None:
         return False
 
     return True
@@ -251,13 +278,18 @@ def get_move_title(char_name: str, move_name: str, db: Connection) -> str:
     :return: `bool`
     """
     c: Cursor = db.cursor()
+    i: int = get_char_id(char_name, db)
     c = db.execute("""
-        SELECT
-            title
-        FROM
-            {}
-        WHERE
-            name=?""".format(char_name), (move_name,))
+            SELECT
+                title
+            FROM
+                frame_data, char_names
+            WHERE
+                frame_data.name = ?
+            AND
+                char_names.id = ?
+            AND
+                char_names.id = frame_data.char_id""", (move_name, i))
     rows: List = c.fetchall()
 
     if len(rows) == 0:
