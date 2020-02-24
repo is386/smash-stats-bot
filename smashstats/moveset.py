@@ -10,7 +10,7 @@ from smashstats import database, reactions, move_model
 syntax_error: str = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`"
 move_error: str = "The move **{}** does not exist. `?help` for more."
 char_error: str = "That character doesn't exist. `?help` for more."
-hbox_error: str = "**{}** does not have a hitbox gif yet. `?help` for more."
+#hbox_error: str = "**{}** does not have a hitbox gif yet. `?help` for more."
 select_msg: str = "There are multiple hitboxes for this move. React within 60s with the hitbox you would like (Sender Only):\n```{}```"
 synonyms_db: Connection = database.connect_to_synonyms_db()
 chars_db: Connection = database.connect_to_characters_db()
@@ -72,20 +72,21 @@ async def get_move(ctx: Context) -> dict:
     # Finds moves that match parsed move. If so, that move has multiple hitboxes.
     matching_moves = [entry for entry in moveset if move in entry]
     if len(matching_moves) > 1:
-        selection_moves = []
+        # selection_moves = []
         # Removes the matching moves that do not have an image
-        for i in matching_moves:
-            if database.move_has_hitbox(char, i, chars_db):
-                selection_moves.append(str(i))
-        if len(selection_moves) == 0:
-            await ctx.send(hbox_error.format(move))
+        # for i in matching_moves:
+        #     if database.move_has_hitbox(char, i, chars_db):
+        #         selection_moves.append(str(i))
+        # if len(selection_moves) == 0:
+        #     await ctx.send(hbox_error.format(move))
+        #     return None
+        # elif len(selection_moves) == 1:
+        #     move = selection_moves[0]
+
+        # else:
+        move = await parse_move_selection(char, matching_moves, ctx)
+        if len(move) == 0:
             return None
-        elif len(selection_moves) == 1:
-            move = selection_moves[0]
-        else:
-            move = await parse_move_selection(char, selection_moves, ctx)
-            if len(move) == 0:
-                return None
 
     elif move[-1].isalpha():
         move += "1"
@@ -157,7 +158,7 @@ async def parse_move_selection(char: str, moves: List[str], ctx: Context) -> str
     return moves[answer_index]
 
 
-def get_move_data(char: str, move: str) -> move_model.Move:
+def get_move_data(char_name: str, move_name: str) -> move_model.Move:
     """
     Return a move object with the code name, title, and image.
 
@@ -165,5 +166,15 @@ def get_move_data(char: str, move: str) -> move_model.Move:
     :param move: `str` move name
     :return: `move_mode.Move`
     """
-    move_data: List[str] = database.select_move_data(char, move, chars_db)
-    return move_model.Move(move_data[0], move_data[1], move_data[2])
+    move_data: tuple = database.select_move_data(
+        char_name, move_name, chars_db)
+    move = move_model.Move(move_data[0], move_data[1], move_data[2])
+    move.set_startup(move_data[3])
+    move.set_onshield(move_data[4])
+    move.set_activeon(move_data[5])
+    move.set_totalframes(move_data[6])
+    move.set_landinglag(move_data[7])
+    move.set_basedmg(move_data[8])
+    move.set_shieldlag(move_data[9])
+    move.set_shieldstun(move_data[10])
+    return move
