@@ -196,3 +196,20 @@ class Move:
         :return: `str`
         """
         return self.shield_stun
+
+    def get_frame_data(self) -> dict:
+        """
+        Get a list of all the frame data.
+
+        :return: `str`
+        """
+        return {
+            "startup": self.startup,
+            "onshield": self.on_shield,
+            "activeon": self.active_on,
+            "totalframes": self.total_frames,
+            "landinglag": self.landing_lag,
+            "basedmg": self.base_dmg,
+            "shieldlag": self.shield_lag,
+            "shieldstun": self.shield_stun
+        }
