@@ -11,6 +11,7 @@ syntax_error: str = "You have to specify a character and a move\nCorrect syntax:
 move_error: str = "The move **{}** does not exist. `?help` for more."
 char_error: str = "That character doesn't exist. `?help` for more."
 hbox_error: str = "**{}** does not have a hitbox gif yet. `?help` for more."
+stats_error: str = "**{}** does not have stats yet. `?help` for more."
 select_msg: str = "There are multiple hitboxes for this move. React within 60s with the hitbox you would like (Sender Only):\n```{}```"
 synonyms_db: Connection = database.connect_to_synonyms_db()
 chars_db: Connection = database.connect_to_characters_db()

@@ -203,7 +203,7 @@ class Move:
 
         :return: `str`
         """
-        return {
+        frame_data: dict = {
             "Startup": self.startup,
             "On Shield": self.on_shield,
             "Active On": self.active_on,
@@ -213,3 +213,10 @@ class Move:
             "Shield Lag": self.shield_lag,
             "Shield Stun": self.shield_stun
         }
+
+        # Checks to see if the move has no frame data at all.
+        for f in list(frame_data.values()):
+            if f is not None:
+                return frame_data
+
+        return {}

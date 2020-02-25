@@ -70,8 +70,11 @@ async def visualize_hitbox(ctx: commands.Context):
 
     send_stats: bool = await reactions.choose_other_fd_cmd(ctx, resp)
     if send_stats:
-        embed: Embed = embeds.create_stats_embed(move)
-        await ctx.send(embed=embed)
+        if len(move.get_frame_data()) == 0:
+            await ctx.send(moveset.stats_error.format(move.get_title()))
+        else:
+            embed: Embed = embeds.create_stats_embed(move)
+            await ctx.send(embed=embed)
 
 
 @bot.command(name='stats', aliases=['stat', 'data'])
@@ -85,6 +88,10 @@ async def stats(ctx: commands.Context):
     move: move_model.Move = await moveset.get_move(ctx)
 
     if move is None:
+        return
+
+    if len(move.get_frame_data()) == 0:
+        await ctx.send(moveset.stats_error.format(move.get_title()))
         return
 
     embed: Embed = embeds.create_stats_embed(move)
