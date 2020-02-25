@@ -8,6 +8,8 @@ Default Prefix = `?`
 
 `?prefix [prefix]` = admins can use this to set a custom prefix.
 
+`?stats [character name] [move name]` = send a message containing frame data for the move.
+
 `?viz [character name] [move name]` = send a gif of the specified move for the specified character.
 
 **Error Message Info:**
