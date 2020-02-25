@@ -73,7 +73,7 @@ async def get_move(ctx: Context) -> dict:
     matching_moves = [entry for entry in moveset if move in entry]
     if len(matching_moves) > 1:
         # Removes the matching moves that do not have an image
-        if ctx.command == "viz" or ctx.command == "vis":
+        if str(ctx.command) == "viz":
             selection_moves = []
             for i in matching_moves:
                 if database.move_has_hitbox(char, i, chars_db):
