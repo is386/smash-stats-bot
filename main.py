@@ -1,17 +1,19 @@
 from sqlite3 import Connection, Cursor
 
-from discord import Game, Embed
+from discord import Game, Embed, Message
 from discord.ext import commands
 
-from smashstats import moveset, embeds, database, move_model
+from smashstats import moveset, embeds, database, move_model, reactions
 from secret import token
 
 db_name = "databases/prefixes.db"
 default_prefix = "?"
 status_msg: str = "?help"
+red_circle: str = "🔴"
 embed_error: str = "An error has occurred during the creation of the embed:\n{}"
 prefix_error1: str = "{} you need the permission **Administrator** to set the prefix."
 prefix_error2: str = "You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`"
+footer_msg: str = "React with 🔴 within 60s to see the {}."
 
 prefix_conn: Connection = database.connect_to_prefix_db(db_name)
 
@@ -61,8 +63,42 @@ async def visualize_hitbox(ctx: commands.Context):
         await ctx.send(moveset.hbox_error.format(move.get_title()))
         return
 
-    embed: Embed = embeds.create_image_embed(move)
-    await ctx.send(embed=embed)
+    embed: Embed = embeds.create_viz_embed(move)
+    embed.set_footer(text=footer_msg.format("stats"))
+    resp: Message = await ctx.send(embed=embed)
+    await resp.add_reaction(red_circle)
+
+    send_stats: bool = await reactions.choose_other_fd_cmd(ctx, resp)
+    if send_stats:
+        embed: Embed = embeds.create_stats_embed(move)
+        await ctx.send(embed=embed)
+
+
+@bot.command(name='stats', aliases=['stat', 'data'])
+async def stats(ctx: commands.Context):
+    """
+    Async function to send an embedded message with a move's stats.
+
+    :param ctx: `Context` original user message's context
+    :return: `None`
+    """
+    move: move_model.Move = await moveset.get_move(ctx)
+
+    if move is None:
+        return
+
+    embed: Embed = embeds.create_stats_embed(move)
+    embed.set_footer(text=footer_msg.format("hitbox"))
+    resp: Message = await ctx.send(embed=embed)
+    await resp.add_reaction(red_circle)
+
+    send_viz: bool = await reactions.choose_other_fd_cmd(ctx, resp)
+    if send_viz:
+        if move.get_image() is None:
+            await ctx.send(moveset.hbox_error.format(move.get_title()))
+        else:
+            embed: Embed = embeds.create_viz_embed(move)
+            await ctx.send(embed=embed)
 
 
 @bot.command(name='help')

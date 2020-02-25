@@ -158,7 +158,7 @@ def get_char_id(char_name: str, db: Connection) -> int:
     return row[0]
 
 
-def select_move_data(char_name: str, move_name: str, db: Connection) -> List[str]:
+def select_move_data(char_name: str, move_name: str, db: Connection) -> tuple:
     """
     Get the name, title, and image of a move from the character's table.
 
@@ -171,7 +171,7 @@ def select_move_data(char_name: str, move_name: str, db: Connection) -> List[str
     i: int = get_char_id(char_name, db)
     c = db.execute("""
             SELECT
-                frame_data.name, title, image
+                *
             FROM
                 frame_data, char_names
             WHERE
@@ -185,7 +185,7 @@ def select_move_data(char_name: str, move_name: str, db: Connection) -> List[str
     if len(row) == 0:
         return []
 
-    return [row[0], row[1], row[2]]
+    return row[1:12]
 
 
 def char_has_move(char_name: str, move_name: str, db: Connection) -> bool:

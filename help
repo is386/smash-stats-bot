@@ -8,6 +8,8 @@ Default Prefix = `?`
 
 `?prefix [prefix]` = admins can use this to set a custom prefix.
 
+`?stats [character name] [move name]` = send a message containing frame data for the move.
+
 `?viz [character name] [move name]` = send a gif of the specified move for the specified character.
 
 **Error Message Info:**
@@ -19,8 +21,3 @@ This means that the character does not exist in Super Smash Bros. Ultimate. If y
 
 `____ does not have a hitbox gif yet.`
 This means that the character does have the move that you specified, but Ultimate Frame Data did not have a gif for that move.
-
-**Additional Info:**
-Right now the bot is only for Smashcords since it is still incomplete. The remaining features are:
-    - Using move names for the commands. (`?viz mario fireball` instead of `?viz mario nspecial`)
-    - Frame data and other stats for every move.
