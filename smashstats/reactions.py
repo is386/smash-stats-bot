@@ -58,6 +58,9 @@ async def choose_other_fd_cmd(ctx: Context, resp: Message) -> bool:
                                    timeout=timeout,
                                    check=lambda react, user: str(react.emoji) == red_circle and user == ctx.author)
 
-            return True
+            resp = await ctx.channel.fetch_message(resp.id)
+            if resp.reactions[0].count > 1:
+                return True
+
     except TimeoutError:
         return False
