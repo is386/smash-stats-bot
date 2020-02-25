@@ -7,6 +7,7 @@ from discord.ext.commands import Context
 timeout = 60.0
 number_emojis: List[str] = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣',
                             '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
+red_circle: str = "🔴"
 
 
 async def move_selection(ctx: Context, resp: Message, emoji_count: int) -> int:
@@ -38,3 +39,25 @@ async def move_selection(ctx: Context, resp: Message, emoji_count: int) -> int:
                     return n
     except TimeoutError:
         return -1
+
+
+async def choose_other_fd_cmd(ctx: Context, resp: Message) -> bool:
+    """
+    Wait for the user to press the red circle emoji.
+    This is to have the user easily pick between hitbox or stats.
+
+    :param ctx: `Context` original message context
+    :param resp: `Message` message to add reactions to
+    :return: `int` or -1 if nothing is chosen
+    """
+    try:
+        # This loop prevents a bug where if you did two stats cmds and reacted to one of them,
+        # it would send the follow up message to both messages instead of the one that was reacted to.
+        while True:
+            await ctx.bot.wait_for('reaction_add',
+                                   timeout=timeout,
+                                   check=lambda react, user: str(react.emoji) == red_circle and user == ctx.author)
+
+            return True
+    except TimeoutError:
+        return False
