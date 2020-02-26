@@ -94,7 +94,12 @@ async def get_move(ctx: Context) -> dict:
     elif move[-1].isalpha():
         move += "1"
 
-    return get_move_data(char, move)
+    move_data: move_model.Move = get_move_data(char, move)
+    if move_data is None:
+        await ctx.send(move_error.format(orig_move))
+        return None
+
+    return move_data
 
 
 def split_char_move(msg: list) -> tuple:
@@ -170,6 +175,10 @@ def get_move_data(char_name: str, move_name: str) -> move_model.Move:
     """
     move_data: tuple = database.select_move_data(
         char_name, move_name, chars_db)
+
+    if len(move_data) == 0:
+        return None
+
     move = move_model.Move(move_data[0], move_data[1], move_data[2])
     move.set_startup(move_data[3])
     move.set_onshield(move_data[4])

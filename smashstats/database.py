@@ -154,8 +154,12 @@ def get_char_id(char_name: str, db: Connection) -> int:
     """
     c: Cursor = db.cursor()
     c = db.execute("SELECT id FROM char_names WHERE name = ?", (char_name,))
-    row: List = c.fetchall()[0]
-    return row[0]
+    rows: List = c.fetchall()
+
+    if len(rows) == 0:
+        return 0
+
+    return rows[0][0]
 
 
 def select_move_data(char_name: str, move_name: str, db: Connection) -> tuple:
@@ -180,12 +184,12 @@ def select_move_data(char_name: str, move_name: str, db: Connection) -> tuple:
                 char_names.id = ?
             AND
                 char_names.id = frame_data.char_id""", (move_name, i))
-    row: List = c.fetchall()[0]
+    rows: List = c.fetchall()
 
-    if len(row) == 0:
+    if len(rows) == 0:
         return []
 
-    return row[1:12]
+    return rows[0][1:12]
 
 
 def char_has_move(char_name: str, move_name: str, db: Connection) -> bool:
