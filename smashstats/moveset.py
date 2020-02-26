@@ -76,20 +76,20 @@ async def get_move(ctx: Context) -> dict:
         # Removes the matching moves that do not have an image
         if str(ctx.command) == "viz":
             selection_moves = []
+
             for i in matching_moves:
                 if database.move_has_hitbox(char, i, chars_db):
                     selection_moves.append(str(i))
+
             if len(selection_moves) == 0:
                 await ctx.send(hbox_error.format(move))
                 return None
             elif len(selection_moves) == 1:
                 move = selection_moves[0]
             else:
-                matching_moves = selection_moves
-
-        move = await parse_move_selection(char, matching_moves, ctx)
-        if len(move) == 0:
-            return None
+                move = await parse_move_selection(char, selection_moves, ctx)
+                if len(move) == 0:
+                    return None
 
     elif move[-1].isalpha():
         move += "1"
