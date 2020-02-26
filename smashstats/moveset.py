@@ -90,6 +90,10 @@ async def get_move(ctx: Context) -> dict:
                 move = await parse_move_selection(char, selection_moves, ctx)
                 if len(move) == 0:
                     return None
+        else:
+            move = await parse_move_selection(char, matching_moves, ctx)
+            if len(move) == 0:
+                return None
 
     elif move[-1].isalpha():
         move += "1"
