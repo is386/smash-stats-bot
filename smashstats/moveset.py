@@ -8,10 +8,10 @@ from discord.ext.commands import Context
 from smashstats import database, reactions, move_model
 
 syntax_error: str = "You have to specify a character and a move\nCorrect syntax: `{}viz character move`"
-move_error: str = "The move **{}** does not exist. `?help` for more."
-char_error: str = "That character doesn't exist. `?help` for more."
-hbox_error: str = "**{}** does not have a hitbox gif yet. `?help` for more."
-stats_error: str = "**{}** does not have stats yet. `?help` for more."
+move_error: str = "The move **{}** does not exist. `{}help` for more."
+char_error: str = "That character doesn't exist. `{}help` for more."
+hbox_error: str = "**{}** does not have a hitbox gif yet. `{}help` for more."
+stats_error: str = "**{}** does not have stats yet. `{}help` for more."
 select_msg: str = "There are multiple hitboxes for this move. React within 60s with the hitbox you would like (Sender Only):\n```{}```"
 synonyms_db: Connection = database.connect_to_synonyms_db()
 chars_db: Connection = database.connect_to_characters_db()
@@ -38,7 +38,7 @@ async def get_move(ctx: Context) -> dict:
     if len(msg) <= 10:
         char, move = split_char_move(msg[1:])
         if len(char) == 0:
-            await ctx.send(char_error)
+            await ctx.send(char_error.format(ctx.prefix))
             return None
         elif len(move) == 0:
             await ctx.send(syntax_error.format(ctx.prefix))
@@ -51,7 +51,7 @@ async def get_move(ctx: Context) -> dict:
     orig_move: str = move
     move = parse_move(move, char)
     if len(move) == 0:
-        await ctx.send(move_error.format(orig_move))
+        await ctx.send(move_error.format(orig_move, ctx.prefix))
         return None
 
     # Parse moves that have multiple hitboxes.
@@ -62,7 +62,7 @@ async def get_move(ctx: Context) -> dict:
         if len(move) == 0:
             return None
         elif move == "no hitboxes":
-            await ctx.send(hbox_error.format(move))
+            await ctx.send(hbox_error.format(move, ctx.prefix))
             return None
     elif move[-1].isalpha():
         move += "1"
@@ -70,7 +70,7 @@ async def get_move(ctx: Context) -> dict:
     # Construct Move object.
     move_data: move_model.Move = get_move_data(char, move)
     if move_data is None:
-        await ctx.send(move_error.format(orig_move))
+        await ctx.send(move_error.format(orig_move, ctx.prefix))
         return None
 
     return move_data
