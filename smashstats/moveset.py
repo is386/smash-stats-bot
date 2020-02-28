@@ -24,16 +24,17 @@ async def get_move(ctx: Context) -> dict:
     :param ctx: `Context` message that has the character and move
     :return: `dict` on success, an empty dictionary on fail
     """
+    # Get the message.
     msg: List[str] = ctx.message.content.lower().split()
     if len(msg) < 2:
         await ctx.send(syntax_error.format(ctx.prefix))
         return None
 
-    # Removes special characters from character and move
+    # Remove special characters from the message.
     for i, string in enumerate(msg):
         msg[i] = sub(r"[^\w\d]|[_\-]", "", string)
 
-    # Parses the full character and move name
+    # Get the character name and move name from the message.
     if len(msg) <= 10:
         char, move = split_char_move(msg[1:])
         if len(char) == 0:
@@ -46,58 +47,27 @@ async def get_move(ctx: Context) -> dict:
         await ctx.send("That message is too long!")
         return None
 
-    # Gets move data
+    # Get the given move's code name.
     orig_move: str = move
-
-    # Checks if the move ends in a number
-    n_match: Match = search(r'\d+$', move)
-    n = ""
-
-    # Removes the number if there is one
-    if n_match is not None:
-        n = move[n_match.start():n_match.end()]
-        move = move[:n_match.start()]
-
-    if not database.char_has_move(char, move, chars_db):
-        move = get_real_move_name(move)
-
-    # Checks if the move exists or if the move with the number exists
-    if len(move) == 0 or (not database.char_has_move(char, move + n, chars_db) and len(n) != 0):
+    move = parse_move(move, char)
+    if len(move) == 0:
         await ctx.send(move_error.format(orig_move))
         return None
 
-    # Appends the number back to the move
-    move = move + n
+    # Parse moves that have multiple hitboxes.
     moveset = database.get_move_list(char, chars_db)
-
-    # Finds moves that match parsed move. If so, that move has multiple hitboxes.
-    matching_moves = [entry for entry in moveset if move in entry]
-    if len(matching_moves) > 1:
-        # Removes the matching moves that do not have an image
-        if str(ctx.command) == "viz":
-            selection_moves = []
-
-            for i in matching_moves:
-                if database.move_has_hitbox(char, i, chars_db):
-                    selection_moves.append(str(i))
-
-            if len(selection_moves) == 0:
-                await ctx.send(hbox_error.format(move))
-                return None
-            elif len(selection_moves) == 1:
-                move = selection_moves[0]
-            else:
-                move = await parse_move_selection(char, selection_moves, ctx)
-                if len(move) == 0:
-                    return None
-        else:
-            move = await parse_move_selection(char, matching_moves, ctx)
-            if len(move) == 0:
-                return None
-
+    multi_moves = [entry for entry in moveset if move in entry]
+    if len(multi_moves) > 1:
+        move = await parse_multi_moves(ctx, multi_moves, char)
+        if len(move) == 0:
+            return None
+        elif move == "no hitboxes":
+            await ctx.send(hbox_error.format(move))
+            return None
     elif move[-1].isalpha():
         move += "1"
 
+    # Construct Move object.
     move_data: move_model.Move = get_move_data(char, move)
     if move_data is None:
         await ctx.send(move_error.format(orig_move))
@@ -131,7 +101,31 @@ def split_char_move(msg: list) -> tuple:
     return database.select_char(char, synonyms_db), ''.join(msg)
 
 
-def get_real_move_name(move_name: str) -> str:
+def parse_move(move_name: str, char_name: str) -> str:
+    """
+    Parse the given move name by its synonym.
+
+    :param move_name: `str` user given move name
+    :param move_name: `str` user given character name
+    :return: `str` empty if not found
+    """
+    n_match: Match = search(r'\d+$', move_name)
+    n = ""
+
+    if n_match is not None:
+        n = move_name[n_match.start():n_match.end()]
+        move_name = move_name[:n_match.start()]
+
+    if not database.char_has_move(char_name, move_name, chars_db):
+        move_name = translate_move(move_name)
+
+    if len(move_name) == 0 or (not database.char_has_move(char_name, move_name + n, chars_db) and len(n) != 0):
+        return ""
+
+    return move_name + n
+
+
+def translate_move(move_name: str) -> str:
     """
     Extract the move's code name from the character data.
 
@@ -143,11 +137,38 @@ def get_real_move_name(move_name: str) -> str:
     return move
 
 
-async def parse_move_selection(char: str, moves: List[str], ctx: Context) -> str:
+async def parse_multi_moves(ctx: Context, moves: List[str], char_name: str) -> str:
     """
     Async function to ask for user input on a list of moves to pick one.
 
-    :param moves: `str` character's name
+    :param ctx: `Context` original message context
+    :param moves: `List[str]` moves that are similar
+    :param char_name: `str` character's name
+    :return: `str` empty if failed
+    """
+    if str(ctx.command) == "viz":
+        moves_to_select = []
+        for i in moves:
+            if database.move_has_hitbox(char_name, i, chars_db):
+                moves_to_select.append(str(i))
+
+        if len(moves_to_select) == 0:
+            return "no hitboxes"
+        elif len(moves_to_select) == 1:
+            move = moves_to_select[0]
+        else:
+            move = await send_move_selector(char_name, moves_to_select, ctx)
+    else:
+        move = await send_move_selector(char_name, moves, ctx)
+
+    return move
+
+
+async def send_move_selector(char: str, moves: List[str], ctx: Context) -> str:
+    """
+    Async function to ask for user input on a list of moves to pick one.
+
+    :param char_name: `str` character's name
     :param moves: `List[str]` moves that are similar
     :param ctx: `Context` original message context
     :return: `str` empty if failed
@@ -165,6 +186,7 @@ async def parse_move_selection(char: str, moves: List[str], ctx: Context) -> str
         await response.edit(content="You took too long to select a move.")
         await response.clear_reactions()
         return ""
+
     await response.delete()
     return moves[answer_index]
 
@@ -175,7 +197,7 @@ def get_move_data(char_name: str, move_name: str) -> move_model.Move:
 
     :param char: `str` character's name
     :param move: `str` move name
-    :return: `move_mode.Move`
+    :return: `move_mode.Move` None if failed
     """
     move_data: tuple = database.select_move_data(
         char_name, move_name, chars_db)
