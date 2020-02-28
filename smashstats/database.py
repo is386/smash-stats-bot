@@ -84,7 +84,7 @@ def select_char(char_name: str, db: Connection) -> str:
 
     :param move_name: `str` name of the character
     :param db: `Connection` connection to the synonyms db
-    :return: `str`
+    :return: `str` "" if not found
     """
     c: Cursor = db.cursor()
     c = db.execute("SELECT name FROM characters where name=?", (char_name,))
@@ -117,7 +117,7 @@ def select_move(move_name: str, db: Connection) -> str:
 
     :param move_name: `str` name of the move
     :param db: `Connection` connection to the synonyms db
-    :return: `str`
+    :return: `str` "" if not found
     """
     c: Cursor = db.cursor()
     c = db.execute("SELECT name FROM moves where name=?", (move_name,))
@@ -150,7 +150,7 @@ def get_char_id(char_name: str, db: Connection) -> int:
 
     :param char_name: `str` name of the character
     :param db: `Connection` connection to the characters db
-    :return: `int`
+    :return: `int` 0 if not found.
     """
     c: Cursor = db.cursor()
     c = db.execute("SELECT id FROM char_names WHERE name = ?", (char_name,))
@@ -169,7 +169,7 @@ def select_move_data(char_name: str, move_name: str, db: Connection) -> tuple:
     :param char_name: `str` name of the character
     :param move_name: `str` name of the move
     :param db: `Connection` connection to the characters db
-    :return: `List[str]`
+    :return: `List[str]` [] if not found.
     """
     c: Cursor = db.cursor()
     i: int = get_char_id(char_name, db)
@@ -228,7 +228,7 @@ def get_move_list(char_name: str, db: Connection) -> List[str]:
 
     :param char_name: `str` name of the character
     :param db: `Connection` connection to the characters db
-    :return: `List[str]`
+    :return: `List[str]` [] if not found
     """
     c: Cursor = db.cursor()
     i: int = get_char_id(char_name, db)
@@ -279,7 +279,7 @@ def get_move_title(char_name: str, move_name: str, db: Connection) -> str:
     :param char_name: `str` name of the character
     :param move_name: `str` name of the move
     :param db: `Connection` connection to the characters db
-    :return: `bool`
+    :return: `str` "" if not found
     """
     c: Cursor = db.cursor()
     i: int = get_char_id(char_name, db)
