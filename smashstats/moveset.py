@@ -144,7 +144,7 @@ async def parse_multi_moves(ctx: Context, moves: List[str], char_name: str) -> s
     :param ctx: `Context` original message context
     :param moves: `List[str]` moves that are similar
     :param char_name: `str` character's name
-    :return: `str` empty if failed
+    :return: `str` empty if failed, "no hitboxes" if moves don't have hitboxes.
     """
     if str(ctx.command) == "viz":
         moves_to_select = []

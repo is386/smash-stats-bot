@@ -21,6 +21,16 @@ class Move:
         self.shield_lag = ""
         self.shield_stun = ""
 
+    def __eq__(self, other):
+        """
+        Check if two moves are the same.
+
+        :param other: `Move`
+        """
+        if self.name == other.name and self.title == other.title and self.image == other.image and self.get_frame_data() == other.get_frame_data():
+            return True
+        return False
+
     def set_name(self, n: str):
         """
         Set the code name of the move.
