@@ -60,7 +60,7 @@ async def visualize_hitbox(ctx: commands.Context):
         return
 
     if move.get_image() is None:
-        await ctx.send(moveset.hbox_error.format(move.get_title()))
+        await ctx.send(moveset.hbox_error.format(move.get_title(), ctx.prefix))
         return
 
     embed: Embed = embeds.create_viz_embed(move)
@@ -71,7 +71,7 @@ async def visualize_hitbox(ctx: commands.Context):
     send_stats: bool = await reactions.choose_other_fd_cmd(ctx, resp)
     if send_stats:
         if len(move.get_frame_data()) == 0:
-            await ctx.send(moveset.stats_error.format(move.get_title()))
+            await ctx.send(moveset.stats_error.format(move.get_title(), ctx.prefix))
         else:
             embed: Embed = embeds.create_stats_embed(move)
             await ctx.send(embed=embed)
@@ -91,7 +91,7 @@ async def stats(ctx: commands.Context):
         return
 
     if len(move.get_frame_data()) == 0:
-        await ctx.send(moveset.stats_error.format(move.get_title()))
+        await ctx.send(moveset.stats_error.format(move.get_title(), ctx.prefix))
         return
 
     embed: Embed = embeds.create_stats_embed(move)
@@ -102,7 +102,7 @@ async def stats(ctx: commands.Context):
     send_viz: bool = await reactions.choose_other_fd_cmd(ctx, resp)
     if send_viz:
         if move.get_image() is None:
-            await ctx.send(moveset.hbox_error.format(move.get_title()))
+            await ctx.send(moveset.hbox_error.format(move.get_title(), ctx.prefix))
         else:
             embed: Embed = embeds.create_viz_embed(move)
             await ctx.send(embed=embed)
