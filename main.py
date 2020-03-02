@@ -8,7 +8,7 @@ from secret import token
 
 db_name = "databases/prefixes.db"
 default_prefix = "?"
-status_msg: str = "?help"
+status_msg: str = "@Ultimate Stats help"
 red_circle: str = "🔴"
 embed_error: str = "An error has occurred during the creation of the embed:\n{}"
 prefix_error1: str = "{} you need the permission **Administrator** to set the prefix."
@@ -37,11 +37,11 @@ async def get_prefix(bot, ctx) -> str:
     if len(rows) == 0:
         return default_prefix
 
-    return commands.when_mentioned_or(rows[0][0])(bot, ctx)
+    return rows[0][0]
 
 
 bot: commands.Bot = commands.Bot(
-    command_prefix=get_prefix,
+    command_prefix=commands.when_mentioned_or(get_prefix),
     help_command=None,
     activity=Game(status_msg))
 
