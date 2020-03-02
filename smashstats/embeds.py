@@ -13,7 +13,7 @@ def create_viz_embed(move: move_model.Move) -> Embed:
     :return: `Embed` image message to send to the user
     """
     embed: Embed = Embed(title=move.get_title(), color=embed_color)
-    embed.set_image(url=move.get_image())
+    embed.set_image(url=move.get_image().replace(" ", ""))
     return embed
 
 
