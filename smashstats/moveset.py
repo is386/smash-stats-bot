@@ -117,7 +117,8 @@ def parse_move(move_name: str, char_name: str) -> str:
         move_name = move_name[:n_match.start()]
 
     if not database.char_has_move(char_name, move_name, chars_db):
-        move_name = translate_move(move_name)
+        move_name = translate_move(move_name, char_name)
+        print(move_name)
 
     if len(move_name) == 0 or (not database.char_has_move(char_name, move_name + n, chars_db) and len(n) != 0):
         return ""
@@ -125,7 +126,7 @@ def parse_move(move_name: str, char_name: str) -> str:
     return move_name + n
 
 
-def translate_move(move_name: str) -> str:
+def translate_move(move_name: str, char_name: str) -> str:
     """
     Extract the move's code name from the character data.
 
@@ -133,7 +134,14 @@ def translate_move(move_name: str) -> str:
     :return: `str` empty if not found
     """
     move: str = database.select_move(move_name, synonyms_db)
-    # TODO: Implement a way to use canon move names
+    print(move)
+    # TODO: make table for canon move names
+    if len(move) == 0:
+        for m in database.get_move_list(char_name, chars_db):
+            title: str = database.get_move_title(
+                char_name, m, chars_db).split(",", 1)[0].lower().replace(" ", "")
+            if move_name == title:
+                return m
     return move
 
 
@@ -159,6 +167,7 @@ async def parse_multi_moves(ctx: Context, moves: List[str], char_name: str) -> s
         else:
             move = await send_move_selector(char_name, moves_to_select, ctx)
     else:
+        # TODO: check for no frame data
         move = await send_move_selector(char_name, moves, ctx)
 
     return move
