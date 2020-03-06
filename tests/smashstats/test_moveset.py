@@ -60,9 +60,10 @@ def test_parse_move():
 
 
 def test_translate_move():
-    assert translate_move("forwardtilt") == "ftilt"
-    assert translate_move("forwardssmashdown") == "fsmash"
-    assert translate_move("fhoaiuwhfawo eiofew") == ""
+    assert translate_move("forwardtilt", "banjo") == "ftilt"
+    assert translate_move("forwardssmashdown", "banjo") == "fsmash"
+    assert translate_move("fireball", "mario") == "nspecial1"
+    assert translate_move("fhoaiuwhfawo eiofew", "banjo") == ""
 
 
 def test_get_move_data():
