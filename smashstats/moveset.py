@@ -118,7 +118,6 @@ def parse_move(move_name: str, char_name: str) -> str:
 
     if not database.char_has_move(char_name, move_name, chars_db):
         move_name = translate_move(move_name, char_name)
-        print(move_name)
 
     if len(move_name) == 0 or (not database.char_has_move(char_name, move_name + n, chars_db) and len(n) != 0):
         return ""
@@ -134,7 +133,6 @@ def translate_move(move_name: str, char_name: str) -> str:
     :return: `str` empty if not found
     """
     move: str = database.select_move(move_name, synonyms_db)
-    print(move)
     # TODO: make table for canon move names
     if len(move) == 0:
         for m in database.get_move_list(char_name, chars_db):
