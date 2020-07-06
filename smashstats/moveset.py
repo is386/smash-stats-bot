@@ -54,6 +54,9 @@ async def get_move(ctx: Context) -> dict:
         await ctx.send(move_error.format(orig_move, ctx.prefix))
         return None
 
+    # For minmin
+    move = "fair" if move == "bair" and char == "minmin" else move
+
     # Parse moves that have multiple hitboxes.
     moveset = database.get_move_list(char, chars_db)
     multi_moves = [entry for entry in moveset if move in entry]
