@@ -1,3 +1,4 @@
+import random
 from sqlite3 import Connection, Cursor
 
 from discord import Game, Embed, Message
@@ -44,6 +45,15 @@ bot: commands.Bot = commands.Bot(
     command_prefix=get_prefix,
     help_command=None,
     activity=Game(status_msg))
+
+
+@bot.command(name='coin')
+async def coin(ctx: commands.Context):
+    i = random.randint()
+    if i % 2 == 0:
+        ctx.send("**HEADS**")
+    else:
+        ctx.send("**TAILS**")
 
 
 @bot.command(name='viz', aliases=['vis'])
