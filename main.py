@@ -49,11 +49,11 @@ bot: commands.Bot = commands.Bot(
 
 @bot.command(name='coin')
 async def coin(ctx: commands.Context):
-    i = random.randint()
+    i = random.randint(1, 100000)
     if i % 2 == 0:
-        ctx.send("**HEADS**")
+        await ctx.send("**HEADS**")
     else:
-        ctx.send("**TAILS**")
+        await ctx.send("**TAILS**")
 
 
 @bot.command(name='viz', aliases=['vis'])
