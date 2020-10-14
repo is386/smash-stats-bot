@@ -167,4 +167,8 @@ async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
         await ctx.send(prefix_error2.format(ctx.prefix))
 
 
+@bot.event
+async def on_message(msg: Message):
+    if msg.author.id != 192271088779001856:
+        await bot.process_commands(msg)
 bot.run(token)
