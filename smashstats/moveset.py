@@ -57,6 +57,11 @@ async def get_move(ctx: Context) -> dict:
     # For minmin
     move = "fair" if move == "bair" and char == "minmin" else move
 
+    # For hero
+    if move == "dspecial" and char == "hero":
+        await ctx.send("For Hero's menu spells, please refer to them by their full name. There's just too many lol.")
+        return None
+
     # Parse moves that have multiple hitboxes.
     moveset = database.get_move_list(char, chars_db)
     multi_moves = [entry for entry in moveset if move in entry]
