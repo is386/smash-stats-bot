@@ -1,5 +1,5 @@
 --------------------------------------------------------------
-Thank you for using **Ultimate Stats Bot** by 1nder
+Thank you for using **Ultimate Stats Bot**
 --------------------------------------------------------------
 
 **Commands:**
@@ -17,7 +17,7 @@ Default Prefix = `?`
 This means that the character does not have the move you specified. If you get this error, try checking your spelling. Right now, move names cannot be used in the command (Except Terry and Hero down special), so that may also cause this error.
 
 `That character doesn't exist. `
-This means that the character does not exist in Super Smash Bros. Ultimate. If you get this error, check your spelling. The bot may not have the exact spelling of the name you used. If that is the case, DM 1nder and he can add it to the bot.
+This means that the character does not exist in Super Smash Bros. Ultimate. If you get this error, check your spelling. The bot may not have the exact spelling of the name you used.
 
 `____ does not have a hitbox gif yet.`
 This means that the character does have the move that you specified, but Ultimate Frame Data did not have a gif for that move.

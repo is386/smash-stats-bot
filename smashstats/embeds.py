@@ -2,8 +2,6 @@ from discord import Embed
 from smashstats import move_model
 
 embed_color: int = 00000000
-desc: str = "**If any of these stats are incorrect, DM 1nder**"
-
 
 def create_viz_embed(move: move_model.Move) -> Embed:
     """
@@ -25,7 +23,7 @@ def create_stats_embed(move: move_model.Move) -> Embed:
     :return: `Embed` text message to send to the user
     """
     embed: Embed = Embed(title=move.get_title(),
-                         color=embed_color, description=desc)
+                         color=embed_color)
     frame_data: dict = move.get_frame_data()
 
     for fd in frame_data.keys():
