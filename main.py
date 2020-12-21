@@ -166,4 +166,10 @@ async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
     elif isinstance(error, commands.MissingRequiredArgument):
         await ctx.send(prefix_error2.format(ctx.prefix))
 
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CommandNotFound):
+        return
+    raise error
+
 bot.run(token)
