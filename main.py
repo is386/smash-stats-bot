@@ -47,7 +47,7 @@ bot: commands.Bot = commands.Bot(
     activity=Game(status_msg))
 
 
-@bot.command(name='viz', aliases=['vis'])
+@bot.command(name='viz', aliases=['vis', 'v'])
 async def visualize_hitbox(ctx: commands.Context):
     """
     Async function to send an embedded message with a hitbox visual.
@@ -78,7 +78,7 @@ async def visualize_hitbox(ctx: commands.Context):
             await ctx.send(embed=embed)
 
 
-@bot.command(name='stats', aliases=['stat', 'data'])
+@bot.command(name='stats', aliases=['stat', 'data', 's'])
 async def stats(ctx: commands.Context):
     """
     Async function to send an embedded message with a move's stats.
@@ -165,6 +165,7 @@ async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
         await ctx.send(prefix_error1.format(ctx.author.mention))
     elif isinstance(error, commands.MissingRequiredArgument):
         await ctx.send(prefix_error2.format(ctx.prefix))
+
 
 @bot.event
 async def on_command_error(ctx, error):
