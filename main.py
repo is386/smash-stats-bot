@@ -1,7 +1,8 @@
+import asyncio
 import random
 from sqlite3 import Connection, Cursor
 
-from discord import Game, Embed, Message
+from discord import Game, Embed, Message, Intents
 from discord.ext import commands
 
 from smashstats import moveset, embeds, database, move_model, reactions
@@ -40,11 +41,11 @@ async def get_prefix(bot, ctx) -> str:
 
     return commands.when_mentioned_or(rows[0][0])(bot, ctx)
 
-
 bot: commands.Bot = commands.Bot(
     command_prefix=get_prefix,
     help_command=None,
-    activity=Game(status_msg))
+    activity=Game(status_msg),
+    intents=Intents.default())
 
 
 @bot.command(name='viz', aliases=['vis', 'v'])
@@ -174,3 +175,4 @@ async def on_command_error(ctx, error):
     raise error
 
 bot.run(token)
+
