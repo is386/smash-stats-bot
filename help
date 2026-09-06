@@ -4,20 +4,25 @@ Thank you for using **Ultimate Stats Bot**
 
 **Commands:**
 
-Default Prefix = `?`
+`/stats [character] [move]` = show the frame data for a move.
 
-`?prefix [prefix]` = admins can use this to set a custom prefix.
+`/viz [character] [move]` = show the hitbox gif for a move.
 
-`?stats [character name] [move name]` = send a message containing frame data for the move.
+`/help` = show this message.
 
-`?viz [character name] [move name]` = send a gif of the specified move for the specified character.
+Both fields autocomplete, so start typing a character and pick from the list. The move list is filled in once a character is chosen, and you can search it by either its name (`neutral air`) or its short code (`nair1`).
+
+When a move has several versions you'll get a dropdown to pick from, and every result has a button to flip between its stats and its hitbox gif.
 
 **Error Message Info:**
-`The move ____ does not exist.`
-This means that the character does not have the move you specified. If you get this error, try checking your spelling. Right now, move names cannot be used in the command (Except Terry and Hero down special), so that may also cause this error.
+`The move ____ does not exist for ____.`
+That character doesn't have the move you asked for. Pick the move from the autocomplete list to be sure of the spelling.
 
-`That character doesn't exist. `
-This means that the character does not exist in Super Smash Bros. Ultimate. If you get this error, check your spelling. The bot may not have the exact spelling of the name you used.
+`That character doesn't exist.`
+The name didn't match any fighter. Pick one from the autocomplete list.
 
 `____ does not have a hitbox gif yet.`
-This means that the character does have the move that you specified, but Ultimate Frame Data did not have a gif for that move.
+The character has the move, but Ultimate Frame Data has no gif for it.
+
+`____ does not have frame data yet.`
+The character has the move, but Ultimate Frame Data has no numbers for it.

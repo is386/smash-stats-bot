@@ -2,26 +2,6 @@ from sqlite3 import Connection, Cursor, connect
 from typing import List
 
 
-def connect_to_prefix_db(db_name: str) -> Connection:
-    """
-    Connect to the given DB and create a prefixes table.
-
-    :param db_name: `str` name of the database
-    :return: `Connection` connection to db
-    """
-    conn: Connection = connect(db_name)
-    c: Cursor = conn.cursor()
-    c.execute("""
-        CREATE TABLE IF NOT EXISTS prefixes (
-            server_id int not NULL,
-            prefix char(256) NOT NULL,
-            PRIMARY KEY (server_id)
-        )
-    """)
-    conn.commit()
-    return conn
-
-
 def connect_to_synonyms_db() -> Connection:
     """
     Connect to the synonyms database.
@@ -40,6 +20,17 @@ def connect_to_characters_db() -> Connection:
     """
     conn: Connection = connect("databases/characters.db")
     return conn
+
+
+def get_all_chars(db: Connection) -> List[str]:
+    """
+    Return every character's code name, alphabetically.
+
+    :param db: `Connection` connection to the synonyms db
+    :return: `List[str]`
+    """
+    c: Cursor = db.execute("SELECT name FROM characters ORDER BY name")
+    return [row[0] for row in c.fetchall()]
 
 
 def get_similar_chars(char_name: str, db: Connection) -> List[str]:
@@ -266,10 +257,41 @@ def move_has_hitbox(char_name: str, move_name: str, db: Connection) -> bool:
                 char_names.id = frame_data.char_id""", (move_name, i))
     rows: List = c.fetchall()
 
-    if rows[0][0] is None:
+    if len(rows) == 0 or rows[0][0] is None:
         return False
 
     return True
+
+
+def move_has_frame_data(char_name: str, move_name: str, db: Connection) -> bool:
+    """
+    Check if the given move has any frame data at all.
+
+    :param char_name: `str` name of the character
+    :param move_name: `str` name of the move
+    :param db: `Connection` connection to the characters db
+    :return: `bool`
+    """
+    c: Cursor = db.cursor()
+    i: int = get_char_id(char_name, db)
+    c = db.execute("""
+            SELECT
+                startup, on_shield, active_on, total_frames,
+                landing_lag, base_dmg, shield_lag, shield_stun
+            FROM
+                frame_data, char_names
+            WHERE
+                frame_data.name = ?
+            AND
+                char_names.id = ?
+            AND
+                char_names.id = frame_data.char_id""", (move_name, i))
+    rows: List = c.fetchall()
+
+    if len(rows) == 0:
+        return False
+
+    return any(value is not None for value in rows[0])
 
 
 def get_move_title(char_name: str, move_name: str, db: Connection) -> str:

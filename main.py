@@ -1,178 +1,183 @@
-import asyncio
-import random
-from sqlite3 import Connection, Cursor
+from typing import List
 
-from discord import Game, Embed, Message, Intents
-from discord.ext import commands
+import discord
+from discord import app_commands
 
-from smashstats import moveset, embeds, database, move_model, reactions
+from smashstats import moveset, views
 from secret import token
 
-db_name = "databases/prefixes.db"
-default_prefix = "?"
-status_msg: str = "@Ultimate Stats help"
-red_circle: str = "🔴"
-embed_error: str = "An error has occurred during the creation of the embed:\n{}"
-prefix_error1: str = "{} you need the permission **Administrator** to set the prefix."
-prefix_error2: str = "You have to specify a prefix.\nCorrect syntax: `{}prefix new_prefix`"
-footer_msg: str = "React with 🔴 within 60s to see the {}."
-
-prefix_conn: Connection = database.connect_to_prefix_db(db_name)
+status_msg: str = "/stats and /viz"
+help_file: str = "help"
+char_desc: str = "The character, e.g. banjo, bowserjr, kingkrool"
+move_desc: str = "The move, e.g. nair, forward tilt, dspecial2"
+unknown_error: str = "Something went wrong running that command."
 
 
-async def get_prefix(bot, ctx) -> str:
+class SmashStats(discord.Client):
+    """The bot client, with an app command tree and no privileged intents."""
+
+    def __init__(self):
+        # Slash commands arrive as self-contained interaction payloads, so the
+        # bot never needs to read message content.
+        super().__init__(intents=discord.Intents.none(),
+                         activity=discord.Game(status_msg))
+        self.tree: app_commands.CommandTree = app_commands.CommandTree(self)
+
+    async def setup_hook(self):
+        """
+        Publish the command tree to Discord on startup.
+
+        :return: `None`
+        """
+        await self.tree.sync()
+
+
+client: SmashStats = SmashStats()
+
+
+async def character_autocomplete(interaction: discord.Interaction,
+                                 current: str) -> List[app_commands.Choice]:
     """
-    Async function to get the server's custom prefix.
+    Suggest character names as the user types.
 
-    :param bot: `commands.Bot` the bot object that will use the prefix
-    :param ctx: `Context` original user message's context
-    :return: `str` the prefix
+    :param interaction: `Interaction` the in-progress command
+    :param current: `str` what the user has typed so far
+    :return: `List[Choice]`
     """
-    if ctx.guild is None:
-        return default_prefix
-
-    c: Cursor = prefix_conn.cursor()
-    c = c.execute(
-        "SELECT prefix FROM prefixes WHERE server_id=?", (ctx.guild.id,))
-    rows = c.fetchall()
-
-    if len(rows) == 0:
-        return default_prefix
-
-    return commands.when_mentioned_or(rows[0][0])(bot, ctx)
-
-bot: commands.Bot = commands.Bot(
-    command_prefix=get_prefix,
-    help_command=None,
-    activity=Game(status_msg),
-    intents=Intents.default())
+    return [app_commands.Choice(name=c, value=c)
+            for c in moveset.character_choices(current)]
 
 
-@bot.command(name='viz', aliases=['vis', 'v'])
-async def visualize_hitbox(ctx: commands.Context):
+async def move_autocomplete(interaction: discord.Interaction,
+                            current: str) -> List[app_commands.Choice]:
     """
-    Async function to send an embedded message with a hitbox visual.
+    Suggest moves belonging to whichever character has been filled in.
 
-    :param ctx: `Context` original user message's context
+    :param interaction: `Interaction` the in-progress command
+    :param current: `str` what the user has typed so far
+    :return: `List[Choice]`
+    """
+    char: str = moveset.find_character(interaction.namespace.character or "")
+
+    if len(char) == 0:
+        return []
+
+    return [app_commands.Choice(name=label, value=value)
+            for label, value in moveset.move_choices(char, current)]
+
+
+async def send_move(interaction: discord.Interaction, character: str, move: str,
+                    want_hitbox: bool):
+    """
+    Resolve the character and move, then answer with a gif or frame data.
+
+    :param interaction: `Interaction` the command invocation
+    :param character: `str` user given character name
+    :param move: `str` user given move name
+    :param want_hitbox: `bool` True for the gif, False for the frame data
     :return: `None`
     """
-    move: move_model.Move = await moveset.get_move(ctx)
+    try:
+        char: str = moveset.resolve_character(character)
+        candidates: List[str] = moveset.resolve_moves(char, move)
 
-    if move is None:
-        return
-
-    if move.get_image() is None:
-        await ctx.send(moveset.hbox_error.format(move.get_title(), ctx.prefix))
-        return
-
-    embed: Embed = embeds.create_viz_embed(move)
-    embed.set_footer(text=footer_msg.format("stats"))
-    resp: Message = await ctx.send(embed=embed)
-    await resp.add_reaction(red_circle)
-
-    send_stats: bool = await reactions.choose_other_fd_cmd(ctx, resp)
-    if send_stats:
-        if len(move.get_frame_data()) == 0:
-            await ctx.send(moveset.stats_error.format(move.get_title(), ctx.prefix))
+        # Drop the candidates that can't answer this command, so a dropdown
+        # never offers an option that errors when picked.
+        if want_hitbox:
+            usable: List[str] = moveset.with_hitboxes(char, candidates)
+            missing: str = moveset.hbox_error
         else:
-            embed: Embed = embeds.create_stats_embed(move)
-            await ctx.send(embed=embed)
+            usable = moveset.with_frame_data(char, candidates)
+            missing = moveset.stats_error
 
+        if len(usable) == 0:
+            title: str = moveset.move_title(char, candidates[0]) or move
+            raise moveset.MoveLookupError(missing.format(title))
 
-@bot.command(name='stats', aliases=['stat', 'data', 's'])
-async def stats(ctx: commands.Context):
-    """
-    Async function to send an embedded message with a move's stats.
+        candidates = usable
 
-    :param ctx: `Context` original user message's context
-    :return: `None`
-    """
-    move: move_model.Move = await moveset.get_move(ctx)
+        if len(candidates) > 1:
+            picker: views.MoveSelectView = views.MoveSelectView(
+                char, candidates, interaction.user.id, want_hitbox)
+            await interaction.response.send_message(moveset.select_msg, view=picker)
+            picker.message = await interaction.original_response()
+            return
 
-    if move is None:
+        embed, view = views.build_response(
+            char, candidates[0], interaction.user.id, want_hitbox)
+    except moveset.MoveLookupError as error:
+        await interaction.response.send_message(str(error), ephemeral=True)
         return
 
-    if len(move.get_frame_data()) == 0:
-        await ctx.send(moveset.stats_error.format(move.get_title(), ctx.prefix))
-        return
+    # send_message has no Optional view: None would be dereferenced, unlike
+    # edit_message where None means "remove the components".
+    await interaction.response.send_message(
+        embed=embed, view=view if view is not None else discord.utils.MISSING)
 
-    embed: Embed = embeds.create_stats_embed(move)
-    embed.set_footer(text=footer_msg.format("hitbox"))
-    resp: Message = await ctx.send(embed=embed)
-    await resp.add_reaction(red_circle)
-
-    send_viz: bool = await reactions.choose_other_fd_cmd(ctx, resp)
-    if send_viz:
-        if move.get_image() is None:
-            await ctx.send(moveset.hbox_error.format(move.get_title(), ctx.prefix))
-        else:
-            embed: Embed = embeds.create_viz_embed(move)
-            await ctx.send(embed=embed)
+    if view is not None:
+        view.message = await interaction.original_response()
 
 
-@bot.command(name='help')
-async def send_help(ctx: commands.Context):
+@client.tree.command(name="stats", description="Show frame data for a character's move.")
+@app_commands.describe(character=char_desc, move=move_desc)
+@app_commands.autocomplete(character=character_autocomplete, move=move_autocomplete)
+async def stats(interaction: discord.Interaction, character: str, move: str):
     """
-    Async function to send a direct message with the help text.
+    Answer with a move's frame data.
 
-    :param ctx: `Context` original user message's context
+    :param interaction: `Interaction` the command invocation
+    :param character: `str` user given character name
+    :param move: `str` user given move name
     :return: `None`
     """
-    with open("help", "r") as help_file:
-        help_msg: str = help_file.read()
-    await ctx.author.send(help_msg)
-    await ctx.send("Sent you a DM {}.".format(ctx.author.mention))
+    await send_move(interaction, character, move, want_hitbox=False)
 
 
-@bot.command(name='prefix')
-@commands.has_permissions(administrator=True)
-async def set_prefix(ctx: commands.Context, prefix: str):
+@client.tree.command(name="viz", description="Show the hitbox gif for a character's move.")
+@app_commands.describe(character=char_desc, move=move_desc)
+@app_commands.autocomplete(character=character_autocomplete, move=move_autocomplete)
+async def viz(interaction: discord.Interaction, character: str, move: str):
     """
-    Async function to send a direct message with the help text.
+    Answer with a move's hitbox gif.
 
-    :param ctx: `Context` original user message's context
-    :param prefix: `str` the desired prefix
+    :param interaction: `Interaction` the command invocation
+    :param character: `str` user given character name
+    :param move: `str` user given move name
     :return: `None`
     """
-    if len(prefix) > 3:
-        await ctx.send("That prefix is too long. It must 3 characters or less.")
-        return
-
-    c: Cursor = prefix_conn.cursor()
-    c.execute("""
-        INSERT INTO
-            prefixes (server_id, prefix)
-        VALUES
-            (?, ?)
-        ON CONFLICT
-            (server_id)
-        DO UPDATE SET
-            prefix=?
-    """, (ctx.guild.id, prefix, prefix))
-    prefix_conn.commit()
-    await ctx.send("Your new prefix has been set to **{}**".format(prefix))
+    await send_move(interaction, character, move, want_hitbox=True)
 
 
-@set_prefix.error
-async def set_prefix_error(ctx: commands.Context, error: commands.CommandError):
+@client.tree.command(name="help", description="Explain how to use the bot.")
+async def send_help(interaction: discord.Interaction):
     """
-    Async function to send a message if a user is missing permissions to change the prefix.
+    Answer with the help text, visible only to the user who asked.
 
-    :param ctx: `Context` original user message's context
-    :param error: `commands.CommandError` the error invoked by the user
+    :param interaction: `Interaction` the command invocation
     :return: `None`
     """
-    if isinstance(error, commands.MissingPermissions):
-        await ctx.send(prefix_error1.format(ctx.author.mention))
-    elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send(prefix_error2.format(ctx.prefix))
+    with open(help_file, "r") as f:
+        help_msg: str = f.read()
+    await interaction.response.send_message(help_msg, ephemeral=True)
 
 
-@bot.event
-async def on_command_error(ctx, error):
-    if isinstance(error, commands.CommandNotFound):
-        return
+@client.tree.error
+async def on_command_error(interaction: discord.Interaction,
+                           error: app_commands.AppCommandError):
+    """
+    Tell the user the command failed, then re-raise for the logs.
+
+    :param interaction: `Interaction` the command invocation
+    :param error: `AppCommandError` what went wrong
+    :return: `None`
+    """
+    if interaction.response.is_done():
+        await interaction.followup.send(unknown_error, ephemeral=True)
+    else:
+        await interaction.response.send_message(unknown_error, ephemeral=True)
+
     raise error
 
-bot.run(token)
 
+if __name__ == "__main__":
+    client.run(token)

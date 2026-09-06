@@ -8,6 +8,6 @@ setup(
     license='GPL',
     author='is386',
     author_email='',
-    description='',
-    install_requires=['discord', 'PyYAML']
+    description='A Discord bot for Super Smash Bros. Ultimate frame data.',
+    install_requires=['discord.py>=2.3.2,<3.0']
 )
