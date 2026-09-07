@@ -6,7 +6,7 @@ from discord import app_commands
 from smashstats import moveset, views
 from secret import token
 
-status_msg: str = "⚠️ UPDATE — click my profile to fix /commands"
+status_msg: str = "⚠️ UPDATE! Click my profile to fix cmds"
 help_file: str = "help"
 char_desc: str = "The character, e.g. banjo, bowserjr, kingkrool"
 move_desc: str = "The move, e.g. nair, forward tilt, dspecial2"
