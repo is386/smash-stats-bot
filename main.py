@@ -6,7 +6,7 @@ from discord import app_commands
 from smashstats import moveset, views
 from secret import token
 
-status_msg: str = "/stats and /viz"
+status_msg: str = "⚠️ UPDATE — click my profile to fix /commands"
 help_file: str = "help"
 char_desc: str = "The character, e.g. banjo, bowserjr, kingkrool"
 move_desc: str = "The move, e.g. nair, forward tilt, dspecial2"
@@ -20,7 +20,9 @@ class SmashStats(discord.Client):
         # Slash commands arrive as self-contained interaction payloads, so the
         # bot never needs to read message content.
         super().__init__(intents=discord.Intents.none(),
-                         activity=discord.Game(status_msg))
+                         activity=discord.Activity(
+                             type=discord.ActivityType.watching,
+                             name=status_msg))
         self.tree: app_commands.CommandTree = app_commands.CommandTree(self)
 
     async def setup_hook(self):
