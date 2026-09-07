@@ -5,7 +5,7 @@ The data comes from [Ultimate Frame Data](https://ultimateframedata.com/smash) a
 databases. Everything is a slash command, so there is nothing to remember about prefixes. It is used by over
 10,000 users across the Smashcords.
 
-![](https://github.com/is386/smash-stats-bot/blob/master/demo.png?raw=true)
+![](https://github.com/1nderr/smash-stats-bot/blob/master/demo.png?raw=true)
 
 ## Features
 
