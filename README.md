@@ -1,4 +1,4 @@
-# SmashStats
+# smash-stats-bot
 
 This is a Discord bot written in Python that serves Super Smash Bros. Ultimate frame data and hitbox gifs.
 The data comes from [Ultimate Frame Data](https://ultimateframedata.com/smash) and is stored in SQLite
